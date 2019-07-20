@@ -3,4 +3,4 @@ before_script:
   - composer install
 php:
   - 7.3
-script: phpunit
+script: phpunit --configuration $DB.phpunit.xml
