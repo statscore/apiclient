@@ -36,7 +36,8 @@
       "Statscore": "lib/"
     },
     "psr-4": {
-      "Statscore\\": "lib/Statscore/"
+      "Statscore\\": "lib/Statscore/",
+      "UnitTests\\": "tests/unit"
     }
   }
 }

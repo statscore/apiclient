@@ -28,6 +28,16 @@ class Service
     private $serializer;
 
     /**
+     * @var integer
+     */
+    private $clientId;
+
+    /**
+     * @var string
+     */
+    private $secretKey;
+
+    /**
      * Service constructor.
      * @param Client $guzzle
      * @param Serializer $serializer
@@ -36,6 +46,44 @@ class Service
     {
         $this->client = $guzzle;
         $this->serializer = $serializer;
+    }
+
+    /**
+     * @return int
+     */
+    public function getClientId(): int
+    {
+        return $this->clientId;
+    }
+
+    /**
+     * @param int $clientId
+     * @return Service
+     */
+    public function setClientId(int $clientId): Service
+    {
+        $this->clientId = $clientId;
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSecretKey(): string
+    {
+        return $this->secretKey;
+    }
+
+    /**
+     * @param string $secretKey
+     * @return Service
+     */
+    public function setSecretKey(string $secretKey): Service
+    {
+        $this->secretKey = $secretKey;
+
+        return $this;
     }
 
     /**
