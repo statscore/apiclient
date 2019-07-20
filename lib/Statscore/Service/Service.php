@@ -6,6 +6,7 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\RequestOptions;
 use Itav\Component\Serializer\Serializer;
+use Itav\Component\Serializer\SerializerException;
 use Statscore\Model\Request\RequestDTO;
 use Statscore\Model\Response\ResponseDTO;
 use Statscore\Service\Exception\AuthorizationException;
@@ -78,6 +79,7 @@ class Service
      * @return ResponseDTO
      * @throws AuthorizationException
      * @throws GuzzleException
+     * @throws SerializerException
      */
     public function getToken(): ResponseDTO
     {
@@ -102,8 +104,9 @@ class Service
 
     /**
      * @param RequestDTO $requestDTO
-     * @return mixed
+     * @return ResponseDTO
      * @throws GuzzleException
+     * @throws SerializerException
      */
     public function request(RequestDTO $requestDTO): ResponseDTO
     {
@@ -113,10 +116,11 @@ class Service
             $this->prepareBody($requestDTO)
         );
 
-        /**
-         * @TODO
-         */
-        return $request->getBody()->getContents();
+        $response = $request->getBody()->getContents();
+        $response = json_decode($response, true);
+
+        return $this->serializer->denormalize($response, ResponseDTO::class);
+
     }
 
     /**
