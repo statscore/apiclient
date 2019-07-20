@@ -16,4 +16,13 @@ class InitTests extends TestCase
         $this->assertInstanceOf(Client::class, $this->client);
     }
 
+    public function testSetClientId()
+    {
+        $this->assertInstanceOf(Client::class, $this->client->setClientId(1));
+    }
+
+    public function testSetSecretKey()
+    {
+        $this->assertInstanceOf(Client::class, $this->client->setSecretKey('dsadsadas'));
+    }
 }

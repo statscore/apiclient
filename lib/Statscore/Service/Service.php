@@ -6,8 +6,10 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\RequestOptions;
 use Itav\Component\Serializer\Serializer;
-use Itav\Component\Serializer\SerializerException;
 use Statscore\Model\Request\RequestDTO;
+use Statscore\Model\Response\ResponseDTO;
+use Statscore\Service\Exception\AuthorizationException;
+use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Class Service
@@ -15,7 +17,9 @@ use Statscore\Model\Request\RequestDTO;
  */
 class Service
 {
-    const VERSION = 'v1';
+    const VERSION = 'v2';
+
+    const URI = 'http://dev.api.statscore.com';
 
     /**
      * @var Client
@@ -49,14 +53,6 @@ class Service
     }
 
     /**
-     * @return int
-     */
-    public function getClientId(): int
-    {
-        return $this->clientId;
-    }
-
-    /**
      * @param int $clientId
      * @return Service
      */
@@ -65,14 +61,6 @@ class Service
         $this->clientId = $clientId;
 
         return $this;
-    }
-
-    /**
-     * @return string
-     */
-    public function getSecretKey(): string
-    {
-        return $this->secretKey;
     }
 
     /**
@@ -87,16 +75,41 @@ class Service
     }
 
     /**
+     * @return ResponseDTO
+     * @throws AuthorizationException
+     * @throws GuzzleException
+     */
+    public function getToken(): ResponseDTO
+    {
+        if (!$this->clientId) {
+            throw new AuthorizationException(AuthorizationException::ERROR_AUTHORIZATION_CLIENT_ID);
+        }
+
+        if (!$this->secretKey) {
+            throw new AuthorizationException(AuthorizationException::ERROR_AUTHORIZATION_SECRET_KEY);
+        }
+
+        $request = new RequestDTO();
+        $request->setMethod(Request::METHOD_GET);
+        $request->setUri('oauth');
+        $request->setQuery([
+            'client_id' => $this->clientId,
+            'secret_key' => $this->secretKey,
+        ]);
+
+        return $this->request($request);
+    }
+
+    /**
      * @param RequestDTO $requestDTO
      * @return mixed
      * @throws GuzzleException
-     * @throws SerializerException
      */
-    public function request(RequestDTO $requestDTO)
+    public function request(RequestDTO $requestDTO): ResponseDTO
     {
         $request = $this->client->request(
             $requestDTO->getMethod(),
-            $requestDTO->getUri(),
+            Service::URI . '/' . Service::VERSION . '/' . $requestDTO->getUri(),
             $this->prepareBody($requestDTO)
         );
 
