@@ -19,12 +19,11 @@ abstract class AbstractService implements InterfaceService
     /**
      * AbstractService constructor.
      * @param ApiService $service
-     * @param Serializer $serializer
      */
-    public function __construct(ApiService $service, Serializer $serializer)
+    public function __construct(ApiService $service)
     {
         $this->service = $service;
-        $this->serializer = $serializer;
+        $this->serializer = $service->serializer;
     }
 
 }

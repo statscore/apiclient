@@ -47,33 +47,11 @@ class MethodDTO
     }
 
     /**
-     * @param array $parameters
-     * @return MethodDTO
-     */
-    public function setParameters(array $parameters): MethodDTO
-    {
-        $this->parameters = $parameters;
-
-        return $this;
-    }
-
-    /**
      * @return string
      */
     public function getName(): string
     {
         return $this->name;
-    }
-
-    /**
-     * @param string $name
-     * @return MethodDTO
-     */
-    public function setName(string $name): MethodDTO
-    {
-        $this->name = $name;
-
-        return $this;
     }
 
     /**
@@ -85,33 +63,11 @@ class MethodDTO
     }
 
     /**
-     * @param string $details
-     * @return MethodDTO
-     */
-    public function setDetails(string $details): MethodDTO
-    {
-        $this->details = $details;
-
-        return $this;
-    }
-
-    /**
      * @return string|null
      */
     public function getTotalItems(): ?string
     {
         return $this->totalItems;
-    }
-
-    /**
-     * @param string|null $totalItems
-     * @return MethodDTO
-     */
-    public function setTotalItems(?string $totalItems): MethodDTO
-    {
-        $this->totalItems = $totalItems;
-
-        return $this;
     }
 
     /**
@@ -123,32 +79,10 @@ class MethodDTO
     }
 
     /**
-     * @param string|null $previousPage
-     * @return MethodDTO
-     */
-    public function setPreviousPage(?string $previousPage): MethodDTO
-    {
-        $this->previousPage = $previousPage;
-
-        return $this;
-    }
-
-    /**
      * @return string|null
      */
     public function getNextPage(): ?string
     {
         return $this->nextPage;
-    }
-
-    /**
-     * @param string|null $nextPage
-     * @return MethodDTO
-     */
-    public function setNextPage(?string $nextPage): MethodDTO
-    {
-        $this->nextPage = $nextPage;
-
-        return $this;
     }
 }

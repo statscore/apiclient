@@ -34,12 +34,10 @@ class Client
      */
     public function __construct(int $clientId, string $secretKey)
     {
-        $guzzle = new Guzzle([]);
-        $serializer = new Serializer();
-        $this->service = new ApiService($guzzle, $serializer);
+        $this->service = new ApiService(new Guzzle([]), new Serializer());
         $this->service->setClientId($clientId);
         $this->service->setSecretKey($secretKey);
-        $this->area = new AreaService($this->service, $serializer);
+        $this->area = new AreaService($this->service);
     }
 
     /**

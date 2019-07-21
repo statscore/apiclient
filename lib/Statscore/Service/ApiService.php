@@ -31,7 +31,7 @@ class ApiService
     /**
      * @var Serializer
      */
-    protected $serializer;
+    public $serializer;
 
     /**
      * @var integer

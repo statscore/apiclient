@@ -37,17 +37,6 @@ class ResponseDTO
     }
 
     /**
-     * @param string $ver
-     * @return ResponseDTO
-     */
-    public function setVer(string $ver): ResponseDTO
-    {
-        $this->ver = $ver;
-
-        return $this;
-    }
-
-    /**
      * @return string
      */
     public function getTimestamp(): string
@@ -56,33 +45,11 @@ class ResponseDTO
     }
 
     /**
-     * @param string $timestamp
-     * @return ResponseDTO
-     */
-    public function setTimestamp(string $timestamp): ResponseDTO
-    {
-        $this->timestamp = $timestamp;
-
-        return $this;
-    }
-
-    /**
      * @return MethodDTO
      */
     public function getMethod(): MethodDTO
     {
         return $this->method;
-    }
-
-    /**
-     * @param MethodDTO $method
-     * @return ResponseDTO
-     */
-    public function setMethod(MethodDTO $method): ResponseDTO
-    {
-        $this->method = $method;
-
-        return $this;
     }
 
     /**
