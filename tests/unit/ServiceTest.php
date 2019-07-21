@@ -8,9 +8,11 @@ use GuzzleHttp\Psr7\Response;
 use Itav\Component\Serializer\Serializer;
 use Itav\Component\Serializer\SerializerException;
 use Mockery;
+use Statscore\Model\Request\RequestDTO;
 use Statscore\Model\Response\ResponseDTO;
 use Statscore\Service\Exception\AuthorizationException;
 use Statscore\Service\Service;
+use Symfony\Component\HttpFoundation\Request;
 
 class ServiceTest extends TestCase
 {
@@ -79,6 +81,26 @@ class ServiceTest extends TestCase
         $this->service->setSecretKey('dsadsadsadsa');
 
         $this->assertInstanceOf(ResponseDTO::class, $this->service->getToken());
+    }
+
+    /**
+     * @throws GuzzleException
+     * @throws SerializerException
+     */
+    public function testRequest()
+    {
+        $this->guzzle->shouldReceive('request')->andReturn(new Response());
+        $this->serializer->shouldReceive('denormalize')->andReturn(new ResponseDTO());
+
+        $request = new RequestDTO();
+        $request->setQuery(['test' => true]);
+        $request->setUri('test');
+        $request->setMethod(Request::METHOD_GET);
+        $request->setHeaders(['test' => true]);
+        $request->setBody(['test' => true]);
+        $request->setJson('{"test":true}');
+
+        $this->assertInstanceOf(ResponseDTO::class, $this->service->request($request));
     }
 
 }
