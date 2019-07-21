@@ -6,14 +6,14 @@ use Itav\Component\Serializer\Serializer;
 
 /**
  * Interface InterfaceService
- * @package Statscore\Service
+ * @package Statscore\ApiService
  */
 interface InterfaceService
 {
     /**
      * InterfaceService constructor.
-     * @param Service $service
+     * @param ApiService $service
      * @param Serializer $serializer
      */
-    public function __construct(Service $service, Serializer $serializer);
+    public function __construct(ApiService $service, Serializer $serializer);
 }

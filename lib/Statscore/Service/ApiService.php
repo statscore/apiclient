@@ -14,10 +14,10 @@ use Statscore\Service\Exception\AuthorizationException;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
- * Class Service
- * @package Statscore\Service
+ * Class ApiService
+ * @package Statscore\ApiService
  */
-class Service
+class ApiService
 {
     const VERSION = 'v2';
 
@@ -31,7 +31,7 @@ class Service
     /**
      * @var Serializer
      */
-    private $serializer;
+    protected $serializer;
 
     /**
      * @var integer
@@ -44,7 +44,12 @@ class Service
     private $secretKey;
 
     /**
-     * Service constructor.
+     * @var string
+     */
+    private $token;
+
+    /**
+     * ApiService constructor.
      * @param Client $guzzle
      * @param Serializer $serializer
      */
@@ -56,9 +61,9 @@ class Service
 
     /**
      * @param int $clientId
-     * @return Service
+     * @return ApiService
      */
-    public function setClientId(int $clientId): Service
+    public function setClientId(int $clientId): ApiService
     {
         $this->clientId = $clientId;
 
@@ -67,11 +72,22 @@ class Service
 
     /**
      * @param string $secretKey
-     * @return Service
+     * @return ApiService
      */
-    public function setSecretKey(string $secretKey): Service
+    public function setSecretKey(string $secretKey): ApiService
     {
         $this->secretKey = $secretKey;
+
+        return $this;
+    }
+
+    /**
+     * @param string $token
+     * @return ApiService
+     */
+    public function setToken(string $token): ApiService
+    {
+        $this->token = $token;
 
         return $this;
     }
@@ -115,7 +131,7 @@ class Service
     {
         $request = $this->client->request(
             $requestDTO->getMethod(),
-            Service::URI . '/' . Service::VERSION . '/' . $requestDTO->getUri(),
+            ApiService::URI . '/' . ApiService::VERSION . '/' . $requestDTO->getUri(),
             $this->prepareBody($requestDTO)
         );
 

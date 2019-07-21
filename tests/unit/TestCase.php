@@ -22,7 +22,7 @@ abstract class TestCase extends BaseTest
     {
         parent::setUp();
 
-        $this->client = new Client();
+        $this->client = new Client(1, 'dsadsdsads');
         $this->serializer = new Serializer();
     }
 }
