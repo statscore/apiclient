@@ -8,6 +8,7 @@ use GuzzleHttp\RequestOptions;
 use Itav\Component\Serializer\Serializer;
 use Itav\Component\Serializer\SerializerException;
 use Statscore\Model\Request\RequestDTO;
+use Statscore\Model\Response\Authorization\AuthorizationDTO;
 use Statscore\Model\Response\ResponseDTO;
 use Statscore\Service\Exception\AuthorizationException;
 use Symfony\Component\HttpFoundation\Request;
@@ -76,12 +77,12 @@ class Service
     }
 
     /**
-     * @return ResponseDTO
+     * @return AuthorizationDTO
      * @throws AuthorizationException
      * @throws GuzzleException
      * @throws SerializerException
      */
-    public function getToken(): ResponseDTO
+    public function getToken(): AuthorizationDTO
     {
         if (!$this->clientId) {
             throw new AuthorizationException(AuthorizationException::ERROR_AUTHORIZATION_CLIENT_ID);
@@ -99,7 +100,9 @@ class Service
             'secret_key' => $this->secretKey,
         ]);
 
-        return $this->request($request);
+        $responseDTO = $this->request($request);
+
+        return $this->serializer->denormalize($responseDTO->getData(), AuthorizationDTO::class);
     }
 
     /**
@@ -119,8 +122,7 @@ class Service
         $response = $request->getBody()->getContents();
         $response = json_decode($response, true);
 
-        return $this->serializer->denormalize($response, ResponseDTO::class);
-
+        return $this->serializer->denormalize($response['api'] ?? [], ResponseDTO::class);
     }
 
     /**

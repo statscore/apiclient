@@ -3,8 +3,12 @@
 namespace Statscore;
 
 use GuzzleHttp\Client as Guzzle;
-use Statscore\Service\Service;
+use GuzzleHttp\Exception\GuzzleException;
 use Itav\Component\Serializer\Serializer;
+use Itav\Component\Serializer\SerializerException;
+use Statscore\Model\Response\Authorization\AuthorizationDTO;
+use Statscore\Service\Exception\AuthorizationException;
+use Statscore\Service\Service;
 
 /**
  * Class Client
@@ -47,5 +51,16 @@ class Client
         $this->service->setSecretKey($secretKey);
 
         return $this;
+    }
+
+    /**
+     * @return AuthorizationDTO
+     * @throws AuthorizationException
+     * @throws GuzzleException
+     * @throws SerializerException
+     */
+    public function getToken(): AuthorizationDTO
+    {
+        return $this->service->getToken();
     }
 }

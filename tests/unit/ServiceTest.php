@@ -9,10 +9,12 @@ use Itav\Component\Serializer\Serializer;
 use Itav\Component\Serializer\SerializerException;
 use Mockery;
 use Statscore\Model\Request\RequestDTO;
+use Statscore\Model\Response\Authorization\AuthorizationDTO;
 use Statscore\Model\Response\ResponseDTO;
 use Statscore\Service\Exception\AuthorizationException;
 use Statscore\Service\Service;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response as HttpFoundationResponse;
 
 class ServiceTest extends TestCase
 {
@@ -26,17 +28,11 @@ class ServiceTest extends TestCase
      */
     private $guzzle;
 
-    /**
-     * @var Serializer|Mockery\MockInterface
-     */
-    private $serializer;
-
     public function setUp(): void
     {
         parent::setUp();
 
         $this->guzzle = Mockery::mock(Client::class);
-        $this->serializer = Mockery::mock(Serializer::class);
 
         $this->service = new Service($this->guzzle, $this->serializer);
     }
@@ -74,13 +70,21 @@ class ServiceTest extends TestCase
      */
     public function testGetToken()
     {
-        $this->guzzle->shouldReceive('request')->andReturn(new Response());
-        $this->serializer->shouldReceive('denormalize')->andReturn(new ResponseDTO());
+        $response = '{"api":{"ver":"2.125","timestamp":1563700541,"method":{"parameters":{"client_id":"1","secret_key":"c0eb3cd79f75b2e75f290ca33cbde138"},"name":"oauth","details":"oauth","total_items":"","previous_page":"","next_page":""},"data":{"client_id":"1","token":"415ab746cee5826dd8e2a64d3a137f56","token_expiration":1563786941}}}';
+
+        $response = new Response(HttpFoundationResponse::HTTP_OK, ['Content-Type' => 'application/json'], $response);
+
+        $this->guzzle->shouldReceive('request')->andReturn($response);
 
         $this->service->setClientId(1);
         $this->service->setSecretKey('dsadsadsadsa');
 
-        $this->assertInstanceOf(ResponseDTO::class, $this->service->getToken());
+        $authorizationDTO = $this->service->getToken();
+
+        $this->assertInstanceOf(AuthorizationDTO::class, $authorizationDTO);
+        $this->assertEquals('415ab746cee5826dd8e2a64d3a137f56', $authorizationDTO->getToken());
+        $this->assertEquals(1, $authorizationDTO->getClientId());
+        $this->assertEquals(1563786941, $authorizationDTO->getTokenExpiration());
     }
 
     /**
@@ -90,7 +94,6 @@ class ServiceTest extends TestCase
     public function testRequest()
     {
         $this->guzzle->shouldReceive('request')->andReturn(new Response());
-        $this->serializer->shouldReceive('denormalize')->andReturn(new ResponseDTO());
 
         $request = new RequestDTO();
         $request->setQuery(['test' => true]);

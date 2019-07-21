@@ -24,9 +24,9 @@ class ResponseDTO
     private $method;
 
     /**
-     * @var object
+     * @var array
      */
-    private $data;
+    private $data = [];
 
     /**
      * @return string
@@ -86,18 +86,18 @@ class ResponseDTO
     }
 
     /**
-     * @return object
+     * @return array
      */
-    public function getData(): object
+    public function getData(): array
     {
         return $this->data;
     }
 
     /**
-     * @param object $data
+     * @param array $data
      * @return ResponseDTO
      */
-    public function setData(object $data): ResponseDTO
+    public function setData(array $data): ResponseDTO
     {
         $this->data = $data;
 

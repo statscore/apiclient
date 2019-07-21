@@ -25,4 +25,5 @@ class InitTests extends TestCase
     {
         $this->assertInstanceOf(Client::class, $this->client->setSecretKey('dsadsadas'));
     }
+
 }
