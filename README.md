@@ -4,4 +4,4 @@
 ![PHP from Travis config](https://img.shields.io/travis/php-v/statscore/apiclient/development.svg)
 [![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=statscore_apiclient&metric=alert_status)](https://sonarcloud.io/dashboard?id=statscore_apiclient)
 
-TODO
+TODO!
