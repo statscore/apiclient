@@ -8,6 +8,7 @@ use Itav\Component\Serializer\Serializer;
 use Itav\Component\Serializer\SerializerException;
 use Statscore\Model\Response\Authorization\AuthorizationDTO;
 use Statscore\Service\Area\AreaService;
+use Statscore\Service\Competition\CompetitionService;
 use Statscore\Service\Exception\AuthorizationException;
 use Statscore\Service\ApiService;
 
@@ -25,7 +26,12 @@ class Client
     /**
      * @var AreaService
      */
-    public $area;
+    public $areas;
+
+    /**
+     * @var CompetitionService
+     */
+    public $competitions;
 
     /**
      * Statscore constructor.
@@ -37,7 +43,8 @@ class Client
         $this->service = new ApiService(new Guzzle([]), new Serializer());
         $this->service->setClientId($clientId);
         $this->service->setSecretKey($secretKey);
-        $this->area = new AreaService($this->service);
+        $this->areas = new AreaService($this->service);
+        $this->competitions = new CompetitionService($this->service);
     }
 
     /**

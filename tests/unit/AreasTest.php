@@ -14,10 +14,10 @@ use Statscore\Service\Area\AreaService;
 use Symfony\Component\HttpFoundation\Response as HttpFoundationResponse;
 
 /**
- * Class AreaTest
+ * Class AreasTest
  * @package UnitTests
  */
-class AreaTest extends TestCase
+class AreasTest extends TestCase
 {
 
     /**
