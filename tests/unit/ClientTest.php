@@ -19,12 +19,12 @@ class ClientTest extends TestCase
         $this->client = new Client(1, 'dsadsdsads');
     }
 
-    public function testInitClass()
+    public function testInitClass(): void
     {
         $this->assertInstanceOf(Client::class, $this->client);
     }
 
-    public function testSetToken()
+    public function testSetToken(): void
     {
         $this->assertInstanceOf(Client::class, $this->client->setToken('dsadsadas'));
     }
@@ -34,7 +34,7 @@ class ClientTest extends TestCase
      * @throws GuzzleException
      * @throws SerializerException
      */
-    public function testGetToken()
+    public function testGetToken(): void
     {
         $this->expectException(AuthorizationException::class);
         $this->client = new Client(0, '');

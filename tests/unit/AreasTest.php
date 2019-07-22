@@ -44,10 +44,11 @@ class AreasTest extends TestCase
     }
 
     /**
+     * @return AreaDTO
      * @throws GuzzleException
      * @throws SerializerException
      */
-    public function testGetAll()
+    public function testGetAll(): AreaDTO
     {
         $response = '{"api":{"ver":"2.125","timestamp":1563734521,"method":{"parameters":[],"name":"areas.index","details":"areas.index","total_items":2,"previous_page":"","next_page":""},"data":{"areas":[{"id":1,"area_code":"AFG","name":"Afghanistan","parent_area_id":"210","ut":1514992911},{"id":2,"area_code":"ALB","name":"Albania","parent_area_id":"209","ut":1514992911}]}}}';
 
@@ -76,7 +77,7 @@ class AreasTest extends TestCase
      * @param AreaDTO $areaDTO
      * @depends testGetAll
      */
-    public function testAreaResponse(AreaDTO $areaDTO)
+    public function testAreaResponse(AreaDTO $areaDTO): void
     {
         $this->assertEquals(1, $areaDTO->getId());
         $this->assertEquals('AFG', $areaDTO->getAreaCode());

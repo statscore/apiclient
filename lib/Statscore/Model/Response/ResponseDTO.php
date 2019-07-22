@@ -24,9 +24,9 @@ class ResponseDTO
     private $method;
 
     /**
-     * @var array
+     * @var mixed
      */
-    private $data = [];
+    private $data;
 
     /**
      * @return string
@@ -53,18 +53,18 @@ class ResponseDTO
     }
 
     /**
-     * @return array
+     * @return mixed
      */
-    public function getData(): array
+    public function getData()
     {
         return $this->data;
     }
 
     /**
-     * @param array $data
+     * @param mixed $data
      * @return ResponseDTO
      */
-    public function setData(array $data): ResponseDTO
+    public function setData($data): ResponseDTO
     {
         $this->data = $data;
 

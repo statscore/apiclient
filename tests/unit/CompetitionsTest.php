@@ -44,10 +44,11 @@ class CompetitionsTest extends TestCase
     }
 
     /**
-     * @throws GuzzleException
+     * @return CompetitionDTO
      * @throws SerializerException
+     * @throws GuzzleException
      */
-    public function testGetAll()
+    public function testGetAll(): CompetitionDTO
     {
         $response = '{"api":{"ver":"2.125","timestamp":1563818450,"method":{"parameters":{"client_id":1},"name":"competitions.index","details":"competitions.index","total_items":2,"previous_page":"","next_page":""},"data":{"competitions":[{"id":5806,"name":"Serbia & Montenegro","short_name":"Serbia & Montenegro","mini_name":"mnb","gender":"male","type":"country_league","area_id":1,"area_name":"Afghanistan","area_type":"country","area_sort":2,"area_code":"AFG","overall_sort":50,"sport_id":20,"sport_name":"Alpine skiing","tour_id":4,"tour_name":"ATP Challengers","ut":1434115672,"old_competition_id":"","slug":"serbia-&-montenegro,5806","stats_lvl":"bronze","seasons":{}},{"id":466,"name":"Brisbane (W)","short_name":"Brisbane (W)","mini_name":"BRI","gender":"female","type":"single","area_id":14,"area_name":"Australia","area_type":"international","area_sort":1,"area_code":"AUS","overall_sort":50,"sport_id":4,"sport_name":"Tennis","tour_id":2,"tour_name":"WTA Tour","ut":1455090924,"old_competition_id":"","slug":"brisbane-w,466","stats_lvl":"bronze","seasons":{}}]}}}';
 
@@ -61,7 +62,7 @@ class CompetitionsTest extends TestCase
         $this->assertEquals('competitions.index', $responseDTO->getMethod()->getName());
         $this->assertEmpty($responseDTO->getMethod()->getNextPage());
         $this->assertEmpty($responseDTO->getMethod()->getPreviousPage());
-        $this->assertArrayHasKey('client_id',$responseDTO->getMethod()->getParameters());
+        $this->assertArrayHasKey('client_id', $responseDTO->getMethod()->getParameters());
         $this->assertEquals(1563818450, $responseDTO->getTimestamp());
         $this->assertEquals('2.125', $responseDTO->getVer());
         $this->assertEquals(2, $responseDTO->getMethod()->getTotalItems());
@@ -75,8 +76,9 @@ class CompetitionsTest extends TestCase
     /**
      * @param CompetitionDTO $competitionDTO
      * @depends testGetAll
+     * @depends testGet
      */
-    public function testCompetitionResponse(CompetitionDTO $competitionDTO)
+    public function testCompetitionResponse(CompetitionDTO $competitionDTO): void
     {
         $this->assertEquals(5806, $competitionDTO->getId());
         $this->assertEquals('Serbia & Montenegro', $competitionDTO->getName());
@@ -98,6 +100,37 @@ class CompetitionsTest extends TestCase
         $this->assertEquals('serbia-&-montenegro,5806', $competitionDTO->getSlug());
         $this->assertEquals('bronze', $competitionDTO->getStatsLvl());
         $this->assertEquals([], $competitionDTO->getSeasons());
+    }
 
+    /**
+     * @return CompetitionDTO
+     * @throws GuzzleException
+     * @throws SerializerException
+     */
+    public function testGet(): CompetitionDTO
+    {
+        $id = 5806;
+        $response = '{"api":{"ver":"2.125","timestamp":1563821336,"method":{"parameters":{"username":"statscore","client_id":1,"competition_id":"5806"},"name":"competitions.show","details":"competitions.show","total_items":1,"previous_page":"","next_page":""},"data":{"competition":{"id":5806,"name":"Serbia & Montenegro","short_name":"Serbia & Montenegro","mini_name":"mnb","gender":"male","type":"country_league","area_id":"1","area_name":"Afghanistan","area_type":"country","area_sort":"2","area_code":"AFG","overall_sort":"50","sport_id":"20","sport_name":"Alpine skiing","tour_id":"4","tour_name":"ATP Challengers","ut":"1434115672","old_competition_id":"","slug":"serbia-&-montenegro,5806","stats_lvl":"bronze","seasons":[]}}}}';
+
+        $response = new Response(HttpFoundationResponse::HTTP_OK, ['Content-Type' => 'application/json'], $response);
+
+        $this->guzzle->shouldReceive('request')->andReturn($response);
+
+        $responseDTO = $this->competitionsService->get($id);
+
+        $this->assertEquals('competitions.show', $responseDTO->getMethod()->getDetails());
+        $this->assertEquals('competitions.show', $responseDTO->getMethod()->getName());
+        $this->assertEmpty($responseDTO->getMethod()->getNextPage());
+        $this->assertEmpty($responseDTO->getMethod()->getPreviousPage());
+        $this->assertArrayHasKey('client_id', $responseDTO->getMethod()->getParameters());
+        $this->assertArrayHasKey('competition_id', $responseDTO->getMethod()->getParameters());
+        $this->assertEquals($id, $responseDTO->getMethod()->getParameters()['competition_id']);
+        $this->assertEquals(1563821336, $responseDTO->getTimestamp());
+        $this->assertEquals('2.125', $responseDTO->getVer());
+        $this->assertEquals(1, $responseDTO->getMethod()->getTotalItems());
+
+        $this->assertInstanceOf(CompetitionDTO::class, $responseDTO->getData());
+
+        return $responseDTO->getData();
     }
 }

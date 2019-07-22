@@ -37,4 +37,28 @@ class CompetitionService extends AbstractService implements InterfaceService
         return $responseDTO;
     }
 
+    /**
+     * @param int $id
+     * @param array $query
+     * @return ResponseDTO
+     * @throws GuzzleException
+     * @throws SerializerException
+     */
+    public function get(int $id, array $query = []): ResponseDTO
+    {
+        $request = new RequestDTO();
+        $request->setUri('competitions/' . $id);
+        $request->setMethod(Request::METHOD_GET);
+        $request->setQuery($query);
+
+        $responseDTO = $this->service->request($request);
+        $responseDTO->setData(
+            $this->serializer->denormalize(
+                $responseDTO->getData()['competition'] ?? [],
+                CompetitionDTO::class)
+        );
+
+        return $responseDTO;
+    }
+
 }
