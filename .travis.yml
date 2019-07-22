@@ -6,6 +6,13 @@ php:
 
 script:
   - vendor/bin/phpunit --coverage-clover=coverage.xml
+  - sonar-scanner
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+
+addons:
+  sonarcloud:
+    organization: "statscore"
+    token:
+      secure: "kbhNOo8CCj+bOI6MvtGRqcV9xc3+2xg+ADB3r0xvzfr7Hff1sfpM1bk+6F/HdMHqwnR6Y/1b5qJS1lBBSGoXraXxNLJntaNXTKdHX21N2YY3iSPd3cHo/uf3YUZlPNHiT5+s0lj0JVX+5ZPBortw21difxX9eM2P5CqrTUfZAtVQE4wUzYqrWbLpURv9RKApn0TOVdn4rmgwacx6SMmYPgxtjzvj18Zq44Z/xjDaaW8dOUYyL6VukQZC5zy2wUgA41lDpTmxBZK6DJdwOR7Lv8dL/FYueMO80/zdfw3KXbs/Aef0hjjYSgX06aPulzicg30NKrtX0lbLcgD5pun5whf8KUmMSBRpzm23MiUbvQheVDX2bN6cUUmaUboTO4YnKJ8CfvQGcuHFzfHaghuq/xb1zuimBUO9klzc1AVdfrDCOPv+DBZ9xpsHdJXDhskhHfbJmAr1MSrKjysTIA9LXPOk2H7yeLQYiRZ9UUAtcvhL44jH6kx/TWwFb0jyM/Gsf0YuLVKwNyM5neP3SG14GRDBY9Nji7fjXdRzp7dbn8hGaVOxHMzAnsG5nGIJaI9WZ1P/dekNSfCWtxTulIPcqrPcSQuGtRwNpLZBIEYONMpiZLtpJsZ/IaK3eAnUJSaBrANWdvUMxSGFCYgEYQAiYhF+UolbT7Y6rwmXQB/HX/8="
