@@ -6,7 +6,7 @@ php:
   - 7.3
 
 script:
-  - vendor/bin/phpunit --coverage-clover=coverage.xml
+  - vendor/bin/phpunit --coverage-clover=coverage.xml --log-junit=test-report.xml
   - sonar-scanner
 
 after_success:
