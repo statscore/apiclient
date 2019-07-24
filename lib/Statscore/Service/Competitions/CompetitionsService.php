@@ -13,6 +13,10 @@ use Symfony\Component\HttpFoundation\Request;
 
 class CompetitionsService extends AbstractService implements InterfaceService
 {
+    /**
+     * @var string
+     */
+    protected $url = 'competitions';
 
     /**
      * @param array $query
@@ -23,7 +27,7 @@ class CompetitionsService extends AbstractService implements InterfaceService
     public function getAll(array $query = []): ResponseDTO
     {
         $request = new RequestDTO();
-        $request->setUri('competitions');
+        $request->setUri($this->url);
         $request->setMethod(Request::METHOD_GET);
         $request->setQuery($query);
 
@@ -47,7 +51,7 @@ class CompetitionsService extends AbstractService implements InterfaceService
     public function get(int $id, array $query = []): ResponseDTO
     {
         $request = new RequestDTO();
-        $request->setUri('competitions/' . $id);
+        $request->setUri($this->url . '/' . $id);
         $request->setMethod(Request::METHOD_GET);
         $request->setQuery($query);
 
