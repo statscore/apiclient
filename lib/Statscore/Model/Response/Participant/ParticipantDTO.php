@@ -1,19 +1,30 @@
 <?php
 
-namespace Statscore\Model\Response\Competition;
+namespace Statscore\Model\Response\Participant;
 
-use Statscore\Model\Response\Season\SeasonDTO;
+use Statscore\Model\Response\Result\ResultDTO;
+use Statscore\Model\Response\Stat\StatDTO;
 
 /**
- * Class CompetitionDTO
- * @package Statscore\Model\Response\Competition
+ * Class ParticipantDTO
+ * @package Statscore\Model\Response\Participant
  */
-class CompetitionDTO
+class ParticipantDTO
 {
     /**
      * @var integer
      */
+    private $counter;
+
+    /**
+     * @var integer
+     */
     private $id;
+
+    /**
+     * @var string
+     */
+    private $type;
 
     /**
      * @var string
@@ -28,17 +39,12 @@ class CompetitionDTO
     /**
      * @var string
      */
-    private $miniName;
+    private $acronym;
 
     /**
      * @var string
      */
     private $gender;
-
-    /**
-     * @var string
-     */
-    private $type;
 
     /**
      * @var integer
@@ -53,22 +59,7 @@ class CompetitionDTO
     /**
      * @var string
      */
-    private $areaType;
-
-    /**
-     * @var integer
-     */
-    private $areaSort;
-
-    /**
-     * @var string
-     */
     private $areaCode;
-
-    /**
-     * @var integer
-     */
-    private $overallSort;
 
     /**
      * @var integer
@@ -81,14 +72,14 @@ class CompetitionDTO
     private $sportName;
 
     /**
-     * @var integer
+     * @var string
      */
-    private $tourId;
+    private $national;
 
     /**
      * @var string
      */
-    private $tourName;
+    private $website;
 
     /**
      * @var string
@@ -103,12 +94,30 @@ class CompetitionDTO
     /**
      * @var string
      */
-    private $statsLvl;
+    private $logo;
 
     /**
-     * @var SeasonDTO[]
+     * @var string
      */
-    private $seasons;
+    private $virtual;
+
+    /**
+     * @var \Statscore\Model\Response\Stat\StatDTO[]
+     */
+    private $stats = [];
+
+    /**
+     * @var \Statscore\Model\Response\Result\ResultDTO[]
+     */
+    private $results = [];
+
+    /**
+     * @return int
+     */
+    public function getCounter(): int
+    {
+        return $this->counter;
+    }
 
     /**
      * @return int
@@ -116,6 +125,14 @@ class CompetitionDTO
     public function getId(): int
     {
         return $this->id;
+    }
+
+    /**
+     * @return string
+     */
+    public function getType(): string
+    {
+        return $this->type;
     }
 
     /**
@@ -137,9 +154,9 @@ class CompetitionDTO
     /**
      * @return string
      */
-    public function getMiniName(): string
+    public function getAcronym(): string
     {
-        return $this->miniName;
+        return $this->acronym;
     }
 
     /**
@@ -148,14 +165,6 @@ class CompetitionDTO
     public function getGender(): string
     {
         return $this->gender;
-    }
-
-    /**
-     * @return string
-     */
-    public function getType(): string
-    {
-        return $this->type;
     }
 
     /**
@@ -177,33 +186,9 @@ class CompetitionDTO
     /**
      * @return string
      */
-    public function getAreaType(): string
-    {
-        return $this->areaType;
-    }
-
-    /**
-     * @return int
-     */
-    public function getAreaSort(): int
-    {
-        return $this->areaSort;
-    }
-
-    /**
-     * @return string
-     */
     public function getAreaCode(): string
     {
         return $this->areaCode;
-    }
-
-    /**
-     * @return int
-     */
-    public function getOverallSort(): int
-    {
-        return $this->overallSort;
     }
 
     /**
@@ -223,19 +208,19 @@ class CompetitionDTO
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getTourId(): int
+    public function getNational(): string
     {
-        return $this->tourId;
+        return $this->national;
     }
 
     /**
      * @return string
      */
-    public function getTourName(): string
+    public function getWebsite(): string
     {
-        return $this->tourName;
+        return $this->website;
     }
 
     /**
@@ -257,16 +242,32 @@ class CompetitionDTO
     /**
      * @return string
      */
-    public function getStatsLvl(): string
+    public function getLogo(): string
     {
-        return $this->statsLvl;
+        return $this->logo;
     }
 
     /**
-     * @return SeasonDTO[]
+     * @return string
      */
-    public function getSeasons(): array
+    public function getVirtual(): string
     {
-        return $this->seasons;
+        return $this->virtual;
+    }
+
+    /**
+     * @return StatDTO[]
+     */
+    public function getStats(): array
+    {
+        return $this->stats;
+    }
+
+    /**
+     * @return ResultDTO[]
+     */
+    public function getResults(): array
+    {
+        return $this->results;
     }
 }

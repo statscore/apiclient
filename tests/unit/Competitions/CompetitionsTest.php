@@ -1,6 +1,6 @@
 <?php
 
-namespace UnitTests;
+namespace UnitTests\Competitions;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
@@ -10,11 +10,12 @@ use Mockery;
 use Mockery\MockInterface;
 use Statscore\Model\Response\Competition\CompetitionDTO;
 use Statscore\Service\ApiService;
-use Statscore\Service\Competition\CompetitionService;
+use Statscore\Service\Competitions\CompetitionsService;
 use Symfony\Component\HttpFoundation\Response as HttpFoundationResponse;
+use UnitTests\TestCase;
 
 /**
- * Class Competitions
+ * Class CompetitionsTest
  * @package UnitTests
  */
 class CompetitionsTest extends TestCase
@@ -31,7 +32,7 @@ class CompetitionsTest extends TestCase
     private $service;
 
     /**
-     * @var CompetitionService
+     * @var CompetitionsService
      */
     private $competitionsService;
 
@@ -40,7 +41,7 @@ class CompetitionsTest extends TestCase
         parent::setUp();
         $this->guzzle = Mockery::mock(Client::class);
         $this->service = new ApiService($this->guzzle, $this->serializer);
-        $this->competitionsService = new CompetitionService($this->service);
+        $this->competitionsService = new CompetitionsService($this->service);
     }
 
     /**
@@ -50,7 +51,7 @@ class CompetitionsTest extends TestCase
      */
     public function testGetAll(): CompetitionDTO
     {
-        $response = '{"api":{"ver":"2.125","timestamp":1563818450,"method":{"parameters":{"client_id":1},"name":"competitions.index","details":"competitions.index","total_items":2,"previous_page":"","next_page":""},"data":{"competitions":[{"id":5806,"name":"Serbia & Montenegro","short_name":"Serbia & Montenegro","mini_name":"mnb","gender":"male","type":"country_league","area_id":1,"area_name":"Afghanistan","area_type":"country","area_sort":2,"area_code":"AFG","overall_sort":50,"sport_id":20,"sport_name":"Alpine skiing","tour_id":4,"tour_name":"ATP Challengers","ut":1434115672,"old_competition_id":"","slug":"serbia-&-montenegro,5806","stats_lvl":"bronze","seasons":{}},{"id":466,"name":"Brisbane (W)","short_name":"Brisbane (W)","mini_name":"BRI","gender":"female","type":"single","area_id":14,"area_name":"Australia","area_type":"international","area_sort":1,"area_code":"AUS","overall_sort":50,"sport_id":4,"sport_name":"Tennis","tour_id":2,"tour_name":"WTA Tour","ut":1455090924,"old_competition_id":"","slug":"brisbane-w,466","stats_lvl":"bronze","seasons":{}}]}}}';
+        $response = file_get_contents(__DIR__ . '/assets/competitions.json');
 
         $response = new Response(HttpFoundationResponse::HTTP_OK, ['Content-Type' => 'application/json'], $response);
 
@@ -110,7 +111,7 @@ class CompetitionsTest extends TestCase
     public function testGet(): CompetitionDTO
     {
         $id = 5806;
-        $response = '{"api":{"ver":"2.125","timestamp":1563821336,"method":{"parameters":{"username":"statscore","client_id":1,"competition_id":"5806"},"name":"competitions.show","details":"competitions.show","total_items":1,"previous_page":"","next_page":""},"data":{"competition":{"id":5806,"name":"Serbia & Montenegro","short_name":"Serbia & Montenegro","mini_name":"mnb","gender":"male","type":"country_league","area_id":"1","area_name":"Afghanistan","area_type":"country","area_sort":"2","area_code":"AFG","overall_sort":"50","sport_id":"20","sport_name":"Alpine skiing","tour_id":"4","tour_name":"ATP Challengers","ut":"1434115672","old_competition_id":"","slug":"serbia-&-montenegro,5806","stats_lvl":"bronze","seasons":[]}}}}';
+        $response = file_get_contents(__DIR__ . '/assets/competitions_5806.json');
 
         $response = new Response(HttpFoundationResponse::HTTP_OK, ['Content-Type' => 'application/json'], $response);
 

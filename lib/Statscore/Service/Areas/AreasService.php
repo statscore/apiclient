@@ -1,6 +1,6 @@
 <?php
 
-namespace Statscore\Service\Area;
+namespace Statscore\Service\Areas;
 
 use GuzzleHttp\Exception\GuzzleException;
 use Itav\Component\Serializer\SerializerException;
@@ -11,7 +11,7 @@ use Statscore\Service\AbstractService;
 use Statscore\Service\InterfaceService;
 use Symfony\Component\HttpFoundation\Request;
 
-class AreaService extends AbstractService implements InterfaceService
+class AreasService extends AbstractService implements InterfaceService
 {
 
     /**

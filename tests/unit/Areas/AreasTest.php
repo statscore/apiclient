@@ -1,6 +1,6 @@
 <?php
 
-namespace UnitTests;
+namespace UnitTests\Areas;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
@@ -10,8 +10,9 @@ use Mockery;
 use Mockery\MockInterface;
 use Statscore\Model\Response\Area\AreaDTO;
 use Statscore\Service\ApiService;
-use Statscore\Service\Area\AreaService;
+use Statscore\Service\Areas\AreasService;
 use Symfony\Component\HttpFoundation\Response as HttpFoundationResponse;
+use UnitTests\TestCase;
 
 /**
  * Class AreasTest
@@ -31,7 +32,7 @@ class AreasTest extends TestCase
     private $service;
 
     /**
-     * @var AreaService
+     * @var AreasService
      */
     private $areaService;
 
@@ -40,7 +41,7 @@ class AreasTest extends TestCase
         parent::setUp();
         $this->guzzle = Mockery::mock(Client::class);
         $this->service = new ApiService($this->guzzle, $this->serializer);
-        $this->areaService = new AreaService($this->service);
+        $this->areaService = new AreasService($this->service);
     }
 
     /**
@@ -50,7 +51,7 @@ class AreasTest extends TestCase
      */
     public function testGetAll(): AreaDTO
     {
-        $response = '{"api":{"ver":"2.125","timestamp":1563734521,"method":{"parameters":[],"name":"areas.index","details":"areas.index","total_items":2,"previous_page":"","next_page":""},"data":{"areas":[{"id":1,"area_code":"AFG","name":"Afghanistan","parent_area_id":"210","ut":1514992911},{"id":2,"area_code":"ALB","name":"Albania","parent_area_id":"209","ut":1514992911}]}}}';
+        $response = file_get_contents(__DIR__ . '/assets/areas.json');
 
         $response = new Response(HttpFoundationResponse::HTTP_OK, ['Content-Type' => 'application/json'], $response);
 

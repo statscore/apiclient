@@ -1,0 +1,743 @@
+{
+  "api": {
+    "ver": "2.125",
+    "timestamp": 1563997241,
+    "method": {
+      "parameters": {
+        "username": "statscore",
+        "client_id": 1,
+        "event_id": "1799408"
+      },
+      "name": "events.show",
+      "details": "events.show",
+      "total_items": 1,
+      "previous_page": "",
+      "next_page": ""
+    },
+    "data": {
+      "competition": {
+        "id": 466,
+        "name": "Brisbane (W)",
+        "short_name": "Brisbane (W)",
+        "mini_name": "BRI",
+        "gender": "female",
+        "type": "single",
+        "area_id": "14",
+        "area_name": "Australia",
+        "area_type": "international",
+        "area_sort": "1",
+        "area_code": "AUS",
+        "overall_sort": "50",
+        "sport_id": "4",
+        "sport_name": "Tennis",
+        "tour_id": "2",
+        "tour_name": "WTA Tour",
+        "ut": "1455090924",
+        "old_competition_id": "",
+        "slug": "brisbane-w,466",
+        "stats_lvl": "bronze",
+        "seasons": [
+        ],
+        "season": {
+          "id": 25338,
+          "name": "Brisbane (W) 2016",
+          "year": "2016",
+          "actual": "no",
+          "ut": 1563986090,
+          "old_season_id": "",
+          "range_level": 5,
+          "stats_lvl": "bronze",
+          "stage": {
+            "id": 75968,
+            "stage_name_id": 620,
+            "name": "Main Tournament",
+            "start_date": "2016-01-02",
+            "end_date": "2016-01-09",
+            "show_standings": "no",
+            "groups_nr": 0,
+            "sort": 2,
+            "is_current": "yes",
+            "ut": 1451641759,
+            "old_stage_id": "",
+            "group": {
+              "id": "",
+              "name": "",
+              "ut": "",
+              "event": {
+                "id": 1799408,
+                "name": "Pavlyuchenkova A. - Kerber Angelique",
+                "source": 3,
+                "source_dc": "no",
+                "source_super": null,
+                "relation_status": "not_started",
+                "start_date": "2019-07-24 16:34",
+                "ft_only": "no",
+                "coverage_type": "from_tv",
+                "channel_id": null,
+                "channel_name": "",
+                "scoutsfeed": "yes",
+                "status_id": 11,
+                "status_name": "Finished",
+                "status_type": "finished",
+                "sport_id": 4,
+                "sport_name": "Tennis",
+                "day": "",
+                "clock_time": null,
+                "clock_status": null,
+                "winner_id": null,
+                "progress_id": null,
+                "bet_status": "suspended",
+                "neutral_venue": "no",
+                "item_status": "active",
+                "ut": 1452134088,
+                "old_event_id": "",
+                "slug": "pavlyuchenkova-a_kerber-angelique,1799408",
+                "verified_result": "no",
+                "is_protocol_verified": "yes",
+                "protocol_verified_by": null,
+                "protocol_verified_at": null,
+                "round_id": null,
+                "round_name": "",
+                "venue_id": "",
+                "event_stats_lvl": "bronze",
+                "details": [
+                  {
+                    "id": 6,
+                    "name": "Surface",
+                    "value": "hard"
+                  },
+                  {
+                    "id": 7,
+                    "name": "Sets number",
+                    "value": "Best of 3 sets"
+                  },
+                  {
+                    "id": 54,
+                    "name": "Will there be deuces?",
+                    "value": "yes"
+                  },
+                  {
+                    "id": 55,
+                    "name": "Will there be advantage set?",
+                    "value": "no"
+                  },
+                  {
+                    "id": 166,
+                    "name": "Possible supertiebreak",
+                    "value": "no"
+                  },
+                  {
+                    "id": 57,
+                    "name": "IPTL Format?",
+                    "value": "no"
+                  },
+                  {
+                    "id": 8,
+                    "name": "Weather conditions",
+                    "value": ""
+                  },
+                  {
+                    "id": 1,
+                    "name": "First set start date",
+                    "value": ""
+                  },
+                  {
+                    "id": 2,
+                    "name": "Second set start date",
+                    "value": ""
+                  },
+                  {
+                    "id": 3,
+                    "name": "Third set start date",
+                    "value": ""
+                  },
+                  {
+                    "id": 4,
+                    "name": "Fourth set start date",
+                    "value": ""
+                  },
+                  {
+                    "id": 5,
+                    "name": "Fifth set start date",
+                    "value": ""
+                  },
+                  {
+                    "id": 167,
+                    "name": "Super tiebreak start date",
+                    "value": ""
+                  }
+                ],
+                "referees": [
+                ],
+                "participants": [
+                  {
+                    "counter": 1,
+                    "id": 14300,
+                    "type": "person",
+                    "name": "Anastasia Pavlyuchenkova",
+                    "short_name": "Pavlyuchenkova A.",
+                    "acronym": "PAV",
+                    "gender": "female",
+                    "area_id": 149,
+                    "area_name": "Russia",
+                    "area_code": "RUS",
+                    "sport_id": 4,
+                    "sport_name": "Tennis",
+                    "national": "no",
+                    "website": "",
+                    "ut": 1457601273,
+                    "old_participant_id": "",
+                    "slug": "pavlyuchenkova-a,14300",
+                    "logo": "no",
+                    "virtual": "no",
+                    "shirt_nr": "",
+                    "stats": [
+                      {
+                        "id": 75,
+                        "short_name": "Points",
+                        "name": "Points",
+                        "value": "52",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 48,
+                        "short_name": "Aces",
+                        "name": "Aces",
+                        "value": "1",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 106,
+                        "short_name": "Double faults",
+                        "name": "Double faults",
+                        "value": "1",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 112,
+                        "short_name": "1st services attempts",
+                        "name": "1st services attempts",
+                        "value": "67",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 111,
+                        "short_name": "1st services in",
+                        "name": "1st services in",
+                        "value": "43",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 126,
+                        "short_name": "First service points",
+                        "name": "First service points",
+                        "value": "24",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 129,
+                        "short_name": "1st serve",
+                        "name": "1st serve",
+                        "value": "63",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 130,
+                        "short_name": "1st serve in",
+                        "name": "1st serve in",
+                        "value": "55",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 131,
+                        "short_name": "2nd services attempts",
+                        "name": "2nd services attempts",
+                        "value": "24",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 127,
+                        "short_name": "Second service points",
+                        "name": "Second service points",
+                        "value": "8",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 132,
+                        "short_name": "2nd serve",
+                        "name": "2nd serve",
+                        "value": "32",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 105,
+                        "short_name": "Service faults",
+                        "name": "Service faults",
+                        "value": "24",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 114,
+                        "short_name": "Break points",
+                        "name": "Break points",
+                        "value": "5",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 107,
+                        "short_name": "Break points won",
+                        "name": "Break points won",
+                        "value": "3",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 113,
+                        "short_name": "Break points won percentage",
+                        "name": "Break points won percentage",
+                        "value": "60",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 109,
+                        "short_name": "Challenges",
+                        "name": "Challenges",
+                        "value": "0",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 110,
+                        "short_name": "Challenges correct",
+                        "name": "Challenges correct",
+                        "value": "0",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 416,
+                        "short_name": "Challenges incorrect",
+                        "name": "Challenges incorrect",
+                        "value": "",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 403,
+                        "short_name": "Is server side",
+                        "name": "Is server side",
+                        "value": "",
+                        "data_type": "binary_text"
+                      },
+                      {
+                        "id": 628,
+                        "short_name": "Current service",
+                        "name": "Current service",
+                        "value": "1",
+                        "data_type": "select"
+                      },
+                      {
+                        "id": 629,
+                        "short_name": "Court side",
+                        "name": "Court side",
+                        "value": "right",
+                        "data_type": "select"
+                      }
+                    ],
+                    "results": [
+                      {
+                        "id": 411,
+                        "short_name": "Winner",
+                        "name": "Winner",
+                        "value": "0",
+                        "data_type": "binary"
+                      },
+                      {
+                        "id": 412,
+                        "short_name": "Progress",
+                        "name": "Progress",
+                        "value": "0",
+                        "data_type": "binary"
+                      },
+                      {
+                        "id": 2,
+                        "short_name": "Result",
+                        "name": "Result",
+                        "value": "0",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 43,
+                        "short_name": "First set",
+                        "name": "First set",
+                        "value": "4",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 44,
+                        "short_name": "Second set",
+                        "name": "Second set",
+                        "value": "4",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 45,
+                        "short_name": "Third set",
+                        "name": "Third set",
+                        "value": "",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 46,
+                        "short_name": "Fourth set",
+                        "name": "Fourth set",
+                        "value": "",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 47,
+                        "short_name": "Fifth set",
+                        "name": "Fifth set",
+                        "value": "",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 115,
+                        "short_name": "Current game points",
+                        "name": "Current game points",
+                        "value": "",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 627,
+                        "short_name": "S.tiebreak points",
+                        "name": "S.tiebreak points",
+                        "value": "",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 116,
+                        "short_name": "1st set tb points",
+                        "name": "1st set tb points",
+                        "value": "",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 117,
+                        "short_name": "2nd set tb points",
+                        "name": "2nd set tb points",
+                        "value": "",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 118,
+                        "short_name": "3rd set tb points",
+                        "name": "3rd set tb points",
+                        "value": "",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 119,
+                        "short_name": "4th set tb points",
+                        "name": "4th set tb points",
+                        "value": "",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 120,
+                        "short_name": "5th set tb pts",
+                        "name": "5th set tb pts",
+                        "value": "",
+                        "data_type": "integer"
+                      }
+                    ],
+                    "lineups": [
+                    ]
+                  },
+                  {
+                    "counter": 2,
+                    "id": 13858,
+                    "type": "person",
+                    "name": "Angelique Kerber",
+                    "short_name": "Kerber Angelique",
+                    "acronym": "KER",
+                    "gender": "female",
+                    "area_id": 130,
+                    "area_name": "Germany",
+                    "area_code": "DEU",
+                    "sport_id": 4,
+                    "sport_name": "Tennis",
+                    "national": "no",
+                    "website": "",
+                    "ut": 1457601273,
+                    "old_participant_id": "",
+                    "slug": "kerber-angelique,13858",
+                    "logo": "no",
+                    "virtual": "no",
+                    "shirt_nr": "",
+                    "stats": [
+                      {
+                        "id": 75,
+                        "short_name": "Points",
+                        "name": "Points",
+                        "value": "67",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 48,
+                        "short_name": "Aces",
+                        "name": "Aces",
+                        "value": "2",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 106,
+                        "short_name": "Double faults",
+                        "name": "Double faults",
+                        "value": "3",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 112,
+                        "short_name": "1st services attempts",
+                        "name": "1st services attempts",
+                        "value": "52",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 111,
+                        "short_name": "1st services in",
+                        "name": "1st services in",
+                        "value": "31",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 126,
+                        "short_name": "First service points",
+                        "name": "First service points",
+                        "value": "23",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 129,
+                        "short_name": "1st serve",
+                        "name": "1st serve",
+                        "value": "60",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 130,
+                        "short_name": "1st serve in",
+                        "name": "1st serve in",
+                        "value": "74",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 131,
+                        "short_name": "2nd services attempts",
+                        "name": "2nd services attempts",
+                        "value": "21",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 127,
+                        "short_name": "Second service points",
+                        "name": "Second service points",
+                        "value": "9",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 132,
+                        "short_name": "2nd serve",
+                        "name": "2nd serve",
+                        "value": "43",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 105,
+                        "short_name": "Service faults",
+                        "name": "Service faults",
+                        "value": "21",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 114,
+                        "short_name": "Break points",
+                        "name": "Break points",
+                        "value": "7",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 107,
+                        "short_name": "Break points won",
+                        "name": "Break points won",
+                        "value": "5",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 113,
+                        "short_name": "Break points won percentage",
+                        "name": "Break points won percentage",
+                        "value": "71",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 109,
+                        "short_name": "Challenges",
+                        "name": "Challenges",
+                        "value": "0",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 110,
+                        "short_name": "Challenges correct",
+                        "name": "Challenges correct",
+                        "value": "0",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 416,
+                        "short_name": "Challenges incorrect",
+                        "name": "Challenges incorrect",
+                        "value": "",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 403,
+                        "short_name": "Is server side",
+                        "name": "Is server side",
+                        "value": "",
+                        "data_type": "binary_text"
+                      },
+                      {
+                        "id": 628,
+                        "short_name": "Current service",
+                        "name": "Current service",
+                        "value": "2",
+                        "data_type": "select"
+                      },
+                      {
+                        "id": 629,
+                        "short_name": "Court side",
+                        "name": "Court side",
+                        "value": "right",
+                        "data_type": "select"
+                      }
+                    ],
+                    "results": [
+                      {
+                        "id": 411,
+                        "short_name": "Winner",
+                        "name": "Winner",
+                        "value": "0",
+                        "data_type": "binary"
+                      },
+                      {
+                        "id": 412,
+                        "short_name": "Progress",
+                        "name": "Progress",
+                        "value": "0",
+                        "data_type": "binary"
+                      },
+                      {
+                        "id": 2,
+                        "short_name": "Result",
+                        "name": "Result",
+                        "value": "2",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 43,
+                        "short_name": "First set",
+                        "name": "First set",
+                        "value": "6",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 44,
+                        "short_name": "Second set",
+                        "name": "Second set",
+                        "value": "6",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 45,
+                        "short_name": "Third set",
+                        "name": "Third set",
+                        "value": "",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 46,
+                        "short_name": "Fourth set",
+                        "name": "Fourth set",
+                        "value": "",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 47,
+                        "short_name": "Fifth set",
+                        "name": "Fifth set",
+                        "value": "",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 115,
+                        "short_name": "Current game points",
+                        "name": "Current game points",
+                        "value": "",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 627,
+                        "short_name": "S.tiebreak points",
+                        "name": "S.tiebreak points",
+                        "value": "",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 116,
+                        "short_name": "1st set tb points",
+                        "name": "1st set tb points",
+                        "value": "",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 117,
+                        "short_name": "2nd set tb points",
+                        "name": "2nd set tb points",
+                        "value": "",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 118,
+                        "short_name": "3rd set tb points",
+                        "name": "3rd set tb points",
+                        "value": "",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 119,
+                        "short_name": "4th set tb points",
+                        "name": "4th set tb points",
+                        "value": "",
+                        "data_type": "integer"
+                      },
+                      {
+                        "id": 120,
+                        "short_name": "5th set tb pts",
+                        "name": "5th set tb pts",
+                        "value": "",
+                        "data_type": "integer"
+                      }
+                    ],
+                    "lineups": [
+                    ]
+                  }
+                ],
+                "events_incidents": [
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

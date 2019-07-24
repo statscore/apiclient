@@ -1,12 +1,12 @@
 <?php
 
-namespace Statscore\Model\Response\Area;
+namespace Statscore\Model\Response\Stat;
 
 /**
- * Class AreaDTO
- * @package Statscore\Model\Response\Area
+ * Class StatDTO
+ * @package Statscore\Model\Response\Stat
  */
-class AreaDTO
+class StatDTO
 {
     /**
      * @var integer
@@ -16,7 +16,7 @@ class AreaDTO
     /**
      * @var string
      */
-    private $areaCode;
+    private $shortName;
 
     /**
      * @var string
@@ -24,14 +24,9 @@ class AreaDTO
     private $name;
 
     /**
-     * @var integer
-     */
-    private $parentAreaId;
-
-    /**
      * @var string
      */
-    private $ut;
+    private $value;
 
     /**
      * @return int
@@ -44,9 +39,9 @@ class AreaDTO
     /**
      * @return string
      */
-    public function getAreaCode(): string
+    public function getShortName(): string
     {
-        return $this->areaCode;
+        return $this->shortName;
     }
 
     /**
@@ -58,18 +53,10 @@ class AreaDTO
     }
 
     /**
-     * @return int
-     */
-    public function getParentAreaId(): int
-    {
-        return $this->parentAreaId;
-    }
-
-    /**
      * @return string
      */
-    public function getUt(): string
+    public function getValue(): string
     {
-        return $this->ut;
+        return $this->value;
     }
 }

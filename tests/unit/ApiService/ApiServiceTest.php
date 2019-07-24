@@ -1,6 +1,6 @@
 <?php
 
-namespace UnitTests;
+namespace UnitTests\ApiService;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
@@ -14,6 +14,7 @@ use Statscore\Service\Exception\AuthorizationException;
 use Statscore\Service\ApiService;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response as HttpFoundationResponse;
+use UnitTests\TestCase;
 
 /**
  * Class ApiServiceTest
@@ -73,7 +74,7 @@ class ApiServiceTest extends TestCase
      */
     public function testGetToken(): void
     {
-        $response = '{"api":{"ver":"2.125","timestamp":1563700541,"method":{"parameters":{"client_id":"1","secret_key":"c0eb3cd79f75b2e75f290ca33cbde138"},"name":"oauth","details":"oauth","total_items":"","previous_page":"","next_page":""},"data":{"client_id":"1","token":"415ab746cee5826dd8e2a64d3a137f56","token_expiration":1563786941}}}';
+        $response = file_get_contents(__DIR__ . '/assets/auth.json');
 
         $response = new Response(HttpFoundationResponse::HTTP_OK, ['Content-Type' => 'application/json'], $response);
 

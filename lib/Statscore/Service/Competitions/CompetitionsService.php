@@ -1,6 +1,6 @@
 <?php
 
-namespace Statscore\Service\Competition;
+namespace Statscore\Service\Competitions;
 
 use GuzzleHttp\Exception\GuzzleException;
 use Itav\Component\Serializer\SerializerException;
@@ -11,7 +11,7 @@ use Statscore\Service\AbstractService;
 use Statscore\Service\InterfaceService;
 use Symfony\Component\HttpFoundation\Request;
 
-class CompetitionService extends AbstractService implements InterfaceService
+class CompetitionsService extends AbstractService implements InterfaceService
 {
 
     /**

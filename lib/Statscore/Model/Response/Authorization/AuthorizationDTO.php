@@ -2,6 +2,10 @@
 
 namespace Statscore\Model\Response\Authorization;
 
+/**
+ * Class AuthorizationDTO
+ * @package Statscore\Model\Response\Authorization
+ */
 class AuthorizationDTO
 {
     /**
