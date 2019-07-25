@@ -2,16 +2,13 @@
 
 namespace UnitTests\ApiService;
 
-use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Response;
 use Itav\Component\Serializer\SerializerException;
-use Mockery;
 use Statscore\Model\Request\RequestDTO;
 use Statscore\Model\Response\Authorization\AuthorizationDTO;
 use Statscore\Model\Response\ResponseDTO;
 use Statscore\Service\Exception\AuthorizationException;
-use Statscore\Service\ApiService;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response as HttpFoundationResponse;
 use UnitTests\TestCase;
@@ -22,25 +19,6 @@ use UnitTests\TestCase;
  */
 class ApiServiceTest extends TestCase
 {
-    /**
-     * @var ApiService
-     */
-    private $service;
-
-    /**
-     * @var Client|Mockery\MockInterface
-     */
-    private $guzzle;
-
-    public function setUp(): void
-    {
-        parent::setUp();
-
-        $this->guzzle = Mockery::mock(Client::class);
-
-        $this->service = new ApiService($this->guzzle, $this->serializer);
-    }
-
     /**
      * @throws AuthorizationException
      * @throws GuzzleException

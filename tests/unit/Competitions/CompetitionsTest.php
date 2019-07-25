@@ -2,14 +2,10 @@
 
 namespace UnitTests\Competitions;
 
-use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Response;
 use Itav\Component\Serializer\SerializerException;
-use Mockery;
-use Mockery\MockInterface;
 use Statscore\Model\Response\Competition\CompetitionDTO;
-use Statscore\Service\ApiService;
 use Statscore\Service\Competitions\CompetitionsService;
 use Symfony\Component\HttpFoundation\Response as HttpFoundationResponse;
 use UnitTests\TestCase;
@@ -22,16 +18,6 @@ class CompetitionsTest extends TestCase
 {
 
     /**
-     * @var Client|MockInterface
-     */
-    private $guzzle;
-
-    /**
-     * @var ApiService
-     */
-    private $service;
-
-    /**
      * @var CompetitionsService
      */
     private $competitionsService;
@@ -39,8 +25,6 @@ class CompetitionsTest extends TestCase
     public function setUp(): void
     {
         parent::setUp();
-        $this->guzzle = Mockery::mock(Client::class);
-        $this->service = new ApiService($this->guzzle, $this->serializer);
         $this->competitionsService = new CompetitionsService($this->service);
     }
 

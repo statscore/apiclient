@@ -3,12 +3,9 @@
 namespace UnitTests\Events;
 
 use DateTime;
-use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Response;
 use Itav\Component\Serializer\SerializerException;
-use Mockery;
-use Mockery\MockInterface;
 use Statscore\Model\Response\Competition\CompetitionDTO;
 use Statscore\Model\Response\Detail\DetailDTO;
 use Statscore\Model\Response\Event\EventDTO;
@@ -18,8 +15,6 @@ use Statscore\Model\Response\Result\ResultDTO;
 use Statscore\Model\Response\Season\SeasonDTO;
 use Statscore\Model\Response\Stage\StageDTO;
 use Statscore\Model\Response\Stat\StatDTO;
-use Statscore\Service\ApiService;
-use Statscore\Service\Competitions\CompetitionsService;
 use Statscore\Service\Events\EventsService;
 use Symfony\Component\HttpFoundation\Response as HttpFoundationResponse;
 use UnitTests\TestCase;
@@ -32,16 +27,6 @@ class EventsTest extends TestCase
 {
 
     /**
-     * @var Client|MockInterface
-     */
-    private $guzzle;
-
-    /**
-     * @var ApiService
-     */
-    private $service;
-
-    /**
      * @var EventsService
      */
     private $eventsService;
@@ -49,8 +34,6 @@ class EventsTest extends TestCase
     public function setUp(): void
     {
         parent::setUp();
-        $this->guzzle = Mockery::mock(Client::class);
-        $this->service = new ApiService($this->guzzle, $this->serializer);
         $this->eventsService = new EventsService($this->service);
     }
 
