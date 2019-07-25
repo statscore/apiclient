@@ -13,6 +13,7 @@ use Statscore\Service\Events\EventsService;
 use Statscore\Service\Exception\AuthorizationException;
 use Statscore\Service\ApiService;
 use Statscore\Service\Feeds\FeedsService;
+use Statscore\Service\Groups\GroupsService;
 
 /**
  * Class Client
@@ -46,6 +47,11 @@ class Client
     public $feeds;
 
     /**
+     * @var GroupsService
+     */
+    public $groups;
+
+    /**
      * Statscore constructor.
      * @param int $clientId
      * @param string $secretKey
@@ -59,6 +65,7 @@ class Client
         $this->competitions = new CompetitionsService($this->service);
         $this->events = new EventsService($this->service);
         $this->feeds = new FeedsService($this->service);
+        $this->groups = new GroupsService($this->service);
     }
 
     /**

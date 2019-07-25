@@ -51,6 +51,11 @@ class SeasonDTO
     private $stages = [];
 
     /**
+     * @var \Statscore\Model\Response\Stage\StageDTO
+     */
+    private $stage;
+
+    /**
      * @return int
      */
     public function getId(): int
@@ -112,5 +117,13 @@ class SeasonDTO
     public function getStages(): array
     {
         return $this->stages;
+    }
+
+    /**
+     * @return StageDTO
+     */
+    public function getStage(): StageDTO
+    {
+        return $this->stage;
     }
 }

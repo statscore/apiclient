@@ -147,4 +147,16 @@ class RequestDTO
 
         return $this;
     }
+
+    /**
+     * @param string $key
+     * @param string $value
+     * @return RequestDTO
+     */
+    public function addQuery(string $key, string $value): RequestDTO
+    {
+        $this->query[$key] = $value;
+
+        return $this;
+    }
 }

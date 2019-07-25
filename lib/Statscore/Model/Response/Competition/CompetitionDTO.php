@@ -111,6 +111,11 @@ class CompetitionDTO
     private $seasons;
 
     /**
+     * @var SeasonDTO
+     */
+    private $season;
+
+    /**
      * @return int
      */
     public function getId(): int
@@ -268,5 +273,13 @@ class CompetitionDTO
     public function getSeasons(): array
     {
         return $this->seasons;
+    }
+
+    /**
+     * @return SeasonDTO
+     */
+    public function getSeason(): SeasonDTO
+    {
+        return $this->season;
     }
 }
