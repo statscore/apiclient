@@ -5,13 +5,16 @@ namespace Statscore\Service\Feeds;
 use GuzzleHttp\Exception\GuzzleException;
 use Itav\Component\Serializer\SerializerException;
 use Statscore\Model\Request\RequestDTO;
-use Statscore\Model\Response\Competition\CompetitionDTO;
 use Statscore\Model\Response\Feed\FeedDTO;
 use Statscore\Model\Response\ResponseDTO;
 use Statscore\Service\AbstractService;
 use Statscore\Service\InterfaceService;
 use Symfony\Component\HttpFoundation\Request;
 
+/**
+ * Class FeedsService
+ * @package Statscore\Service\Feeds
+ */
 class FeedsService extends AbstractService implements InterfaceService
 {
     /**

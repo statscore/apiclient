@@ -9,49 +9,19 @@ namespace Statscore\Model\Response\Incident;
 class IncidentDTO
 {
     /**
-     * @var string
+     * @var integer
      */
     private $id;
 
     /**
      * @var string
      */
-    private $action;
-
-    /**
-     * @var integer
-     */
-    private $incidentId;
+    private $name;
 
     /**
      * @var string
      */
-    private $incidentName;
-
-    /**
-     * @var integer
-     */
-    private $participantId;
-
-    /**
-     * @var string
-     */
-    private $participantName;
-
-    /**
-     * @var integer|null
-     */
-    private $subparticipantId;
-
-    /**
-     * @var string|null
-     */
-    private $subparticipantName;
-
-    /**
-     * @var string|null
-     */
-    private $info;
+    private $code;
 
     /**
      * @var string
@@ -64,64 +34,44 @@ class IncidentDTO
     private $importantForTrader;
 
     /**
-     * @var string|null
-     */
-    private $addData;
-
-    /**
-     * @var string
-     */
-    private $showPopup;
-
-    /**
-     * @var string
-     */
-    private $showScores;
-
-    /**
-     * @var string
-     */
-    private $showAction;
-
-    /**
-     * @var string
-     */
-    private $showTime;
-
-    /**
-     * @var string
-     */
-    private $showOnTimeline;
-
-    /**
-     * @var string|null
-     */
-    private $eventTime;
-
-    /**
      * @var integer
      */
-    private $eventStatusId;
+    private $sportId;
 
     /**
      * @var string
      */
-    private $eventStatusName;
+    private $type;
+
+    /**
+     * @var string
+     */
+    private $for;
 
     /**
      * @var string|null
      */
-    private $xPos;
+    private $group;
 
     /**
-     * @var string|null
+     * @var string
      */
-    private $yPos;
+    private $details;
 
     /**
-     * @return string
+     * @var string
      */
-    public function getId(): string
+    private $gameBreak;
+
+    /**
+     * @var string
+     */
+    private $ut;
+
+    /**
+     * @return int
+     */
+    public function getId(): int
     {
         return $this->id;
     }
@@ -129,65 +79,17 @@ class IncidentDTO
     /**
      * @return string
      */
-    public function getAction(): string
+    public function getName(): string
     {
-        return $this->action;
-    }
-
-    /**
-     * @return int
-     */
-    public function getIncidentId(): int
-    {
-        return $this->incidentId;
+        return $this->name;
     }
 
     /**
      * @return string
      */
-    public function getIncidentName(): string
+    public function getCode(): string
     {
-        return $this->incidentName;
-    }
-
-    /**
-     * @return int
-     */
-    public function getParticipantId(): int
-    {
-        return $this->participantId;
-    }
-
-    /**
-     * @return string
-     */
-    public function getParticipantName(): string
-    {
-        return $this->participantName;
-    }
-
-    /**
-     * @return int|null
-     */
-    public function getSubparticipantId(): ?int
-    {
-        return $this->subparticipantId;
-    }
-
-    /**
-     * @return string|null
-     */
-    public function getSubparticipantName(): ?string
-    {
-        return $this->subparticipantName;
-    }
-
-    /**
-     * @return string|null
-     */
-    public function getInfo(): ?string
-    {
-        return $this->info;
+        return $this->code;
     }
 
     /**
@@ -207,90 +109,58 @@ class IncidentDTO
     }
 
     /**
-     * @return string|null
-     */
-    public function getAddData(): ?string
-    {
-        return $this->addData;
-    }
-
-    /**
-     * @return string
-     */
-    public function getShowPopup(): string
-    {
-        return $this->showPopup;
-    }
-
-    /**
-     * @return string
-     */
-    public function getShowScores(): string
-    {
-        return $this->showScores;
-    }
-
-    /**
-     * @return string
-     */
-    public function getShowAction(): string
-    {
-        return $this->showAction;
-    }
-
-    /**
-     * @return string
-     */
-    public function getShowTime(): string
-    {
-        return $this->showTime;
-    }
-
-    /**
-     * @return string
-     */
-    public function getShowOnTimeline(): string
-    {
-        return $this->showOnTimeline;
-    }
-
-    /**
-     * @return string|null
-     */
-    public function getEventTime(): ?string
-    {
-        return $this->eventTime;
-    }
-
-    /**
      * @return int
      */
-    public function getEventStatusId(): int
+    public function getSportId(): int
     {
-        return $this->eventStatusId;
+        return $this->sportId;
     }
 
     /**
      * @return string
      */
-    public function getEventStatusName(): string
+    public function getType(): string
     {
-        return $this->eventStatusName;
+        return $this->type;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFor(): string
+    {
+        return $this->for;
     }
 
     /**
      * @return string|null
      */
-    public function getXPos(): ?string
+    public function getGroup(): ?string
     {
-        return $this->xPos;
+        return $this->group;
     }
 
     /**
-     * @return string|null
+     * @return string
      */
-    public function getYPos(): ?string
+    public function getDetails(): string
     {
-        return $this->yPos;
+        return $this->details;
+    }
+
+    /**
+     * @return string
+     */
+    public function getGameBreak(): string
+    {
+        return $this->gameBreak;
+    }
+
+    /**
+     * @return string
+     */
+    public function getUt(): string
+    {
+        return $this->ut;
     }
 }

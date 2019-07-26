@@ -3,7 +3,7 @@
 namespace Statscore\Model\Response\Feed;
 
 use Statscore\Model\Response\Event\EventDTO;
-use Statscore\Model\Response\Incident\IncidentDTO;
+use Statscore\Model\Response\Feed\FeedIncidentDTO;
 
 /**
  * Class FeedDataDTO
@@ -12,7 +12,7 @@ use Statscore\Model\Response\Incident\IncidentDTO;
 class FeedDataDTO
 {
     /**
-     * @var \Statscore\Model\Response\Incident\IncidentDTO
+     * @var \Statscore\Model\Response\Feed\FeedIncidentDTO
      */
     private $incident;
 
@@ -22,9 +22,9 @@ class FeedDataDTO
     private $event;
 
     /**
-     * @return IncidentDTO
+     * @return FeedIncidentDTO
      */
-    public function getIncident(): IncidentDTO
+    public function getIncident(): FeedIncidentDTO
     {
         return $this->incident;
     }

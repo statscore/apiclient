@@ -12,7 +12,7 @@ use UnitTests\TestCase;
 
 /**
  * Class AreasTest
- * @package UnitTests
+ * @package UnitTests\Areas
  */
 class AreasTest extends TestCase
 {

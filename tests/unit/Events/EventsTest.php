@@ -21,7 +21,7 @@ use UnitTests\TestCase;
 
 /**
  * Class EventsTest
- * @package UnitTests
+ * @package UnitTests\Events
  */
 class EventsTest extends TestCase
 {

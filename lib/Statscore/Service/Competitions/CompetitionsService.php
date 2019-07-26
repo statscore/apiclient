@@ -11,6 +11,10 @@ use Statscore\Service\AbstractService;
 use Statscore\Service\InterfaceService;
 use Symfony\Component\HttpFoundation\Request;
 
+/**
+ * Class CompetitionsService
+ * @package Statscore\Service\Competitions
+ */
 class CompetitionsService extends AbstractService implements InterfaceService
 {
     /**

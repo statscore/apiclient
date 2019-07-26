@@ -11,6 +11,10 @@ use Statscore\Service\AbstractService;
 use Statscore\Service\InterfaceService;
 use Symfony\Component\HttpFoundation\Request;
 
+/**
+ * Class AreasService
+ * @package Statscore\Service\Areas
+ */
 class AreasService extends AbstractService implements InterfaceService
 {
 

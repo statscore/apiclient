@@ -1,0 +1,332 @@
+{
+  "api": {
+    "ver": "2.125",
+    "timestamp": 1564163634,
+    "method": {
+      "parameters": [
+
+      ],
+      "name": "languages.index",
+      "details": "languages.index",
+      "total_items": 39,
+      "previous_page": "",
+      "next_page": ""
+    },
+    "data": {
+      "languages": [
+        {
+          "id": 1,
+          "code": "en",
+          "name": "English",
+          "original_name": "English",
+          "active": "yes",
+          "ut": 1415800837
+        },
+        {
+          "id": 2,
+          "code": "de",
+          "name": "German",
+          "original_name": "Deutsch",
+          "active": "yes",
+          "ut": 1415800837
+        },
+        {
+          "id": 3,
+          "code": "fr",
+          "name": "French",
+          "original_name": "Français",
+          "active": "yes",
+          "ut": 1415800837
+        },
+        {
+          "id": 4,
+          "code": "it",
+          "name": "Italian",
+          "original_name": "Italiano",
+          "active": "yes",
+          "ut": 1415800837
+        },
+        {
+          "id": 5,
+          "code": "tr",
+          "name": "Turkish",
+          "original_name": "Türkçe",
+          "active": "yes",
+          "ut": 1415800837
+        },
+        {
+          "id": 6,
+          "code": "cs",
+          "name": "Czech Republic",
+          "original_name": "Český",
+          "active": "yes",
+          "ut": 1415800837
+        },
+        {
+          "id": 7,
+          "code": "pl",
+          "name": "Polish",
+          "original_name": "Polski",
+          "active": "yes",
+          "ut": 1415800837
+        },
+        {
+          "id": 8,
+          "code": "hr",
+          "name": "Croatian",
+          "original_name": "Hrvatski",
+          "active": "yes",
+          "ut": 1415800837
+        },
+        {
+          "id": 9,
+          "code": "da",
+          "name": "Danish",
+          "original_name": "Dansk",
+          "active": "yes",
+          "ut": 1415800837
+        },
+        {
+          "id": 10,
+          "code": "es",
+          "name": "Spanish",
+          "original_name": "Español",
+          "active": "yes",
+          "ut": 1415800837
+        },
+        {
+          "id": 11,
+          "code": "fi",
+          "name": "Finnish",
+          "original_name": "Suomeksi",
+          "active": "yes",
+          "ut": 1415800837
+        },
+        {
+          "id": 12,
+          "code": "el",
+          "name": "Greek",
+          "original_name": "ελληνικά",
+          "active": "yes",
+          "ut": 1415800837
+        },
+        {
+          "id": 13,
+          "code": "hu",
+          "name": "Hungarian",
+          "original_name": "Magyar",
+          "active": "yes",
+          "ut": 1545915600
+        },
+        {
+          "id": 14,
+          "code": "jp",
+          "name": "Japan",
+          "original_name": "日本語",
+          "active": "no",
+          "ut": 1415800837
+        },
+        {
+          "id": 15,
+          "code": "lt",
+          "name": "Lithuanian",
+          "original_name": "Lietuvos",
+          "active": "no",
+          "ut": 1415800837
+        },
+        {
+          "id": 16,
+          "code": "lv",
+          "name": "Latvian",
+          "original_name": "Latvijas",
+          "active": "no",
+          "ut": 1415800837
+        },
+        {
+          "id": 17,
+          "code": "nl",
+          "name": "Dutch",
+          "original_name": "Nederlands",
+          "active": "yes",
+          "ut": 1415800837
+        },
+        {
+          "id": 19,
+          "code": "no",
+          "name": "Norway",
+          "original_name": "Norsk",
+          "active": "yes",
+          "ut": 1415800837
+        },
+        {
+          "id": 20,
+          "code": "pt",
+          "name": "Portuguese",
+          "original_name": "Português",
+          "active": "yes",
+          "ut": 1415800837
+        },
+        {
+          "id": 21,
+          "code": "ro",
+          "name": "Romanian",
+          "original_name": "Româna",
+          "active": "yes",
+          "ut": 1415800837
+        },
+        {
+          "id": 22,
+          "code": "sr",
+          "name": "Serbian",
+          "original_name": "Srpski",
+          "active": "yes",
+          "ut": 1415800837
+        },
+        {
+          "id": 23,
+          "code": "ru",
+          "name": "Russian",
+          "original_name": "Русский",
+          "active": "yes",
+          "ut": 1415800837
+        },
+        {
+          "id": 24,
+          "code": "sv",
+          "name": "Swedish",
+          "original_name": "Svensk",
+          "active": "yes",
+          "ut": 1415800837
+        },
+        {
+          "id": 25,
+          "code": "si",
+          "name": "Slovenian",
+          "original_name": "Slovenščina",
+          "active": "no",
+          "ut": 1415800837
+        },
+        {
+          "id": 26,
+          "code": "sk",
+          "name": "Slovakian",
+          "original_name": "Slovenských",
+          "active": "yes",
+          "ut": 1415800837
+        },
+        {
+          "id": 27,
+          "code": "zh",
+          "name": "Chinese",
+          "original_name": "中文繁體",
+          "active": "yes",
+          "ut": 1415800837
+        },
+        {
+          "id": 28,
+          "code": "bs",
+          "name": "Bosnian",
+          "original_name": "Bosanski",
+          "active": "no",
+          "ut": 1415800837
+        },
+        {
+          "id": 29,
+          "code": "bg",
+          "name": "Bulgarian",
+          "original_name": "Български",
+          "active": "yes",
+          "ut": 1511100037
+        },
+        {
+          "id": 30,
+          "code": "et",
+          "name": "Estonian",
+          "original_name": "Esti",
+          "active": "yes",
+          "ut": 1415800837
+        },
+        {
+          "id": 31,
+          "code": "th",
+          "name": "Thai",
+          "original_name": "ไทย",
+          "active": "yes",
+          "ut": 1415800837
+        },
+        {
+          "id": 32,
+          "code": "mk",
+          "name": "Macedonian",
+          "original_name": "Македонски",
+          "active": "yes",
+          "ut": 1415800837
+        },
+        {
+          "id": 33,
+          "code": "vi",
+          "name": "Vietnamese",
+          "original_name": "Tiếng Việt",
+          "active": "yes",
+          "ut": 1415800837
+        },
+        {
+          "id": 34,
+          "code": "id",
+          "name": "Indonesian",
+          "original_name": "Bahasa",
+          "active": "yes",
+          "ut": 1415800837
+        },
+        {
+          "id": 35,
+          "code": "ko",
+          "name": "Korean",
+          "original_name": "한국어",
+          "active": "yes",
+          "ut": 1415800837
+        },
+        {
+          "id": 36,
+          "code": "ka",
+          "name": "Georgian",
+          "original_name": "ქართული",
+          "active": "yes",
+          "ut": 1415800837
+        },
+        {
+          "id": 37,
+          "code": "uk",
+          "name": "Ukrainian",
+          "original_name": "Український",
+          "active": "yes",
+          "ut": 1545915600
+        },
+        {
+          "id": 38,
+          "code": "sq",
+          "name": "Albanian",
+          "original_name": "Shqiptar",
+          "active": "yes",
+          "ut": 1524732415
+        },
+        {
+          "id": 39,
+          "code": "me",
+          "name": "Montenegrin",
+          "original_name": "Crnogorski",
+          "active": "yes",
+          "ut": 1524732665
+        },
+        {
+          "id": 40,
+          "code": "zh-CN",
+          "name": "Chinese Simplified",
+          "original_name": "简体字",
+          "active": "yes",
+          "ut": 1542790800
+        }
+      ]
+    }
+  }
+}

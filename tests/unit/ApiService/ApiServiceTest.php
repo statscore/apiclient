@@ -15,7 +15,7 @@ use UnitTests\TestCase;
 
 /**
  * Class ApiServiceTest
- * @package UnitTests
+ * @package UnitTests\ApiService
  */
 class ApiServiceTest extends TestCase
 {

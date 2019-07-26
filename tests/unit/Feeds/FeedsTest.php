@@ -8,11 +8,15 @@ use Itav\Component\Serializer\SerializerException;
 use Statscore\Model\Response\Event\EventDTO;
 use Statscore\Model\Response\Feed\FeedDataDTO;
 use Statscore\Model\Response\Feed\FeedDTO;
-use Statscore\Model\Response\Incident\IncidentDTO;
+use Statscore\Model\Response\Feed\FeedIncidentDTO;
 use Statscore\Service\Feeds\FeedsService;
 use Symfony\Component\HttpFoundation\Response as HttpFoundationResponse;
 use UnitTests\TestCase;
 
+/**
+ * Class FeedsTest
+ * @package UnitTests\Feeds
+ */
 class FeedsTest extends TestCase
 {
     /**
@@ -59,26 +63,26 @@ class FeedsTest extends TestCase
      * @param FeedDTO $feedDTO
      * @depends testGetAll
      * @depends testGet
-     * @return  IncidentDTO
+     * @return  FeedIncidentDTO
      */
-    public function testFeedResponse(FeedDTO $feedDTO): IncidentDTO
+    public function testFeedResponse(FeedDTO $feedDTO): FeedIncidentDTO
     {
         $this->assertEquals(111, $feedDTO->getId());
         $this->assertEquals('incident', $feedDTO->getType());
         $this->assertEquals(-1, $feedDTO->getSource());
         $this->assertEquals(1512653946, $feedDTO->getUt());
         $this->assertInstanceOf(FeedDataDTO::class, $feedDTO->getData());
-        $this->assertInstanceOf(IncidentDTO::class, $feedDTO->getData()->getIncident());
+        $this->assertInstanceOf(FeedIncidentDTO::class, $feedDTO->getData()->getIncident());
         $this->assertInstanceOf(EventDTO::class, $feedDTO->getData()->getEvent());
 
         return $feedDTO->getData()->getIncident();
     }
 
     /**
-     * @param IncidentDTO $incidentDTO
+     * @param FeedIncidentDTO $incidentDTO
      * @depends testFeedResponse
      */
-    public function testFeedIncident(IncidentDTO $incidentDTO): void
+    public function testFeedIncident(FeedIncidentDTO $incidentDTO): void
     {
         $this->assertEquals('5-889947', $incidentDTO->getId());
         $this->assertEquals('insert', $incidentDTO->getAction());

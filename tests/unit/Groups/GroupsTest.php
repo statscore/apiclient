@@ -1,6 +1,6 @@
 <?php
 
-namespace UnitTests\Feeds;
+namespace UnitTests\Groups;
 
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Response;
@@ -12,6 +12,10 @@ use Statscore\Service\Groups\GroupsService;
 use Symfony\Component\HttpFoundation\Response as HttpFoundationResponse;
 use UnitTests\TestCase;
 
+/**
+ * Class GroupsTest
+ * @package UnitTests\Groups
+ */
 class GroupsTest extends TestCase
 {
     /**
