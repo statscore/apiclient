@@ -5,15 +5,14 @@ namespace UnitTests\Languages;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Response;
 use Itav\Component\Serializer\SerializerException;
-use Statscore\Model\Response\Incident\IncidentDTO;
 use Statscore\Model\Response\Language\LanguageDTO;
 use Statscore\Service\Incidents\IncidentsService;
-use Statscore\Service\Languages\LanguagesServices;
+use Statscore\Service\Languages\LanguagesService;
 use Symfony\Component\HttpFoundation\Response as HttpFoundationResponse;
 use UnitTests\TestCase;
 
 /**
- * Class LanguagesTest
+ * Class RoundsTest
  * @package UnitTests\Languages
  */
 class LanguagesTest extends TestCase
@@ -26,7 +25,7 @@ class LanguagesTest extends TestCase
     public function setUp(): void
     {
         parent::setUp();
-        $this->languagesService = new LanguagesServices($this->service);
+        $this->languagesService = new LanguagesService($this->service);
     }
 
     /**

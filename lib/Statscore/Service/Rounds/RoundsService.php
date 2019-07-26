@@ -1,26 +1,26 @@
 <?php
 
-namespace Statscore\Service\Languages;
+namespace Statscore\Service\Rounds;
 
 use GuzzleHttp\Exception\GuzzleException;
 use Itav\Component\Serializer\SerializerException;
 use Statscore\Model\Request\RequestDTO;
-use Statscore\Model\Response\Language\LanguageDTO;
 use Statscore\Model\Response\ResponseDTO;
+use Statscore\Model\Response\Round\RoundDTO;
 use Statscore\Service\AbstractService;
 use Statscore\Service\InterfaceService;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
- * Class LanguagesServices
- * @package Statscore\Service\Lanugages
+ * Class RoundsService
+ * @package Statscore\Service\Rounds
  */
-class LanguagesServices extends AbstractService implements InterfaceService
+class RoundsService extends AbstractService implements InterfaceService
 {
     /**
      * @var string
      */
-    protected $url = 'languages';
+    protected $url = 'rounds';
 
     /**
      * @param array $query
@@ -38,8 +38,8 @@ class LanguagesServices extends AbstractService implements InterfaceService
         $responseDTO = $this->service->request($request);
         $responseDTO->setData(
             $this->serializer->denormalize(
-                $responseDTO->getData()['languages'] ?? [],
-                LanguageDTO::class . '[]')
+                $responseDTO->getData()['rounds'] ?? [],
+                RoundDTO::class . '[]')
         );
 
         return $responseDTO;

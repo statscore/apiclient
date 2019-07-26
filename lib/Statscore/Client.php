@@ -15,7 +15,9 @@ use Statscore\Service\ApiService;
 use Statscore\Service\Feeds\FeedsService;
 use Statscore\Service\Groups\GroupsService;
 use Statscore\Service\Incidents\IncidentsService;
-use Statscore\Service\Languages\LanguagesServices;
+use Statscore\Service\Languages\LanguagesService;
+use Statscore\Service\Livescore\LivescoreService;
+use Statscore\Service\Rounds\RoundsService;
 
 /**
  * Class Client
@@ -59,9 +61,19 @@ class Client
     public $incidents;
 
     /**
-     * @var LanguagesServices
+     * @var LanguagesService
      */
     public $languages;
+
+    /**
+     * @var LivescoreService
+     */
+    public $livescore;
+
+    /**
+     * @var RoundsService
+     */
+    public $rounds;
 
     /**
      * Statscore constructor.
@@ -79,7 +91,9 @@ class Client
         $this->feeds = new FeedsService($this->service);
         $this->groups = new GroupsService($this->service);
         $this->incidents = new IncidentsService($this->service);
-        $this->languages = new LanguagesServices($this->service);
+        $this->languages = new LanguagesService($this->service);
+        $this->livescore = new LivescoreService($this->service);
+        $this->rounds = new RoundsService($this->service);
     }
 
     /**

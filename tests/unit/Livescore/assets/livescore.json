@@ -1,0 +1,677 @@
+{
+  "api": {
+    "ver": "2.125",
+    "timestamp": 1564164813,
+    "method": {
+      "parameters": {
+        "client_id": 1,
+        "events_details": "yes",
+        "hasCompetitionsOrder": false,
+        "date_from": "2019-07-19 00:00:00",
+        "date_to": "2019-07-26 23:59:59",
+        "status_type": "live"
+      },
+      "name": "livescore.index",
+      "details": "livescore.index",
+      "total_items": 1,
+      "previous_page": "",
+      "next_page": ""
+    },
+    "data": {
+      "competitions": [
+        {
+          "id": 466,
+          "name": "Brisbane (W)",
+          "short_name": "Brisbane (W)",
+          "mini_name": "BRI",
+          "gender": "female",
+          "type": "single",
+          "area_id": "14",
+          "area_name": "Australia",
+          "area_type": "international",
+          "area_sort": "1",
+          "area_code": "AUS",
+          "overall_sort": "50",
+          "sport_id": "4",
+          "sport_name": "Tennis",
+          "tour_id": "2",
+          "tour_name": "WTA Tour",
+          "ut": "1455090924",
+          "old_competition_id": "",
+          "slug": "brisbane-w,466",
+          "stats_lvl": "bronze",
+          "seasons": [
+            {
+              "id": 25523,
+              "name": "Coppa Italia 2016",
+              "year": "2016",
+              "actual": "no",
+              "ut": 1456041460,
+              "old_season_id": "",
+              "range_level": 1,
+              "stats_lvl": "bronze",
+              "stages": [
+                {
+                  "id": 76601,
+                  "stage_name_id": 4,
+                  "name": "Final",
+                  "start_date": "2016-02-20",
+                  "end_date": "2016-02-20",
+                  "show_standings": "no",
+                  "groups_nr": 0,
+                  "sort": 3,
+                  "is_current": "yes",
+                  "ut": 1456041460,
+                  "old_stage_id": "",
+                  "groups": [
+                    {
+                      "id": 2,
+                      "name": "Group B",
+                      "ut": 1415800836,
+                      "events": [
+                        {
+                          "id": 2135481,
+                          "name": "Awesome event",
+                          "source": -1,
+                          "source_dc": "no",
+                          "source_super": null,
+                          "relation_status": "not_started",
+                          "start_date": "2019-07-26 18:11",
+                          "ft_only": "no",
+                          "coverage_type": "from_tv",
+                          "channel_id": null,
+                          "channel_name": "",
+                          "scoutsfeed": "yes",
+                          "status_id": 135,
+                          "status_name": "3rd set",
+                          "status_type": "live",
+                          "sport_id": 4,
+                          "sport_name": "Tennis",
+                          "day": "",
+                          "clock_time": null,
+                          "clock_status": null,
+                          "winner_id": null,
+                          "progress_id": null,
+                          "bet_status": "suspended",
+                          "neutral_venue": "no",
+                          "item_status": "active",
+                          "ut": 1455899242,
+                          "old_event_id": "",
+                          "slug": "awesome-event,2135481",
+                          "verified_result": "no",
+                          "is_protocol_verified": "no",
+                          "protocol_verified_by": null,
+                          "protocol_verified_at": null,
+                          "round_id": null,
+                          "round_name": "",
+                          "client_event_id": null,
+                          "booked": "no",
+                          "booked_by": null,
+                          "inverted_participants": "no",
+                          "venue_id": "",
+                          "bfs": "no",
+                          "event_stats_lvl": "bronze",
+                          "details": [
+                            {
+                              "id": 6,
+                              "name": "Surface",
+                              "value": "hard"
+                            },
+                            {
+                              "id": 7,
+                              "name": "Sets number",
+                              "value": "Best of 3 sets"
+                            },
+                            {
+                              "id": 54,
+                              "name": "Will there be deuces?",
+                              "value": "yes"
+                            },
+                            {
+                              "id": 55,
+                              "name": "Will there be advantage set?",
+                              "value": "no"
+                            },
+                            {
+                              "id": 166,
+                              "name": "Possible supertiebreak",
+                              "value": "no"
+                            },
+                            {
+                              "id": 57,
+                              "name": "IPTL Format?",
+                              "value": "no"
+                            },
+                            {
+                              "id": 8,
+                              "name": "Weather conditions",
+                              "value": ""
+                            },
+                            {
+                              "id": 1,
+                              "name": "First set start date",
+                              "value": ""
+                            },
+                            {
+                              "id": 2,
+                              "name": "Second set start date",
+                              "value": ""
+                            },
+                            {
+                              "id": 3,
+                              "name": "Third set start date",
+                              "value": ""
+                            },
+                            {
+                              "id": 4,
+                              "name": "Fourth set start date",
+                              "value": ""
+                            },
+                            {
+                              "id": 5,
+                              "name": "Fifth set start date",
+                              "value": ""
+                            },
+                            {
+                              "id": 167,
+                              "name": "Super tiebreak start date",
+                              "value": ""
+                            }
+                          ],
+                          "participants": [
+                            {
+                              "counter": 1,
+                              "id": 30350,
+                              "type": "person",
+                              "name": "Samantha Crawford",
+                              "short_name": "Crawford Samantha",
+                              "acronym": "CRA",
+                              "gender": "female",
+                              "area_id": 191,
+                              "area_name": "USA",
+                              "area_code": "USA",
+                              "sport_id": 4,
+                              "sport_name": "Tennis",
+                              "national": "no",
+                              "website": "",
+                              "ut": 1457601273,
+                              "old_participant_id": "",
+                              "slug": "crawford-samantha,30350",
+                              "logo": "no",
+                              "virtual": "no",
+                              "stats": [
+                                {
+                                  "id": 75,
+                                  "short_name": "Points",
+                                  "name": "Points",
+                                  "value": "60"
+                                },
+                                {
+                                  "id": 48,
+                                  "short_name": "Aces",
+                                  "name": "Aces",
+                                  "value": "2"
+                                },
+                                {
+                                  "id": 106,
+                                  "short_name": "Double faults",
+                                  "name": "Double faults",
+                                  "value": "0"
+                                },
+                                {
+                                  "id": 112,
+                                  "short_name": "1st services attempts",
+                                  "name": "1st services attempts",
+                                  "value": "50"
+                                },
+                                {
+                                  "id": 111,
+                                  "short_name": "1st services in",
+                                  "name": "1st services in",
+                                  "value": "33"
+                                },
+                                {
+                                  "id": 126,
+                                  "short_name": "First service points",
+                                  "name": "First service points",
+                                  "value": "23"
+                                },
+                                {
+                                  "id": 129,
+                                  "short_name": "1st serve",
+                                  "name": "1st serve",
+                                  "value": "66"
+                                },
+                                {
+                                  "id": 130,
+                                  "short_name": "1st serve in",
+                                  "name": "1st serve in",
+                                  "value": "70"
+                                },
+                                {
+                                  "id": 131,
+                                  "short_name": "2nd services attempts",
+                                  "name": "2nd services attempts",
+                                  "value": "17"
+                                },
+                                {
+                                  "id": 127,
+                                  "short_name": "Second service points",
+                                  "name": "Second service points",
+                                  "value": "9"
+                                },
+                                {
+                                  "id": 132,
+                                  "short_name": "2nd serve",
+                                  "name": "2nd serve",
+                                  "value": "53"
+                                },
+                                {
+                                  "id": 105,
+                                  "short_name": "Service faults",
+                                  "name": "Service faults",
+                                  "value": "17"
+                                },
+                                {
+                                  "id": 114,
+                                  "short_name": "Break points",
+                                  "name": "Break points",
+                                  "value": "8"
+                                },
+                                {
+                                  "id": 107,
+                                  "short_name": "Break points won",
+                                  "name": "Break points won",
+                                  "value": "5"
+                                },
+                                {
+                                  "id": 113,
+                                  "short_name": "Break points won percentage",
+                                  "name": "Break points won percentage",
+                                  "value": "63"
+                                },
+                                {
+                                  "id": 109,
+                                  "short_name": "Challenges",
+                                  "name": "Challenges",
+                                  "value": "1"
+                                },
+                                {
+                                  "id": 110,
+                                  "short_name": "Challenges correct",
+                                  "name": "Challenges correct",
+                                  "value": "0"
+                                },
+                                {
+                                  "id": 416,
+                                  "short_name": "Challenges incorrect",
+                                  "name": "Challenges incorrect",
+                                  "value": ""
+                                },
+                                {
+                                  "id": 403,
+                                  "short_name": "Is server side",
+                                  "name": "Is server side",
+                                  "value": ""
+                                },
+                                {
+                                  "id": 628,
+                                  "short_name": "Current service",
+                                  "name": "Current service",
+                                  "value": "1"
+                                },
+                                {
+                                  "id": 629,
+                                  "short_name": "Court side",
+                                  "name": "Court side",
+                                  "value": "right"
+                                }
+                              ],
+                              "results": [
+                                {
+                                  "id": 411,
+                                  "short_name": "Winner",
+                                  "name": "Winner",
+                                  "value": "0"
+                                },
+                                {
+                                  "id": 412,
+                                  "short_name": "Progress",
+                                  "name": "Progress",
+                                  "value": "0"
+                                },
+                                {
+                                  "id": 2,
+                                  "short_name": "Result",
+                                  "name": "Result",
+                                  "value": "2"
+                                },
+                                {
+                                  "id": 43,
+                                  "short_name": "First set",
+                                  "name": "First set",
+                                  "value": "6"
+                                },
+                                {
+                                  "id": 44,
+                                  "short_name": "Second set",
+                                  "name": "Second set",
+                                  "value": "6"
+                                },
+                                {
+                                  "id": 45,
+                                  "short_name": "Third set",
+                                  "name": "Third set",
+                                  "value": ""
+                                },
+                                {
+                                  "id": 46,
+                                  "short_name": "Fourth set",
+                                  "name": "Fourth set",
+                                  "value": ""
+                                },
+                                {
+                                  "id": 47,
+                                  "short_name": "Fifth set",
+                                  "name": "Fifth set",
+                                  "value": ""
+                                },
+                                {
+                                  "id": 115,
+                                  "short_name": "Current game points",
+                                  "name": "Current game points",
+                                  "value": ""
+                                },
+                                {
+                                  "id": 627,
+                                  "short_name": "S.tiebreak points",
+                                  "name": "S.tiebreak points",
+                                  "value": ""
+                                },
+                                {
+                                  "id": 116,
+                                  "short_name": "1st set tb points",
+                                  "name": "1st set tb points",
+                                  "value": ""
+                                },
+                                {
+                                  "id": 117,
+                                  "short_name": "2nd set tb points",
+                                  "name": "2nd set tb points",
+                                  "value": ""
+                                },
+                                {
+                                  "id": 118,
+                                  "short_name": "3rd set tb points",
+                                  "name": "3rd set tb points",
+                                  "value": ""
+                                },
+                                {
+                                  "id": 119,
+                                  "short_name": "4th set tb points",
+                                  "name": "4th set tb points",
+                                  "value": ""
+                                },
+                                {
+                                  "id": 120,
+                                  "short_name": "5th set tb pts",
+                                  "name": "5th set tb pts",
+                                  "value": ""
+                                }
+                              ]
+                            },
+                            {
+                              "counter": 2,
+                              "id": 32326,
+                              "type": "person",
+                              "name": "Roberta Vinci",
+                              "short_name": "Vinci Roberta",
+                              "acronym": "VIN",
+                              "gender": "female",
+                              "area_id": 198,
+                              "area_name": "Italy",
+                              "area_code": "ITA",
+                              "sport_id": 4,
+                              "sport_name": "Tennis",
+                              "national": "no",
+                              "website": "",
+                              "ut": 1457601273,
+                              "old_participant_id": "",
+                              "slug": "vinci-roberta,32326",
+                              "logo": "no",
+                              "virtual": "no",
+                              "stats": [
+                                {
+                                  "id": 75,
+                                  "short_name": "Points",
+                                  "name": "Points",
+                                  "value": "60"
+                                },
+                                {
+                                  "id": 48,
+                                  "short_name": "Aces",
+                                  "name": "Aces",
+                                  "value": "2"
+                                },
+                                {
+                                  "id": 106,
+                                  "short_name": "Double faults",
+                                  "name": "Double faults",
+                                  "value": "0"
+                                },
+                                {
+                                  "id": 112,
+                                  "short_name": "1st services attempts",
+                                  "name": "1st services attempts",
+                                  "value": "50"
+                                },
+                                {
+                                  "id": 111,
+                                  "short_name": "1st services in",
+                                  "name": "1st services in",
+                                  "value": "33"
+                                },
+                                {
+                                  "id": 126,
+                                  "short_name": "First service points",
+                                  "name": "First service points",
+                                  "value": "23"
+                                },
+                                {
+                                  "id": 129,
+                                  "short_name": "1st serve",
+                                  "name": "1st serve",
+                                  "value": "66"
+                                },
+                                {
+                                  "id": 130,
+                                  "short_name": "1st serve in",
+                                  "name": "1st serve in",
+                                  "value": "70"
+                                },
+                                {
+                                  "id": 131,
+                                  "short_name": "2nd services attempts",
+                                  "name": "2nd services attempts",
+                                  "value": "17"
+                                },
+                                {
+                                  "id": 127,
+                                  "short_name": "Second service points",
+                                  "name": "Second service points",
+                                  "value": "9"
+                                },
+                                {
+                                  "id": 132,
+                                  "short_name": "2nd serve",
+                                  "name": "2nd serve",
+                                  "value": "53"
+                                },
+                                {
+                                  "id": 105,
+                                  "short_name": "Service faults",
+                                  "name": "Service faults",
+                                  "value": "17"
+                                },
+                                {
+                                  "id": 114,
+                                  "short_name": "Break points",
+                                  "name": "Break points",
+                                  "value": "8"
+                                },
+                                {
+                                  "id": 107,
+                                  "short_name": "Break points won",
+                                  "name": "Break points won",
+                                  "value": "5"
+                                },
+                                {
+                                  "id": 113,
+                                  "short_name": "Break points won percentage",
+                                  "name": "Break points won percentage",
+                                  "value": "63"
+                                },
+                                {
+                                  "id": 109,
+                                  "short_name": "Challenges",
+                                  "name": "Challenges",
+                                  "value": "1"
+                                },
+                                {
+                                  "id": 110,
+                                  "short_name": "Challenges correct",
+                                  "name": "Challenges correct",
+                                  "value": "0"
+                                },
+                                {
+                                  "id": 416,
+                                  "short_name": "Challenges incorrect",
+                                  "name": "Challenges incorrect",
+                                  "value": ""
+                                },
+                                {
+                                  "id": 403,
+                                  "short_name": "Is server side",
+                                  "name": "Is server side",
+                                  "value": ""
+                                },
+                                {
+                                  "id": 628,
+                                  "short_name": "Current service",
+                                  "name": "Current service",
+                                  "value": "1"
+                                },
+                                {
+                                  "id": 629,
+                                  "short_name": "Court side",
+                                  "name": "Court side",
+                                  "value": "right"
+                                }
+                              ],
+                              "results": [
+                                {
+                                  "id": 411,
+                                  "short_name": "Winner",
+                                  "name": "Winner",
+                                  "value": "0"
+                                },
+                                {
+                                  "id": 412,
+                                  "short_name": "Progress",
+                                  "name": "Progress",
+                                  "value": "0"
+                                },
+                                {
+                                  "id": 2,
+                                  "short_name": "Result",
+                                  "name": "Result",
+                                  "value": "2"
+                                },
+                                {
+                                  "id": 43,
+                                  "short_name": "First set",
+                                  "name": "First set",
+                                  "value": "6"
+                                },
+                                {
+                                  "id": 44,
+                                  "short_name": "Second set",
+                                  "name": "Second set",
+                                  "value": "6"
+                                },
+                                {
+                                  "id": 45,
+                                  "short_name": "Third set",
+                                  "name": "Third set",
+                                  "value": ""
+                                },
+                                {
+                                  "id": 46,
+                                  "short_name": "Fourth set",
+                                  "name": "Fourth set",
+                                  "value": ""
+                                },
+                                {
+                                  "id": 47,
+                                  "short_name": "Fifth set",
+                                  "name": "Fifth set",
+                                  "value": ""
+                                },
+                                {
+                                  "id": 115,
+                                  "short_name": "Current game points",
+                                  "name": "Current game points",
+                                  "value": ""
+                                },
+                                {
+                                  "id": 627,
+                                  "short_name": "S.tiebreak points",
+                                  "name": "S.tiebreak points",
+                                  "value": ""
+                                },
+                                {
+                                  "id": 116,
+                                  "short_name": "1st set tb points",
+                                  "name": "1st set tb points",
+                                  "value": ""
+                                },
+                                {
+                                  "id": 117,
+                                  "short_name": "2nd set tb points",
+                                  "name": "2nd set tb points",
+                                  "value": ""
+                                },
+                                {
+                                  "id": 118,
+                                  "short_name": "3rd set tb points",
+                                  "name": "3rd set tb points",
+                                  "value": ""
+                                },
+                                {
+                                  "id": 119,
+                                  "short_name": "4th set tb points",
+                                  "name": "4th set tb points",
+                                  "value": ""
+                                },
+                                {
+                                  "id": 120,
+                                  "short_name": "5th set tb pts",
+                                  "name": "5th set tb pts",
+                                  "value": ""
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
