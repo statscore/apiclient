@@ -17,7 +17,7 @@ use Symfony\Component\HttpFoundation\Request;
  * Class ApiService
  * @package Statscore\ApiService
  */
-class ApiService
+final class ApiService
 {
     const VERSION = 'v2';
 

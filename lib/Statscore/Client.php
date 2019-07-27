@@ -17,13 +17,14 @@ use Statscore\Service\Groups\GroupsService;
 use Statscore\Service\Incidents\IncidentsService;
 use Statscore\Service\Languages\LanguagesService;
 use Statscore\Service\Livescore\LivescoreService;
+use Statscore\Service\Participants\ParticipantsService;
 use Statscore\Service\Rounds\RoundsService;
 
 /**
  * Class Client
  * @package Statscore
  */
-class Client
+final class Client
 {
     /**
      * @var ApiService
@@ -71,6 +72,11 @@ class Client
     public $livescore;
 
     /**
+     * @var ParticipantsService
+     */
+    public $participants;
+
+    /**
      * @var RoundsService
      */
     public $rounds;
@@ -93,6 +99,7 @@ class Client
         $this->incidents = new IncidentsService($this->service);
         $this->languages = new LanguagesService($this->service);
         $this->livescore = new LivescoreService($this->service);
+        $this->participants = new ParticipantsService($this->service);
         $this->rounds = new RoundsService($this->service);
     }
 

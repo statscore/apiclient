@@ -4,7 +4,6 @@
     "timestamp": 1564084682,
     "method": {
       "parameters": {
-        "username": "statscore"
       },
       "name": "feed.show",
       "details": "feed.show",

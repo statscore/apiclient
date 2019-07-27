@@ -102,6 +102,16 @@ class ParticipantDTO
     private $virtual;
 
     /**
+     * @var string
+     */
+    private $shirtNr;
+
+    /**
+     * @var \Statscore\Model\Response\Participant\ParticipantDetailsDTO
+     */
+    private $details;
+
+    /**
      * @var \Statscore\Model\Response\Stat\StatDTO[]
      */
     private $stats = [];
@@ -253,6 +263,22 @@ class ParticipantDTO
     public function getVirtual(): string
     {
         return $this->virtual;
+    }
+
+    /**
+     * @return string
+     */
+    public function getShirtNr(): string
+    {
+        return $this->shirtNr;
+    }
+
+    /**
+     * @return ParticipantDetailsDTO
+     */
+    public function getDetails(): ParticipantDetailsDTO
+    {
+        return $this->details;
     }
 
     /**

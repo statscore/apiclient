@@ -4,7 +4,6 @@
     "timestamp": 1563821336,
     "method": {
       "parameters": {
-        "username": "statscore",
         "client_id": 1,
         "competition_id": "5806"
       },
