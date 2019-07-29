@@ -198,7 +198,7 @@ class EventDTO
     private $invertedParticipants;
 
     /**
-     * @var integer
+     * @var integer|null
      */
     private $venueId;
 
@@ -519,9 +519,9 @@ class EventDTO
     }
 
     /**
-     * @return int
+     * @return int|null
      */
-    public function getVenueId(): int
+    public function getVenueId(): ?int
     {
         return $this->venueId;
     }

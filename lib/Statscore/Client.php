@@ -4,6 +4,7 @@ namespace Statscore;
 
 use GuzzleHttp\Client as Guzzle;
 use GuzzleHttp\Exception\GuzzleException;
+use Itav\Component\Serializer\Factory;
 use Itav\Component\Serializer\Serializer;
 use Itav\Component\Serializer\SerializerException;
 use Statscore\Model\Response\Authorization\AuthorizationDTO;
@@ -88,7 +89,7 @@ final class Client
      */
     public function __construct(int $clientId, string $secretKey)
     {
-        $this->service = new ApiService(new Guzzle([]), new Serializer());
+        $this->service = new ApiService(new Guzzle([]), Factory::create());
         $this->service->setClientId($clientId);
         $this->service->setSecretKey($secretKey);
         $this->areas = new AreasService($this->service);

@@ -152,7 +152,7 @@ class EventsTest extends TestCase
      */
     public function testGroupResponse(GroupDTO $groupDTO): EventDTO
     {
-        $this->assertEquals(0, $groupDTO->getId());
+        $this->assertEquals(null, $groupDTO->getId());
         $this->assertEquals("", $groupDTO->getName());
         $this->assertEquals("", $groupDTO->getUt());
         $this->assertCount(7, $groupDTO->getEvents());

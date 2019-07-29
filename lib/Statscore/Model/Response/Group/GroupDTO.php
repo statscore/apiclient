@@ -11,7 +11,7 @@ use Statscore\Model\Response\Event\EventDTO;
 class GroupDTO
 {
     /**
-     * @var integer
+     * @var integer|null
      */
     private $id;
 
@@ -31,9 +31,9 @@ class GroupDTO
     private $events = [];
 
     /**
-     * @return int
+     * @return int|null
      */
-    public function getId(): int
+    public function getId(): ?int
     {
         return $this->id;
     }

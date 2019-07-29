@@ -2,6 +2,7 @@
 
 namespace UnitTests;
 
+use Itav\Component\Serializer\Factory;
 use Itav\Component\Serializer\Serializer;
 use Mockery;
 use PHPUnit\Framework\TestCase as BaseTest;
@@ -34,7 +35,7 @@ abstract class TestCase extends BaseTest
     {
         parent::setUp();
 
-        $this->serializer = new Serializer();
+        $this->serializer = Factory::create();
         $this->guzzle = Mockery::mock(\GuzzleHttp\Client::class);
         $this->service = new ApiService($this->guzzle, $this->serializer);
     }

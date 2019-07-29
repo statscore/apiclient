@@ -9,7 +9,7 @@ namespace Statscore\Model\Response\Participant;
 class ParticipantDetailsDTO
 {
     /**
-     * @var integer
+     * @var integer|null
      */
     private $founded;
 
@@ -29,7 +29,7 @@ class ParticipantDetailsDTO
     private $address;
 
     /**
-     * @var integer
+     * @var integer|null
      */
     private $venueId;
 
@@ -59,7 +59,7 @@ class ParticipantDetailsDTO
     private $positionName;
 
     /**
-     * @var integer
+     * @var integer|null
      */
     private $positionId;
 
@@ -84,9 +84,9 @@ class ParticipantDetailsDTO
     private $subtype;
 
     /**
-     * @return int
+     * @return int|null
      */
-    public function getFounded(): int
+    public function getFounded(): ?int
     {
         return $this->founded;
     }
@@ -116,9 +116,9 @@ class ParticipantDetailsDTO
     }
 
     /**
-     * @return int
+     * @return int|null
      */
-    public function getVenueId(): int
+    public function getVenueId(): ?int
     {
         return $this->venueId;
     }
@@ -164,9 +164,9 @@ class ParticipantDetailsDTO
     }
 
     /**
-     * @return int
+     * @return int|null
      */
-    public function getPositionId(): int
+    public function getPositionId(): ?int
     {
         return $this->positionId;
     }
