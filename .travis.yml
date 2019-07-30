@@ -10,6 +10,7 @@ script:
   - sonar-scanner
 
 after_success:
+  - snyk monitor
   - bash <(curl -s https://codecov.io/bash)
 
 addons:
