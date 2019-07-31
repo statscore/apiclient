@@ -3,5 +3,6 @@
 [![codecov](https://codecov.io/gh/statscore/apiclient/branch/development/graph/badge.svg)](https://codecov.io/gh/statscore/apiclient)
 ![PHP from Travis config](https://img.shields.io/travis/php-v/statscore/apiclient/development.svg)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=statscore_apiclient&metric=alert_status)](https://sonarcloud.io/dashboard?id=statscore_apiclient)
+![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/statscore/apiclient)
 
 TODO!
