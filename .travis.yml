@@ -1,11 +1,9 @@
 language: php
 dist: trusty
-
+before_script:
+  - composer install
 php:
   - 7.3
-
-install:
-  - snyk test
 
 script:
   - vendor/bin/phpunit --coverage-clover=coverage.xml --log-junit=test-report.xml
