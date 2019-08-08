@@ -36,7 +36,7 @@ class SeasonDTO
     private $ut;
 
     /**
-     * @var integer
+     * @var integer|null
      */
     private $rangeLevel;
 
@@ -96,9 +96,9 @@ class SeasonDTO
     }
 
     /**
-     * @return int
+     * @return int|null
      */
-    public function getRangeLevel(): int
+    public function getRangeLevel(): ?int
     {
         return $this->rangeLevel;
     }

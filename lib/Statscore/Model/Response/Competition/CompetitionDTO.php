@@ -81,7 +81,7 @@ class CompetitionDTO
     private $sportName;
 
     /**
-     * @var integer
+     * @var integer|null
      */
     private $tourId;
 
@@ -228,9 +228,9 @@ class CompetitionDTO
     }
 
     /**
-     * @return int
+     * @return int|null
      */
-    public function getTourId(): int
+    public function getTourId(): ?int
     {
         return $this->tourId;
     }
