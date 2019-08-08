@@ -2,21 +2,13 @@
 
 namespace UnitTests\Seasons;
 
-use DateTime;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Response;
 use Itav\Component\Serializer\SerializerException;
 use ReflectionException;
 use Statscore\Model\Response\Competition\CompetitionDTO;
-use Statscore\Model\Response\Detail\DetailDTO;
-use Statscore\Model\Response\Event\EventDTO;
-use Statscore\Model\Response\Group\GroupDTO;
-use Statscore\Model\Response\Participant\ParticipantDTO;
-use Statscore\Model\Response\Result\ResultDTO;
 use Statscore\Model\Response\Season\SeasonDTO;
 use Statscore\Model\Response\Stage\StageDTO;
-use Statscore\Model\Response\Stat\StatDTO;
-use Statscore\Service\Events\EventsService;
 use Statscore\Service\Seasons\SeasonsService;
 use Symfony\Component\HttpFoundation\Response as HttpFoundationResponse;
 use UnitTests\TestCase;
@@ -27,16 +19,15 @@ use UnitTests\TestCase;
  */
 class SeasonsTest extends TestCase
 {
-
     /**
-     * @var EventsService
+     * @var SeasonsService
      */
-    private $eventsService;
+    private $seasonsService;
 
     public function setUp(): void
     {
         parent::setUp();
-        $this->eventsService = new SeasonsService($this->service);
+        $this->seasonsService = new SeasonsService($this->service);
     }
 
     /**
@@ -53,7 +44,7 @@ class SeasonsTest extends TestCase
 
         $this->guzzle->shouldReceive('request')->andReturn($response);
 
-        $responseDTO = $this->eventsService->getAll();
+        $responseDTO = $this->seasonsService->getAll();
 
         $this->assertEquals('seasons.index', $responseDTO->getMethod()->getDetails());
         $this->assertEquals('seasons.index', $responseDTO->getMethod()->getName());
@@ -135,7 +126,7 @@ class SeasonsTest extends TestCase
 
         $this->guzzle->shouldReceive('request')->andReturn($response);
 
-        $responseDTO = $this->eventsService->get($id);
+        $responseDTO = $this->seasonsService->get($id);
 
         $this->assertEquals('seasons.show', $responseDTO->getMethod()->getDetails());
         $this->assertEquals('seasons.show', $responseDTO->getMethod()->getName());

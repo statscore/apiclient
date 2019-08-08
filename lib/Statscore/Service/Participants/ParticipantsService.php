@@ -9,15 +9,14 @@ use Statscore\Model\Request\RequestDTO;
 use Statscore\Model\Response\Participant\ParticipantCompareDTO;
 use Statscore\Model\Response\Participant\ParticipantDTO;
 use Statscore\Model\Response\ResponseDTO;
-use Statscore\Service\AbstractService;
-use Statscore\Service\InterfaceService;
+use Statscore\Service\Api;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Class ParticipantsService
  * @package Statscore\Service\Participants
  */
-class ParticipantsService extends AbstractService implements InterfaceService
+class ParticipantsService extends Api
 {
     /**
      * @var string

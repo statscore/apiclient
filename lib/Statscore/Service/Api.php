@@ -4,7 +4,7 @@ namespace Statscore\Service;
 
 use Itav\Component\Serializer\Serializer;
 
-abstract class AbstractService implements InterfaceService
+abstract class Api
 {
     /**
      * @var ApiService

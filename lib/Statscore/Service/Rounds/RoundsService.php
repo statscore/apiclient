@@ -8,15 +8,14 @@ use ReflectionException;
 use Statscore\Model\Request\RequestDTO;
 use Statscore\Model\Response\ResponseDTO;
 use Statscore\Model\Response\Round\RoundDTO;
-use Statscore\Service\AbstractService;
-use Statscore\Service\InterfaceService;
+use Statscore\Service\Api;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Class RoundsService
  * @package Statscore\Service\Rounds
  */
-class RoundsService extends AbstractService implements InterfaceService
+class RoundsService extends Api
 {
     /**
      * @var string

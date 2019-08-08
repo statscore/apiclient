@@ -21,6 +21,7 @@ use Statscore\Service\Livescore\LivescoreService;
 use Statscore\Service\Participants\ParticipantsService;
 use Statscore\Service\Rounds\RoundsService;
 use Statscore\Service\Seasons\SeasonsService;
+use Statscore\Service\Sports\SportsService;
 
 /**
  * Class Client
@@ -89,6 +90,11 @@ final class Client
     public $seasons;
 
     /**
+     * @var SportsService
+     */
+    public $sports;
+
+    /**
      * Statscore constructor.
      * @param int $clientId
      * @param string $secretKey
@@ -109,6 +115,7 @@ final class Client
         $this->participants = new ParticipantsService($this->service);
         $this->rounds = new RoundsService($this->service);
         $this->seasons = new SeasonsService($this->service);
+        $this->sports = new SportsService($this->service);
     }
 
     /**

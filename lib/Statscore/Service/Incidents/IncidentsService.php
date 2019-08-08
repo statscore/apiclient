@@ -8,15 +8,14 @@ use ReflectionException;
 use Statscore\Model\Request\RequestDTO;
 use Statscore\Model\Response\Incident\IncidentDTO;
 use Statscore\Model\Response\ResponseDTO;
-use Statscore\Service\AbstractService;
-use Statscore\Service\InterfaceService;
+use Statscore\Service\Api;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Class IncidentsService
  * @package Statscore\Service\Incidents
  */
-class IncidentsService extends AbstractService implements InterfaceService
+class IncidentsService extends Api
 {
     /**
      * @var string

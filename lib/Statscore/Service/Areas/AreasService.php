@@ -8,15 +8,14 @@ use ReflectionException;
 use Statscore\Model\Request\RequestDTO;
 use Statscore\Model\Response\Area\AreaDTO;
 use Statscore\Model\Response\ResponseDTO;
-use Statscore\Service\AbstractService;
-use Statscore\Service\InterfaceService;
+use Statscore\Service\Api;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Class AreasService
  * @package Statscore\Service\Areas
  */
-class AreasService extends AbstractService implements InterfaceService
+class AreasService extends Api
 {
 
     /**

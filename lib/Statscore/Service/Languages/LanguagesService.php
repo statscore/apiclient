@@ -8,15 +8,14 @@ use ReflectionException;
 use Statscore\Model\Request\RequestDTO;
 use Statscore\Model\Response\Language\LanguageDTO;
 use Statscore\Model\Response\ResponseDTO;
-use Statscore\Service\AbstractService;
-use Statscore\Service\InterfaceService;
+use Statscore\Service\Api;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Class LanguagesService
  * @package Statscore\Service\Lanugages
  */
-class LanguagesService extends AbstractService implements InterfaceService
+class LanguagesService extends Api
 {
     /**
      * @var string

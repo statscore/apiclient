@@ -3,13 +3,12 @@
 namespace Statscore\Service\Seasons;
 
 use Statscore\Service\Competitions\CompetitionsService;
-use Statscore\Service\InterfaceService;
 
 /**
  * Class SeasonsService
  * @package Statscore\Service\Seasons
  */
-class SeasonsService extends CompetitionsService implements InterfaceService
+class SeasonsService extends CompetitionsService
 {
     /**
      * @var string

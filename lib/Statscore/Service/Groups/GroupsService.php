@@ -8,15 +8,14 @@ use ReflectionException;
 use Statscore\Model\Request\RequestDTO;
 use Statscore\Model\Response\Competition\CompetitionDTO;
 use Statscore\Model\Response\ResponseDTO;
-use Statscore\Service\AbstractService;
-use Statscore\Service\InterfaceService;
+use Statscore\Service\Api;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Class GroupsService
  * @package Statscore\Service\Groups
  */
-class GroupsService extends AbstractService implements InterfaceService
+class GroupsService extends Api
 {
     /**
      * @var string
