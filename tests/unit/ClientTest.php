@@ -4,6 +4,7 @@ namespace UnitTests;
 
 use GuzzleHttp\Exception\GuzzleException;
 use Itav\Component\Serializer\SerializerException;
+use ReflectionException;
 use Statscore\Client;
 use Statscore\Service\Exception\AuthorizationException;
 
@@ -33,6 +34,7 @@ class ClientTest extends TestCase
      * @throws AuthorizationException
      * @throws GuzzleException
      * @throws SerializerException
+     * @throws ReflectionException
      */
     public function testGetToken(): void
     {

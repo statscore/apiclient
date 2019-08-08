@@ -4,6 +4,7 @@ namespace Statscore\Service\Feeds;
 
 use GuzzleHttp\Exception\GuzzleException;
 use Itav\Component\Serializer\SerializerException;
+use ReflectionException;
 use Statscore\Model\Request\RequestDTO;
 use Statscore\Model\Response\Feed\FeedDTO;
 use Statscore\Model\Response\ResponseDTO;
@@ -27,6 +28,7 @@ class FeedsService extends AbstractService implements InterfaceService
      * @return ResponseDTO
      * @throws GuzzleException
      * @throws SerializerException
+     * @throws ReflectionException
      */
     public function getAll(array $query = []): ResponseDTO
     {
@@ -50,6 +52,7 @@ class FeedsService extends AbstractService implements InterfaceService
      * @param array $query
      * @return ResponseDTO
      * @throws GuzzleException
+     * @throws ReflectionException
      * @throws SerializerException
      */
     public function get(int $eventId, array $query = []): ResponseDTO

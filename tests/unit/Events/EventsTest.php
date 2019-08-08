@@ -6,6 +6,7 @@ use DateTime;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Response;
 use Itav\Component\Serializer\SerializerException;
+use ReflectionException;
 use Statscore\Model\Response\Competition\CompetitionDTO;
 use Statscore\Model\Response\Detail\DetailDTO;
 use Statscore\Model\Response\Event\EventDTO;
@@ -39,8 +40,9 @@ class EventsTest extends TestCase
 
     /**
      * @return CompetitionDTO
-     * @throws SerializerException
      * @throws GuzzleException
+     * @throws SerializerException
+     * @throws ReflectionException
      */
     public function testGetAll(): CompetitionDTO
     {
@@ -269,6 +271,7 @@ class EventsTest extends TestCase
      * @return CompetitionDTO
      * @throws GuzzleException
      * @throws SerializerException
+     * @throws ReflectionException
      */
     public function testGet(): CompetitionDTO
     {

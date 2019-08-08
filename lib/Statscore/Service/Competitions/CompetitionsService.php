@@ -4,6 +4,7 @@ namespace Statscore\Service\Competitions;
 
 use GuzzleHttp\Exception\GuzzleException;
 use Itav\Component\Serializer\SerializerException;
+use ReflectionException;
 use Statscore\Model\Request\RequestDTO;
 use Statscore\Model\Response\Competition\CompetitionDTO;
 use Statscore\Model\Response\ResponseDTO;
@@ -27,6 +28,7 @@ class CompetitionsService extends AbstractService implements InterfaceService
      * @return ResponseDTO
      * @throws GuzzleException
      * @throws SerializerException
+     * @throws ReflectionException
      */
     public function getAll(array $query = []): ResponseDTO
     {
@@ -50,6 +52,7 @@ class CompetitionsService extends AbstractService implements InterfaceService
      * @param array $query
      * @return ResponseDTO
      * @throws GuzzleException
+     * @throws ReflectionException
      * @throws SerializerException
      */
     public function get(int $id, array $query = []): ResponseDTO

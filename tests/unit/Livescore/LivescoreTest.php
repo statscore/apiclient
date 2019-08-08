@@ -5,6 +5,7 @@ namespace UnitTests\Livescore;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Response;
 use Itav\Component\Serializer\SerializerException;
+use ReflectionException;
 use Statscore\Model\Response\Competition\CompetitionDTO;
 use Statscore\Service\Livescore\LivescoreService;
 use Symfony\Component\HttpFoundation\Response as HttpFoundationResponse;
@@ -28,8 +29,9 @@ class LivescoreTest extends TestCase
     }
 
     /**
-     * @throws SerializerException
      * @throws GuzzleException
+     * @throws SerializerException
+     * @throws ReflectionException
      */
     public function testGetAll(): void
     {

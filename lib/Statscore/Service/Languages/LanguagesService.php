@@ -4,6 +4,7 @@ namespace Statscore\Service\Languages;
 
 use GuzzleHttp\Exception\GuzzleException;
 use Itav\Component\Serializer\SerializerException;
+use ReflectionException;
 use Statscore\Model\Request\RequestDTO;
 use Statscore\Model\Response\Language\LanguageDTO;
 use Statscore\Model\Response\ResponseDTO;
@@ -27,6 +28,7 @@ class LanguagesService extends AbstractService implements InterfaceService
      * @return ResponseDTO
      * @throws GuzzleException
      * @throws SerializerException
+     * @throws ReflectionException
      */
     public function getAll(array $query = []): ResponseDTO
     {

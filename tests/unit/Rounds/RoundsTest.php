@@ -5,7 +5,7 @@ namespace UnitTests\Rounds;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Response;
 use Itav\Component\Serializer\SerializerException;
-use Statscore\Model\Response\Competition\CompetitionDTO;
+use ReflectionException;
 use Statscore\Model\Response\Round\RoundDTO;
 use Statscore\Service\Rounds\RoundsService;
 use Symfony\Component\HttpFoundation\Response as HttpFoundationResponse;
@@ -29,8 +29,10 @@ class RoundsTest extends TestCase
     }
 
     /**
-     * @throws SerializerException
+     * @return RoundDTO
      * @throws GuzzleException
+     * @throws SerializerException
+     * @throws ReflectionException
      */
     public function testGetAll(): RoundDTO
     {

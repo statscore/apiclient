@@ -4,6 +4,7 @@ namespace Statscore\Service\Groups;
 
 use GuzzleHttp\Exception\GuzzleException;
 use Itav\Component\Serializer\SerializerException;
+use ReflectionException;
 use Statscore\Model\Request\RequestDTO;
 use Statscore\Model\Response\Competition\CompetitionDTO;
 use Statscore\Model\Response\ResponseDTO;
@@ -28,6 +29,7 @@ class GroupsService extends AbstractService implements InterfaceService
      * @return ResponseDTO
      * @throws GuzzleException
      * @throws SerializerException
+     * @throws ReflectionException
      */
     public function get(int $stageId, array $query = []): ResponseDTO
     {

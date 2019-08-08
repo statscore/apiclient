@@ -5,6 +5,7 @@ namespace UnitTests\ApiService;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Response;
 use Itav\Component\Serializer\SerializerException;
+use ReflectionException;
 use Statscore\Model\Request\RequestDTO;
 use Statscore\Model\Response\Authorization\AuthorizationDTO;
 use Statscore\Model\Response\ResponseDTO;
@@ -23,6 +24,7 @@ class ApiServiceTest extends TestCase
      * @throws AuthorizationException
      * @throws GuzzleException
      * @throws SerializerException
+     * @throws ReflectionException
      */
     public function testGetTokenNoClientId(): void
     {
@@ -34,6 +36,7 @@ class ApiServiceTest extends TestCase
     /**
      * @throws AuthorizationException
      * @throws GuzzleException
+     * @throws ReflectionException
      * @throws SerializerException
      */
     public function testGetTokenNoSecretKey(): void
@@ -48,6 +51,7 @@ class ApiServiceTest extends TestCase
     /**
      * @throws AuthorizationException
      * @throws GuzzleException
+     * @throws ReflectionException
      * @throws SerializerException
      */
     public function testGetToken(): void
@@ -71,6 +75,7 @@ class ApiServiceTest extends TestCase
 
     /**
      * @throws GuzzleException
+     * @throws ReflectionException
      * @throws SerializerException
      */
     public function testRequest(): void

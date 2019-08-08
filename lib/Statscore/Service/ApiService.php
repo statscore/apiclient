@@ -7,6 +7,7 @@ use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\RequestOptions;
 use Itav\Component\Serializer\Serializer;
 use Itav\Component\Serializer\SerializerException;
+use ReflectionException;
 use Statscore\Model\Request\RequestDTO;
 use Statscore\Model\Response\Authorization\AuthorizationDTO;
 use Statscore\Model\Response\ResponseDTO;
@@ -97,6 +98,7 @@ final class ApiService
      * @throws AuthorizationException
      * @throws GuzzleException
      * @throws SerializerException
+     * @throws ReflectionException
      */
     public function getToken(): AuthorizationDTO
     {
@@ -125,6 +127,7 @@ final class ApiService
      * @param RequestDTO $requestDTO
      * @return ResponseDTO
      * @throws GuzzleException
+     * @throws ReflectionException
      * @throws SerializerException
      */
     public function request(RequestDTO $requestDTO): ResponseDTO

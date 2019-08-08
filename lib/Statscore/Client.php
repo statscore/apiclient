@@ -5,8 +5,8 @@ namespace Statscore;
 use GuzzleHttp\Client as Guzzle;
 use GuzzleHttp\Exception\GuzzleException;
 use Itav\Component\Serializer\Factory;
-use Itav\Component\Serializer\Serializer;
 use Itav\Component\Serializer\SerializerException;
+use ReflectionException;
 use Statscore\Model\Response\Authorization\AuthorizationDTO;
 use Statscore\Service\Areas\AreasService;
 use Statscore\Service\Competitions\CompetitionsService;
@@ -109,6 +109,7 @@ final class Client
      * @throws AuthorizationException
      * @throws GuzzleException
      * @throws SerializerException
+     * @throws ReflectionException
      */
     public function getToken(): AuthorizationDTO
     {

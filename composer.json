@@ -8,7 +8,7 @@
       "name": "Michał Per",
       "email": "m.per@statscore.com",
       "homepage": "https://github.com/michalper",
-      "role": "Chief Technical Officer"
+      "role": "Chief Technology Officer"
     }
   ],
   "support": {
@@ -25,7 +25,7 @@
   },
   "require-dev": {
     "mockery/mockery": "^1.2",
-    "phpunit/phpunit": "^8.2"
+    "phpunit/phpunit": "^8.3"
   },
   "type": "library",
   "config": {
