@@ -1,0 +1,2696 @@
+{
+  "api": {
+    "ver": "2.132",
+    "timestamp": 1554189911,
+    "method": {
+      "parameters": {
+        "token": "05401ca2d9ccaafb54e120c503745f23",
+        "standing_id": "39719",
+        "client_id": 1
+      },
+      "name": "standings.show",
+      "details": "standings.show",
+      "total_items": "",
+      "previous_page": "",
+      "next_page": ""
+    },
+    "data": {
+      "standings": {
+        "id": 39719,
+        "name": "League standings - Europe, UEFA Champions League 2017/18, stage: Group Stage",
+        "sport_id": 5,
+        "sport_name": "Soccer",
+        "type_id": 2,
+        "type_name": "League standings",
+        "subtype": "standings",
+        "object_id": 85270,
+        "object_type": "stage",
+        "object_name": "Group Stage",
+        "item_status": "active",
+        "reset_group_rank": "yes",
+        "competition_id": 1658,
+        "season_id": 29848,
+        "stage_id": 85270,
+        "ut": 1527367453,
+        "groups": [
+          {
+            "id": 1,
+            "name": "Group A",
+            "ut": 1415800836,
+            "participants": [
+              {
+                "id": 136195,
+                "name": "Manchester United",
+                "participant_slug": "manchester-united,136195",
+                "area_id": 5,
+                "area_name": "England",
+                "rank": 1,
+                "last_rank": 3,
+                "zone_name": "Next Round",
+                "subparticipant_id": "",
+                "subparticipant_name": "",
+                "subparticipant_slug": "",
+                "columns": [
+                  {
+                    "id": 1,
+                    "name": "Matches played",
+                    "short_name": "MP",
+                    "code": "mp",
+                    "value": 6
+                  },
+                  {
+                    "id": 2,
+                    "name": "Won",
+                    "short_name": "W",
+                    "code": "won",
+                    "value": 5
+                  },
+                  {
+                    "id": 3,
+                    "name": "Draw",
+                    "short_name": "D",
+                    "code": "draw",
+                    "value": 0
+                  },
+                  {
+                    "id": 4,
+                    "name": "Lost",
+                    "short_name": "L",
+                    "code": "lost",
+                    "value": 1
+                  },
+                  {
+                    "id": 6,
+                    "name": "Goals scored",
+                    "short_name": "GS",
+                    "code": "goals_scored",
+                    "value": 12
+                  },
+                  {
+                    "id": 7,
+                    "name": "Goals allowed",
+                    "short_name": "GA",
+                    "code": "goals_allowed",
+                    "value": 3
+                  },
+                  {
+                    "id": 5,
+                    "name": "Goals difference",
+                    "short_name": "GD",
+                    "code": "goals_diff",
+                    "value": 9
+                  },
+                  {
+                    "id": 8,
+                    "name": "Points",
+                    "short_name": "Pts",
+                    "code": "pts",
+                    "value": 15
+                  },
+                  {
+                    "id": 46,
+                    "name": "Form",
+                    "short_name": "Form",
+                    "code": "form",
+                    "value": "W,L,W,W,W,W"
+                  }
+                ]
+              },
+              {
+                "id": 136885,
+                "name": "FC Basel",
+                "participant_slug": "fc-basel,136885",
+                "area_id": 173,
+                "area_name": "Switzerland",
+                "rank": 2,
+                "last_rank": 3,
+                "zone_name": "Next Round",
+                "subparticipant_id": "",
+                "subparticipant_name": "",
+                "subparticipant_slug": "",
+                "columns": [
+                  {
+                    "id": 1,
+                    "name": "Matches played",
+                    "short_name": "MP",
+                    "code": "mp",
+                    "value": 6
+                  },
+                  {
+                    "id": 2,
+                    "name": "Won",
+                    "short_name": "W",
+                    "code": "won",
+                    "value": 4
+                  },
+                  {
+                    "id": 3,
+                    "name": "Draw",
+                    "short_name": "D",
+                    "code": "draw",
+                    "value": 0
+                  },
+                  {
+                    "id": 4,
+                    "name": "Lost",
+                    "short_name": "L",
+                    "code": "lost",
+                    "value": 2
+                  },
+                  {
+                    "id": 6,
+                    "name": "Goals scored",
+                    "short_name": "GS",
+                    "code": "goals_scored",
+                    "value": 11
+                  },
+                  {
+                    "id": 7,
+                    "name": "Goals allowed",
+                    "short_name": "GA",
+                    "code": "goals_allowed",
+                    "value": 5
+                  },
+                  {
+                    "id": 5,
+                    "name": "Goals difference",
+                    "short_name": "GD",
+                    "code": "goals_diff",
+                    "value": 6
+                  },
+                  {
+                    "id": 8,
+                    "name": "Points",
+                    "short_name": "Pts",
+                    "code": "pts",
+                    "value": 12
+                  },
+                  {
+                    "id": 46,
+                    "name": "Form",
+                    "short_name": "Form",
+                    "code": "form",
+                    "value": "W,W,L,W,W,L"
+                  }
+                ]
+              },
+              {
+                "id": 136820,
+                "name": "CSKA Moskva",
+                "participant_slug": "cska-moskva,136820",
+                "area_id": 149,
+                "area_name": "Russia",
+                "rank": 3,
+                "last_rank": 2,
+                "zone_name": "Europa League",
+                "subparticipant_id": "",
+                "subparticipant_name": "",
+                "subparticipant_slug": "",
+                "columns": [
+                  {
+                    "id": 1,
+                    "name": "Matches played",
+                    "short_name": "MP",
+                    "code": "mp",
+                    "value": 6
+                  },
+                  {
+                    "id": 2,
+                    "name": "Won",
+                    "short_name": "W",
+                    "code": "won",
+                    "value": 3
+                  },
+                  {
+                    "id": 3,
+                    "name": "Draw",
+                    "short_name": "D",
+                    "code": "draw",
+                    "value": 0
+                  },
+                  {
+                    "id": 4,
+                    "name": "Lost",
+                    "short_name": "L",
+                    "code": "lost",
+                    "value": 3
+                  },
+                  {
+                    "id": 6,
+                    "name": "Goals scored",
+                    "short_name": "GS",
+                    "code": "goals_scored",
+                    "value": 8
+                  },
+                  {
+                    "id": 7,
+                    "name": "Goals allowed",
+                    "short_name": "GA",
+                    "code": "goals_allowed",
+                    "value": 10
+                  },
+                  {
+                    "id": 5,
+                    "name": "Goals difference",
+                    "short_name": "GD",
+                    "code": "goals_diff",
+                    "value": -2
+                  },
+                  {
+                    "id": 8,
+                    "name": "Points",
+                    "short_name": "Pts",
+                    "code": "pts",
+                    "value": 9
+                  },
+                  {
+                    "id": 46,
+                    "name": "Form",
+                    "short_name": "Form",
+                    "code": "form",
+                    "value": "L,W,W,L,L,W"
+                  }
+                ]
+              },
+              {
+                "id": 136798,
+                "name": "Benfica",
+                "participant_slug": "benfica,136798",
+                "area_id": 145,
+                "area_name": "Portugal",
+                "rank": 4,
+                "last_rank": 31,
+                "zone_name": "",
+                "subparticipant_id": "",
+                "subparticipant_name": "",
+                "subparticipant_slug": "",
+                "columns": [
+                  {
+                    "id": 1,
+                    "name": "Matches played",
+                    "short_name": "MP",
+                    "code": "mp",
+                    "value": 6
+                  },
+                  {
+                    "id": 2,
+                    "name": "Won",
+                    "short_name": "W",
+                    "code": "won",
+                    "value": 0
+                  },
+                  {
+                    "id": 3,
+                    "name": "Draw",
+                    "short_name": "D",
+                    "code": "draw",
+                    "value": 0
+                  },
+                  {
+                    "id": 4,
+                    "name": "Lost",
+                    "short_name": "L",
+                    "code": "lost",
+                    "value": 6
+                  },
+                  {
+                    "id": 6,
+                    "name": "Goals scored",
+                    "short_name": "GS",
+                    "code": "goals_scored",
+                    "value": 1
+                  },
+                  {
+                    "id": 7,
+                    "name": "Goals allowed",
+                    "short_name": "GA",
+                    "code": "goals_allowed",
+                    "value": 14
+                  },
+                  {
+                    "id": 5,
+                    "name": "Goals difference",
+                    "short_name": "GD",
+                    "code": "goals_diff",
+                    "value": -13
+                  },
+                  {
+                    "id": 8,
+                    "name": "Points",
+                    "short_name": "Pts",
+                    "code": "pts",
+                    "value": 0
+                  },
+                  {
+                    "id": 46,
+                    "name": "Form",
+                    "short_name": "Form",
+                    "code": "form",
+                    "value": "L,L,L,L,L,L"
+                  }
+                ]
+              }
+            ],
+            "zones": [
+              {
+                "id": 26,
+                "name": "Next Round",
+                "colour": "#002400"
+              },
+              {
+                "id": 22,
+                "name": "Europa League",
+                "colour": "#b1b1b1"
+              }
+            ],
+            "corrections": []
+          },
+          {
+            "id": 2,
+            "name": "Group B",
+            "ut": 1415800836,
+            "participants": [
+              {
+                "id": 136404,
+                "name": "Paris Saint-Germain",
+                "participant_slug": "paris-saint-germain,136404",
+                "area_id": 56,
+                "area_name": "France",
+                "rank": 1,
+                "last_rank": 1,
+                "zone_name": "Next Round",
+                "subparticipant_id": "",
+                "subparticipant_name": "",
+                "subparticipant_slug": "",
+                "columns": [
+                  {
+                    "id": 1,
+                    "name": "Matches played",
+                    "short_name": "MP",
+                    "code": "mp",
+                    "value": 6
+                  },
+                  {
+                    "id": 2,
+                    "name": "Won",
+                    "short_name": "W",
+                    "code": "won",
+                    "value": 5
+                  },
+                  {
+                    "id": 3,
+                    "name": "Draw",
+                    "short_name": "D",
+                    "code": "draw",
+                    "value": 0
+                  },
+                  {
+                    "id": 4,
+                    "name": "Lost",
+                    "short_name": "L",
+                    "code": "lost",
+                    "value": 1
+                  },
+                  {
+                    "id": 6,
+                    "name": "Goals scored",
+                    "short_name": "GS",
+                    "code": "goals_scored",
+                    "value": 25
+                  },
+                  {
+                    "id": 7,
+                    "name": "Goals allowed",
+                    "short_name": "GA",
+                    "code": "goals_allowed",
+                    "value": 4
+                  },
+                  {
+                    "id": 5,
+                    "name": "Goals difference",
+                    "short_name": "GD",
+                    "code": "goals_diff",
+                    "value": 21
+                  },
+                  {
+                    "id": 8,
+                    "name": "Points",
+                    "short_name": "Pts",
+                    "code": "pts",
+                    "value": 15
+                  },
+                  {
+                    "id": 46,
+                    "name": "Form",
+                    "short_name": "Form",
+                    "code": "form",
+                    "value": "L,W,W,W,W,W"
+                  }
+                ]
+              },
+              {
+                "id": 136357,
+                "name": "Bayern Munchen",
+                "participant_slug": "bayern-munchen,136357",
+                "area_id": 130,
+                "area_name": "Germany",
+                "rank": 2,
+                "last_rank": 7,
+                "zone_name": "Next Round",
+                "subparticipant_id": "",
+                "subparticipant_name": "",
+                "subparticipant_slug": "",
+                "columns": [
+                  {
+                    "id": 1,
+                    "name": "Matches played",
+                    "short_name": "MP",
+                    "code": "mp",
+                    "value": 6
+                  },
+                  {
+                    "id": 2,
+                    "name": "Won",
+                    "short_name": "W",
+                    "code": "won",
+                    "value": 5
+                  },
+                  {
+                    "id": 3,
+                    "name": "Draw",
+                    "short_name": "D",
+                    "code": "draw",
+                    "value": 0
+                  },
+                  {
+                    "id": 4,
+                    "name": "Lost",
+                    "short_name": "L",
+                    "code": "lost",
+                    "value": 1
+                  },
+                  {
+                    "id": 6,
+                    "name": "Goals scored",
+                    "short_name": "GS",
+                    "code": "goals_scored",
+                    "value": 13
+                  },
+                  {
+                    "id": 7,
+                    "name": "Goals allowed",
+                    "short_name": "GA",
+                    "code": "goals_allowed",
+                    "value": 6
+                  },
+                  {
+                    "id": 5,
+                    "name": "Goals difference",
+                    "short_name": "GD",
+                    "code": "goals_diff",
+                    "value": 7
+                  },
+                  {
+                    "id": 8,
+                    "name": "Points",
+                    "short_name": "Pts",
+                    "code": "pts",
+                    "value": 15
+                  },
+                  {
+                    "id": 46,
+                    "name": "Form",
+                    "short_name": "Form",
+                    "code": "form",
+                    "value": "W,W,W,W,L,W"
+                  }
+                ]
+              },
+              {
+                "id": 136861,
+                "name": "Celtic",
+                "participant_slug": "celtic,136861",
+                "area_id": 174,
+                "area_name": "Scotland",
+                "rank": 3,
+                "last_rank": 23,
+                "zone_name": "Europa League",
+                "subparticipant_id": "",
+                "subparticipant_name": "",
+                "subparticipant_slug": "",
+                "columns": [
+                  {
+                    "id": 1,
+                    "name": "Matches played",
+                    "short_name": "MP",
+                    "code": "mp",
+                    "value": 6
+                  },
+                  {
+                    "id": 2,
+                    "name": "Won",
+                    "short_name": "W",
+                    "code": "won",
+                    "value": 1
+                  },
+                  {
+                    "id": 3,
+                    "name": "Draw",
+                    "short_name": "D",
+                    "code": "draw",
+                    "value": 0
+                  },
+                  {
+                    "id": 4,
+                    "name": "Lost",
+                    "short_name": "L",
+                    "code": "lost",
+                    "value": 5
+                  },
+                  {
+                    "id": 6,
+                    "name": "Goals scored",
+                    "short_name": "GS",
+                    "code": "goals_scored",
+                    "value": 5
+                  },
+                  {
+                    "id": 7,
+                    "name": "Goals allowed",
+                    "short_name": "GA",
+                    "code": "goals_allowed",
+                    "value": 18
+                  },
+                  {
+                    "id": 5,
+                    "name": "Goals difference",
+                    "short_name": "GD",
+                    "code": "goals_diff",
+                    "value": -13
+                  },
+                  {
+                    "id": 8,
+                    "name": "Points",
+                    "short_name": "Pts",
+                    "code": "pts",
+                    "value": 3
+                  },
+                  {
+                    "id": 46,
+                    "name": "Form",
+                    "short_name": "Form",
+                    "code": "form",
+                    "value": "L,L,L,L,W,L"
+                  }
+                ]
+              },
+              {
+                "id": 136330,
+                "name": "RSC Anderlecht",
+                "participant_slug": "rsc-anderlecht,136330",
+                "area_id": 21,
+                "area_name": "Belgium",
+                "rank": 4,
+                "last_rank": 32,
+                "zone_name": "",
+                "subparticipant_id": "",
+                "subparticipant_name": "",
+                "subparticipant_slug": "",
+                "columns": [
+                  {
+                    "id": 1,
+                    "name": "Matches played",
+                    "short_name": "MP",
+                    "code": "mp",
+                    "value": 6
+                  },
+                  {
+                    "id": 2,
+                    "name": "Won",
+                    "short_name": "W",
+                    "code": "won",
+                    "value": 1
+                  },
+                  {
+                    "id": 3,
+                    "name": "Draw",
+                    "short_name": "D",
+                    "code": "draw",
+                    "value": 0
+                  },
+                  {
+                    "id": 4,
+                    "name": "Lost",
+                    "short_name": "L",
+                    "code": "lost",
+                    "value": 5
+                  },
+                  {
+                    "id": 6,
+                    "name": "Goals scored",
+                    "short_name": "GS",
+                    "code": "goals_scored",
+                    "value": 2
+                  },
+                  {
+                    "id": 7,
+                    "name": "Goals allowed",
+                    "short_name": "GA",
+                    "code": "goals_allowed",
+                    "value": 17
+                  },
+                  {
+                    "id": 5,
+                    "name": "Goals difference",
+                    "short_name": "GD",
+                    "code": "goals_diff",
+                    "value": -15
+                  },
+                  {
+                    "id": 8,
+                    "name": "Points",
+                    "short_name": "Pts",
+                    "code": "pts",
+                    "value": 3
+                  },
+                  {
+                    "id": 46,
+                    "name": "Form",
+                    "short_name": "Form",
+                    "code": "form",
+                    "value": "W,L,L,L,L,L"
+                  }
+                ]
+              }
+            ],
+            "zones": [
+              {
+                "id": 26,
+                "name": "Next Round",
+                "colour": "#002400"
+              },
+              {
+                "id": 22,
+                "name": "Europa League",
+                "colour": "#b1b1b1"
+              }
+            ],
+            "corrections": []
+          },
+          {
+            "id": 3,
+            "name": "Group C",
+            "ut": 1415800836,
+            "participants": [
+              {
+                "id": 136564,
+                "name": "AS Roma",
+                "participant_slug": "as-roma,136564",
+                "area_id": 198,
+                "area_name": "Italy",
+                "rank": 1,
+                "last_rank": 2,
+                "zone_name": "Next Round",
+                "subparticipant_id": "",
+                "subparticipant_name": "",
+                "subparticipant_slug": "",
+                "columns": [
+                  {
+                    "id": 1,
+                    "name": "Matches played",
+                    "short_name": "MP",
+                    "code": "mp",
+                    "value": 6
+                  },
+                  {
+                    "id": 2,
+                    "name": "Won",
+                    "short_name": "W",
+                    "code": "won",
+                    "value": 3
+                  },
+                  {
+                    "id": 3,
+                    "name": "Draw",
+                    "short_name": "D",
+                    "code": "draw",
+                    "value": 2
+                  },
+                  {
+                    "id": 4,
+                    "name": "Lost",
+                    "short_name": "L",
+                    "code": "lost",
+                    "value": 1
+                  },
+                  {
+                    "id": 6,
+                    "name": "Goals scored",
+                    "short_name": "GS",
+                    "code": "goals_scored",
+                    "value": 9
+                  },
+                  {
+                    "id": 7,
+                    "name": "Goals allowed",
+                    "short_name": "GA",
+                    "code": "goals_allowed",
+                    "value": 6
+                  },
+                  {
+                    "id": 5,
+                    "name": "Goals difference",
+                    "short_name": "GD",
+                    "code": "goals_diff",
+                    "value": 3
+                  },
+                  {
+                    "id": 8,
+                    "name": "Points",
+                    "short_name": "Pts",
+                    "code": "pts",
+                    "value": 11
+                  },
+                  {
+                    "id": 46,
+                    "name": "Form",
+                    "short_name": "Form",
+                    "code": "form",
+                    "value": "W,L,W,D,W,D"
+                  }
+                ]
+              },
+              {
+                "id": 136194,
+                "name": "Chelsea",
+                "participant_slug": "chelsea,136194",
+                "area_id": 5,
+                "area_name": "England",
+                "rank": 2,
+                "last_rank": 1,
+                "zone_name": "Next Round",
+                "subparticipant_id": "",
+                "subparticipant_name": "",
+                "subparticipant_slug": "",
+                "columns": [
+                  {
+                    "id": 1,
+                    "name": "Matches played",
+                    "short_name": "MP",
+                    "code": "mp",
+                    "value": 6
+                  },
+                  {
+                    "id": 2,
+                    "name": "Won",
+                    "short_name": "W",
+                    "code": "won",
+                    "value": 3
+                  },
+                  {
+                    "id": 3,
+                    "name": "Draw",
+                    "short_name": "D",
+                    "code": "draw",
+                    "value": 2
+                  },
+                  {
+                    "id": 4,
+                    "name": "Lost",
+                    "short_name": "L",
+                    "code": "lost",
+                    "value": 1
+                  },
+                  {
+                    "id": 6,
+                    "name": "Goals scored",
+                    "short_name": "GS",
+                    "code": "goals_scored",
+                    "value": 16
+                  },
+                  {
+                    "id": 7,
+                    "name": "Goals allowed",
+                    "short_name": "GA",
+                    "code": "goals_allowed",
+                    "value": 8
+                  },
+                  {
+                    "id": 5,
+                    "name": "Goals difference",
+                    "short_name": "GD",
+                    "code": "goals_diff",
+                    "value": 8
+                  },
+                  {
+                    "id": 8,
+                    "name": "Points",
+                    "short_name": "Pts",
+                    "code": "pts",
+                    "value": 11
+                  },
+                  {
+                    "id": 46,
+                    "name": "Form",
+                    "short_name": "Form",
+                    "code": "form",
+                    "value": "D,W,L,D,W,W"
+                  }
+                ]
+              },
+              {
+                "id": 136923,
+                "name": "Atletico Madrid",
+                "participant_slug": "atletico-madrid,136923",
+                "area_id": 70,
+                "area_name": "Spain",
+                "rank": 3,
+                "last_rank": 21,
+                "zone_name": "Europa League",
+                "subparticipant_id": "",
+                "subparticipant_name": "",
+                "subparticipant_slug": "",
+                "columns": [
+                  {
+                    "id": 1,
+                    "name": "Matches played",
+                    "short_name": "MP",
+                    "code": "mp",
+                    "value": 6
+                  },
+                  {
+                    "id": 2,
+                    "name": "Won",
+                    "short_name": "W",
+                    "code": "won",
+                    "value": 1
+                  },
+                  {
+                    "id": 3,
+                    "name": "Draw",
+                    "short_name": "D",
+                    "code": "draw",
+                    "value": 4
+                  },
+                  {
+                    "id": 4,
+                    "name": "Lost",
+                    "short_name": "L",
+                    "code": "lost",
+                    "value": 1
+                  },
+                  {
+                    "id": 6,
+                    "name": "Goals scored",
+                    "short_name": "GS",
+                    "code": "goals_scored",
+                    "value": 5
+                  },
+                  {
+                    "id": 7,
+                    "name": "Goals allowed",
+                    "short_name": "GA",
+                    "code": "goals_allowed",
+                    "value": 4
+                  },
+                  {
+                    "id": 5,
+                    "name": "Goals difference",
+                    "short_name": "GD",
+                    "code": "goals_diff",
+                    "value": 1
+                  },
+                  {
+                    "id": 8,
+                    "name": "Points",
+                    "short_name": "Pts",
+                    "code": "pts",
+                    "value": 7
+                  },
+                  {
+                    "id": 46,
+                    "name": "Form",
+                    "short_name": "Form",
+                    "code": "form",
+                    "value": "D,W,D,D,L,D"
+                  }
+                ]
+              },
+              {
+                "id": 138299,
+                "name": "Qarabag Agdam",
+                "participant_slug": "qarabag-agdam,138299",
+                "area_id": 16,
+                "area_name": "Azerbaijan",
+                "rank": 4,
+                "last_rank": 27,
+                "zone_name": "",
+                "subparticipant_id": "",
+                "subparticipant_name": "",
+                "subparticipant_slug": "",
+                "columns": [
+                  {
+                    "id": 1,
+                    "name": "Matches played",
+                    "short_name": "MP",
+                    "code": "mp",
+                    "value": 6
+                  },
+                  {
+                    "id": 2,
+                    "name": "Won",
+                    "short_name": "W",
+                    "code": "won",
+                    "value": 0
+                  },
+                  {
+                    "id": 3,
+                    "name": "Draw",
+                    "short_name": "D",
+                    "code": "draw",
+                    "value": 2
+                  },
+                  {
+                    "id": 4,
+                    "name": "Lost",
+                    "short_name": "L",
+                    "code": "lost",
+                    "value": 4
+                  },
+                  {
+                    "id": 6,
+                    "name": "Goals scored",
+                    "short_name": "GS",
+                    "code": "goals_scored",
+                    "value": 2
+                  },
+                  {
+                    "id": 7,
+                    "name": "Goals allowed",
+                    "short_name": "GA",
+                    "code": "goals_allowed",
+                    "value": 14
+                  },
+                  {
+                    "id": 5,
+                    "name": "Goals difference",
+                    "short_name": "GD",
+                    "code": "goals_diff",
+                    "value": -12
+                  },
+                  {
+                    "id": 8,
+                    "name": "Points",
+                    "short_name": "Pts",
+                    "code": "pts",
+                    "value": 2
+                  },
+                  {
+                    "id": 46,
+                    "name": "Form",
+                    "short_name": "Form",
+                    "code": "form",
+                    "value": "L,L,D,D,L,L"
+                  }
+                ]
+              }
+            ],
+            "zones": [
+              {
+                "id": 26,
+                "name": "Next Round",
+                "colour": "#002400"
+              },
+              {
+                "id": 22,
+                "name": "Europa League",
+                "colour": "#b1b1b1"
+              }
+            ],
+            "corrections": []
+          },
+          {
+            "id": 4,
+            "name": "Group D",
+            "ut": 1415800836,
+            "participants": [
+              {
+                "id": 136928,
+                "name": "FC Barcelona",
+                "participant_slug": "fc-barcelona,136928",
+                "area_id": 70,
+                "area_name": "Spain",
+                "rank": 1,
+                "last_rank": 5,
+                "zone_name": "Next Round",
+                "subparticipant_id": "",
+                "subparticipant_name": "",
+                "subparticipant_slug": "",
+                "columns": [
+                  {
+                    "id": 1,
+                    "name": "Matches played",
+                    "short_name": "MP",
+                    "code": "mp",
+                    "value": 6
+                  },
+                  {
+                    "id": 2,
+                    "name": "Won",
+                    "short_name": "W",
+                    "code": "won",
+                    "value": 4
+                  },
+                  {
+                    "id": 3,
+                    "name": "Draw",
+                    "short_name": "D",
+                    "code": "draw",
+                    "value": 2
+                  },
+                  {
+                    "id": 4,
+                    "name": "Lost",
+                    "short_name": "L",
+                    "code": "lost",
+                    "value": 0
+                  },
+                  {
+                    "id": 6,
+                    "name": "Goals scored",
+                    "short_name": "GS",
+                    "code": "goals_scored",
+                    "value": 9
+                  },
+                  {
+                    "id": 7,
+                    "name": "Goals allowed",
+                    "short_name": "GA",
+                    "code": "goals_allowed",
+                    "value": 1
+                  },
+                  {
+                    "id": 5,
+                    "name": "Goals difference",
+                    "short_name": "GD",
+                    "code": "goals_diff",
+                    "value": 8
+                  },
+                  {
+                    "id": 8,
+                    "name": "Points",
+                    "short_name": "Pts",
+                    "code": "pts",
+                    "value": 14
+                  },
+                  {
+                    "id": 46,
+                    "name": "Form",
+                    "short_name": "Form",
+                    "code": "form",
+                    "value": "W,D,D,W,W,W"
+                  }
+                ]
+              },
+              {
+                "id": 136572,
+                "name": "Juventus",
+                "participant_slug": "juventus,136572",
+                "area_id": 198,
+                "area_name": "Italy",
+                "rank": 2,
+                "last_rank": 14,
+                "zone_name": "Next Round",
+                "subparticipant_id": "",
+                "subparticipant_name": "",
+                "subparticipant_slug": "",
+                "columns": [
+                  {
+                    "id": 1,
+                    "name": "Matches played",
+                    "short_name": "MP",
+                    "code": "mp",
+                    "value": 6
+                  },
+                  {
+                    "id": 2,
+                    "name": "Won",
+                    "short_name": "W",
+                    "code": "won",
+                    "value": 3
+                  },
+                  {
+                    "id": 3,
+                    "name": "Draw",
+                    "short_name": "D",
+                    "code": "draw",
+                    "value": 2
+                  },
+                  {
+                    "id": 4,
+                    "name": "Lost",
+                    "short_name": "L",
+                    "code": "lost",
+                    "value": 1
+                  },
+                  {
+                    "id": 6,
+                    "name": "Goals scored",
+                    "short_name": "GS",
+                    "code": "goals_scored",
+                    "value": 7
+                  },
+                  {
+                    "id": 7,
+                    "name": "Goals allowed",
+                    "short_name": "GA",
+                    "code": "goals_allowed",
+                    "value": 5
+                  },
+                  {
+                    "id": 5,
+                    "name": "Goals difference",
+                    "short_name": "GD",
+                    "code": "goals_diff",
+                    "value": 2
+                  },
+                  {
+                    "id": 8,
+                    "name": "Points",
+                    "short_name": "Pts",
+                    "code": "pts",
+                    "value": 11
+                  },
+                  {
+                    "id": 46,
+                    "name": "Form",
+                    "short_name": "Form",
+                    "code": "form",
+                    "value": "W,D,D,W,W,L"
+                  }
+                ]
+              },
+              {
+                "id": 136800,
+                "name": "Sporting",
+                "participant_slug": "sporting,136800",
+                "area_id": 145,
+                "area_name": "Portugal",
+                "rank": 3,
+                "last_rank": 19,
+                "zone_name": "Europa League",
+                "subparticipant_id": "",
+                "subparticipant_name": "",
+                "subparticipant_slug": "",
+                "columns": [
+                  {
+                    "id": 1,
+                    "name": "Matches played",
+                    "short_name": "MP",
+                    "code": "mp",
+                    "value": 6
+                  },
+                  {
+                    "id": 2,
+                    "name": "Won",
+                    "short_name": "W",
+                    "code": "won",
+                    "value": 2
+                  },
+                  {
+                    "id": 3,
+                    "name": "Draw",
+                    "short_name": "D",
+                    "code": "draw",
+                    "value": 1
+                  },
+                  {
+                    "id": 4,
+                    "name": "Lost",
+                    "short_name": "L",
+                    "code": "lost",
+                    "value": 3
+                  },
+                  {
+                    "id": 6,
+                    "name": "Goals scored",
+                    "short_name": "GS",
+                    "code": "goals_scored",
+                    "value": 8
+                  },
+                  {
+                    "id": 7,
+                    "name": "Goals allowed",
+                    "short_name": "GA",
+                    "code": "goals_allowed",
+                    "value": 9
+                  },
+                  {
+                    "id": 5,
+                    "name": "Goals difference",
+                    "short_name": "GD",
+                    "code": "goals_diff",
+                    "value": -1
+                  },
+                  {
+                    "id": 8,
+                    "name": "Points",
+                    "short_name": "Pts",
+                    "code": "pts",
+                    "value": 7
+                  },
+                  {
+                    "id": 46,
+                    "name": "Form",
+                    "short_name": "Form",
+                    "code": "form",
+                    "value": "L,W,D,L,L,W"
+                  }
+                ]
+              },
+              {
+                "id": 136519,
+                "name": "Olympiakos Pireus",
+                "participant_slug": "olympiakos-pireus,136519",
+                "area_id": 60,
+                "area_name": "Greece",
+                "rank": 4,
+                "last_rank": 28,
+                "zone_name": "",
+                "subparticipant_id": "",
+                "subparticipant_name": "",
+                "subparticipant_slug": "",
+                "columns": [
+                  {
+                    "id": 1,
+                    "name": "Matches played",
+                    "short_name": "MP",
+                    "code": "mp",
+                    "value": 6
+                  },
+                  {
+                    "id": 2,
+                    "name": "Won",
+                    "short_name": "W",
+                    "code": "won",
+                    "value": 0
+                  },
+                  {
+                    "id": 3,
+                    "name": "Draw",
+                    "short_name": "D",
+                    "code": "draw",
+                    "value": 1
+                  },
+                  {
+                    "id": 4,
+                    "name": "Lost",
+                    "short_name": "L",
+                    "code": "lost",
+                    "value": 5
+                  },
+                  {
+                    "id": 6,
+                    "name": "Goals scored",
+                    "short_name": "GS",
+                    "code": "goals_scored",
+                    "value": 4
+                  },
+                  {
+                    "id": 7,
+                    "name": "Goals allowed",
+                    "short_name": "GA",
+                    "code": "goals_allowed",
+                    "value": 13
+                  },
+                  {
+                    "id": 5,
+                    "name": "Goals difference",
+                    "short_name": "GD",
+                    "code": "goals_diff",
+                    "value": -9
+                  },
+                  {
+                    "id": 8,
+                    "name": "Points",
+                    "short_name": "Pts",
+                    "code": "pts",
+                    "value": 1
+                  },
+                  {
+                    "id": 46,
+                    "name": "Form",
+                    "short_name": "Form",
+                    "code": "form",
+                    "value": "L,L,D,L,L,L"
+                  }
+                ]
+              }
+            ],
+            "zones": [
+              {
+                "id": 26,
+                "name": "Next Round",
+                "colour": "#002400"
+              },
+              {
+                "id": 22,
+                "name": "Europa League",
+                "colour": "#b1b1b1"
+              }
+            ],
+            "corrections": []
+          },
+          {
+            "id": 5,
+            "name": "Group E",
+            "ut": 1415800836,
+            "participants": [
+              {
+                "id": 136212,
+                "name": "Liverpool FC",
+                "participant_slug": "liverpool-fc,136212",
+                "area_id": 5,
+                "area_name": "England",
+                "rank": 1,
+                "last_rank": 9,
+                "zone_name": "Next Round",
+                "subparticipant_id": "",
+                "subparticipant_name": "",
+                "subparticipant_slug": "",
+                "columns": [
+                  {
+                    "id": 1,
+                    "name": "Matches played",
+                    "short_name": "MP",
+                    "code": "mp",
+                    "value": 6
+                  },
+                  {
+                    "id": 2,
+                    "name": "Won",
+                    "short_name": "W",
+                    "code": "won",
+                    "value": 3
+                  },
+                  {
+                    "id": 3,
+                    "name": "Draw",
+                    "short_name": "D",
+                    "code": "draw",
+                    "value": 3
+                  },
+                  {
+                    "id": 4,
+                    "name": "Lost",
+                    "short_name": "L",
+                    "code": "lost",
+                    "value": 0
+                  },
+                  {
+                    "id": 6,
+                    "name": "Goals scored",
+                    "short_name": "GS",
+                    "code": "goals_scored",
+                    "value": 23
+                  },
+                  {
+                    "id": 7,
+                    "name": "Goals allowed",
+                    "short_name": "GA",
+                    "code": "goals_allowed",
+                    "value": 6
+                  },
+                  {
+                    "id": 5,
+                    "name": "Goals difference",
+                    "short_name": "GD",
+                    "code": "goals_diff",
+                    "value": 17
+                  },
+                  {
+                    "id": 8,
+                    "name": "Points",
+                    "short_name": "Pts",
+                    "code": "pts",
+                    "value": 12
+                  },
+                  {
+                    "id": 46,
+                    "name": "Form",
+                    "short_name": "Form",
+                    "code": "form",
+                    "value": "W,D,W,W,D,D"
+                  }
+                ]
+              },
+              {
+                "id": 136937,
+                "name": "Sevilla FC",
+                "participant_slug": "sevilla-fc,136937",
+                "area_id": 70,
+                "area_name": "Spain",
+                "rank": 2,
+                "last_rank": 13,
+                "zone_name": "Next Round",
+                "subparticipant_id": "",
+                "subparticipant_name": "",
+                "subparticipant_slug": "",
+                "columns": [
+                  {
+                    "id": 1,
+                    "name": "Matches played",
+                    "short_name": "MP",
+                    "code": "mp",
+                    "value": 6
+                  },
+                  {
+                    "id": 2,
+                    "name": "Won",
+                    "short_name": "W",
+                    "code": "won",
+                    "value": 2
+                  },
+                  {
+                    "id": 3,
+                    "name": "Draw",
+                    "short_name": "D",
+                    "code": "draw",
+                    "value": 3
+                  },
+                  {
+                    "id": 4,
+                    "name": "Lost",
+                    "short_name": "L",
+                    "code": "lost",
+                    "value": 1
+                  },
+                  {
+                    "id": 6,
+                    "name": "Goals scored",
+                    "short_name": "GS",
+                    "code": "goals_scored",
+                    "value": 12
+                  },
+                  {
+                    "id": 7,
+                    "name": "Goals allowed",
+                    "short_name": "GA",
+                    "code": "goals_allowed",
+                    "value": 12
+                  },
+                  {
+                    "id": 5,
+                    "name": "Goals difference",
+                    "short_name": "GD",
+                    "code": "goals_diff",
+                    "value": 0
+                  },
+                  {
+                    "id": 8,
+                    "name": "Points",
+                    "short_name": "Pts",
+                    "code": "pts",
+                    "value": 9
+                  },
+                  {
+                    "id": 46,
+                    "name": "Form",
+                    "short_name": "Form",
+                    "code": "form",
+                    "value": "D,D,W,L,W,D"
+                  }
+                ]
+              },
+              {
+                "id": 136832,
+                "name": "Spartak Moskva",
+                "participant_slug": "spartak-moskva,136832",
+                "area_id": 149,
+                "area_name": "Russia",
+                "rank": 3,
+                "last_rank": 18,
+                "zone_name": "Europa League",
+                "subparticipant_id": "",
+                "subparticipant_name": "",
+                "subparticipant_slug": "",
+                "columns": [
+                  {
+                    "id": 1,
+                    "name": "Matches played",
+                    "short_name": "MP",
+                    "code": "mp",
+                    "value": 6
+                  },
+                  {
+                    "id": 2,
+                    "name": "Won",
+                    "short_name": "W",
+                    "code": "won",
+                    "value": 1
+                  },
+                  {
+                    "id": 3,
+                    "name": "Draw",
+                    "short_name": "D",
+                    "code": "draw",
+                    "value": 3
+                  },
+                  {
+                    "id": 4,
+                    "name": "Lost",
+                    "short_name": "L",
+                    "code": "lost",
+                    "value": 2
+                  },
+                  {
+                    "id": 6,
+                    "name": "Goals scored",
+                    "short_name": "GS",
+                    "code": "goals_scored",
+                    "value": 9
+                  },
+                  {
+                    "id": 7,
+                    "name": "Goals allowed",
+                    "short_name": "GA",
+                    "code": "goals_allowed",
+                    "value": 13
+                  },
+                  {
+                    "id": 5,
+                    "name": "Goals difference",
+                    "short_name": "GD",
+                    "code": "goals_diff",
+                    "value": -4
+                  },
+                  {
+                    "id": 8,
+                    "name": "Points",
+                    "short_name": "Pts",
+                    "code": "pts",
+                    "value": 6
+                  },
+                  {
+                    "id": 46,
+                    "name": "Form",
+                    "short_name": "Form",
+                    "code": "form",
+                    "value": "L,D,L,W,D,D"
+                  }
+                ]
+              },
+              {
+                "id": 136918,
+                "name": "Maribor",
+                "participant_slug": "maribor,136918",
+                "area_id": 165,
+                "area_name": "Slovenia",
+                "rank": 4,
+                "last_rank": 29,
+                "zone_name": "",
+                "subparticipant_id": "",
+                "subparticipant_name": "",
+                "subparticipant_slug": "",
+                "columns": [
+                  {
+                    "id": 1,
+                    "name": "Matches played",
+                    "short_name": "MP",
+                    "code": "mp",
+                    "value": 6
+                  },
+                  {
+                    "id": 2,
+                    "name": "Won",
+                    "short_name": "W",
+                    "code": "won",
+                    "value": 0
+                  },
+                  {
+                    "id": 3,
+                    "name": "Draw",
+                    "short_name": "D",
+                    "code": "draw",
+                    "value": 3
+                  },
+                  {
+                    "id": 4,
+                    "name": "Lost",
+                    "short_name": "L",
+                    "code": "lost",
+                    "value": 3
+                  },
+                  {
+                    "id": 6,
+                    "name": "Goals scored",
+                    "short_name": "GS",
+                    "code": "goals_scored",
+                    "value": 3
+                  },
+                  {
+                    "id": 7,
+                    "name": "Goals allowed",
+                    "short_name": "GA",
+                    "code": "goals_allowed",
+                    "value": 16
+                  },
+                  {
+                    "id": 5,
+                    "name": "Goals difference",
+                    "short_name": "GD",
+                    "code": "goals_diff",
+                    "value": -13
+                  },
+                  {
+                    "id": 8,
+                    "name": "Points",
+                    "short_name": "Pts",
+                    "code": "pts",
+                    "value": 3
+                  },
+                  {
+                    "id": 46,
+                    "name": "Form",
+                    "short_name": "Form",
+                    "code": "form",
+                    "value": "D,D,L,L,L,D"
+                  }
+                ]
+              }
+            ],
+            "zones": [
+              {
+                "id": 26,
+                "name": "Next Round",
+                "colour": "#002400"
+              },
+              {
+                "id": 22,
+                "name": "Europa League",
+                "colour": "#b1b1b1"
+              }
+            ],
+            "corrections": []
+          },
+          {
+            "id": 6,
+            "name": "Group F",
+            "ut": 1415800836,
+            "participants": [
+              {
+                "id": 136196,
+                "name": "Manchester City",
+                "participant_slug": "manchester-city,136196",
+                "area_id": 5,
+                "area_name": "England",
+                "rank": 1,
+                "last_rank": 2,
+                "zone_name": "Next Round",
+                "subparticipant_id": "",
+                "subparticipant_name": "",
+                "subparticipant_slug": "",
+                "columns": [
+                  {
+                    "id": 1,
+                    "name": "Matches played",
+                    "short_name": "MP",
+                    "code": "mp",
+                    "value": 6
+                  },
+                  {
+                    "id": 2,
+                    "name": "Won",
+                    "short_name": "W",
+                    "code": "won",
+                    "value": 5
+                  },
+                  {
+                    "id": 3,
+                    "name": "Draw",
+                    "short_name": "D",
+                    "code": "draw",
+                    "value": 0
+                  },
+                  {
+                    "id": 4,
+                    "name": "Lost",
+                    "short_name": "L",
+                    "code": "lost",
+                    "value": 1
+                  },
+                  {
+                    "id": 6,
+                    "name": "Goals scored",
+                    "short_name": "GS",
+                    "code": "goals_scored",
+                    "value": 14
+                  },
+                  {
+                    "id": 7,
+                    "name": "Goals allowed",
+                    "short_name": "GA",
+                    "code": "goals_allowed",
+                    "value": 5
+                  },
+                  {
+                    "id": 5,
+                    "name": "Goals difference",
+                    "short_name": "GD",
+                    "code": "goals_diff",
+                    "value": 9
+                  },
+                  {
+                    "id": 8,
+                    "name": "Points",
+                    "short_name": "Pts",
+                    "code": "pts",
+                    "value": 15
+                  },
+                  {
+                    "id": 46,
+                    "name": "Form",
+                    "short_name": "Form",
+                    "code": "form",
+                    "value": "L,W,W,W,W,W"
+                  }
+                ]
+              },
+              {
+                "id": 137004,
+                "name": "Shakhtar Donetsk",
+                "participant_slug": "shakhtar-donetsk,137004",
+                "area_id": 189,
+                "area_name": "Ukraine",
+                "rank": 2,
+                "last_rank": 8,
+                "zone_name": "Next Round",
+                "subparticipant_id": "",
+                "subparticipant_name": "",
+                "subparticipant_slug": "",
+                "columns": [
+                  {
+                    "id": 1,
+                    "name": "Matches played",
+                    "short_name": "MP",
+                    "code": "mp",
+                    "value": 6
+                  },
+                  {
+                    "id": 2,
+                    "name": "Won",
+                    "short_name": "W",
+                    "code": "won",
+                    "value": 4
+                  },
+                  {
+                    "id": 3,
+                    "name": "Draw",
+                    "short_name": "D",
+                    "code": "draw",
+                    "value": 0
+                  },
+                  {
+                    "id": 4,
+                    "name": "Lost",
+                    "short_name": "L",
+                    "code": "lost",
+                    "value": 2
+                  },
+                  {
+                    "id": 6,
+                    "name": "Goals scored",
+                    "short_name": "GS",
+                    "code": "goals_scored",
+                    "value": 9
+                  },
+                  {
+                    "id": 7,
+                    "name": "Goals allowed",
+                    "short_name": "GA",
+                    "code": "goals_allowed",
+                    "value": 9
+                  },
+                  {
+                    "id": 5,
+                    "name": "Goals difference",
+                    "short_name": "GD",
+                    "code": "goals_diff",
+                    "value": 0
+                  },
+                  {
+                    "id": 8,
+                    "name": "Points",
+                    "short_name": "Pts",
+                    "code": "pts",
+                    "value": 12
+                  },
+                  {
+                    "id": 46,
+                    "name": "Form",
+                    "short_name": "Form",
+                    "code": "form",
+                    "value": "W,L,W,W,L,W"
+                  }
+                ]
+              },
+              {
+                "id": 136576,
+                "name": "SSC Napoli",
+                "participant_slug": "ssc-napoli,136576",
+                "area_id": 198,
+                "area_name": "Italy",
+                "rank": 3,
+                "last_rank": 22,
+                "zone_name": "Europa League",
+                "subparticipant_id": "",
+                "subparticipant_name": "",
+                "subparticipant_slug": "",
+                "columns": [
+                  {
+                    "id": 1,
+                    "name": "Matches played",
+                    "short_name": "MP",
+                    "code": "mp",
+                    "value": 6
+                  },
+                  {
+                    "id": 2,
+                    "name": "Won",
+                    "short_name": "W",
+                    "code": "won",
+                    "value": 2
+                  },
+                  {
+                    "id": 3,
+                    "name": "Draw",
+                    "short_name": "D",
+                    "code": "draw",
+                    "value": 0
+                  },
+                  {
+                    "id": 4,
+                    "name": "Lost",
+                    "short_name": "L",
+                    "code": "lost",
+                    "value": 4
+                  },
+                  {
+                    "id": 6,
+                    "name": "Goals scored",
+                    "short_name": "GS",
+                    "code": "goals_scored",
+                    "value": 11
+                  },
+                  {
+                    "id": 7,
+                    "name": "Goals allowed",
+                    "short_name": "GA",
+                    "code": "goals_allowed",
+                    "value": 11
+                  },
+                  {
+                    "id": 5,
+                    "name": "Goals difference",
+                    "short_name": "GD",
+                    "code": "goals_diff",
+                    "value": 0
+                  },
+                  {
+                    "id": 8,
+                    "name": "Points",
+                    "short_name": "Pts",
+                    "code": "pts",
+                    "value": 6
+                  },
+                  {
+                    "id": 46,
+                    "name": "Form",
+                    "short_name": "Form",
+                    "code": "form",
+                    "value": "L,W,L,L,W,L"
+                  }
+                ]
+              },
+              {
+                "id": 136692,
+                "name": "Feyenoord Rotterdam",
+                "participant_slug": "feyenoord-rotterdam,136692",
+                "area_id": 71,
+                "area_name": "Netherlands",
+                "rank": 4,
+                "last_rank": 30,
+                "zone_name": "",
+                "subparticipant_id": "",
+                "subparticipant_name": "",
+                "subparticipant_slug": "",
+                "columns": [
+                  {
+                    "id": 1,
+                    "name": "Matches played",
+                    "short_name": "MP",
+                    "code": "mp",
+                    "value": 6
+                  },
+                  {
+                    "id": 2,
+                    "name": "Won",
+                    "short_name": "W",
+                    "code": "won",
+                    "value": 1
+                  },
+                  {
+                    "id": 3,
+                    "name": "Draw",
+                    "short_name": "D",
+                    "code": "draw",
+                    "value": 0
+                  },
+                  {
+                    "id": 4,
+                    "name": "Lost",
+                    "short_name": "L",
+                    "code": "lost",
+                    "value": 5
+                  },
+                  {
+                    "id": 6,
+                    "name": "Goals scored",
+                    "short_name": "GS",
+                    "code": "goals_scored",
+                    "value": 5
+                  },
+                  {
+                    "id": 7,
+                    "name": "Goals allowed",
+                    "short_name": "GA",
+                    "code": "goals_allowed",
+                    "value": 14
+                  },
+                  {
+                    "id": 5,
+                    "name": "Goals difference",
+                    "short_name": "GD",
+                    "code": "goals_diff",
+                    "value": -9
+                  },
+                  {
+                    "id": 8,
+                    "name": "Points",
+                    "short_name": "Pts",
+                    "code": "pts",
+                    "value": 3
+                  },
+                  {
+                    "id": 46,
+                    "name": "Form",
+                    "short_name": "Form",
+                    "code": "form",
+                    "value": "W,L,L,L,L,L"
+                  }
+                ]
+              }
+            ],
+            "zones": [
+              {
+                "id": 26,
+                "name": "Next Round",
+                "colour": "#002400"
+              },
+              {
+                "id": 22,
+                "name": "Europa League",
+                "colour": "#b1b1b1"
+              }
+            ],
+            "corrections": []
+          },
+          {
+            "id": 7,
+            "name": "Group G",
+            "ut": 1415800836,
+            "participants": [
+              {
+                "id": 136981,
+                "name": "Besiktas",
+                "participant_slug": "besiktas,136981",
+                "area_id": 175,
+                "area_name": "Turkey",
+                "rank": 1,
+                "last_rank": 6,
+                "zone_name": "Next Round",
+                "subparticipant_id": "",
+                "subparticipant_name": "",
+                "subparticipant_slug": "",
+                "columns": [
+                  {
+                    "id": 1,
+                    "name": "Matches played",
+                    "short_name": "MP",
+                    "code": "mp",
+                    "value": 6
+                  },
+                  {
+                    "id": 2,
+                    "name": "Won",
+                    "short_name": "W",
+                    "code": "won",
+                    "value": 4
+                  },
+                  {
+                    "id": 3,
+                    "name": "Draw",
+                    "short_name": "D",
+                    "code": "draw",
+                    "value": 2
+                  },
+                  {
+                    "id": 4,
+                    "name": "Lost",
+                    "short_name": "L",
+                    "code": "lost",
+                    "value": 0
+                  },
+                  {
+                    "id": 6,
+                    "name": "Goals scored",
+                    "short_name": "GS",
+                    "code": "goals_scored",
+                    "value": 11
+                  },
+                  {
+                    "id": 7,
+                    "name": "Goals allowed",
+                    "short_name": "GA",
+                    "code": "goals_allowed",
+                    "value": 5
+                  },
+                  {
+                    "id": 5,
+                    "name": "Goals difference",
+                    "short_name": "GD",
+                    "code": "goals_diff",
+                    "value": 6
+                  },
+                  {
+                    "id": 8,
+                    "name": "Points",
+                    "short_name": "Pts",
+                    "code": "pts",
+                    "value": 14
+                  },
+                  {
+                    "id": 46,
+                    "name": "Form",
+                    "short_name": "Form",
+                    "code": "form",
+                    "value": "W,D,D,W,W,W"
+                  }
+                ]
+              },
+              {
+                "id": 136792,
+                "name": "FC Porto",
+                "participant_slug": "fc-porto,136792",
+                "area_id": 145,
+                "area_name": "Portugal",
+                "rank": 2,
+                "last_rank": 17,
+                "zone_name": "Next Round",
+                "subparticipant_id": "",
+                "subparticipant_name": "",
+                "subparticipant_slug": "",
+                "columns": [
+                  {
+                    "id": 1,
+                    "name": "Matches played",
+                    "short_name": "MP",
+                    "code": "mp",
+                    "value": 6
+                  },
+                  {
+                    "id": 2,
+                    "name": "Won",
+                    "short_name": "W",
+                    "code": "won",
+                    "value": 3
+                  },
+                  {
+                    "id": 3,
+                    "name": "Draw",
+                    "short_name": "D",
+                    "code": "draw",
+                    "value": 1
+                  },
+                  {
+                    "id": 4,
+                    "name": "Lost",
+                    "short_name": "L",
+                    "code": "lost",
+                    "value": 2
+                  },
+                  {
+                    "id": 6,
+                    "name": "Goals scored",
+                    "short_name": "GS",
+                    "code": "goals_scored",
+                    "value": 15
+                  },
+                  {
+                    "id": 7,
+                    "name": "Goals allowed",
+                    "short_name": "GA",
+                    "code": "goals_allowed",
+                    "value": 10
+                  },
+                  {
+                    "id": 5,
+                    "name": "Goals difference",
+                    "short_name": "GD",
+                    "code": "goals_diff",
+                    "value": 5
+                  },
+                  {
+                    "id": 8,
+                    "name": "Points",
+                    "short_name": "Pts",
+                    "code": "pts",
+                    "value": 10
+                  },
+                  {
+                    "id": 46,
+                    "name": "Form",
+                    "short_name": "Form",
+                    "code": "form",
+                    "value": "W,D,W,L,W,L"
+                  }
+                ]
+              },
+              {
+                "id": 138550,
+                "name": "RB Leipzig",
+                "participant_slug": "rb-leipzig,138550",
+                "area_id": 130,
+                "area_name": "Germany",
+                "rank": 3,
+                "last_rank": 20,
+                "zone_name": "Europa League",
+                "subparticipant_id": "",
+                "subparticipant_name": "",
+                "subparticipant_slug": "",
+                "columns": [
+                  {
+                    "id": 1,
+                    "name": "Matches played",
+                    "short_name": "MP",
+                    "code": "mp",
+                    "value": 6
+                  },
+                  {
+                    "id": 2,
+                    "name": "Won",
+                    "short_name": "W",
+                    "code": "won",
+                    "value": 2
+                  },
+                  {
+                    "id": 3,
+                    "name": "Draw",
+                    "short_name": "D",
+                    "code": "draw",
+                    "value": 1
+                  },
+                  {
+                    "id": 4,
+                    "name": "Lost",
+                    "short_name": "L",
+                    "code": "lost",
+                    "value": 3
+                  },
+                  {
+                    "id": 6,
+                    "name": "Goals scored",
+                    "short_name": "GS",
+                    "code": "goals_scored",
+                    "value": 10
+                  },
+                  {
+                    "id": 7,
+                    "name": "Goals allowed",
+                    "short_name": "GA",
+                    "code": "goals_allowed",
+                    "value": 11
+                  },
+                  {
+                    "id": 5,
+                    "name": "Goals difference",
+                    "short_name": "GD",
+                    "code": "goals_diff",
+                    "value": -1
+                  },
+                  {
+                    "id": 8,
+                    "name": "Points",
+                    "short_name": "Pts",
+                    "code": "pts",
+                    "value": 7
+                  },
+                  {
+                    "id": 46,
+                    "name": "Form",
+                    "short_name": "Form",
+                    "code": "form",
+                    "value": "L,W,L,W,L,D"
+                  }
+                ]
+              },
+              {
+                "id": 136390,
+                "name": "AS Monaco",
+                "participant_slug": "as-monaco,136390",
+                "area_id": 56,
+                "area_name": "France",
+                "rank": 4,
+                "last_rank": 26,
+                "zone_name": "",
+                "subparticipant_id": "",
+                "subparticipant_name": "",
+                "subparticipant_slug": "",
+                "columns": [
+                  {
+                    "id": 1,
+                    "name": "Matches played",
+                    "short_name": "MP",
+                    "code": "mp",
+                    "value": 6
+                  },
+                  {
+                    "id": 2,
+                    "name": "Won",
+                    "short_name": "W",
+                    "code": "won",
+                    "value": 0
+                  },
+                  {
+                    "id": 3,
+                    "name": "Draw",
+                    "short_name": "D",
+                    "code": "draw",
+                    "value": 2
+                  },
+                  {
+                    "id": 4,
+                    "name": "Lost",
+                    "short_name": "L",
+                    "code": "lost",
+                    "value": 4
+                  },
+                  {
+                    "id": 6,
+                    "name": "Goals scored",
+                    "short_name": "GS",
+                    "code": "goals_scored",
+                    "value": 6
+                  },
+                  {
+                    "id": 7,
+                    "name": "Goals allowed",
+                    "short_name": "GA",
+                    "code": "goals_allowed",
+                    "value": 16
+                  },
+                  {
+                    "id": 5,
+                    "name": "Goals difference",
+                    "short_name": "GD",
+                    "code": "goals_diff",
+                    "value": -10
+                  },
+                  {
+                    "id": 8,
+                    "name": "Points",
+                    "short_name": "Pts",
+                    "code": "pts",
+                    "value": 2
+                  },
+                  {
+                    "id": 46,
+                    "name": "Form",
+                    "short_name": "Form",
+                    "code": "form",
+                    "value": "L,L,D,L,L,D"
+                  }
+                ]
+              }
+            ],
+            "zones": [
+              {
+                "id": 26,
+                "name": "Next Round",
+                "colour": "#002400"
+              },
+              {
+                "id": 22,
+                "name": "Europa League",
+                "colour": "#b1b1b1"
+              }
+            ],
+            "corrections": []
+          },
+          {
+            "id": 8,
+            "name": "Group H",
+            "ut": 1415800836,
+            "participants": [
+              {
+                "id": 136207,
+                "name": "Tottenham Hotspur",
+                "participant_slug": "tottenham-hotspur,136207",
+                "area_id": 5,
+                "area_name": "England",
+                "rank": 1,
+                "last_rank": 4,
+                "zone_name": "Next Round",
+                "subparticipant_id": "",
+                "subparticipant_name": "",
+                "subparticipant_slug": "",
+                "columns": [
+                  {
+                    "id": 1,
+                    "name": "Matches played",
+                    "short_name": "MP",
+                    "code": "mp",
+                    "value": 6
+                  },
+                  {
+                    "id": 2,
+                    "name": "Won",
+                    "short_name": "W",
+                    "code": "won",
+                    "value": 5
+                  },
+                  {
+                    "id": 3,
+                    "name": "Draw",
+                    "short_name": "D",
+                    "code": "draw",
+                    "value": 1
+                  },
+                  {
+                    "id": 4,
+                    "name": "Lost",
+                    "short_name": "L",
+                    "code": "lost",
+                    "value": 0
+                  },
+                  {
+                    "id": 6,
+                    "name": "Goals scored",
+                    "short_name": "GS",
+                    "code": "goals_scored",
+                    "value": 15
+                  },
+                  {
+                    "id": 7,
+                    "name": "Goals allowed",
+                    "short_name": "GA",
+                    "code": "goals_allowed",
+                    "value": 4
+                  },
+                  {
+                    "id": 5,
+                    "name": "Goals difference",
+                    "short_name": "GD",
+                    "code": "goals_diff",
+                    "value": 11
+                  },
+                  {
+                    "id": 8,
+                    "name": "Points",
+                    "short_name": "Pts",
+                    "code": "pts",
+                    "value": 16
+                  },
+                  {
+                    "id": 46,
+                    "name": "Form",
+                    "short_name": "Form",
+                    "code": "form",
+                    "value": "W,W,W,D,W,W"
+                  }
+                ]
+              },
+              {
+                "id": 136934,
+                "name": "Real Madrid",
+                "participant_slug": "real-madrid,136934",
+                "area_id": 70,
+                "area_name": "Spain",
+                "rank": 2,
+                "last_rank": 12,
+                "zone_name": "Next Round",
+                "subparticipant_id": "",
+                "subparticipant_name": "",
+                "subparticipant_slug": "",
+                "columns": [
+                  {
+                    "id": 1,
+                    "name": "Matches played",
+                    "short_name": "MP",
+                    "code": "mp",
+                    "value": 6
+                  },
+                  {
+                    "id": 2,
+                    "name": "Won",
+                    "short_name": "W",
+                    "code": "won",
+                    "value": 4
+                  },
+                  {
+                    "id": 3,
+                    "name": "Draw",
+                    "short_name": "D",
+                    "code": "draw",
+                    "value": 1
+                  },
+                  {
+                    "id": 4,
+                    "name": "Lost",
+                    "short_name": "L",
+                    "code": "lost",
+                    "value": 1
+                  },
+                  {
+                    "id": 6,
+                    "name": "Goals scored",
+                    "short_name": "GS",
+                    "code": "goals_scored",
+                    "value": 17
+                  },
+                  {
+                    "id": 7,
+                    "name": "Goals allowed",
+                    "short_name": "GA",
+                    "code": "goals_allowed",
+                    "value": 7
+                  },
+                  {
+                    "id": 5,
+                    "name": "Goals difference",
+                    "short_name": "GD",
+                    "code": "goals_diff",
+                    "value": 10
+                  },
+                  {
+                    "id": 8,
+                    "name": "Points",
+                    "short_name": "Pts",
+                    "code": "pts",
+                    "value": 13
+                  },
+                  {
+                    "id": 46,
+                    "name": "Form",
+                    "short_name": "Form",
+                    "code": "form",
+                    "value": "W,W,L,D,W,W"
+                  }
+                ]
+              },
+              {
+                "id": 136359,
+                "name": "Borussia Dortmund",
+                "participant_slug": "borussia-dortmund,136359",
+                "area_id": 130,
+                "area_name": "Germany",
+                "rank": 3,
+                "last_rank": 24,
+                "zone_name": "Europa League",
+                "subparticipant_id": "",
+                "subparticipant_name": "",
+                "subparticipant_slug": "",
+                "columns": [
+                  {
+                    "id": 1,
+                    "name": "Matches played",
+                    "short_name": "MP",
+                    "code": "mp",
+                    "value": 6
+                  },
+                  {
+                    "id": 2,
+                    "name": "Won",
+                    "short_name": "W",
+                    "code": "won",
+                    "value": 0
+                  },
+                  {
+                    "id": 3,
+                    "name": "Draw",
+                    "short_name": "D",
+                    "code": "draw",
+                    "value": 2
+                  },
+                  {
+                    "id": 4,
+                    "name": "Lost",
+                    "short_name": "L",
+                    "code": "lost",
+                    "value": 4
+                  },
+                  {
+                    "id": 6,
+                    "name": "Goals scored",
+                    "short_name": "GS",
+                    "code": "goals_scored",
+                    "value": 7
+                  },
+                  {
+                    "id": 7,
+                    "name": "Goals allowed",
+                    "short_name": "GA",
+                    "code": "goals_allowed",
+                    "value": 13
+                  },
+                  {
+                    "id": 5,
+                    "name": "Goals difference",
+                    "short_name": "GD",
+                    "code": "goals_diff",
+                    "value": -6
+                  },
+                  {
+                    "id": 8,
+                    "name": "Points",
+                    "short_name": "Pts",
+                    "code": "pts",
+                    "value": 2
+                  },
+                  {
+                    "id": 46,
+                    "name": "Form",
+                    "short_name": "Form",
+                    "code": "form",
+                    "value": "L,L,D,D,L,L"
+                  }
+                ]
+              },
+              {
+                "id": 137043,
+                "name": "APOEL Nicosia",
+                "participant_slug": "apoel-nicosia,137043",
+                "area_id": 40,
+                "area_name": "Cyprus",
+                "rank": 4,
+                "last_rank": 25,
+                "zone_name": "",
+                "subparticipant_id": "",
+                "subparticipant_name": "",
+                "subparticipant_slug": "",
+                "columns": [
+                  {
+                    "id": 1,
+                    "name": "Matches played",
+                    "short_name": "MP",
+                    "code": "mp",
+                    "value": 6
+                  },
+                  {
+                    "id": 2,
+                    "name": "Won",
+                    "short_name": "W",
+                    "code": "won",
+                    "value": 0
+                  },
+                  {
+                    "id": 3,
+                    "name": "Draw",
+                    "short_name": "D",
+                    "code": "draw",
+                    "value": 2
+                  },
+                  {
+                    "id": 4,
+                    "name": "Lost",
+                    "short_name": "L",
+                    "code": "lost",
+                    "value": 4
+                  },
+                  {
+                    "id": 6,
+                    "name": "Goals scored",
+                    "short_name": "GS",
+                    "code": "goals_scored",
+                    "value": 2
+                  },
+                  {
+                    "id": 7,
+                    "name": "Goals allowed",
+                    "short_name": "GA",
+                    "code": "goals_allowed",
+                    "value": 17
+                  },
+                  {
+                    "id": 5,
+                    "name": "Goals difference",
+                    "short_name": "GD",
+                    "code": "goals_diff",
+                    "value": -15
+                  },
+                  {
+                    "id": 8,
+                    "name": "Points",
+                    "short_name": "Pts",
+                    "code": "pts",
+                    "value": 2
+                  },
+                  {
+                    "id": 46,
+                    "name": "Form",
+                    "short_name": "Form",
+                    "code": "form",
+                    "value": "L,L,D,D,L,L"
+                  }
+                ]
+              }
+            ],
+            "zones": [
+              {
+                "id": 26,
+                "name": "Next Round",
+                "colour": "#002400"
+              },
+              {
+                "id": 22,
+                "name": "Europa League",
+                "colour": "#b1b1b1"
+              }
+            ],
+            "corrections": []
+          }
+        ]
+      }
+    }
+  }
+}

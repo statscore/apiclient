@@ -1,0 +1,1471 @@
+{
+  "api": {
+    "ver": "2.125",
+    "timestamp": 1565346035,
+    "method": {
+      "parameters": {
+        "username": "statscore",
+        "sport_id": "5",
+        "client_id": 1
+      },
+      "name": "standings-types.index",
+      "details": "standings-types.index",
+      "total_items": 15,
+      "previous_page": "",
+      "next_page": ""
+    },
+    "data": {
+      "standings_types": [
+        {
+          "id": 115,
+          "name": "Assists",
+          "ut": 1520344509,
+          "columns": [
+            {
+              "id": 1,
+              "name": "Matches played",
+              "short_name": "MP",
+              "code": "mp"
+            },
+            {
+              "id": 257,
+              "name": "Assists",
+              "short_name": "AS",
+              "code": "assists"
+            },
+            {
+              "id": 258,
+              "name": "Assists per match",
+              "short_name": "ASPM",
+              "code": "assists_per_match"
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "name": "Wide standings",
+          "ut": 1434609534,
+          "columns": [
+            {
+              "id": 1,
+              "name": "Matches played",
+              "short_name": "MP",
+              "code": "mp"
+            },
+            {
+              "id": 2,
+              "name": "Won",
+              "short_name": "W",
+              "code": "won"
+            },
+            {
+              "id": 3,
+              "name": "Draw",
+              "short_name": "D",
+              "code": "draw"
+            },
+            {
+              "id": 4,
+              "name": "Lost",
+              "short_name": "L",
+              "code": "lost"
+            },
+            {
+              "id": 5,
+              "name": "Goals difference",
+              "short_name": "GD",
+              "code": "goals_diff"
+            },
+            {
+              "id": 6,
+              "name": "Goals scored",
+              "short_name": "GS",
+              "code": "goals_scored"
+            },
+            {
+              "id": 7,
+              "name": "Goals allowed",
+              "short_name": "GA",
+              "code": "goals_allowed"
+            },
+            {
+              "id": 8,
+              "name": "Points",
+              "short_name": "Pts",
+              "code": "pts"
+            },
+            {
+              "id": 46,
+              "name": "Form",
+              "short_name": "Form",
+              "code": "form"
+            },
+            {
+              "id": 34,
+              "name": "Home matches played",
+              "short_name": "HMP",
+              "code": "home_mp"
+            },
+            {
+              "id": 9,
+              "name": "Home won",
+              "short_name": "HW",
+              "code": "home_won"
+            },
+            {
+              "id": 10,
+              "name": "Home draw",
+              "short_name": "HD",
+              "code": "home_draw"
+            },
+            {
+              "id": 11,
+              "name": "Home lost",
+              "short_name": "HL",
+              "code": "home_lost"
+            },
+            {
+              "id": 14,
+              "name": "Home goals difference",
+              "short_name": "HGD",
+              "code": "home_goals_diff"
+            },
+            {
+              "id": 12,
+              "name": "Home goals scored",
+              "short_name": "HGS",
+              "code": "home_goals_scored"
+            },
+            {
+              "id": 13,
+              "name": "Home goals allowed",
+              "short_name": "HGA",
+              "code": "home_goals_allowed"
+            },
+            {
+              "id": 48,
+              "name": "Home points",
+              "short_name": "H Pts",
+              "code": "home_pts"
+            },
+            {
+              "id": 61,
+              "name": "Home form",
+              "short_name": "H Form",
+              "code": "home_form"
+            },
+            {
+              "id": 35,
+              "name": "Away matches played",
+              "short_name": "AMP",
+              "code": "away_mp"
+            },
+            {
+              "id": 15,
+              "name": "Away won",
+              "short_name": "AW",
+              "code": "away_won"
+            },
+            {
+              "id": 16,
+              "name": "Away draw",
+              "short_name": "AD",
+              "code": "away_draw"
+            },
+            {
+              "id": 17,
+              "name": "Away lost",
+              "short_name": "AL",
+              "code": "away_lost"
+            },
+            {
+              "id": 18,
+              "name": "Away goals difference",
+              "short_name": "AGD",
+              "code": "away_goals_diff"
+            },
+            {
+              "id": 30,
+              "name": "Away goals scored",
+              "short_name": "AGS",
+              "code": "away_goals_scored"
+            },
+            {
+              "id": 31,
+              "name": "Away goals allowed",
+              "short_name": "AGA",
+              "code": "away_goals_allowed"
+            },
+            {
+              "id": 49,
+              "name": "Away points",
+              "short_name": "A Pts",
+              "code": "away_pts"
+            },
+            {
+              "id": 62,
+              "name": "Away form",
+              "short_name": "A Form",
+              "code": "away_form"
+            },
+            {
+              "id": 189,
+              "name": "Last Matches",
+              "short_name": "LM",
+              "code": "last_matches"
+            },
+            {
+              "id": 78,
+              "name": "Percentage",
+              "short_name": "%",
+              "code": "pct"
+            },
+            {
+              "id": 195,
+              "name": "Manual rank",
+              "short_name": "MR",
+              "code": "manual_rank"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "League standings",
+          "ut": 1434609534,
+          "columns": [
+            {
+              "id": 1,
+              "name": "Matches played",
+              "short_name": "MP",
+              "code": "mp"
+            },
+            {
+              "id": 2,
+              "name": "Won",
+              "short_name": "W",
+              "code": "won"
+            },
+            {
+              "id": 3,
+              "name": "Draw",
+              "short_name": "D",
+              "code": "draw"
+            },
+            {
+              "id": 4,
+              "name": "Lost",
+              "short_name": "L",
+              "code": "lost"
+            },
+            {
+              "id": 6,
+              "name": "Goals scored",
+              "short_name": "GS",
+              "code": "goals_scored"
+            },
+            {
+              "id": 7,
+              "name": "Goals allowed",
+              "short_name": "GA",
+              "code": "goals_allowed"
+            },
+            {
+              "id": 5,
+              "name": "Goals difference",
+              "short_name": "GD",
+              "code": "goals_diff"
+            },
+            {
+              "id": 8,
+              "name": "Points",
+              "short_name": "Pts",
+              "code": "pts"
+            },
+            {
+              "id": 46,
+              "name": "Form",
+              "short_name": "Form",
+              "code": "form"
+            },
+            {
+              "id": 189,
+              "name": "Last Matches",
+              "short_name": "LM",
+              "code": "last_matches"
+            },
+            {
+              "id": 195,
+              "name": "Manual rank",
+              "short_name": "MR",
+              "code": "manual_rank"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Halftime standings",
+          "ut": 1434609534,
+          "columns": [
+            {
+              "id": 1,
+              "name": "Matches played",
+              "short_name": "MP",
+              "code": "mp"
+            },
+            {
+              "id": 148,
+              "name": "Won - 1st half",
+              "short_name": "W 1",
+              "code": "1half_won"
+            },
+            {
+              "id": 149,
+              "name": "Draw - 1st half",
+              "short_name": "D 1",
+              "code": "1half_draw"
+            },
+            {
+              "id": 150,
+              "name": "Lost - 1st half",
+              "short_name": "L 1",
+              "code": "1half_lost"
+            },
+            {
+              "id": 151,
+              "name": "Goals difference - 1st half",
+              "short_name": "Diff 1",
+              "code": "1half_goals_diff"
+            },
+            {
+              "id": 153,
+              "name": "Goals scored - 1st half",
+              "short_name": "GS 1",
+              "code": "1half_goals_scored"
+            },
+            {
+              "id": 154,
+              "name": "Goals allowed - 1st half",
+              "short_name": "GA 1",
+              "code": "1half_goals_allowed"
+            },
+            {
+              "id": 155,
+              "name": "Points - 1st half",
+              "short_name": "Pts 1",
+              "code": "1half_pts"
+            },
+            {
+              "id": 195,
+              "name": "Manual rank",
+              "short_name": "MR",
+              "code": "manual_rank"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Home standings",
+          "ut": 1434609534,
+          "columns": [
+            {
+              "id": 34,
+              "name": "Home matches played",
+              "short_name": "HMP",
+              "code": "home_mp"
+            },
+            {
+              "id": 9,
+              "name": "Home won",
+              "short_name": "HW",
+              "code": "home_won"
+            },
+            {
+              "id": 10,
+              "name": "Home draw",
+              "short_name": "HD",
+              "code": "home_draw"
+            },
+            {
+              "id": 11,
+              "name": "Home lost",
+              "short_name": "HL",
+              "code": "home_lost"
+            },
+            {
+              "id": 14,
+              "name": "Home goals difference",
+              "short_name": "HGD",
+              "code": "home_goals_diff"
+            },
+            {
+              "id": 12,
+              "name": "Home goals scored",
+              "short_name": "HGS",
+              "code": "home_goals_scored"
+            },
+            {
+              "id": 13,
+              "name": "Home goals allowed",
+              "short_name": "HGA",
+              "code": "home_goals_allowed"
+            },
+            {
+              "id": 48,
+              "name": "Home points",
+              "short_name": "H Pts",
+              "code": "home_pts"
+            },
+            {
+              "id": 61,
+              "name": "Home form",
+              "short_name": "H Form",
+              "code": "home_form"
+            },
+            {
+              "id": 195,
+              "name": "Manual rank",
+              "short_name": "MR",
+              "code": "manual_rank"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Away standings",
+          "ut": 1434609534,
+          "columns": [
+            {
+              "id": 35,
+              "name": "Away matches played",
+              "short_name": "AMP",
+              "code": "away_mp"
+            },
+            {
+              "id": 15,
+              "name": "Away won",
+              "short_name": "AW",
+              "code": "away_won"
+            },
+            {
+              "id": 16,
+              "name": "Away draw",
+              "short_name": "AD",
+              "code": "away_draw"
+            },
+            {
+              "id": 17,
+              "name": "Away lost",
+              "short_name": "AL",
+              "code": "away_lost"
+            },
+            {
+              "id": 18,
+              "name": "Away goals difference",
+              "short_name": "AGD",
+              "code": "away_goals_diff"
+            },
+            {
+              "id": 30,
+              "name": "Away goals scored",
+              "short_name": "AGS",
+              "code": "away_goals_scored"
+            },
+            {
+              "id": 31,
+              "name": "Away goals allowed",
+              "short_name": "AGA",
+              "code": "away_goals_allowed"
+            },
+            {
+              "id": 49,
+              "name": "Away points",
+              "short_name": "A Pts",
+              "code": "away_pts"
+            },
+            {
+              "id": 62,
+              "name": "Away form",
+              "short_name": "A Form",
+              "code": "away_form"
+            },
+            {
+              "id": 195,
+              "name": "Manual rank",
+              "short_name": "MR",
+              "code": "manual_rank"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "name": "Top scorers",
+          "ut": 1434609534,
+          "columns": [
+            {
+              "id": 6,
+              "name": "Goals scored",
+              "short_name": "GS",
+              "code": "goals_scored"
+            },
+            {
+              "id": 195,
+              "name": "Manual rank",
+              "short_name": "MR",
+              "code": "manual_rank"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "name": "Cards",
+          "ut": 1434609534,
+          "columns": [
+            {
+              "id": 32,
+              "name": "Yellow cards",
+              "short_name": "YC",
+              "code": "yellow_cards"
+            },
+            {
+              "id": 33,
+              "name": "Red cards",
+              "short_name": "RC",
+              "code": "red_cards"
+            },
+            {
+              "id": 8,
+              "name": "Points",
+              "short_name": "Pts",
+              "code": "pts"
+            },
+            {
+              "id": 195,
+              "name": "Manual rank",
+              "short_name": "MR",
+              "code": "manual_rank"
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "name": "FIFA ranking",
+          "ut": 1434609534,
+          "columns": [
+            {
+              "id": 8,
+              "name": "Points",
+              "short_name": "Pts",
+              "code": "pts"
+            },
+            {
+              "id": 195,
+              "name": "Manual rank",
+              "short_name": "MR",
+              "code": "manual_rank"
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "name": "FIFA club ranking",
+          "ut": 1434609534,
+          "columns": [
+            {
+              "id": 8,
+              "name": "Points",
+              "short_name": "Pts",
+              "code": "pts"
+            },
+            {
+              "id": 195,
+              "name": "Manual rank",
+              "short_name": "MR",
+              "code": "manual_rank"
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "name": "Form table",
+          "ut": 1434609534,
+          "columns": [
+            {
+              "id": 46,
+              "name": "Form",
+              "short_name": "Form",
+              "code": "form"
+            },
+            {
+              "id": 189,
+              "name": "Last Matches",
+              "short_name": "LM",
+              "code": "last_matches"
+            }
+          ]
+        },
+        {
+          "id": 39,
+          "name": "Most popular results",
+          "ut": 1434609534,
+          "columns": [
+            {
+              "id": 76,
+              "name": "Result",
+              "short_name": "Res",
+              "code": "result"
+            },
+            {
+              "id": 77,
+              "name": "Amount",
+              "short_name": "Am",
+              "code": "amount"
+            },
+            {
+              "id": 78,
+              "name": "Percentage",
+              "short_name": "%",
+              "code": "pct"
+            },
+            {
+              "id": 195,
+              "name": "Manual rank",
+              "short_name": "MR",
+              "code": "manual_rank"
+            }
+          ]
+        },
+        {
+          "id": 47,
+          "name": "Streaks",
+          "ut": 1434609534,
+          "columns": [
+            {
+              "id": 79,
+              "name": "Wins",
+              "short_name": "W",
+              "code": "wins"
+            },
+            {
+              "id": 80,
+              "name": "Draws",
+              "short_name": "D",
+              "code": "draws"
+            },
+            {
+              "id": 81,
+              "name": "Losses",
+              "short_name": "L",
+              "code": "losses"
+            },
+            {
+              "id": 82,
+              "name": "No wins",
+              "short_name": "NW",
+              "code": "no_wins"
+            },
+            {
+              "id": 83,
+              "name": "No draws",
+              "short_name": "ND",
+              "code": "no_draws"
+            },
+            {
+              "id": 84,
+              "name": "No losses",
+              "short_name": "NL",
+              "code": "no_losses"
+            },
+            {
+              "id": 195,
+              "name": "Manual rank",
+              "short_name": "MR",
+              "code": "manual_rank"
+            }
+          ]
+        },
+        {
+          "id": 55,
+          "name": "Overall stats",
+          "ut": 1434609534,
+          "columns": [
+            {
+              "id": 11,
+              "name": "Home lost",
+              "short_name": "HL",
+              "code": "home_lost"
+            },
+            {
+              "id": 68,
+              "name": "Matches scheduled",
+              "short_name": "MS",
+              "code": "scheduled"
+            },
+            {
+              "id": 329,
+              "name": "Home won - 1st half",
+              "short_name": "HW1",
+              "code": "home_won_first_half"
+            },
+            {
+              "id": 1,
+              "name": "Matches played",
+              "short_name": "MP",
+              "code": "mp"
+            },
+            {
+              "id": 9,
+              "name": "Home won",
+              "short_name": "HW",
+              "code": "home_won"
+            },
+            {
+              "id": 66,
+              "name": "Home won percentage",
+              "short_name": "% HW",
+              "code": "home_won_pct"
+            },
+            {
+              "id": 3,
+              "name": "Draw",
+              "short_name": "D",
+              "code": "draw"
+            },
+            {
+              "id": 94,
+              "name": "Draw percentage",
+              "short_name": "% D",
+              "code": "draw_pct"
+            },
+            {
+              "id": 15,
+              "name": "Away won",
+              "short_name": "AW",
+              "code": "away_won"
+            },
+            {
+              "id": 67,
+              "name": "Away won percentage",
+              "short_name": "% AW",
+              "code": "away_won_pct"
+            },
+            {
+              "id": 6,
+              "name": "Goals scored",
+              "short_name": "GS",
+              "code": "goals_scored"
+            },
+            {
+              "id": 12,
+              "name": "Home goals scored",
+              "short_name": "HGS",
+              "code": "home_goals_scored"
+            },
+            {
+              "id": 30,
+              "name": "Away goals scored",
+              "short_name": "AGS",
+              "code": "away_goals_scored"
+            },
+            {
+              "id": 102,
+              "name": "Average goals scored",
+              "short_name": "AGS",
+              "code": "avg_goals_scored"
+            },
+            {
+              "id": 103,
+              "name": "Home average goals scored",
+              "short_name": "HAGS",
+              "code": "avg_home_goals_scored"
+            },
+            {
+              "id": 104,
+              "name": "Away average goals scored",
+              "short_name": "AAGS",
+              "code": "avg_away_goals_scored"
+            },
+            {
+              "id": 105,
+              "name": "Average goals scored - 1st half",
+              "short_name": "AGS 1",
+              "code": "1half_avg_goals_scored"
+            },
+            {
+              "id": 106,
+              "name": "Average goals scored - 2nd half",
+              "short_name": "AGS 2",
+              "code": "2half_avg_goals_scored"
+            },
+            {
+              "id": 31,
+              "name": "Away goals allowed",
+              "short_name": "AGA",
+              "code": "away_goals_allowed"
+            },
+            {
+              "id": 7,
+              "name": "Goals allowed",
+              "short_name": "GA",
+              "code": "goals_allowed"
+            },
+            {
+              "id": 154,
+              "name": "Goals allowed - 1st half",
+              "short_name": "GA 1",
+              "code": "1half_goals_allowed"
+            },
+            {
+              "id": 24,
+              "name": "H2H goals allowed",
+              "short_name": "H2H GA",
+              "code": "h2h_ga"
+            },
+            {
+              "id": 190,
+              "name": "Home average goals allowed",
+              "short_name": "Av. HGA",
+              "code": "home_avg_goals_allowed"
+            },
+            {
+              "id": 107,
+              "name": "Over 2.5 goals",
+              "short_name": "Ov2.5",
+              "code": "over_2_5_goals"
+            },
+            {
+              "id": 108,
+              "name": "Over 2.5 goals percentage",
+              "short_name": "% Ov2.5",
+              "code": "over_2_5_goals_pct"
+            },
+            {
+              "id": 110,
+              "name": "Under 2.5 goals",
+              "short_name": "Un2.5",
+              "code": "under_2_5_goals"
+            },
+            {
+              "id": 111,
+              "name": "Under 2.5 goals percentage",
+              "short_name": "% Un2.5",
+              "code": "under_2_5_goals_pct"
+            },
+            {
+              "id": 113,
+              "name": "Over 1.5 goals",
+              "short_name": "Ov1.5",
+              "code": "over_1_5_goals"
+            },
+            {
+              "id": 114,
+              "name": "Over 1.5 goals percentage",
+              "short_name": "% Ov1.5",
+              "code": "over_1_5_goals_pct"
+            },
+            {
+              "id": 115,
+              "name": "Under 1.5 goals",
+              "short_name": "Un1.5",
+              "code": "under_1_5_goals"
+            },
+            {
+              "id": 116,
+              "name": "Under 1.5 goals percentage",
+              "short_name": "% Un1.5",
+              "code": "under_1_5_goals_pct"
+            },
+            {
+              "id": 117,
+              "name": "Over 0.5 goals",
+              "short_name": "Ov0.5",
+              "code": "over_0_5_goals"
+            },
+            {
+              "id": 118,
+              "name": "Over 0.5 goals percentage",
+              "short_name": "% Ov0.5",
+              "code": "over_0_5_goals_pct"
+            },
+            {
+              "id": 119,
+              "name": "Under 0.5 goals",
+              "short_name": "Un0.5",
+              "code": "under_0_5_goals"
+            },
+            {
+              "id": 120,
+              "name": "Under 0.5 goals percentage",
+              "short_name": "% Un0.5",
+              "code": "under_0_5_goals_pct"
+            },
+            {
+              "id": 188,
+              "name": "Average goals allowed",
+              "short_name": "Av. GA",
+              "code": "avg_goals_allowed"
+            }
+          ]
+        },
+        {
+          "id": 90,
+          "name": "Team overall stats",
+          "ut": 1434609534,
+          "columns": [
+            {
+              "id": 1,
+              "name": "Matches played",
+              "short_name": "MP",
+              "code": "mp"
+            },
+            {
+              "id": 2,
+              "name": "Won",
+              "short_name": "W",
+              "code": "won"
+            },
+            {
+              "id": 3,
+              "name": "Draw",
+              "short_name": "D",
+              "code": "draw"
+            },
+            {
+              "id": 4,
+              "name": "Lost",
+              "short_name": "L",
+              "code": "lost"
+            },
+            {
+              "id": 6,
+              "name": "Goals scored",
+              "short_name": "GS",
+              "code": "goals_scored"
+            },
+            {
+              "id": 7,
+              "name": "Goals allowed",
+              "short_name": "GA",
+              "code": "goals_allowed"
+            },
+            {
+              "id": 9,
+              "name": "Home won",
+              "short_name": "HW",
+              "code": "home_won"
+            },
+            {
+              "id": 10,
+              "name": "Home draw",
+              "short_name": "HD",
+              "code": "home_draw"
+            },
+            {
+              "id": 11,
+              "name": "Home lost",
+              "short_name": "HL",
+              "code": "home_lost"
+            },
+            {
+              "id": 12,
+              "name": "Home goals scored",
+              "short_name": "HGS",
+              "code": "home_goals_scored"
+            },
+            {
+              "id": 13,
+              "name": "Home goals allowed",
+              "short_name": "HGA",
+              "code": "home_goals_allowed"
+            },
+            {
+              "id": 15,
+              "name": "Away won",
+              "short_name": "AW",
+              "code": "away_won"
+            },
+            {
+              "id": 16,
+              "name": "Away draw",
+              "short_name": "AD",
+              "code": "away_draw"
+            },
+            {
+              "id": 17,
+              "name": "Away lost",
+              "short_name": "AL",
+              "code": "away_lost"
+            },
+            {
+              "id": 30,
+              "name": "Away goals scored",
+              "short_name": "AGS",
+              "code": "away_goals_scored"
+            },
+            {
+              "id": 31,
+              "name": "Away goals allowed",
+              "short_name": "AGA",
+              "code": "away_goals_allowed"
+            },
+            {
+              "id": 66,
+              "name": "Home won percentage",
+              "short_name": "% HW",
+              "code": "home_won_pct"
+            },
+            {
+              "id": 67,
+              "name": "Away won percentage",
+              "short_name": "% AW",
+              "code": "away_won_pct"
+            },
+            {
+              "id": 68,
+              "name": "Matches scheduled",
+              "short_name": "MS",
+              "code": "scheduled"
+            },
+            {
+              "id": 78,
+              "name": "Percentage",
+              "short_name": "%",
+              "code": "pct"
+            },
+            {
+              "id": 94,
+              "name": "Draw percentage",
+              "short_name": "% D",
+              "code": "draw_pct"
+            },
+            {
+              "id": 102,
+              "name": "Average goals scored",
+              "short_name": "AGS",
+              "code": "avg_goals_scored"
+            },
+            {
+              "id": 103,
+              "name": "Home average goals scored",
+              "short_name": "HAGS",
+              "code": "avg_home_goals_scored"
+            },
+            {
+              "id": 104,
+              "name": "Away average goals scored",
+              "short_name": "AAGS",
+              "code": "avg_away_goals_scored"
+            },
+            {
+              "id": 105,
+              "name": "Average goals scored - 1st half",
+              "short_name": "AGS 1",
+              "code": "1half_avg_goals_scored"
+            },
+            {
+              "id": 106,
+              "name": "Average goals scored - 2nd half",
+              "short_name": "AGS 2",
+              "code": "2half_avg_goals_scored"
+            },
+            {
+              "id": 107,
+              "name": "Over 2.5 goals",
+              "short_name": "Ov2.5",
+              "code": "over_2_5_goals"
+            },
+            {
+              "id": 108,
+              "name": "Over 2.5 goals percentage",
+              "short_name": "% Ov2.5",
+              "code": "over_2_5_goals_pct"
+            },
+            {
+              "id": 110,
+              "name": "Under 2.5 goals",
+              "short_name": "Un2.5",
+              "code": "under_2_5_goals"
+            },
+            {
+              "id": 111,
+              "name": "Under 2.5 goals percentage",
+              "short_name": "% Un2.5",
+              "code": "under_2_5_goals_pct"
+            },
+            {
+              "id": 113,
+              "name": "Over 1.5 goals",
+              "short_name": "Ov1.5",
+              "code": "over_1_5_goals"
+            },
+            {
+              "id": 114,
+              "name": "Over 1.5 goals percentage",
+              "short_name": "% Ov1.5",
+              "code": "over_1_5_goals_pct"
+            },
+            {
+              "id": 115,
+              "name": "Under 1.5 goals",
+              "short_name": "Un1.5",
+              "code": "under_1_5_goals"
+            },
+            {
+              "id": 116,
+              "name": "Under 1.5 goals percentage",
+              "short_name": "% Un1.5",
+              "code": "under_1_5_goals_pct"
+            },
+            {
+              "id": 117,
+              "name": "Over 0.5 goals",
+              "short_name": "Ov0.5",
+              "code": "over_0_5_goals"
+            },
+            {
+              "id": 118,
+              "name": "Over 0.5 goals percentage",
+              "short_name": "% Ov0.5",
+              "code": "over_0_5_goals_pct"
+            },
+            {
+              "id": 119,
+              "name": "Under 0.5 goals",
+              "short_name": "Un0.5",
+              "code": "under_0_5_goals"
+            },
+            {
+              "id": 120,
+              "name": "Under 0.5 goals percentage",
+              "short_name": "% Un0.5",
+              "code": "under_0_5_goals_pct"
+            },
+            {
+              "id": 134,
+              "name": "Won percentage",
+              "short_name": "% W",
+              "code": "won_pct"
+            },
+            {
+              "id": 173,
+              "name": "Lost percentage",
+              "short_name": "% L",
+              "code": "lost_pct"
+            },
+            {
+              "id": 174,
+              "name": "Home draw percentage",
+              "short_name": "% HD",
+              "code": "home_draw_pct"
+            },
+            {
+              "id": 175,
+              "name": "Away draw percentage",
+              "short_name": "% AD",
+              "code": "away_draw_pct"
+            },
+            {
+              "id": 176,
+              "name": "Home lost percentage",
+              "short_name": "% HL",
+              "code": "home_lost_pct"
+            },
+            {
+              "id": 177,
+              "name": "Away lost percentage",
+              "short_name": "% AL",
+              "code": "away_lost_pct"
+            },
+            {
+              "id": 188,
+              "name": "Average goals allowed",
+              "short_name": "Av. GA",
+              "code": "avg_goals_allowed"
+            },
+            {
+              "id": 234,
+              "name": "Wins - 1st half",
+              "short_name": "W1",
+              "code": "won_first_half"
+            },
+            {
+              "id": 237,
+              "name": "Wins - 2nd half",
+              "short_name": "W2",
+              "code": "won_second_half"
+            },
+            {
+              "id": 418,
+              "name": "Home wins - 1st half",
+              "short_name": "HW1",
+              "code": "home_wins_first_half"
+            },
+            {
+              "id": 419,
+              "name": "Home wins - 2nd half",
+              "short_name": "HW2",
+              "code": "home_wins_second_half"
+            },
+            {
+              "id": 240,
+              "name": "Draws - 1st half",
+              "short_name": "D1",
+              "code": "draw_first_half"
+            },
+            {
+              "id": 243,
+              "name": "Draws - 2nd half",
+              "short_name": "D2",
+              "code": "draw_second_half"
+            },
+            {
+              "id": 241,
+              "name": "Home draws - 1st half",
+              "short_name": "HD1",
+              "code": "home_draw_first_half"
+            },
+            {
+              "id": 244,
+              "name": "Home draws - 2nd half",
+              "short_name": "HD2",
+              "code": "home_draw_second_half"
+            },
+            {
+              "id": 422,
+              "name": "Home losses - 1st half",
+              "short_name": "HL1",
+              "code": "home_losses_first_half"
+            },
+            {
+              "id": 423,
+              "name": "Home losses - 2nd half",
+              "short_name": "HL2",
+              "code": "home_losses_second_half"
+            },
+            {
+              "id": 424,
+              "name": "Away wins - 1st half",
+              "short_name": "AW1",
+              "code": "away_wins_first_half"
+            },
+            {
+              "id": 425,
+              "name": "Away wins - 2nd half",
+              "short_name": "AW2",
+              "code": "away_wins_second_half"
+            },
+            {
+              "id": 426,
+              "name": "Away won percentage",
+              "short_name": "AWPCT",
+              "code": "away_won_pct"
+            },
+            {
+              "id": 242,
+              "name": "Away draws - 1st half",
+              "short_name": "AD1",
+              "code": "away_draw_first_half"
+            },
+            {
+              "id": 245,
+              "name": "Away draws - 2nd half",
+              "short_name": "AD2",
+              "code": "away_draw_second_half"
+            },
+            {
+              "id": 427,
+              "name": "Away losses - 1st half",
+              "short_name": "AL1",
+              "code": "away_losses_first_half"
+            },
+            {
+              "id": 428,
+              "name": "Away losses - 2nd half",
+              "short_name": "AL2",
+              "code": "away_losses_second_half"
+            },
+            {
+              "id": 228,
+              "name": "Goals scored - 1st half",
+              "short_name": "GS1",
+              "code": "goals_scored_first_half"
+            },
+            {
+              "id": 229,
+              "name": "Goals scored - 2nd half",
+              "short_name": "GS2",
+              "code": "goals_scored_second_half"
+            },
+            {
+              "id": 246,
+              "name": "Goals allowed - 1st half",
+              "short_name": "GA1",
+              "code": "goals_allowed_first"
+            },
+            {
+              "id": 247,
+              "name": "Goals allowed - 2nd half",
+              "short_name": "GA2",
+              "code": "goals_allowed_second"
+            },
+            {
+              "id": 230,
+              "name": "Home goals scored - 1st half",
+              "short_name": "HGS1",
+              "code": "home_goals_scored_first_half"
+            },
+            {
+              "id": 231,
+              "name": "Home goals scored - 2nd half",
+              "short_name": "HGS2",
+              "code": "home_goals_scored_second_half"
+            },
+            {
+              "id": 232,
+              "name": "Away goals scored - 1st half",
+              "short_name": "AGS1",
+              "code": "away_goals_scored_first_half"
+            },
+            {
+              "id": 233,
+              "name": "Away goals scored - 2nd half",
+              "short_name": "AGS2",
+              "code": "away_goals_scored_second_half"
+            },
+            {
+              "id": 346,
+              "name": "Home goals allowed - 1st half",
+              "short_name": "HGA1",
+              "code": "home_goals_allowed_first_half"
+            },
+            {
+              "id": 347,
+              "name": "Home goals allowed - 2nd half",
+              "short_name": "HGA2",
+              "code": "home_goals_allowed_second_half"
+            },
+            {
+              "id": 349,
+              "name": "Away goals allowed - 1st half",
+              "short_name": "AGA1",
+              "code": "away_goals_allowed_first_half"
+            },
+            {
+              "id": 350,
+              "name": "Away goals allowed - 2nd half",
+              "short_name": "AGA2",
+              "code": "away_goals_allowed_second_half"
+            },
+            {
+              "id": 190,
+              "name": "Home average goals allowed",
+              "short_name": "Av. HGA",
+              "code": "home_avg_goals_allowed"
+            },
+            {
+              "id": 191,
+              "name": "Away average goals allowed",
+              "short_name": "Av. AGA",
+              "code": "away_avg_goals_allowed"
+            },
+            {
+              "id": 429,
+              "name": "Average goals allowed - 1st half",
+              "short_name": "Av.GA1",
+              "code": "avg_goals_allowed_first_half"
+            },
+            {
+              "id": 430,
+              "name": "Average goals allowed - 2nd half",
+              "short_name": "Av.GA2",
+              "code": "avg_goals_allowed_second_half"
+            },
+            {
+              "id": 250,
+              "name": "Home average goals allowed - 1st half",
+              "short_name": "Av.HGA1",
+              "code": "home_average_goals_allowed_first"
+            },
+            {
+              "id": 251,
+              "name": "Home average goals allowed - 2nd half",
+              "short_name": "Av.HGA2",
+              "code": "home_average_goals_allowed_second"
+            },
+            {
+              "id": 252,
+              "name": "Away average goals allowed - 1st half",
+              "short_name": "Av.AGA1",
+              "code": "away_average_goals_allowed_first"
+            },
+            {
+              "id": 253,
+              "name": "Away average goals allowed - 2nd half",
+              "short_name": "Av.AGA2",
+              "code": "away_average_goals_allowed_second"
+            },
+            {
+              "id": 410,
+              "name": "Over 4.5 goals",
+              "short_name": "O4.5",
+              "code": "over_4_5_goals"
+            },
+            {
+              "id": 411,
+              "name": "Over 4.5 goals percentage",
+              "short_name": "O4.5pct",
+              "code": "over_4_5_goals_pct"
+            },
+            {
+              "id": 414,
+              "name": "Under 4.5 goals",
+              "short_name": "U4.5",
+              "code": "under_4_5_goals"
+            },
+            {
+              "id": 415,
+              "name": "Under 4.5 goals percentage",
+              "short_name": "U4.5pct",
+              "code": "under_4_5_goals_pct"
+            },
+            {
+              "id": 412,
+              "name": "Over 3.5 goals",
+              "short_name": "O3.5",
+              "code": "over_3_5_goals"
+            },
+            {
+              "id": 413,
+              "name": "Over 3.5 goals percentage",
+              "short_name": "O3.5pct",
+              "code": "over_3_5_goals_pct"
+            },
+            {
+              "id": 416,
+              "name": "Under 3.5 goals",
+              "short_name": "U3.5",
+              "code": "under_3_5_goals"
+            },
+            {
+              "id": 417,
+              "name": "Under 3.5 goals percentage",
+              "short_name": "U3.5pct",
+              "code": "under_3_5_goals_pct"
+            },
+            {
+              "id": 150,
+              "name": "Lost - 1st half",
+              "short_name": "L 1",
+              "code": "1half_lost"
+            },
+            {
+              "id": 431,
+              "name": "Lost - 2nd half",
+              "short_name": "L 2",
+              "code": "2half_lost"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

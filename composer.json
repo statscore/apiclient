@@ -1,6 +1,10 @@
 {
   "name": "statscore/apiclient",
+  "type": "library",
   "description": "Statscore Official PHP API Client",
+  "keywords": [
+    "statscore"
+  ],
   "homepage": "https://github.com/statscore/apiclient",
   "license": "GNU",
   "authors": [
@@ -10,12 +14,6 @@
       "homepage": "https://github.com/michalper",
       "role": "Chief Technology Officer"
     }
-  ],
-  "support": {
-    "email": "m.per@statscore.com"
-  },
-  "keywords": [
-    "statscore"
   ],
   "require": {
     "ext-json": "*",
@@ -27,7 +25,6 @@
     "mockery/mockery": "^1.2",
     "phpunit/phpunit": "^8.3"
   },
-  "type": "library",
   "config": {
     "sort-packages": true
   },
@@ -39,5 +36,8 @@
       "Statscore\\": "lib/Statscore/",
       "UnitTests\\": "tests/unit"
     }
+  },
+  "support": {
+    "email": "m.per@statscore.com"
   }
 }
