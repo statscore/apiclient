@@ -4,13 +4,12 @@ namespace UnitTests\Seasons;
 
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Response;
-use Itav\Component\Serializer\SerializerException;
-use ReflectionException;
 use Statscore\Model\Response\Competition\CompetitionDTO;
 use Statscore\Model\Response\Season\SeasonDTO;
 use Statscore\Model\Response\Stage\StageDTO;
 use Statscore\Service\Seasons\SeasonsService;
 use Symfony\Component\HttpFoundation\Response as HttpFoundationResponse;
+use Symfony\Component\Serializer\Exception\ExceptionInterface;
 use UnitTests\TestCase;
 
 /**
@@ -32,9 +31,8 @@ class SeasonsTest extends TestCase
 
     /**
      * @return CompetitionDTO
+     * @throws ExceptionInterface
      * @throws GuzzleException
-     * @throws SerializerException
-     * @throws ReflectionException
      */
     public function testGetAll(): CompetitionDTO
     {
@@ -113,9 +111,8 @@ class SeasonsTest extends TestCase
 
     /**
      * @return CompetitionDTO
+     * @throws ExceptionInterface
      * @throws GuzzleException
-     * @throws SerializerException
-     * @throws ReflectionException
      */
     public function testGet(): CompetitionDTO
     {

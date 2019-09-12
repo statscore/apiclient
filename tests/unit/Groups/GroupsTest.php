@@ -4,7 +4,6 @@ namespace UnitTests\Groups;
 
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Response;
-use Itav\Component\Serializer\SerializerException;
 use ReflectionException;
 use Statscore\Model\Response\Competition\CompetitionDTO;
 use Statscore\Model\Response\Season\SeasonDTO;
@@ -33,7 +32,6 @@ class GroupsTest extends TestCase
     /**
      * @return CompetitionDTO
      * @throws GuzzleException
-     * @throws SerializerException
      * @throws ReflectionException
      */
     public function testGet(): CompetitionDTO

@@ -48,7 +48,7 @@ class StandingParticipantDTO
     private $zoneName;
 
     /**
-     * @var integer|null
+     * @var string
      */
     private $subparticipantId;
 
@@ -63,7 +63,7 @@ class StandingParticipantDTO
     private $subparticipantSlug;
 
     /**
-     * @var \Statscore\Model\Response\Standing\StandingColumnDTO[]
+     * @var StandingColumnDTO[]
      */
     private $columns;
 
@@ -132,9 +132,9 @@ class StandingParticipantDTO
     }
 
     /**
-     * @return int|null
+     * @return string
      */
-    public function getSubparticipantId(): ?int
+    public function getSubparticipantId(): string
     {
         return $this->subparticipantId;
     }
@@ -161,5 +161,137 @@ class StandingParticipantDTO
     public function getColumns(): array
     {
         return $this->columns;
+    }
+
+    /**
+     * @param int $id
+     * @return StandingParticipantDTO
+     */
+    public function setId(int $id): StandingParticipantDTO
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * @param string $name
+     * @return StandingParticipantDTO
+     */
+    public function setName(string $name): StandingParticipantDTO
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * @param string $participantSlug
+     * @return StandingParticipantDTO
+     */
+    public function setParticipantSlug(string $participantSlug): StandingParticipantDTO
+    {
+        $this->participantSlug = $participantSlug;
+
+        return $this;
+    }
+
+    /**
+     * @param int|null $areaId
+     * @return StandingParticipantDTO
+     */
+    public function setAreaId(?int $areaId): StandingParticipantDTO
+    {
+        $this->areaId = $areaId;
+
+        return $this;
+    }
+
+    /**
+     * @param string $areaName
+     * @return StandingParticipantDTO
+     */
+    public function setAreaName(string $areaName): StandingParticipantDTO
+    {
+        $this->areaName = $areaName;
+
+        return $this;
+    }
+
+    /**
+     * @param int|null $rank
+     * @return StandingParticipantDTO
+     */
+    public function setRank(?int $rank): StandingParticipantDTO
+    {
+        $this->rank = $rank;
+
+        return $this;
+    }
+
+    /**
+     * @param int|null $lastRank
+     * @return StandingParticipantDTO
+     */
+    public function setLastRank(?int $lastRank): StandingParticipantDTO
+    {
+        $this->lastRank = $lastRank;
+
+        return $this;
+    }
+
+    /**
+     * @param string $zoneName
+     * @return StandingParticipantDTO
+     */
+    public function setZoneName(string $zoneName): StandingParticipantDTO
+    {
+        $this->zoneName = $zoneName;
+
+        return $this;
+    }
+
+    /**
+     * @param string $subparticipantId
+     * @return StandingParticipantDTO
+     */
+    public function setSubparticipantId(string $subparticipantId): StandingParticipantDTO
+    {
+        $this->subparticipantId = $subparticipantId;
+
+        return $this;
+    }
+
+    /**
+     * @param string $subparticipantName
+     * @return StandingParticipantDTO
+     */
+    public function setSubparticipantName(string $subparticipantName): StandingParticipantDTO
+    {
+        $this->subparticipantName = $subparticipantName;
+
+        return $this;
+    }
+
+    /**
+     * @param string $subparticipantSlug
+     * @return StandingParticipantDTO
+     */
+    public function setSubparticipantSlug(string $subparticipantSlug): StandingParticipantDTO
+    {
+        $this->subparticipantSlug = $subparticipantSlug;
+
+        return $this;
+    }
+
+    /**
+     * @param StandingColumnDTO[] $columns
+     * @return StandingParticipantDTO
+     */
+    public function setColumns(array $columns): StandingParticipantDTO
+    {
+        $this->columns = $columns;
+
+        return $this;
     }
 }

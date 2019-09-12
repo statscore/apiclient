@@ -2,12 +2,11 @@
 
 namespace UnitTests;
 
-use Itav\Component\Serializer\Factory;
-use Itav\Component\Serializer\Serializer;
 use Mockery;
 use PHPUnit\Framework\TestCase as BaseTest;
 use Statscore\Client;
 use Statscore\Service\ApiService;
+use Symfony\Component\Serializer\Serializer;
 
 abstract class TestCase extends BaseTest
 {
@@ -35,7 +34,7 @@ abstract class TestCase extends BaseTest
     {
         parent::setUp();
 
-        $this->serializer = Factory::create();
+        $this->serializer = \Statscore\Service\Serializer::get();
         $this->guzzle = Mockery::mock(\GuzzleHttp\Client::class);
         $this->service = new ApiService($this->guzzle, $this->serializer);
     }

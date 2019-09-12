@@ -2,8 +2,6 @@
 
 namespace Statscore\Model\Response\Participant;
 
-use Statscore\Model\Response\Competition\CompetitionDTO;
-
 /**
  * Class ParticipantCompareDTO
  * @package Statscore\Model\Response\Participant
@@ -21,11 +19,6 @@ class ParticipantCompareDTO
     private $head2head;
 
     /**
-     * @var CompetitionDTO[]
-     */
-    private $h2hEvents;
-
-    /**
      * @return ParticipantDTO[]
      */
     public function getParticipants(): array
@@ -39,5 +32,27 @@ class ParticipantCompareDTO
     public function getHead2head(): ParticipantHead2HeadDTO
     {
         return $this->head2head;
+    }
+
+    /**
+     * @param ParticipantDTO[] $participants
+     * @return ParticipantCompareDTO
+     */
+    public function setParticipants(array $participants): ParticipantCompareDTO
+    {
+        $this->participants = $participants;
+
+        return $this;
+    }
+
+    /**
+     * @param ParticipantHead2HeadDTO $head2head
+     * @return ParticipantCompareDTO
+     */
+    public function setHead2head(ParticipantHead2HeadDTO $head2head): ParticipantCompareDTO
+    {
+        $this->head2head = $head2head;
+
+        return $this;
     }
 }

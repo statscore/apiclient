@@ -57,7 +57,7 @@ class StageDTO
     private $isCurrent;
 
     /**
-     * @var string
+     * @var integer
      */
     private $ut;
 
@@ -153,4 +153,127 @@ class StageDTO
     {
         return $this->groups;
     }
+
+    /**
+     * @param int $id
+     * @return StageDTO
+     */
+    public function setId(int $id): StageDTO
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * @param int $stageNameId
+     * @return StageDTO
+     */
+    public function setStageNameId(int $stageNameId): StageDTO
+    {
+        $this->stageNameId = $stageNameId;
+
+        return $this;
+    }
+
+    /**
+     * @param string $name
+     * @return StageDTO
+     */
+    public function setName(string $name): StageDTO
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * @param DateTime $startDate
+     * @return StageDTO
+     */
+    public function setStartDate(DateTime $startDate): StageDTO
+    {
+        $this->startDate = $startDate;
+
+        return $this;
+    }
+
+    /**
+     * @param DateTime $endDate
+     * @return StageDTO
+     */
+    public function setEndDate(DateTime $endDate): StageDTO
+    {
+        $this->endDate = $endDate;
+
+        return $this;
+    }
+
+    /**
+     * @param string $showStandings
+     * @return StageDTO
+     */
+    public function setShowStandings(string $showStandings): StageDTO
+    {
+        $this->showStandings = $showStandings;
+
+        return $this;
+    }
+
+    /**
+     * @param int $groupsNr
+     * @return StageDTO
+     */
+    public function setGroupsNr(int $groupsNr): StageDTO
+    {
+        $this->groupsNr = $groupsNr;
+
+        return $this;
+    }
+
+    /**
+     * @param int $sort
+     * @return StageDTO
+     */
+    public function setSort(int $sort): StageDTO
+    {
+        $this->sort = $sort;
+
+        return $this;
+    }
+
+    /**
+     * @param string $isCurrent
+     * @return StageDTO
+     */
+    public function setIsCurrent(string $isCurrent): StageDTO
+    {
+        $this->isCurrent = $isCurrent;
+
+        return $this;
+    }
+
+    /**
+     * @param int $ut
+     * @return StageDTO
+     */
+    public function setUt(int $ut): StageDTO
+    {
+        $this->ut = $ut;
+
+        return $this;
+    }
+
+    /**
+     * @param GroupDTO[] $groups
+     * @return StageDTO
+     */
+    public function setGroups(array $groups): StageDTO
+    {
+        $this->groups = $groups;
+
+        return $this;
+    }
+
+
 }

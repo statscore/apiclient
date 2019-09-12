@@ -83,7 +83,7 @@ class StandingDTO
     private $stageId;
 
     /**
-     * @var string
+     * @var int
      */
     private $ut;
 
@@ -213,9 +213,9 @@ class StandingDTO
     }
 
     /**
-     * @return string
+     * @return int
      */
-    public function getUt(): string
+    public function getUt(): int
     {
         return $this->ut;
     }
@@ -227,4 +227,193 @@ class StandingDTO
     {
         return $this->groups;
     }
+
+    /**
+     * @param int $id
+     * @return StandingDTO
+     */
+    public function setId(int $id): StandingDTO
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * @param string $name
+     * @return StandingDTO
+     */
+    public function setName(string $name): StandingDTO
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * @param int $sportId
+     * @return StandingDTO
+     */
+    public function setSportId(int $sportId): StandingDTO
+    {
+        $this->sportId = $sportId;
+
+        return $this;
+    }
+
+    /**
+     * @param string $sportName
+     * @return StandingDTO
+     */
+    public function setSportName(string $sportName): StandingDTO
+    {
+        $this->sportName = $sportName;
+
+        return $this;
+    }
+
+    /**
+     * @param int $typeId
+     * @return StandingDTO
+     */
+    public function setTypeId(int $typeId): StandingDTO
+    {
+        $this->typeId = $typeId;
+
+        return $this;
+    }
+
+    /**
+     * @param string $typeName
+     * @return StandingDTO
+     */
+    public function setTypeName(string $typeName): StandingDTO
+    {
+        $this->typeName = $typeName;
+
+        return $this;
+    }
+
+    /**
+     * @param string $subtype
+     * @return StandingDTO
+     */
+    public function setSubtype(string $subtype): StandingDTO
+    {
+        $this->subtype = $subtype;
+
+        return $this;
+    }
+
+    /**
+     * @param int $objectId
+     * @return StandingDTO
+     */
+    public function setObjectId(int $objectId): StandingDTO
+    {
+        $this->objectId = $objectId;
+
+        return $this;
+    }
+
+    /**
+     * @param string $objectType
+     * @return StandingDTO
+     */
+    public function setObjectType(string $objectType): StandingDTO
+    {
+        $this->objectType = $objectType;
+
+        return $this;
+    }
+
+    /**
+     * @param string $objectName
+     * @return StandingDTO
+     */
+    public function setObjectName(string $objectName): StandingDTO
+    {
+        $this->objectName = $objectName;
+
+        return $this;
+    }
+
+    /**
+     * @param string $itemStatus
+     * @return StandingDTO
+     */
+    public function setItemStatus(string $itemStatus): StandingDTO
+    {
+        $this->itemStatus = $itemStatus;
+
+        return $this;
+    }
+
+    /**
+     * @param string $resetGroupRank
+     * @return StandingDTO
+     */
+    public function setResetGroupRank(string $resetGroupRank): StandingDTO
+    {
+        $this->resetGroupRank = $resetGroupRank;
+
+        return $this;
+    }
+
+    /**
+     * @param int $competitionId
+     * @return StandingDTO
+     */
+    public function setCompetitionId(int $competitionId): StandingDTO
+    {
+        $this->competitionId = $competitionId;
+
+        return $this;
+    }
+
+    /**
+     * @param int $seasonId
+     * @return StandingDTO
+     */
+    public function setSeasonId(int $seasonId): StandingDTO
+    {
+        $this->seasonId = $seasonId;
+
+        return $this;
+    }
+
+    /**
+     * @param int $stageId
+     * @return StandingDTO
+     */
+    public function setStageId(int $stageId): StandingDTO
+    {
+        $this->stageId = $stageId;
+
+        return $this;
+    }
+
+    /**
+     * @param int $ut
+     * @return StandingDTO
+     */
+    public function setUt(int $ut): StandingDTO
+    {
+        $this->ut = $ut;
+
+        return $this;
+    }
+
+    /**
+     * @param StandingGroupDTO[] $groups
+     * @return StandingDTO
+     */
+    public function setGroups(array $groups): StandingDTO
+    {
+        $this->groups = $groups;
+
+        return $this;
+    }
+
+
 }

@@ -24,7 +24,7 @@ class RoundDTO
     private $sort;
 
     /**
-     * @var string
+     * @var integer
      */
     private $ut;
 
@@ -53,10 +53,54 @@ class RoundDTO
     }
 
     /**
-     * @return string
+     * @return integer
      */
-    public function getUt(): string
+    public function getUt(): int
     {
         return $this->ut;
+    }
+
+    /**
+     * @param int $id
+     * @return RoundDTO
+     */
+    public function setId(int $id): RoundDTO
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * @param string $name
+     * @return RoundDTO
+     */
+    public function setName(string $name): RoundDTO
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * @param int $sort
+     * @return RoundDTO
+     */
+    public function setSort(int $sort): RoundDTO
+    {
+        $this->sort = $sort;
+
+        return $this;
+    }
+
+    /**
+     * @param int $ut
+     * @return RoundDTO
+     */
+    public function setUt(int $ut): RoundDTO
+    {
+        $this->ut = $ut;
+
+        return $this;
     }
 }

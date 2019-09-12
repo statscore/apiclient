@@ -19,7 +19,7 @@ class FeedDTO
     private $type;
 
     /**
-     * @var string
+     * @var int
      */
     private $ut;
 
@@ -50,9 +50,9 @@ class FeedDTO
     }
 
     /**
-     * @return string
+     * @return integer
      */
-    public function getUt(): string
+    public function getUt(): int
     {
         return $this->ut;
     }
@@ -72,4 +72,60 @@ class FeedDTO
     {
         return $this->data;
     }
+
+    /**
+     * @param int $id
+     * @return FeedDTO
+     */
+    public function setId(int $id): FeedDTO
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * @param string $type
+     * @return FeedDTO
+     */
+    public function setType(string $type): FeedDTO
+    {
+        $this->type = $type;
+
+        return $this;
+    }
+
+    /**
+     * @param int $ut
+     * @return FeedDTO
+     */
+    public function setUt(int $ut): FeedDTO
+    {
+        $this->ut = $ut;
+
+        return $this;
+    }
+
+    /**
+     * @param int $source
+     * @return FeedDTO
+     */
+    public function setSource(int $source): FeedDTO
+    {
+        $this->source = $source;
+
+        return $this;
+    }
+
+    /**
+     * @param FeedDataDTO $data
+     * @return FeedDTO
+     */
+    public function setData(FeedDataDTO $data): FeedDTO
+    {
+        $this->data = $data;
+
+        return $this;
+    }
+
 }

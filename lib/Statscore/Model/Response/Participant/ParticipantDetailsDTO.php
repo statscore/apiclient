@@ -9,7 +9,7 @@ namespace Statscore\Model\Response\Participant;
 class ParticipantDetailsDTO
 {
     /**
-     * @var integer|null
+     * @var string
      */
     private $founded;
 
@@ -29,7 +29,7 @@ class ParticipantDetailsDTO
     private $address;
 
     /**
-     * @var integer|null
+     * @var string
      */
     private $venueId;
 
@@ -59,7 +59,7 @@ class ParticipantDetailsDTO
     private $positionName;
 
     /**
-     * @var integer|null
+     * @var string
      */
     private $positionId;
 
@@ -84,9 +84,9 @@ class ParticipantDetailsDTO
     private $subtype;
 
     /**
-     * @return int|null
+     * @return string
      */
-    public function getFounded(): ?int
+    public function getFounded(): string
     {
         return $this->founded;
     }
@@ -116,9 +116,9 @@ class ParticipantDetailsDTO
     }
 
     /**
-     * @return int|null
+     * @return string
      */
-    public function getVenueId(): ?int
+    public function getVenueId(): string
     {
         return $this->venueId;
     }
@@ -164,9 +164,9 @@ class ParticipantDetailsDTO
     }
 
     /**
-     * @return int|null
+     * @return string
      */
-    public function getPositionId(): ?int
+    public function getPositionId(): string
     {
         return $this->positionId;
     }
@@ -201,5 +201,170 @@ class ParticipantDetailsDTO
     public function getSubtype(): string
     {
         return $this->subtype;
+    }
+
+    /**
+     * @param string $founded
+     * @return ParticipantDetailsDTO
+     */
+    public function setFounded(string $founded): ParticipantDetailsDTO
+    {
+        $this->founded = $founded;
+
+        return $this;
+    }
+
+    /**
+     * @param string $phone
+     * @return ParticipantDetailsDTO
+     */
+    public function setPhone(string $phone): ParticipantDetailsDTO
+    {
+        $this->phone = $phone;
+
+        return $this;
+    }
+
+    /**
+     * @param string $email
+     * @return ParticipantDetailsDTO
+     */
+    public function setEmail(string $email): ParticipantDetailsDTO
+    {
+        $this->email = $email;
+
+        return $this;
+    }
+
+    /**
+     * @param string $address
+     * @return ParticipantDetailsDTO
+     */
+    public function setAddress(string $address): ParticipantDetailsDTO
+    {
+        $this->address = $address;
+
+        return $this;
+    }
+
+    /**
+     * @param string $venueId
+     * @return ParticipantDetailsDTO
+     */
+    public function setVenueId(string $venueId): ParticipantDetailsDTO
+    {
+        $this->venueId = $venueId;
+
+        return $this;
+    }
+
+    /**
+     * @param string $venueName
+     * @return ParticipantDetailsDTO
+     */
+    public function setVenueName(string $venueName): ParticipantDetailsDTO
+    {
+        $this->venueName = $venueName;
+
+        return $this;
+    }
+
+    /**
+     * @param string $weight
+     * @return ParticipantDetailsDTO
+     */
+    public function setWeight(string $weight): ParticipantDetailsDTO
+    {
+        $this->weight = $weight;
+
+        return $this;
+    }
+
+    /**
+     * @param string $height
+     * @return ParticipantDetailsDTO
+     */
+    public function setHeight(string $height): ParticipantDetailsDTO
+    {
+        $this->height = $height;
+
+        return $this;
+    }
+
+    /**
+     * @param string $nickname
+     * @return ParticipantDetailsDTO
+     */
+    public function setNickname(string $nickname): ParticipantDetailsDTO
+    {
+        $this->nickname = $nickname;
+
+        return $this;
+    }
+
+    /**
+     * @param string $positionName
+     * @return ParticipantDetailsDTO
+     */
+    public function setPositionName(string $positionName): ParticipantDetailsDTO
+    {
+        $this->positionName = $positionName;
+
+        return $this;
+    }
+
+    /**
+     * @param string $positionId
+     * @return ParticipantDetailsDTO
+     */
+    public function setPositionId(string $positionId): ParticipantDetailsDTO
+    {
+        $this->positionId = $positionId;
+
+        return $this;
+    }
+
+    /**
+     * @param string $birthdate
+     * @return ParticipantDetailsDTO
+     */
+    public function setBirthdate(string $birthdate): ParticipantDetailsDTO
+    {
+        $this->birthdate = $birthdate;
+
+        return $this;
+    }
+
+    /**
+     * @param string $bornPlace
+     * @return ParticipantDetailsDTO
+     */
+    public function setBornPlace(string $bornPlace): ParticipantDetailsDTO
+    {
+        $this->bornPlace = $bornPlace;
+
+        return $this;
+    }
+
+    /**
+     * @param string $isRetired
+     * @return ParticipantDetailsDTO
+     */
+    public function setIsRetired(string $isRetired): ParticipantDetailsDTO
+    {
+        $this->isRetired = $isRetired;
+
+        return $this;
+    }
+
+    /**
+     * @param string $subtype
+     * @return ParticipantDetailsDTO
+     */
+    public function setSubtype(string $subtype): ParticipantDetailsDTO
+    {
+        $this->subtype = $subtype;
+
+        return $this;
     }
 }

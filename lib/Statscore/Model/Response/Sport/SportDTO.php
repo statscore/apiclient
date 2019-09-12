@@ -46,12 +46,12 @@ class SportDTO
     private $incidentsPositions;
 
     /**
-     * @var string
+     * @var integer
      */
     private $ut;
 
     /**
-     * @var \Statscore\Model\Response\Status\StatusDTO[]
+     * @var StatusDTO[]
      */
     private $statuses = [];
 
@@ -112,9 +112,9 @@ class SportDTO
     }
 
     /**
-     * @return string
+     * @return integer
      */
-    public function getUt(): string
+    public function getUt(): int
     {
         return $this->ut;
     }
@@ -125,5 +125,104 @@ class SportDTO
     public function getStatuses(): array
     {
         return $this->statuses;
+    }
+
+    /**
+     * @param int $id
+     * @return SportDTO
+     */
+    public function setId(int $id): SportDTO
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * @param string $name
+     * @return SportDTO
+     */
+    public function setName(string $name): SportDTO
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * @param string $url
+     * @return SportDTO
+     */
+    public function setUrl(string $url): SportDTO
+    {
+        $this->url = $url;
+
+        return $this;
+    }
+
+    /**
+     * @param string $active
+     * @return SportDTO
+     */
+    public function setActive(string $active): SportDTO
+    {
+        $this->active = $active;
+
+        return $this;
+    }
+
+    /**
+     * @param string $hasTimer
+     * @return SportDTO
+     */
+    public function setHasTimer(string $hasTimer): SportDTO
+    {
+        $this->hasTimer = $hasTimer;
+
+        return $this;
+    }
+
+    /**
+     * @param string $template
+     * @return SportDTO
+     */
+    public function setTemplate(string $template): SportDTO
+    {
+        $this->template = $template;
+
+        return $this;
+    }
+
+    /**
+     * @param string $incidentsPositions
+     * @return SportDTO
+     */
+    public function setIncidentsPositions(string $incidentsPositions): SportDTO
+    {
+        $this->incidentsPositions = $incidentsPositions;
+
+        return $this;
+    }
+
+    /**
+     * @param int $ut
+     * @return SportDTO
+     */
+    public function setUt(int $ut): SportDTO
+    {
+        $this->ut = $ut;
+
+        return $this;
+    }
+
+    /**
+     * @param StatusDTO[] $statuses
+     * @return SportDTO
+     */
+    public function setStatuses(array $statuses): SportDTO
+    {
+        $this->statuses = $statuses;
+
+        return $this;
     }
 }

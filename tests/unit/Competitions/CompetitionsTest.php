@@ -4,11 +4,10 @@ namespace UnitTests\Competitions;
 
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Response;
-use Itav\Component\Serializer\SerializerException;
-use ReflectionException;
 use Statscore\Model\Response\Competition\CompetitionDTO;
 use Statscore\Service\Competitions\CompetitionsService;
 use Symfony\Component\HttpFoundation\Response as HttpFoundationResponse;
+use Symfony\Component\Serializer\Exception\ExceptionInterface;
 use UnitTests\TestCase;
 
 /**
@@ -32,8 +31,7 @@ class CompetitionsTest extends TestCase
     /**
      * @return CompetitionDTO
      * @throws GuzzleException
-     * @throws SerializerException
-     * @throws ReflectionException
+     * @throws ExceptionInterface
      */
     public function testGetAll(): CompetitionDTO
     {
@@ -91,9 +89,8 @@ class CompetitionsTest extends TestCase
 
     /**
      * @return CompetitionDTO
+     * @throws ExceptionInterface
      * @throws GuzzleException
-     * @throws ReflectionException
-     * @throws SerializerException
      */
     public function testGet(): CompetitionDTO
     {

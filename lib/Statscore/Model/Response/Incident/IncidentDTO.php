@@ -64,7 +64,7 @@ class IncidentDTO
     private $gameBreak;
 
     /**
-     * @var string
+     * @var integer
      */
     private $ut;
 
@@ -157,10 +157,142 @@ class IncidentDTO
     }
 
     /**
-     * @return string
+     * @return integer
      */
-    public function getUt(): string
+    public function getUt(): int
     {
         return $this->ut;
+    }
+
+    /**
+     * @param int $id
+     * @return IncidentDTO
+     */
+    public function setId(int $id): IncidentDTO
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * @param string $name
+     * @return IncidentDTO
+     */
+    public function setName(string $name): IncidentDTO
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * @param string $code
+     * @return IncidentDTO
+     */
+    public function setCode(string $code): IncidentDTO
+    {
+        $this->code = $code;
+
+        return $this;
+    }
+
+    /**
+     * @param string $important
+     * @return IncidentDTO
+     */
+    public function setImportant(string $important): IncidentDTO
+    {
+        $this->important = $important;
+
+        return $this;
+    }
+
+    /**
+     * @param string $importantForTrader
+     * @return IncidentDTO
+     */
+    public function setImportantForTrader(string $importantForTrader): IncidentDTO
+    {
+        $this->importantForTrader = $importantForTrader;
+
+        return $this;
+    }
+
+    /**
+     * @param int $sportId
+     * @return IncidentDTO
+     */
+    public function setSportId(int $sportId): IncidentDTO
+    {
+        $this->sportId = $sportId;
+
+        return $this;
+    }
+
+    /**
+     * @param string $type
+     * @return IncidentDTO
+     */
+    public function setType(string $type): IncidentDTO
+    {
+        $this->type = $type;
+
+        return $this;
+    }
+
+    /**
+     * @param string $for
+     * @return IncidentDTO
+     */
+    public function setFor(string $for): IncidentDTO
+    {
+        $this->for = $for;
+
+        return $this;
+    }
+
+    /**
+     * @param string|null $group
+     * @return IncidentDTO
+     */
+    public function setGroup(?string $group): IncidentDTO
+    {
+        $this->group = $group;
+
+        return $this;
+    }
+
+    /**
+     * @param string $details
+     * @return IncidentDTO
+     */
+    public function setDetails(string $details): IncidentDTO
+    {
+        $this->details = $details;
+
+        return $this;
+    }
+
+    /**
+     * @param string $gameBreak
+     * @return IncidentDTO
+     */
+    public function setGameBreak(string $gameBreak): IncidentDTO
+    {
+        $this->gameBreak = $gameBreak;
+
+        return $this;
+    }
+
+    /**
+     * @param int $ut
+     * @return IncidentDTO
+     */
+    public function setUt(int $ut): IncidentDTO
+    {
+        $this->ut = $ut;
+
+        return $this;
     }
 }

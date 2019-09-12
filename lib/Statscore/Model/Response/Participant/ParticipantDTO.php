@@ -82,7 +82,7 @@ class ParticipantDTO
     private $website;
 
     /**
-     * @var string
+     * @var integer
      */
     private $ut;
 
@@ -107,17 +107,17 @@ class ParticipantDTO
     private $shirtNr;
 
     /**
-     * @var \Statscore\Model\Response\Participant\ParticipantDetailsDTO
+     * @var ParticipantDetailsDTO
      */
     private $details;
 
     /**
-     * @var \Statscore\Model\Response\Stat\StatDTO[]
+     * @var StatDTO[]
      */
     private $stats = [];
 
     /**
-     * @var \Statscore\Model\Response\Result\ResultDTO[]
+     * @var ResultDTO[]
      */
     private $results = [];
 
@@ -234,9 +234,9 @@ class ParticipantDTO
     }
 
     /**
-     * @return string
+     * @return int
      */
-    public function getUt(): string
+    public function getUt(): int
     {
         return $this->ut;
     }
@@ -296,4 +296,247 @@ class ParticipantDTO
     {
         return $this->results;
     }
+
+    /**
+     * @param int $counter
+     * @return ParticipantDTO
+     */
+    public function setCounter(int $counter): ParticipantDTO
+    {
+        $this->counter = $counter;
+
+        return $this;
+    }
+
+    /**
+     * @param int $id
+     * @return ParticipantDTO
+     */
+    public function setId(int $id): ParticipantDTO
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * @param string $type
+     * @return ParticipantDTO
+     */
+    public function setType(string $type): ParticipantDTO
+    {
+        $this->type = $type;
+
+        return $this;
+    }
+
+    /**
+     * @param string $name
+     * @return ParticipantDTO
+     */
+    public function setName(string $name): ParticipantDTO
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * @param string $shortName
+     * @return ParticipantDTO
+     */
+    public function setShortName(string $shortName): ParticipantDTO
+    {
+        $this->shortName = $shortName;
+
+        return $this;
+    }
+
+    /**
+     * @param string $acronym
+     * @return ParticipantDTO
+     */
+    public function setAcronym(string $acronym): ParticipantDTO
+    {
+        $this->acronym = $acronym;
+
+        return $this;
+    }
+
+    /**
+     * @param string $gender
+     * @return ParticipantDTO
+     */
+    public function setGender(string $gender): ParticipantDTO
+    {
+        $this->gender = $gender;
+
+        return $this;
+    }
+
+    /**
+     * @param int $areaId
+     * @return ParticipantDTO
+     */
+    public function setAreaId(int $areaId): ParticipantDTO
+    {
+        $this->areaId = $areaId;
+
+        return $this;
+    }
+
+    /**
+     * @param string $areaName
+     * @return ParticipantDTO
+     */
+    public function setAreaName(string $areaName): ParticipantDTO
+    {
+        $this->areaName = $areaName;
+
+        return $this;
+    }
+
+    /**
+     * @param string $areaCode
+     * @return ParticipantDTO
+     */
+    public function setAreaCode(string $areaCode): ParticipantDTO
+    {
+        $this->areaCode = $areaCode;
+
+        return $this;
+    }
+
+    /**
+     * @param int $sportId
+     * @return ParticipantDTO
+     */
+    public function setSportId(int $sportId): ParticipantDTO
+    {
+        $this->sportId = $sportId;
+
+        return $this;
+    }
+
+    /**
+     * @param string $sportName
+     * @return ParticipantDTO
+     */
+    public function setSportName(string $sportName): ParticipantDTO
+    {
+        $this->sportName = $sportName;
+
+        return $this;
+    }
+
+    /**
+     * @param string $national
+     * @return ParticipantDTO
+     */
+    public function setNational(string $national): ParticipantDTO
+    {
+        $this->national = $national;
+
+        return $this;
+    }
+
+    /**
+     * @param string $website
+     * @return ParticipantDTO
+     */
+    public function setWebsite(string $website): ParticipantDTO
+    {
+        $this->website = $website;
+
+        return $this;
+    }
+
+    /**
+     * @param integer $ut
+     * @return ParticipantDTO
+     */
+    public function setUt(int $ut): ParticipantDTO
+    {
+        $this->ut = $ut;
+
+        return $this;
+    }
+
+    /**
+     * @param string $slug
+     * @return ParticipantDTO
+     */
+    public function setSlug(string $slug): ParticipantDTO
+    {
+        $this->slug = $slug;
+
+        return $this;
+    }
+
+    /**
+     * @param string $logo
+     * @return ParticipantDTO
+     */
+    public function setLogo(string $logo): ParticipantDTO
+    {
+        $this->logo = $logo;
+
+        return $this;
+    }
+
+    /**
+     * @param string $virtual
+     * @return ParticipantDTO
+     */
+    public function setVirtual(string $virtual): ParticipantDTO
+    {
+        $this->virtual = $virtual;
+
+        return $this;
+    }
+
+    /**
+     * @param string $shirtNr
+     * @return ParticipantDTO
+     */
+    public function setShirtNr(string $shirtNr): ParticipantDTO
+    {
+        $this->shirtNr = $shirtNr;
+
+        return $this;
+    }
+
+    /**
+     * @param ParticipantDetailsDTO $details
+     * @return ParticipantDTO
+     */
+    public function setDetails(ParticipantDetailsDTO $details): ParticipantDTO
+    {
+        $this->details = $details;
+
+        return $this;
+    }
+
+    /**
+     * @param StatDTO[] $stats
+     * @return ParticipantDTO
+     */
+    public function setStats(array $stats): ParticipantDTO
+    {
+        $this->stats = $stats;
+
+        return $this;
+    }
+
+    /**
+     * @param ResultDTO[] $results
+     * @return ParticipantDTO
+     */
+    public function setResults(array $results): ParticipantDTO
+    {
+        $this->results = $results;
+
+        return $this;
+    }
+
 }

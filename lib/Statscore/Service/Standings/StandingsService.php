@@ -3,14 +3,13 @@
 namespace Statscore\Service\Standings;
 
 use GuzzleHttp\Exception\GuzzleException;
-use Itav\Component\Serializer\SerializerException;
-use ReflectionException;
 use Statscore\Model\Request\RequestDTO;
 use Statscore\Model\Response\ResponseDTO;
 use Statscore\Model\Response\Standing\StandingDTO;
 use Statscore\Model\Response\Standing\StandingTypeDTO;
 use Statscore\Service\Api;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Serializer\Exception\ExceptionInterface;
 
 /**
  * @package Statscore\Service\Standings
@@ -26,8 +25,7 @@ class StandingsService extends Api
      * @param array $query
      * @return ResponseDTO
      * @throws GuzzleException
-     * @throws SerializerException
-     * @throws ReflectionException
+     * @throws ExceptionInterface
      */
     public function getAll(array $query = []): ResponseDTO
     {
@@ -40,7 +38,8 @@ class StandingsService extends Api
         $responseDTO->setData(
             $this->serializer->denormalize(
                 $responseDTO->getData()['standings_list'] ?? [],
-                StandingDTO::class . '[]')
+                StandingDTO::class . '[]'
+            )
         );
 
         return $responseDTO;
@@ -50,9 +49,8 @@ class StandingsService extends Api
      * @param int $id
      * @param array $query
      * @return ResponseDTO
+     * @throws ExceptionInterface
      * @throws GuzzleException
-     * @throws ReflectionException
-     * @throws SerializerException
      */
     public function get(int $id, array $query = []): ResponseDTO
     {
@@ -65,7 +63,8 @@ class StandingsService extends Api
         $responseDTO->setData(
             $this->serializer->denormalize(
                 $responseDTO->getData()['standings'] ?? [],
-                StandingDTO::class)
+                StandingDTO::class
+            )
         );
 
         return $responseDTO;
@@ -75,9 +74,8 @@ class StandingsService extends Api
      * @param int $sportId
      * @param array $query
      * @return ResponseDTO
+     * @throws ExceptionInterface
      * @throws GuzzleException
-     * @throws ReflectionException
-     * @throws SerializerException
      */
     public function types(int $sportId, array $query = []): ResponseDTO
     {
@@ -91,7 +89,8 @@ class StandingsService extends Api
         $responseDTO->setData(
             $this->serializer->denormalize(
                 $responseDTO->getData()['standings_types'] ?? [],
-                StandingTypeDTO::class . '[]')
+                StandingTypeDTO::class . '[]'
+            )
         );
 
         return $responseDTO;

@@ -29,7 +29,7 @@ class StatusDTO
     private $type;
 
     /**
-     * @var string
+     * @var integer
      */
     private $ut;
 
@@ -66,10 +66,65 @@ class StatusDTO
     }
 
     /**
-     * @return string
+     * @return integer
      */
-    public function getUt(): string
+    public function getUt(): int
     {
         return $this->ut;
+    }
+
+    /**
+     * @param int $id
+     * @return StatusDTO
+     */
+    public function setId(int $id): StatusDTO
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * @param string $name
+     * @return StatusDTO
+     */
+    public function setName(string $name): StatusDTO
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * @param string $shortName
+     * @return StatusDTO
+     */
+    public function setShortName(string $shortName): StatusDTO
+    {
+        $this->shortName = $shortName;
+
+        return $this;
+    }
+
+    /**
+     * @param string $type
+     * @return StatusDTO
+     */
+    public function setType(string $type): StatusDTO
+    {
+        $this->type = $type;
+
+        return $this;
+    }
+
+    /**
+     * @param int $ut
+     * @return StatusDTO
+     */
+    public function setUt(int $ut): StatusDTO
+    {
+        $this->ut = $ut;
+
+        return $this;
     }
 }

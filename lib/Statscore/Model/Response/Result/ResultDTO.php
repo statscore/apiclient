@@ -24,7 +24,7 @@ class ResultDTO
     private $name;
 
     /**
-     * @var string
+     * @var mixed
      */
     private $value;
 
@@ -53,10 +53,55 @@ class ResultDTO
     }
 
     /**
-     * @return string
+     * @return mixed
      */
-    public function getValue(): string
+    public function getValue()
     {
         return $this->value;
     }
+
+    /**
+     * @param int $id
+     * @return ResultDTO
+     */
+    public function setId(int $id): ResultDTO
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * @param string $shortName
+     * @return ResultDTO
+     */
+    public function setShortName(string $shortName): ResultDTO
+    {
+        $this->shortName = $shortName;
+
+        return $this;
+    }
+
+    /**
+     * @param string $name
+     * @return ResultDTO
+     */
+    public function setName(string $name): ResultDTO
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * @param mixed $value
+     * @return ResultDTO
+     */
+    public function setValue($value): ResultDTO
+    {
+        $this->value = $value;
+
+        return $this;
+    }
+
 }

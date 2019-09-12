@@ -4,7 +4,6 @@ namespace UnitTests\Languages;
 
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Response;
-use Itav\Component\Serializer\SerializerException;
 use ReflectionException;
 use Statscore\Model\Response\Language\LanguageDTO;
 use Statscore\Service\Incidents\IncidentsService;
@@ -32,7 +31,6 @@ class LanguagesTest extends TestCase
     /**
      * @return LanguageDTO
      * @throws GuzzleException
-     * @throws SerializerException
      * @throws ReflectionException
      */
     public function testGetAll(): LanguageDTO

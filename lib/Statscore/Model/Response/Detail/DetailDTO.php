@@ -19,7 +19,7 @@ class DetailDTO
     private $name;
 
     /**
-     * @var string
+     * @var mixed
      */
     private $value;
 
@@ -40,10 +40,43 @@ class DetailDTO
     }
 
     /**
-     * @return string
+     * @return mixed
      */
-    public function getValue(): string
+    public function getValue()
     {
         return $this->value;
+    }
+
+    /**
+     * @param int $id
+     * @return DetailDTO
+     */
+    public function setId(int $id): DetailDTO
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * @param string $name
+     * @return DetailDTO
+     */
+    public function setName(string $name): DetailDTO
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * @param mixed $value
+     * @return DetailDTO
+     */
+    public function setValue($value): DetailDTO
+    {
+        $this->value = $value;
+
+        return $this;
     }
 }

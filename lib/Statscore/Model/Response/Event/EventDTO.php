@@ -98,7 +98,7 @@ class EventDTO
     private $sportName;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $day;
 
@@ -173,7 +173,7 @@ class EventDTO
     private $roundId;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $roundName;
 
@@ -198,7 +198,7 @@ class EventDTO
     private $invertedParticipants;
 
     /**
-     * @var integer|null
+     * @var string
      */
     private $venueId;
 
@@ -213,12 +213,12 @@ class EventDTO
     private $eventStatsLvl;
 
     /**
-     * @var \Statscore\Model\Response\Detail\DetailDTO[]
+     * @var DetailDTO[]
      */
     private $details = [];
 
     /**
-     * @var \Statscore\Model\Response\Participant\ParticipantDTO[]
+     * @var ParticipantDTO[]
      */
     private $participants = [];
 
@@ -359,9 +359,9 @@ class EventDTO
     }
 
     /**
-     * @return string
+     * @return null|string
      */
-    public function getDay(): string
+    public function getDay(): ?string
     {
         return $this->day;
     }
@@ -479,9 +479,9 @@ class EventDTO
     }
 
     /**
-     * @return string
+     * @return null|string
      */
-    public function getRoundName(): string
+    public function getRoundName(): ?string
     {
         return $this->roundName;
     }
@@ -519,9 +519,9 @@ class EventDTO
     }
 
     /**
-     * @return int|null
+     * @return string
      */
-    public function getVenueId(): ?int
+    public function getVenueId(): string
     {
         return $this->venueId;
     }
@@ -557,4 +557,467 @@ class EventDTO
     {
         return $this->participants;
     }
+
+    /**
+     * @param int $id
+     * @return EventDTO
+     */
+    public function setId(int $id): EventDTO
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * @param string $name
+     * @return EventDTO
+     */
+    public function setName(string $name): EventDTO
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * @param int $source
+     * @return EventDTO
+     */
+    public function setSource(int $source): EventDTO
+    {
+        $this->source = $source;
+
+        return $this;
+    }
+
+    /**
+     * @param string $sourceDc
+     * @return EventDTO
+     */
+    public function setSourceDc(string $sourceDc): EventDTO
+    {
+        $this->sourceDc = $sourceDc;
+
+        return $this;
+    }
+
+    /**
+     * @param int|null $sourceSuper
+     * @return EventDTO
+     */
+    public function setSourceSuper(?int $sourceSuper): EventDTO
+    {
+        $this->sourceSuper = $sourceSuper;
+
+        return $this;
+    }
+
+    /**
+     * @param string $relationStatus
+     * @return EventDTO
+     */
+    public function setRelationStatus(string $relationStatus): EventDTO
+    {
+        $this->relationStatus = $relationStatus;
+
+        return $this;
+    }
+
+    /**
+     * @param DateTime $startDate
+     * @return EventDTO
+     */
+    public function setStartDate(DateTime $startDate): EventDTO
+    {
+        $this->startDate = $startDate;
+
+        return $this;
+    }
+
+    /**
+     * @param string $ftOnly
+     * @return EventDTO
+     */
+    public function setFtOnly(string $ftOnly): EventDTO
+    {
+        $this->ftOnly = $ftOnly;
+
+        return $this;
+    }
+
+    /**
+     * @param string $coverageType
+     * @return EventDTO
+     */
+    public function setCoverageType(string $coverageType): EventDTO
+    {
+        $this->coverageType = $coverageType;
+
+        return $this;
+    }
+
+    /**
+     * @param int|null $channelId
+     * @return EventDTO
+     */
+    public function setChannelId(?int $channelId): EventDTO
+    {
+        $this->channelId = $channelId;
+
+        return $this;
+    }
+
+    /**
+     * @param string $channelName
+     * @return EventDTO
+     */
+    public function setChannelName(string $channelName): EventDTO
+    {
+        $this->channelName = $channelName;
+
+        return $this;
+    }
+
+    /**
+     * @param string $scoutsfeed
+     * @return EventDTO
+     */
+    public function setScoutsfeed(string $scoutsfeed): EventDTO
+    {
+        $this->scoutsfeed = $scoutsfeed;
+
+        return $this;
+    }
+
+    /**
+     * @param int $statusId
+     * @return EventDTO
+     */
+    public function setStatusId(int $statusId): EventDTO
+    {
+        $this->statusId = $statusId;
+
+        return $this;
+    }
+
+    /**
+     * @param string $statusName
+     * @return EventDTO
+     */
+    public function setStatusName(string $statusName): EventDTO
+    {
+        $this->statusName = $statusName;
+
+        return $this;
+    }
+
+    /**
+     * @param string $statusType
+     * @return EventDTO
+     */
+    public function setStatusType(string $statusType): EventDTO
+    {
+        $this->statusType = $statusType;
+
+        return $this;
+    }
+
+    /**
+     * @param int $sportId
+     * @return EventDTO
+     */
+    public function setSportId(int $sportId): EventDTO
+    {
+        $this->sportId = $sportId;
+
+        return $this;
+    }
+
+    /**
+     * @param string $sportName
+     * @return EventDTO
+     */
+    public function setSportName(string $sportName): EventDTO
+    {
+        $this->sportName = $sportName;
+
+        return $this;
+    }
+
+    /**
+     * @param null|string $day
+     * @return EventDTO
+     */
+    public function setDay(?string $day): EventDTO
+    {
+        $this->day = $day;
+
+        return $this;
+    }
+
+    /**
+     * @param string|null $clockTime
+     * @return EventDTO
+     */
+    public function setClockTime(?string $clockTime): EventDTO
+    {
+        $this->clockTime = $clockTime;
+
+        return $this;
+    }
+
+    /**
+     * @param string|null $clockStatus
+     * @return EventDTO
+     */
+    public function setClockStatus(?string $clockStatus): EventDTO
+    {
+        $this->clockStatus = $clockStatus;
+
+        return $this;
+    }
+
+    /**
+     * @param int|null $winnerId
+     * @return EventDTO
+     */
+    public function setWinnerId(?int $winnerId): EventDTO
+    {
+        $this->winnerId = $winnerId;
+
+        return $this;
+    }
+
+    /**
+     * @param int|null $progressId
+     * @return EventDTO
+     */
+    public function setProgressId(?int $progressId): EventDTO
+    {
+        $this->progressId = $progressId;
+
+        return $this;
+    }
+
+    /**
+     * @param string $betStatus
+     * @return EventDTO
+     */
+    public function setBetStatus(string $betStatus): EventDTO
+    {
+        $this->betStatus = $betStatus;
+
+        return $this;
+    }
+
+    /**
+     * @param string $neutralVenue
+     * @return EventDTO
+     */
+    public function setNeutralVenue(string $neutralVenue): EventDTO
+    {
+        $this->neutralVenue = $neutralVenue;
+
+        return $this;
+    }
+
+    /**
+     * @param string $itemStatus
+     * @return EventDTO
+     */
+    public function setItemStatus(string $itemStatus): EventDTO
+    {
+        $this->itemStatus = $itemStatus;
+
+        return $this;
+    }
+
+    /**
+     * @param string $ut
+     * @return EventDTO
+     */
+    public function setUt(string $ut): EventDTO
+    {
+        $this->ut = $ut;
+
+        return $this;
+    }
+
+    /**
+     * @param string $slug
+     * @return EventDTO
+     */
+    public function setSlug(string $slug): EventDTO
+    {
+        $this->slug = $slug;
+
+        return $this;
+    }
+
+    /**
+     * @param string $verifiedResult
+     * @return EventDTO
+     */
+    public function setVerifiedResult(string $verifiedResult): EventDTO
+    {
+        $this->verifiedResult = $verifiedResult;
+
+        return $this;
+    }
+
+    /**
+     * @param string $isProtocolVerified
+     * @return EventDTO
+     */
+    public function setIsProtocolVerified(string $isProtocolVerified): EventDTO
+    {
+        $this->isProtocolVerified = $isProtocolVerified;
+
+        return $this;
+    }
+
+    /**
+     * @param string|null $protocolVerifiedBy
+     * @return EventDTO
+     */
+    public function setProtocolVerifiedBy(?string $protocolVerifiedBy): EventDTO
+    {
+        $this->protocolVerifiedBy = $protocolVerifiedBy;
+
+        return $this;
+    }
+
+    /**
+     * @param string|null $protocolVerifiedAt
+     * @return EventDTO
+     */
+    public function setProtocolVerifiedAt(?string $protocolVerifiedAt): EventDTO
+    {
+        $this->protocolVerifiedAt = $protocolVerifiedAt;
+
+        return $this;
+    }
+
+    /**
+     * @param int|null $roundId
+     * @return EventDTO
+     */
+    public function setRoundId(?int $roundId): EventDTO
+    {
+        $this->roundId = $roundId;
+
+        return $this;
+    }
+
+    /**
+     * @param null|string $roundName
+     * @return EventDTO
+     */
+    public function setRoundName(?string $roundName): EventDTO
+    {
+        $this->roundName = $roundName;
+
+        return $this;
+    }
+
+    /**
+     * @param string|null $clientEventId
+     * @return EventDTO
+     */
+    public function setClientEventId(?string $clientEventId): EventDTO
+    {
+        $this->clientEventId = $clientEventId;
+
+        return $this;
+    }
+
+    /**
+     * @param string $booked
+     * @return EventDTO
+     */
+    public function setBooked(string $booked): EventDTO
+    {
+        $this->booked = $booked;
+
+        return $this;
+    }
+
+    /**
+     * @param string|null $bookedBy
+     * @return EventDTO
+     */
+    public function setBookedBy(?string $bookedBy): EventDTO
+    {
+        $this->bookedBy = $bookedBy;
+
+        return $this;
+    }
+
+    /**
+     * @param string $invertedParticipants
+     * @return EventDTO
+     */
+    public function setInvertedParticipants(string $invertedParticipants): EventDTO
+    {
+        $this->invertedParticipants = $invertedParticipants;
+
+        return $this;
+    }
+
+    /**
+     * @param string $venueId
+     * @return EventDTO
+     */
+    public function setVenueId(string $venueId): EventDTO
+    {
+        $this->venueId = $venueId;
+
+        return $this;
+    }
+
+    /**
+     * @param string $bfs
+     * @return EventDTO
+     */
+    public function setBfs(string $bfs): EventDTO
+    {
+        $this->bfs = $bfs;
+
+        return $this;
+    }
+
+    /**
+     * @param string $eventStatsLvl
+     * @return EventDTO
+     */
+    public function setEventStatsLvl(string $eventStatsLvl): EventDTO
+    {
+        $this->eventStatsLvl = $eventStatsLvl;
+
+        return $this;
+    }
+
+    /**
+     * @param DetailDTO[] $details
+     * @return EventDTO
+     */
+    public function setDetails(array $details): EventDTO
+    {
+        $this->details = $details;
+
+        return $this;
+    }
+
+    /**
+     * @param ParticipantDTO[] $participants
+     * @return EventDTO
+     */
+    public function setParticipants(array $participants): EventDTO
+    {
+        $this->participants = $participants;
+
+        return $this;
+    }
+
 }

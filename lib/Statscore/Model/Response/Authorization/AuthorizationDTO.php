@@ -9,7 +9,7 @@ namespace Statscore\Model\Response\Authorization;
 class AuthorizationDTO
 {
     /**
-     * @var integer
+     * @var string
      */
     private $clientId;
 
@@ -24,9 +24,9 @@ class AuthorizationDTO
     private $tokenExpiration;
 
     /**
-     * @return int
+     * @return string
      */
-    public function getClientId(): int
+    public function getClientId(): string
     {
         return $this->clientId;
     }
@@ -47,4 +47,36 @@ class AuthorizationDTO
         return $this->tokenExpiration;
     }
 
+    /**
+     * @param string $clientId
+     * @return AuthorizationDTO
+     */
+    public function setClientId(string $clientId): AuthorizationDTO
+    {
+        $this->clientId = $clientId;
+
+        return $this;
+    }
+
+    /**
+     * @param string $token
+     * @return AuthorizationDTO
+     */
+    public function setToken(string $token): AuthorizationDTO
+    {
+        $this->token = $token;
+
+        return $this;
+    }
+
+    /**
+     * @param int $tokenExpiration
+     * @return AuthorizationDTO
+     */
+    public function setTokenExpiration(int $tokenExpiration): AuthorizationDTO
+    {
+        $this->tokenExpiration = $tokenExpiration;
+
+        return $this;
+    }
 }

@@ -18,8 +18,10 @@
   "require": {
     "ext-json": "*",
     "guzzlehttp/guzzle": "^6.3",
-    "itav/serializer": "^2.0",
-    "symfony/http-foundation": "^4.3"
+    "symfony/http-foundation": "^4.3",
+    "symfony/property-access": "^4.3",
+    "symfony/property-info": "^4.3",
+    "symfony/serializer": "^4.3"
   },
   "require-dev": {
     "mockery/mockery": "^1.2",

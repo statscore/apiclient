@@ -5,14 +5,13 @@ namespace Statscore\Service;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\RequestOptions;
-use Itav\Component\Serializer\Serializer;
-use Itav\Component\Serializer\SerializerException;
-use ReflectionException;
 use Statscore\Model\Request\RequestDTO;
 use Statscore\Model\Response\Authorization\AuthorizationDTO;
 use Statscore\Model\Response\ResponseDTO;
 use Statscore\Service\Exception\AuthorizationException;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Serializer\Exception\ExceptionInterface;
+use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
 
 /**
  * Class ApiService
@@ -20,9 +19,9 @@ use Symfony\Component\HttpFoundation\Request;
  */
 final class ApiService
 {
-    const VERSION = 'v2';
+    private const VERSION = 'v2';
 
-    const URI = 'http://dev.api.statscore.com';
+    private const URI = 'http://dev.api.statscore.com';
 
     /**
      * @var Client
@@ -30,7 +29,7 @@ final class ApiService
     private $client;
 
     /**
-     * @var Serializer
+     * @var \Symfony\Component\Serializer\Serializer
      */
     public $serializer;
 
@@ -52,9 +51,9 @@ final class ApiService
     /**
      * ApiService constructor.
      * @param Client $guzzle
-     * @param Serializer $serializer
+     * @param \Symfony\Component\Serializer\Serializer $serializer
      */
-    public function __construct(Client $guzzle, Serializer $serializer)
+    public function __construct(Client $guzzle, \Symfony\Component\Serializer\Serializer $serializer)
     {
         $this->client = $guzzle;
         $this->serializer = $serializer;
@@ -97,8 +96,7 @@ final class ApiService
      * @return AuthorizationDTO
      * @throws AuthorizationException
      * @throws GuzzleException
-     * @throws SerializerException
-     * @throws ReflectionException
+     * @throws ExceptionInterface
      */
     public function getToken(): AuthorizationDTO
     {
@@ -126,22 +124,21 @@ final class ApiService
     /**
      * @param RequestDTO $requestDTO
      * @return ResponseDTO
+     * @throws ExceptionInterface
      * @throws GuzzleException
-     * @throws ReflectionException
-     * @throws SerializerException
      */
     public function request(RequestDTO $requestDTO): ResponseDTO
     {
         $request = $this->client->request(
             $requestDTO->getMethod(),
-            ApiService::URI . '/' . ApiService::VERSION . '/' . $requestDTO->getUri(),
+            self::URI . '/' . self::VERSION . '/' . $requestDTO->getUri(),
             $this->prepareBody($requestDTO)
         );
 
         $response = $request->getBody()->getContents();
         $response = json_decode($response, true);
 
-        return $this->serializer->denormalize($response['api'] ?? [], ResponseDTO::class);
+        return $this->serializer->denormalize($response['api'] ?? [], ResponseDTO::class, null, [ObjectNormalizer::DISABLE_TYPE_ENFORCEMENT => true]);
     }
 
     /**

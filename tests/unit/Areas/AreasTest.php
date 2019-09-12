@@ -4,11 +4,10 @@ namespace UnitTests\Areas;
 
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Response;
-use Itav\Component\Serializer\SerializerException;
-use ReflectionException;
 use Statscore\Model\Response\Area\AreaDTO;
 use Statscore\Service\Areas\AreasService;
 use Symfony\Component\HttpFoundation\Response as HttpFoundationResponse;
+use Symfony\Component\Serializer\Exception\ExceptionInterface;
 use UnitTests\TestCase;
 
 /**
@@ -31,8 +30,7 @@ class AreasTest extends TestCase
     /**
      * @return AreaDTO
      * @throws GuzzleException
-     * @throws SerializerException
-     * @throws ReflectionException
+     * @throws ExceptionInterface
      */
     public function testGetAll(): AreaDTO
     {

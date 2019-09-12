@@ -14,7 +14,7 @@ class ResponseDTO
     private $ver;
 
     /**
-     * @var string
+     * @var integer
      */
     private $timestamp;
 
@@ -37,9 +37,9 @@ class ResponseDTO
     }
 
     /**
-     * @return string
+     * @return integer
      */
-    public function getTimestamp(): string
+    public function getTimestamp(): int
     {
         return $this->timestamp;
     }
@@ -67,6 +67,39 @@ class ResponseDTO
     public function setData($data): ResponseDTO
     {
         $this->data = $data;
+
+        return $this;
+    }
+
+    /**
+     * @param string $ver
+     * @return ResponseDTO
+     */
+    public function setVer(string $ver): ResponseDTO
+    {
+        $this->ver = $ver;
+
+        return $this;
+    }
+
+    /**
+     * @param int $timestamp
+     * @return ResponseDTO
+     */
+    public function setTimestamp(int $timestamp): ResponseDTO
+    {
+        $this->timestamp = $timestamp;
+
+        return $this;
+    }
+
+    /**
+     * @param MethodDTO $method
+     * @return ResponseDTO
+     */
+    public function setMethod(MethodDTO $method): ResponseDTO
+    {
+        $this->method = $method;
 
         return $this;
     }

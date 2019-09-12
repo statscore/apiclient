@@ -2,3 +2,4 @@
 /.phpunit.result.cache
 test.php
 vendor
+.php_cs.cache

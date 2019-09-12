@@ -293,4 +293,247 @@ class FeedIncidentDTO
     {
         return $this->yPos;
     }
+
+    /**
+     * @param string $id
+     * @return FeedIncidentDTO
+     */
+    public function setId(string $id): FeedIncidentDTO
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * @param string $action
+     * @return FeedIncidentDTO
+     */
+    public function setAction(string $action): FeedIncidentDTO
+    {
+        $this->action = $action;
+
+        return $this;
+    }
+
+    /**
+     * @param int $incidentId
+     * @return FeedIncidentDTO
+     */
+    public function setIncidentId(int $incidentId): FeedIncidentDTO
+    {
+        $this->incidentId = $incidentId;
+
+        return $this;
+    }
+
+    /**
+     * @param string $incidentName
+     * @return FeedIncidentDTO
+     */
+    public function setIncidentName(string $incidentName): FeedIncidentDTO
+    {
+        $this->incidentName = $incidentName;
+
+        return $this;
+    }
+
+    /**
+     * @param int $participantId
+     * @return FeedIncidentDTO
+     */
+    public function setParticipantId(int $participantId): FeedIncidentDTO
+    {
+        $this->participantId = $participantId;
+
+        return $this;
+    }
+
+    /**
+     * @param string $participantName
+     * @return FeedIncidentDTO
+     */
+    public function setParticipantName(string $participantName): FeedIncidentDTO
+    {
+        $this->participantName = $participantName;
+
+        return $this;
+    }
+
+    /**
+     * @param int|null $subparticipantId
+     * @return FeedIncidentDTO
+     */
+    public function setSubparticipantId(?int $subparticipantId): FeedIncidentDTO
+    {
+        $this->subparticipantId = $subparticipantId;
+
+        return $this;
+    }
+
+    /**
+     * @param string|null $subparticipantName
+     * @return FeedIncidentDTO
+     */
+    public function setSubparticipantName(?string $subparticipantName): FeedIncidentDTO
+    {
+        $this->subparticipantName = $subparticipantName;
+
+        return $this;
+    }
+
+    /**
+     * @param string|null $info
+     * @return FeedIncidentDTO
+     */
+    public function setInfo(?string $info): FeedIncidentDTO
+    {
+        $this->info = $info;
+
+        return $this;
+    }
+
+    /**
+     * @param string $important
+     * @return FeedIncidentDTO
+     */
+    public function setImportant(string $important): FeedIncidentDTO
+    {
+        $this->important = $important;
+
+        return $this;
+    }
+
+    /**
+     * @param string $importantForTrader
+     * @return FeedIncidentDTO
+     */
+    public function setImportantForTrader(string $importantForTrader): FeedIncidentDTO
+    {
+        $this->importantForTrader = $importantForTrader;
+
+        return $this;
+    }
+
+    /**
+     * @param string|null $addData
+     * @return FeedIncidentDTO
+     */
+    public function setAddData(?string $addData): FeedIncidentDTO
+    {
+        $this->addData = $addData;
+
+        return $this;
+    }
+
+    /**
+     * @param string $showPopup
+     * @return FeedIncidentDTO
+     */
+    public function setShowPopup(string $showPopup): FeedIncidentDTO
+    {
+        $this->showPopup = $showPopup;
+
+        return $this;
+    }
+
+    /**
+     * @param string $showScores
+     * @return FeedIncidentDTO
+     */
+    public function setShowScores(string $showScores): FeedIncidentDTO
+    {
+        $this->showScores = $showScores;
+
+        return $this;
+    }
+
+    /**
+     * @param string $showAction
+     * @return FeedIncidentDTO
+     */
+    public function setShowAction(string $showAction): FeedIncidentDTO
+    {
+        $this->showAction = $showAction;
+
+        return $this;
+    }
+
+    /**
+     * @param string $showTime
+     * @return FeedIncidentDTO
+     */
+    public function setShowTime(string $showTime): FeedIncidentDTO
+    {
+        $this->showTime = $showTime;
+
+        return $this;
+    }
+
+    /**
+     * @param string $showOnTimeline
+     * @return FeedIncidentDTO
+     */
+    public function setShowOnTimeline(string $showOnTimeline): FeedIncidentDTO
+    {
+        $this->showOnTimeline = $showOnTimeline;
+
+        return $this;
+    }
+
+    /**
+     * @param string|null $eventTime
+     * @return FeedIncidentDTO
+     */
+    public function setEventTime(?string $eventTime): FeedIncidentDTO
+    {
+        $this->eventTime = $eventTime;
+
+        return $this;
+    }
+
+    /**
+     * @param int $eventStatusId
+     * @return FeedIncidentDTO
+     */
+    public function setEventStatusId(int $eventStatusId): FeedIncidentDTO
+    {
+        $this->eventStatusId = $eventStatusId;
+
+        return $this;
+    }
+
+    /**
+     * @param string $eventStatusName
+     * @return FeedIncidentDTO
+     */
+    public function setEventStatusName(string $eventStatusName): FeedIncidentDTO
+    {
+        $this->eventStatusName = $eventStatusName;
+
+        return $this;
+    }
+
+    /**
+     * @param string|null $xPos
+     * @return FeedIncidentDTO
+     */
+    public function setXPos(?string $xPos): FeedIncidentDTO
+    {
+        $this->xPos = $xPos;
+
+        return $this;
+    }
+
+    /**
+     * @param string|null $yPos
+     * @return FeedIncidentDTO
+     */
+    public function setYPos(?string $yPos): FeedIncidentDTO
+    {
+        $this->yPos = $yPos;
+
+        return $this;
+    }
+
 }

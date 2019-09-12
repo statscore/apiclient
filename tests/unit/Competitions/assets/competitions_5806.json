@@ -21,21 +21,23 @@
         "mini_name": "mnb",
         "gender": "male",
         "type": "country_league",
-        "area_id": "1",
+        "area_id": 1,
         "area_name": "Afghanistan",
         "area_type": "country",
-        "area_sort": "2",
+        "area_sort": 2,
         "area_code": "AFG",
-        "overall_sort": "50",
-        "sport_id": "20",
+        "overall_sort": 50,
+        "sport_id": 20,
         "sport_name": "Alpine skiing",
-        "tour_id": "4",
+        "tour_id": 4,
         "tour_name": "ATP Challengers",
-        "ut": "1434115672",
+        "ut": 1434115672,
         "old_competition_id": "",
         "slug": "serbia-&-montenegro,5806",
         "stats_lvl": "bronze",
-        "seasons": []
+        "generate_season_stats": true,
+        "seasons": [
+        ]
       }
     }
   }

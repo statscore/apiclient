@@ -33,4 +33,27 @@ class ParticipantHead2HeadDTO
     {
         return $this->last10MatchesStats;
     }
+
+    /**
+     * @param ParticipantCompareMatchesStatsDTO $allMatchesStats
+     * @return ParticipantHead2HeadDTO
+     */
+    public function setAllMatchesStats(ParticipantCompareMatchesStatsDTO $allMatchesStats): ParticipantHead2HeadDTO
+    {
+        $this->allMatchesStats = $allMatchesStats;
+
+        return $this;
+    }
+
+    /**
+     * @param ParticipantCompareMatchesStatsDTO $last10MatchesStats
+     * @return ParticipantHead2HeadDTO
+     */
+    public function setLast10MatchesStats(ParticipantCompareMatchesStatsDTO $last10MatchesStats): ParticipantHead2HeadDTO
+    {
+        $this->last10MatchesStats = $last10MatchesStats;
+
+        return $this;
+    }
+
 }

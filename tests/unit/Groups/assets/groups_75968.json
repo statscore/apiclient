@@ -20,26 +20,27 @@
         "mini_name": "BRI",
         "gender": "female",
         "type": "single",
-        "area_id": "14",
+        "area_id": 14,
         "area_name": "Australia",
         "area_type": "international",
-        "area_sort": "1",
+        "area_sort": 1,
         "area_code": "AUS",
-        "overall_sort": "50",
-        "sport_id": "4",
+        "overall_sort": 50,
+        "sport_id": 4,
         "sport_name": "Tennis",
-        "tour_id": "2",
+        "tour_id": 2,
         "tour_name": "WTA Tour",
-        "ut": "1455090924",
+        "ut": 1455090924,
         "old_competition_id": "",
         "slug": "brisbane-w,466",
         "stats_lvl": "bronze",
+        "generate_season_stats": true,
         "season": {
           "id": 25338,
           "name": "Brisbane (W) 2016",
           "year": "2016",
           "actual": "no",
-          "ut": 1564085688,
+          "ut": 1568280446,
           "old_season_id": "",
           "range_level": 5,
           "stats_lvl": "bronze",
@@ -56,6 +57,7 @@
             "ut": 1451641759,
             "old_stage_id": "",
             "groups": [
+
             ]
           }
         }

@@ -5,8 +5,6 @@ namespace UnitTests\Events;
 use DateTime;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Response;
-use Itav\Component\Serializer\SerializerException;
-use ReflectionException;
 use Statscore\Model\Response\Competition\CompetitionDTO;
 use Statscore\Model\Response\Detail\DetailDTO;
 use Statscore\Model\Response\Event\EventDTO;
@@ -18,6 +16,7 @@ use Statscore\Model\Response\Stage\StageDTO;
 use Statscore\Model\Response\Stat\StatDTO;
 use Statscore\Service\Events\EventsService;
 use Symfony\Component\HttpFoundation\Response as HttpFoundationResponse;
+use Symfony\Component\Serializer\Exception\ExceptionInterface;
 use UnitTests\TestCase;
 
 /**
@@ -41,8 +40,7 @@ class EventsTest extends TestCase
     /**
      * @return CompetitionDTO
      * @throws GuzzleException
-     * @throws SerializerException
-     * @throws ReflectionException
+     * @throws ExceptionInterface
      */
     public function testGetAll(): CompetitionDTO
     {
@@ -59,11 +57,11 @@ class EventsTest extends TestCase
         $this->assertEquals('http://dev.api.statscore.com/v2/events?username=statscore&client_id=1&page=2', $responseDTO->getMethod()->getNextPage());
         $this->assertEmpty($responseDTO->getMethod()->getPreviousPage());
         $this->assertArrayHasKey('client_id', $responseDTO->getMethod()->getParameters());
-        $this->assertEquals(1563986359, $responseDTO->getTimestamp());
+        $this->assertEquals(1568286568, $responseDTO->getTimestamp());
         $this->assertEquals('2.125', $responseDTO->getVer());
         $this->assertEquals(2, $responseDTO->getMethod()->getTotalItems());
 
-        $this->assertCount(2, $responseDTO->getData());
+        $this->assertCount(1, $responseDTO->getData());
         $this->assertInstanceOf(CompetitionDTO::class, $responseDTO->getData()[0]);
 
         return $responseDTO->getData()[0];
@@ -96,7 +94,7 @@ class EventsTest extends TestCase
         $this->assertEquals(1455090924, $competitionDTO->getUt());
         $this->assertEquals('brisbane-w,466', $competitionDTO->getSlug());
         $this->assertEquals('bronze', $competitionDTO->getStatsLvl());
-        $this->assertCount(2, $competitionDTO->getSeasons());
+        $this->assertCount(1, $competitionDTO->getSeasons());
         $this->assertInstanceOf(SeasonDTO::class, $competitionDTO->getSeasons()[0]);
 
         return $competitionDTO->getSeasons()[0];
@@ -114,7 +112,7 @@ class EventsTest extends TestCase
         $this->assertEquals(2016, $seasonDTO->getYear());
         $this->assertEquals('no', $seasonDTO->getActual());
         $this->assertEquals(5, $seasonDTO->getRangeLevel());
-        $this->assertEquals(1563986090, $seasonDTO->getUt());
+        $this->assertEquals(1568280446, $seasonDTO->getUt());
         $this->assertEquals('bronze', $seasonDTO->getStatsLvl());
         $this->assertCount(1, $seasonDTO->getStages());
         $this->assertInstanceOf(StageDTO::class, $seasonDTO->getStages()[0]);
@@ -141,7 +139,7 @@ class EventsTest extends TestCase
         $this->assertEquals(2, $stageDTO->getSort());
         $this->assertEquals('yes', $stageDTO->getIsCurrent());
         $this->assertEquals(1451641759, $stageDTO->getUt());
-        $this->assertCount(3, $stageDTO->getGroups());
+        $this->assertCount(1, $stageDTO->getGroups());
         $this->assertInstanceOf(GroupDTO::class, $stageDTO->getGroups()[0]);
 
         return $stageDTO->getGroups()[0];
@@ -155,9 +153,9 @@ class EventsTest extends TestCase
     public function testGroupResponse(GroupDTO $groupDTO): EventDTO
     {
         $this->assertEquals(null, $groupDTO->getId());
-        $this->assertEquals("", $groupDTO->getName());
-        $this->assertEquals("", $groupDTO->getUt());
-        $this->assertCount(7, $groupDTO->getEvents());
+        $this->assertEquals('', $groupDTO->getName());
+        $this->assertEquals('', $groupDTO->getUt());
+        $this->assertCount(5, $groupDTO->getEvents());
         $this->assertInstanceOf(EventDTO::class, $groupDTO->getEvents()[0]);
 
         return $groupDTO->getEvents()[0];
@@ -177,7 +175,7 @@ class EventsTest extends TestCase
         $this->assertEquals(null, $eventDTO->getSourceSuper());
         $this->assertEquals('not_started', $eventDTO->getRelationStatus());
         $this->assertInstanceOf(DateTime::class, $eventDTO->getStartDate());
-        $this->assertEquals('2019-07-24 16:34', $eventDTO->getStartDate()->format('Y-m-d H:i'));
+        $this->assertEquals('2019-09-12 09:27', $eventDTO->getStartDate()->format('Y-m-d H:i'));
         $this->assertEquals('no', $eventDTO->getFtOnly());
         $this->assertEquals('from_tv', $eventDTO->getCoverageType());
         $this->assertEquals(null, $eventDTO->getChannelId());
@@ -269,9 +267,8 @@ class EventsTest extends TestCase
 
     /**
      * @return CompetitionDTO
+     * @throws ExceptionInterface
      * @throws GuzzleException
-     * @throws SerializerException
-     * @throws ReflectionException
      */
     public function testGet(): CompetitionDTO
     {

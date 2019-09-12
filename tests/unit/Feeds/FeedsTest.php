@@ -4,7 +4,6 @@ namespace UnitTests\Feeds;
 
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Response;
-use Itav\Component\Serializer\SerializerException;
 use ReflectionException;
 use Statscore\Model\Response\Event\EventDTO;
 use Statscore\Model\Response\Feed\FeedDataDTO;
@@ -34,7 +33,6 @@ class FeedsTest extends TestCase
     /**
      * @return FeedDTO
      * @throws GuzzleException
-     * @throws SerializerException
      * @throws ReflectionException
      */
     public function testGetAll(): FeedDTO
@@ -114,7 +112,6 @@ class FeedsTest extends TestCase
      * @return FeedDTO
      * @throws GuzzleException
      * @throws ReflectionException
-     * @throws SerializerException
      */
     public function testGet(): FeedDTO
     {

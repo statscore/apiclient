@@ -11,7 +11,7 @@ use Statscore\Model\Response\Event\EventDTO;
 class GroupDTO
 {
     /**
-     * @var integer|null
+     * @var string
      */
     private $id;
 
@@ -26,14 +26,14 @@ class GroupDTO
     private $ut;
 
     /**
-     * @var \Statscore\Model\Response\Event\EventDTO[]
+     * @var EventDTO[]
      */
     private $events = [];
 
     /**
-     * @return int|null
+     * @return string|null
      */
-    public function getId(): ?int
+    public function getId(): ?string
     {
         return $this->id;
     }
@@ -60,5 +60,49 @@ class GroupDTO
     public function getEvents(): array
     {
         return $this->events;
+    }
+
+    /**
+     * @param string|null $id
+     * @return GroupDTO
+     */
+    public function setId(?string $id): GroupDTO
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * @param string $name
+     * @return GroupDTO
+     */
+    public function setName(string $name): GroupDTO
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * @param string $ut
+     * @return GroupDTO
+     */
+    public function setUt(string $ut): GroupDTO
+    {
+        $this->ut = $ut;
+
+        return $this;
+    }
+
+    /**
+     * @param EventDTO[] $events
+     * @return GroupDTO
+     */
+    public function setEvents(array $events): GroupDTO
+    {
+        $this->events = $events;
+
+        return $this;
     }
 }

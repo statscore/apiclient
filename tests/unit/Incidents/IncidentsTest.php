@@ -4,7 +4,6 @@ namespace UnitTests\Incidents;
 
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Response;
-use Itav\Component\Serializer\SerializerException;
 use ReflectionException;
 use Statscore\Model\Response\Incident\IncidentDTO;
 use Statscore\Service\Incidents\IncidentsService;
@@ -31,7 +30,6 @@ class IncidentsTest extends TestCase
     /**
      * @return IncidentDTO
      * @throws GuzzleException
-     * @throws SerializerException
      * @throws ReflectionException
      */
     public function testGetAll(): IncidentDTO

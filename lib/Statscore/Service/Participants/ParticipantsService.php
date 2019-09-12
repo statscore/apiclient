@@ -3,14 +3,13 @@
 namespace Statscore\Service\Participants;
 
 use GuzzleHttp\Exception\GuzzleException;
-use Itav\Component\Serializer\SerializerException;
-use ReflectionException;
 use Statscore\Model\Request\RequestDTO;
 use Statscore\Model\Response\Participant\ParticipantCompareDTO;
 use Statscore\Model\Response\Participant\ParticipantDTO;
 use Statscore\Model\Response\ResponseDTO;
 use Statscore\Service\Api;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Serializer\Exception\ExceptionInterface;
 
 /**
  * Class ParticipantsService
@@ -27,9 +26,8 @@ class ParticipantsService extends Api
      * @param int $sportId
      * @param array $query
      * @return ResponseDTO
+     * @throws ExceptionInterface
      * @throws GuzzleException
-     * @throws SerializerException
-     * @throws ReflectionException
      */
     public function getAll(int $sportId, array $query = []): ResponseDTO
     {
@@ -43,7 +41,8 @@ class ParticipantsService extends Api
         $responseDTO->setData(
             $this->serializer->denormalize(
                 $responseDTO->getData()['participants'] ?? [],
-                ParticipantDTO::class . '[]')
+                ParticipantDTO::class . '[]'
+            )
         );
 
         return $responseDTO;
@@ -53,9 +52,8 @@ class ParticipantsService extends Api
      * @param int $participantId
      * @param array $query
      * @return ResponseDTO
+     * @throws ExceptionInterface
      * @throws GuzzleException
-     * @throws ReflectionException
-     * @throws SerializerException
      */
     public function get(int $participantId, array $query = []): ResponseDTO
     {
@@ -68,7 +66,8 @@ class ParticipantsService extends Api
         $responseDTO->setData(
             $this->serializer->denormalize(
                 $responseDTO->getData()['participant'] ?? [],
-                ParticipantDTO::class)
+                ParticipantDTO::class
+            )
         );
 
         return $responseDTO;
@@ -80,8 +79,7 @@ class ParticipantsService extends Api
      * @param array $query
      * @return ResponseDTO
      * @throws GuzzleException
-     * @throws ReflectionException
-     * @throws SerializerException
+     * @throws ExceptionInterface
      */
     public function compare(int $participantId, int $compareParticipantId, array $query = []): ResponseDTO
     {
@@ -96,7 +94,8 @@ class ParticipantsService extends Api
         $responseDTO->setData(
             $this->serializer->denormalize(
                 $responseDTO->getData() ?? [],
-                ParticipantCompareDTO::class)
+                ParticipantCompareDTO::class
+            )
         );
 
         return $responseDTO;

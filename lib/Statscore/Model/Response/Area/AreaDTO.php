@@ -24,12 +24,12 @@ class AreaDTO
     private $name;
 
     /**
-     * @var integer
+     * @var string
      */
     private $parentAreaId;
 
     /**
-     * @var string
+     * @var integer
      */
     private $ut;
 
@@ -58,18 +58,73 @@ class AreaDTO
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getParentAreaId(): int
+    public function getParentAreaId(): string
     {
         return $this->parentAreaId;
     }
 
     /**
-     * @return string
+     * @return integer
      */
-    public function getUt(): string
+    public function getUt(): int
     {
         return $this->ut;
+    }
+
+    /**
+     * @param int $id
+     * @return AreaDTO
+     */
+    public function setId(int $id): AreaDTO
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * @param string $areaCode
+     * @return AreaDTO
+     */
+    public function setAreaCode(string $areaCode): AreaDTO
+    {
+        $this->areaCode = $areaCode;
+
+        return $this;
+    }
+
+    /**
+     * @param string $name
+     * @return AreaDTO
+     */
+    public function setName(string $name): AreaDTO
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * @param string $parentAreaId
+     * @return AreaDTO
+     */
+    public function setParentAreaId(string $parentAreaId): AreaDTO
+    {
+        $this->parentAreaId = $parentAreaId;
+
+        return $this;
+    }
+
+    /**
+     * @param int $ut
+     * @return AreaDTO
+     */
+    public function setUt(int $ut): AreaDTO
+    {
+        $this->ut = $ut;
+
+        return $this;
     }
 }

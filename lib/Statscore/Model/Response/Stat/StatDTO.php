@@ -24,7 +24,7 @@ class StatDTO
     private $name;
 
     /**
-     * @var string
+     * @var mixed
      */
     private $value;
 
@@ -53,10 +53,56 @@ class StatDTO
     }
 
     /**
-     * @return string
+     * @return mixed
      */
-    public function getValue(): string
+    public function getValue()
     {
         return $this->value;
     }
+
+    /**
+     * @param int $id
+     * @return StatDTO
+     */
+    public function setId(int $id): StatDTO
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * @param string $shortName
+     * @return StatDTO
+     */
+    public function setShortName(string $shortName): StatDTO
+    {
+        $this->shortName = $shortName;
+
+        return $this;
+    }
+
+    /**
+     * @param string $name
+     * @return StatDTO
+     */
+    public function setName(string $name): StatDTO
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * @param mixed $value
+     * @return StatDTO
+     */
+    public function setValue($value): StatDTO
+    {
+        $this->value = $value;
+
+        return $this;
+    }
+
+
 }

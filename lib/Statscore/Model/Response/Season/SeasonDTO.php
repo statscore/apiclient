@@ -21,7 +21,7 @@ class SeasonDTO
     private $name;
 
     /**
-     * @var integer
+     * @var string
      */
     private $year;
 
@@ -31,7 +31,7 @@ class SeasonDTO
     private $actual;
 
     /**
-     * @var string
+     * @var integer
      */
     private $ut;
 
@@ -46,12 +46,12 @@ class SeasonDTO
     private $statsLvl;
 
     /**
-     * @var \Statscore\Model\Response\Stage\StageDTO[]
+     * @var StageDTO[]
      */
     private $stages = [];
 
     /**
-     * @var \Statscore\Model\Response\Stage\StageDTO
+     * @var StageDTO
      */
     private $stage;
 
@@ -88,9 +88,9 @@ class SeasonDTO
     }
 
     /**
-     * @return string
+     * @return integer
      */
-    public function getUt(): string
+    public function getUt(): int
     {
         return $this->ut;
     }
@@ -125,5 +125,104 @@ class SeasonDTO
     public function getStage(): StageDTO
     {
         return $this->stage;
+    }
+
+    /**
+     * @param int $id
+     * @return SeasonDTO
+     */
+    public function setId(int $id): SeasonDTO
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * @param string $name
+     * @return SeasonDTO
+     */
+    public function setName(string $name): SeasonDTO
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * @param string $year
+     * @return SeasonDTO
+     */
+    public function setYear(string $year): SeasonDTO
+    {
+        $this->year = $year;
+
+        return $this;
+    }
+
+    /**
+     * @param string $actual
+     * @return SeasonDTO
+     */
+    public function setActual(string $actual): SeasonDTO
+    {
+        $this->actual = $actual;
+
+        return $this;
+    }
+
+    /**
+     * @param int $ut
+     * @return SeasonDTO
+     */
+    public function setUt(int $ut): SeasonDTO
+    {
+        $this->ut = $ut;
+
+        return $this;
+    }
+
+    /**
+     * @param int|null $rangeLevel
+     * @return SeasonDTO
+     */
+    public function setRangeLevel(?int $rangeLevel): SeasonDTO
+    {
+        $this->rangeLevel = $rangeLevel;
+
+        return $this;
+    }
+
+    /**
+     * @param string $statsLvl
+     * @return SeasonDTO
+     */
+    public function setStatsLvl(string $statsLvl): SeasonDTO
+    {
+        $this->statsLvl = $statsLvl;
+
+        return $this;
+    }
+
+    /**
+     * @param StageDTO[] $stages
+     * @return SeasonDTO
+     */
+    public function setStages(array $stages): SeasonDTO
+    {
+        $this->stages = $stages;
+
+        return $this;
+    }
+
+    /**
+     * @param StageDTO $stage
+     * @return SeasonDTO
+     */
+    public function setStage(StageDTO $stage): SeasonDTO
+    {
+        $this->stage = $stage;
+
+        return $this;
     }
 }

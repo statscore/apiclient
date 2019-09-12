@@ -3,13 +3,13 @@
 namespace Statscore\Service\Competitions;
 
 use GuzzleHttp\Exception\GuzzleException;
-use Itav\Component\Serializer\SerializerException;
-use ReflectionException;
 use Statscore\Model\Request\RequestDTO;
 use Statscore\Model\Response\Competition\CompetitionDTO;
 use Statscore\Model\Response\ResponseDTO;
 use Statscore\Service\Api;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Serializer\Exception\ExceptionInterface;
+use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
 
 /**
  * Class CompetitionsService
@@ -26,8 +26,7 @@ class CompetitionsService extends Api
      * @param array $query
      * @return ResponseDTO
      * @throws GuzzleException
-     * @throws SerializerException
-     * @throws ReflectionException
+     * @throws ExceptionInterface
      */
     public function getAll(array $query = []): ResponseDTO
     {
@@ -40,7 +39,10 @@ class CompetitionsService extends Api
         $responseDTO->setData(
             $this->serializer->denormalize(
                 $responseDTO->getData()['competitions'] ?? [],
-                CompetitionDTO::class . '[]')
+                CompetitionDTO::class . '[]',
+                null,
+                [ObjectNormalizer::DISABLE_TYPE_ENFORCEMENT => true]
+            )
         );
 
         return $responseDTO;
@@ -50,9 +52,8 @@ class CompetitionsService extends Api
      * @param int $id
      * @param array $query
      * @return ResponseDTO
+     * @throws ExceptionInterface
      * @throws GuzzleException
-     * @throws ReflectionException
-     * @throws SerializerException
      */
     public function get(int $id, array $query = []): ResponseDTO
     {
@@ -65,10 +66,10 @@ class CompetitionsService extends Api
         $responseDTO->setData(
             $this->serializer->denormalize(
                 $responseDTO->getData()['competition'] ?? [],
-                CompetitionDTO::class)
+                CompetitionDTO::class
+            )
         );
 
         return $responseDTO;
     }
-
 }

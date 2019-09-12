@@ -18,22 +18,22 @@ class StandingGroupDTO
     private $name;
 
     /**
-     * @var string
+     * @var integer
      */
     private $ut;
 
     /**
-     * @var \Statscore\Model\Response\Standing\StandingParticipantDTO[]
+     * @var StandingParticipantDTO[]
      */
     private $participants;
 
     /**
-     * @var \Statscore\Model\Response\Standing\StandingZoneDTO[]
+     * @var StandingZoneDTO[]
      */
     private $zones;
 
     /**
-     * @var \Statscore\Model\Response\Standing\StandingCorrectionDTO[]
+     * @var StandingCorrectionDTO[]
      */
     private $corrections;
 
@@ -54,9 +54,9 @@ class StandingGroupDTO
     }
 
     /**
-     * @return string
+     * @return integer
      */
-    public function getUt(): string
+    public function getUt(): int
     {
         return $this->ut;
     }
@@ -83,5 +83,71 @@ class StandingGroupDTO
     public function getCorrections(): array
     {
         return $this->corrections;
+    }
+
+    /**
+     * @param int $id
+     * @return StandingGroupDTO
+     */
+    public function setId(int $id): StandingGroupDTO
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * @param string $name
+     * @return StandingGroupDTO
+     */
+    public function setName(string $name): StandingGroupDTO
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * @param int $ut
+     * @return StandingGroupDTO
+     */
+    public function setUt(int $ut): StandingGroupDTO
+    {
+        $this->ut = $ut;
+
+        return $this;
+    }
+
+    /**
+     * @param StandingParticipantDTO[] $participants
+     * @return StandingGroupDTO
+     */
+    public function setParticipants(array $participants): StandingGroupDTO
+    {
+        $this->participants = $participants;
+
+        return $this;
+    }
+
+    /**
+     * @param StandingZoneDTO[] $zones
+     * @return StandingGroupDTO
+     */
+    public function setZones(array $zones): StandingGroupDTO
+    {
+        $this->zones = $zones;
+
+        return $this;
+    }
+
+    /**
+     * @param StandingCorrectionDTO[] $corrections
+     * @return StandingGroupDTO
+     */
+    public function setCorrections(array $corrections): StandingGroupDTO
+    {
+        $this->corrections = $corrections;
+
+        return $this;
     }
 }

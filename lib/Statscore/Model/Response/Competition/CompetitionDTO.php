@@ -91,7 +91,7 @@ class CompetitionDTO
     private $tourName;
 
     /**
-     * @var string
+     * @var integer
      */
     private $ut;
 
@@ -244,9 +244,9 @@ class CompetitionDTO
     }
 
     /**
-     * @return string
+     * @return integer
      */
-    public function getUt(): string
+    public function getUt(): int
     {
         return $this->ut;
     }
@@ -281,5 +281,236 @@ class CompetitionDTO
     public function getSeason(): SeasonDTO
     {
         return $this->season;
+    }
+
+    /**
+     * @param int $id
+     * @return CompetitionDTO
+     */
+    public function setId(int $id): CompetitionDTO
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * @param string $name
+     * @return CompetitionDTO
+     */
+    public function setName(string $name): CompetitionDTO
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * @param string $shortName
+     * @return CompetitionDTO
+     */
+    public function setShortName(string $shortName): CompetitionDTO
+    {
+        $this->shortName = $shortName;
+
+        return $this;
+    }
+
+    /**
+     * @param string $miniName
+     * @return CompetitionDTO
+     */
+    public function setMiniName(string $miniName): CompetitionDTO
+    {
+        $this->miniName = $miniName;
+
+        return $this;
+    }
+
+    /**
+     * @param string $gender
+     * @return CompetitionDTO
+     */
+    public function setGender(string $gender): CompetitionDTO
+    {
+        $this->gender = $gender;
+
+        return $this;
+    }
+
+    /**
+     * @param string $type
+     * @return CompetitionDTO
+     */
+    public function setType(string $type): CompetitionDTO
+    {
+        $this->type = $type;
+
+        return $this;
+    }
+
+    /**
+     * @param int $areaId
+     * @return CompetitionDTO
+     */
+    public function setAreaId(int $areaId): CompetitionDTO
+    {
+        $this->areaId = $areaId;
+
+        return $this;
+    }
+
+    /**
+     * @param string $areaName
+     * @return CompetitionDTO
+     */
+    public function setAreaName(string $areaName): CompetitionDTO
+    {
+        $this->areaName = $areaName;
+
+        return $this;
+    }
+
+    /**
+     * @param string $areaType
+     * @return CompetitionDTO
+     */
+    public function setAreaType(string $areaType): CompetitionDTO
+    {
+        $this->areaType = $areaType;
+
+        return $this;
+    }
+
+    /**
+     * @param int $areaSort
+     * @return CompetitionDTO
+     */
+    public function setAreaSort(int $areaSort): CompetitionDTO
+    {
+        $this->areaSort = $areaSort;
+
+        return $this;
+    }
+
+    /**
+     * @param string $areaCode
+     * @return CompetitionDTO
+     */
+    public function setAreaCode(string $areaCode): CompetitionDTO
+    {
+        $this->areaCode = $areaCode;
+
+        return $this;
+    }
+
+    /**
+     * @param int $overallSort
+     * @return CompetitionDTO
+     */
+    public function setOverallSort(int $overallSort): CompetitionDTO
+    {
+        $this->overallSort = $overallSort;
+
+        return $this;
+    }
+
+    /**
+     * @param int $sportId
+     * @return CompetitionDTO
+     */
+    public function setSportId(int $sportId): CompetitionDTO
+    {
+        $this->sportId = $sportId;
+
+        return $this;
+    }
+
+    /**
+     * @param string $sportName
+     * @return CompetitionDTO
+     */
+    public function setSportName(string $sportName): CompetitionDTO
+    {
+        $this->sportName = $sportName;
+
+        return $this;
+    }
+
+    /**
+     * @param int|null $tourId
+     * @return CompetitionDTO
+     */
+    public function setTourId(?int $tourId): CompetitionDTO
+    {
+        $this->tourId = $tourId;
+
+        return $this;
+    }
+
+    /**
+     * @param string $tourName
+     * @return CompetitionDTO
+     */
+    public function setTourName(string $tourName): CompetitionDTO
+    {
+        $this->tourName = $tourName;
+
+        return $this;
+    }
+
+    /**
+     * @param int $ut
+     * @return CompetitionDTO
+     */
+    public function setUt(int $ut): CompetitionDTO
+    {
+        $this->ut = $ut;
+
+        return $this;
+    }
+
+    /**
+     * @param string $slug
+     * @return CompetitionDTO
+     */
+    public function setSlug(string $slug): CompetitionDTO
+    {
+        $this->slug = $slug;
+
+        return $this;
+    }
+
+    /**
+     * @param string $statsLvl
+     * @return CompetitionDTO
+     */
+    public function setStatsLvl(string $statsLvl): CompetitionDTO
+    {
+        $this->statsLvl = $statsLvl;
+
+        return $this;
+    }
+
+    /**
+     * @param SeasonDTO[] $seasons
+     * @return CompetitionDTO
+     */
+    public function setSeasons(array $seasons): CompetitionDTO
+    {
+        $this->seasons = $seasons;
+
+        return $this;
+    }
+
+    /**
+     * @param SeasonDTO $season
+     * @return CompetitionDTO
+     */
+    public function setSeason(SeasonDTO $season): CompetitionDTO
+    {
+        $this->season = $season;
+
+        return $this;
     }
 }

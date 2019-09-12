@@ -4,9 +4,6 @@ namespace Statscore;
 
 use GuzzleHttp\Client as Guzzle;
 use GuzzleHttp\Exception\GuzzleException;
-use Itav\Component\Serializer\Factory;
-use Itav\Component\Serializer\SerializerException;
-use ReflectionException;
 use Statscore\Model\Response\Authorization\AuthorizationDTO;
 use Statscore\Service\Areas\AreasService;
 use Statscore\Service\Competitions\CompetitionsService;
@@ -21,9 +18,11 @@ use Statscore\Service\Livescore\LivescoreService;
 use Statscore\Service\Participants\ParticipantsService;
 use Statscore\Service\Rounds\RoundsService;
 use Statscore\Service\Seasons\SeasonsService;
+use Statscore\Service\Serializer;
 use Statscore\Service\Sports\SportsService;
 use Statscore\Service\Stages\StagesService;
 use Statscore\Service\Standings\StandingsService;
+use Symfony\Component\Serializer\Exception\ExceptionInterface;
 
 /**
  * Class Client
@@ -113,7 +112,7 @@ final class Client
      */
     public function __construct(int $clientId, string $secretKey)
     {
-        $this->service = new ApiService(new Guzzle([]), Factory::create());
+        $this->service = new ApiService(new Guzzle([]), Serializer::get());
         $this->service->setClientId($clientId);
         $this->service->setSecretKey($secretKey);
         $this->areas = new AreasService($this->service);
@@ -136,8 +135,7 @@ final class Client
      * @return AuthorizationDTO
      * @throws AuthorizationException
      * @throws GuzzleException
-     * @throws SerializerException
-     * @throws ReflectionException
+     * @throws ExceptionInterface
      */
     public function getToken(): AuthorizationDTO
     {
@@ -148,7 +146,7 @@ final class Client
      * @param string $token
      * @return Client
      */
-    public function setToken(string $token)
+    public function setToken(string $token): Client
     {
         $this->service->setToken($token);
 
