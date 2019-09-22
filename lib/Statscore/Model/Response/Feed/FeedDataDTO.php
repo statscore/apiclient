@@ -8,7 +8,7 @@ use Statscore\Model\Response\Event\EventDTO;
  * Class FeedDataDTO
  * @package Statscore\Model\Response\Feed
  */
-class FeedDataDTO
+final class FeedDataDTO
 {
     /**
      * @var FeedIncidentDTO

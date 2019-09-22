@@ -6,7 +6,7 @@ namespace Statscore\Model\Response\Tour;
  * Class TourDTO
  * @package Statscore\Model\Response\Tour
  */
-class TourDTO
+final class TourDTO
 {
     /**
      * @var integer

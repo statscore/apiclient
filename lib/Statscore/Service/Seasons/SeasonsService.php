@@ -8,7 +8,7 @@ use Statscore\Service\Competitions\CompetitionsService;
  * Class SeasonsService
  * @package Statscore\Service\Seasons
  */
-class SeasonsService extends CompetitionsService
+final class SeasonsService extends CompetitionsService
 {
     /**
      * @var string

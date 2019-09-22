@@ -6,7 +6,7 @@ namespace Statscore\Model\Response\Area;
  * Class AreaDTO
  * @package Statscore\Model\Response\Area
  */
-class AreaDTO
+final class AreaDTO
 {
     /**
      * @var integer

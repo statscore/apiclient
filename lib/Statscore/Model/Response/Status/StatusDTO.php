@@ -6,7 +6,7 @@ namespace Statscore\Model\Response\Status;
  * Class StatusDTO
  * @package Statscore\Model\Response\Status
  */
-class StatusDTO
+final class StatusDTO
 {
     /**
      * @var integer

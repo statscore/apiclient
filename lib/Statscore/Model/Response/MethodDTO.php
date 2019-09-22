@@ -6,7 +6,7 @@ namespace Statscore\Model\Response;
  * Class MethodDTO
  * @package Statscore\Model\Response
  */
-class MethodDTO
+final class MethodDTO
 {
     /**
      * @var array
@@ -39,7 +39,7 @@ class MethodDTO
     private $nextPage;
 
     /**
-     * @return array
+     * @return mixed[]
      */
     public function getParameters(): array
     {

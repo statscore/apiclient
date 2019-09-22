@@ -6,7 +6,7 @@ namespace Statscore\Model\Response\Language;
  * Class LanguageDTO
  * @package Statscore\Model\Response\Language
  */
-class LanguageDTO
+final class LanguageDTO
 {
     /**
      * @var integer

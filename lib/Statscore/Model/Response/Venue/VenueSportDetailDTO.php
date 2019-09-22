@@ -2,7 +2,7 @@
 
 namespace Statscore\Model\Response\Venue;
 
-class VenueSportDetailDTO
+final class VenueSportDetailDTO
 {
     /**
      * @var integer

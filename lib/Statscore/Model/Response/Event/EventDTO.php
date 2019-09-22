@@ -10,7 +10,7 @@ use Statscore\Model\Response\Participant\ParticipantDTO;
  * Class EventDTO
  * @package Statscore\Model\Response\Event
  */
-class EventDTO
+final class EventDTO
 {
     /**
      * @var integer

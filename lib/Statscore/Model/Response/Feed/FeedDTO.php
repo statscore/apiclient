@@ -6,7 +6,7 @@ namespace Statscore\Model\Response\Feed;
  * Class FeedDTO
  * @package Statscore\Model\Response\Feed
  */
-class FeedDTO
+final class FeedDTO
 {
     /**
      * @var integer

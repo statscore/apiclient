@@ -14,7 +14,7 @@ use Symfony\Component\Serializer\Exception\ExceptionInterface;
  * Class AreasService
  * @package Statscore\Service\Areas
  */
-class AreasService extends Api
+final class AreasService extends Api
 {
 
     /**

@@ -8,7 +8,7 @@ use Statscore\Model\Response\Event\EventDTO;
  * Class GroupDTO
  * @package Statscore\Model\Response\Group
  */
-class GroupDTO
+final class GroupDTO
 {
     /**
      * @var string

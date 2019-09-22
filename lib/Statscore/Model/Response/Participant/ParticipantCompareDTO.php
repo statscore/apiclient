@@ -6,7 +6,7 @@ namespace Statscore\Model\Response\Participant;
  * Class ParticipantCompareDTO
  * @package Statscore\Model\Response\Participant
  */
-class ParticipantCompareDTO
+final class ParticipantCompareDTO
 {
     /**
      * @var ParticipantDTO[]

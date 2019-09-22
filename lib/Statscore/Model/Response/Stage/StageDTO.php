@@ -9,7 +9,7 @@ use Statscore\Model\Response\Group\GroupDTO;
  * Class StageDTO
  * @package Statscore\Model\Response\Stage
  */
-class StageDTO
+final class StageDTO
 {
     /**
      * @var integer

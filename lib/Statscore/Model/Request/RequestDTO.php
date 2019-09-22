@@ -2,7 +2,7 @@
 
 namespace Statscore\Model\Request;
 
-class RequestDTO
+final class RequestDTO
 {
     /**
      * @var array
@@ -35,7 +35,7 @@ class RequestDTO
     private $query;
 
     /**
-     * @return array
+     * @return mixed[]
      */
     public function getHeaders(): array
     {

@@ -6,7 +6,7 @@ namespace Statscore\Model\Response\Participant;
  * Class ParticipantCompareMatchesStatsDTO
  * @package Statscore\Model\Response\Participant
  */
-class ParticipantCompareMatchesStatsDTO
+final class ParticipantCompareMatchesStatsDTO
 {
     /**
      * @var integer|null

@@ -14,7 +14,7 @@ use Symfony\Component\Serializer\Exception\ExceptionInterface;
  * Class FeedsService
  * @package Statscore\Service\Feeds
  */
-class FeedsService extends Api
+final class FeedsService extends Api
 {
     /**
      * @var string

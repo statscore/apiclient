@@ -6,7 +6,7 @@ namespace Statscore\Model\Response\Round;
  * Class RoundDTO
  * @package Statscore\Model\Response\Round
  */
-class RoundDTO
+final class RoundDTO
 {
     /**
      * @var integer

@@ -6,7 +6,7 @@ namespace Statscore\Model\Response\Standing;
  * Class StandingColumnDTO
  * @package Statscore\Model\Response\Standing
  */
-class StandingColumnDTO
+final class StandingColumnDTO
 {
     /**
      * @var integer
@@ -121,7 +121,7 @@ class StandingColumnDTO
      * @param mixed $value
      * @return StandingColumnDTO
      */
-    public function setValue($value)
+    public function setValue($value): StandingColumnDTO
     {
         $this->value = $value;
 

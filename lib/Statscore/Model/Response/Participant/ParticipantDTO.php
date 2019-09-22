@@ -9,7 +9,7 @@ use Statscore\Model\Response\Stat\StatDTO;
  * Class ParticipantDTO
  * @package Statscore\Model\Response\Participant
  */
-class ParticipantDTO
+final class ParticipantDTO
 {
     /**
      * @var integer

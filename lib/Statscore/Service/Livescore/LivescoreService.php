@@ -8,7 +8,7 @@ use Statscore\Service\Competitions\CompetitionsService;
  * Class LivescoreService
  * @package Statscore\Service\Livescore
  */
-class LivescoreService extends CompetitionsService
+final class LivescoreService extends CompetitionsService
 {
     /**
      * @var string

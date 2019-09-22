@@ -6,7 +6,7 @@ namespace Statscore\Model\Response\Incident;
  * Class IncidentDTO
  * @package Statscore\Model\Response\Incident
  */
-class IncidentDTO
+final class IncidentDTO
 {
     /**
      * @var integer

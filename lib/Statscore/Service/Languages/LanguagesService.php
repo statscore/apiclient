@@ -14,7 +14,7 @@ use Symfony\Component\Serializer\Exception\ExceptionInterface;
  * Class LanguagesService
  * @package Statscore\Service\Lanugages
  */
-class LanguagesService extends Api
+final class LanguagesService extends Api
 {
     /**
      * @var string

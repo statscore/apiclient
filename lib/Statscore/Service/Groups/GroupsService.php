@@ -14,7 +14,7 @@ use Symfony\Component\Serializer\Exception\ExceptionInterface;
  * Class GroupsService
  * @package Statscore\Service\Groups
  */
-class GroupsService extends Api
+final class GroupsService extends Api
 {
     /**
      * @var string

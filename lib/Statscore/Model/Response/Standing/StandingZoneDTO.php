@@ -5,7 +5,7 @@ namespace Statscore\Model\Response\Standing;
 /**
  * @package Statscore\Model\Response\Standing
  */
-class StandingZoneDTO
+final class StandingZoneDTO
 {
     /**
      * @var integer

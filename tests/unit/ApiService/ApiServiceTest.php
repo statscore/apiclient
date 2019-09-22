@@ -75,7 +75,7 @@ class ApiServiceTest extends TestCase
      */
     public function testRequest(): void
     {
-        $this->guzzle->shouldReceive('request')->andReturn(new Response());
+        $this->guzzle->shouldReceive('request')->andReturn(new Response(200, [], '{"test":true}'));
 
         $request = new RequestDTO();
         $request->setQuery(['test' => true]);
@@ -87,5 +87,4 @@ class ApiServiceTest extends TestCase
 
         $this->assertInstanceOf(ResponseDTO::class, $this->service->request($request));
     }
-
 }

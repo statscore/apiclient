@@ -8,7 +8,7 @@ use Statscore\Model\Response\Stage\StageDTO;
  * Class SeasonDTO
  * @package Statscore\Model\Response\Season
  */
-class SeasonDTO
+final class SeasonDTO
 {
     /**
      * @var integer

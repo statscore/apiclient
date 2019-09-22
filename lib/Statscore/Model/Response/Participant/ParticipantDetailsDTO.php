@@ -6,7 +6,7 @@ namespace Statscore\Model\Response\Participant;
  * Class ParticipantDetailsDTO
  * @package Statscore\Model\Response\Participant
  */
-class ParticipantDetailsDTO
+final class ParticipantDetailsDTO
 {
     /**
      * @var string

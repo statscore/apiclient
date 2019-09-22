@@ -9,7 +9,7 @@ use Statscore\Model\Response\Venue\VenueSportDetailDTO;
  * Class SportDTO
  * @package Statscore\Model\Response\Sport
  */
-class SportDTO
+final class SportDTO
 {
     /**
      * @var integer

@@ -6,7 +6,7 @@ namespace Statscore\Model\Response\Feed;
  * Class FeedIncidentDTO
  * @package Statscore\Model\Response\Feed
  */
-class FeedIncidentDTO
+final class FeedIncidentDTO
 {
     /**
      * @var string

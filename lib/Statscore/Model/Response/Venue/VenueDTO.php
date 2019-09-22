@@ -7,7 +7,7 @@ use Statscore\Model\Response\Sport\SportDTO;
 /**
  * @package Statscore\Model\Response\Venue
  */
-class VenueDTO
+final class VenueDTO
 {
     /**
      * @var integer

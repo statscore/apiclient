@@ -6,7 +6,7 @@ namespace Statscore\Model\Response\Detail;
  * Class DetailDTO
  * @package Statscore\Model\Response\Detail
  */
-class DetailDTO
+final class DetailDTO
 {
     /**
      * @var integer

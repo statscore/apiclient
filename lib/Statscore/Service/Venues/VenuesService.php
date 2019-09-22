@@ -14,7 +14,7 @@ use Symfony\Component\Serializer\Exception\ExceptionInterface;
  * Class VenuesService
  * @package Statscore\Service\Venues
  */
-class VenuesService extends Api
+final class VenuesService extends Api
 {
     /**
      * @var string

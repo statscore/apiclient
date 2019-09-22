@@ -14,7 +14,7 @@ use Symfony\Component\Serializer\Exception\ExceptionInterface;
  * Class RoundsService
  * @package Statscore\Service\Rounds
  */
-class RoundsService extends Api
+final class RoundsService extends Api
 {
     /**
      * @var string

@@ -136,14 +136,14 @@ final class ApiService
         );
 
         $response = $request->getBody()->getContents();
-        $response = json_decode($response, true);
+        $response = json_decode($response, true, 512, JSON_THROW_ON_ERROR);
 
         return $this->serializer->denormalize($response['api'] ?? [], ResponseDTO::class, null, [ObjectNormalizer::DISABLE_TYPE_ENFORCEMENT => true]);
     }
 
     /**
      * @param RequestDTO $request
-     * @return array
+     * @return array[]|null[]|string[]
      */
     private function prepareBody(RequestDTO $request): array
     {

@@ -6,7 +6,7 @@ namespace Statscore\Model\Response\Participant;
  * Class ParticipantHead2HeadDTO
  * @package Statscore\Model\Response\Participant
  */
-class ParticipantHead2HeadDTO
+final class ParticipantHead2HeadDTO
 {
     /**
      * @var ParticipantCompareMatchesStatsDTO
