@@ -17,7 +17,7 @@ class VenueSportDetailDTO
     /**
      * @var mixed|null
      */
-    private $velue;
+    private $value;
 
     /**
      * @return int
@@ -60,18 +60,18 @@ class VenueSportDetailDTO
     /**
      * @return mixed|null
      */
-    public function getVelue()
+    public function getValue()
     {
-        return $this->velue;
+        return $this->value;
     }
 
     /**
-     * @param mixed|null $velue
+     * @param mixed|null $value
      * @return VenueSportDetailDTO
      */
-    public function setVelue($velue): VenueSportDetailDTO
+    public function setValue($value): VenueSportDetailDTO
     {
-        $this->velue = $velue;
+        $this->value = $value;
 
         return $this;
     }

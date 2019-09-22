@@ -131,6 +131,6 @@ class VenuesTest extends TestCase
     {
         $this->assertEquals(14, $detailDTO->getId());
         $this->assertEquals('Capacity', $detailDTO->getName());
-        $this->assertEquals(1, $detailDTO->getVelue());
+        $this->assertEquals(1, $detailDTO->getValue());
     }
 }
