@@ -4,12 +4,11 @@ namespace UnitTests\Sports;
 
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Response;
-use Itav\Component\Serializer\SerializerException;
-use ReflectionException;
 use Statscore\Model\Response\Sport\SportDTO;
 use Statscore\Model\Response\Status\StatusDTO;
 use Statscore\Service\Sports\SportsService;
 use Symfony\Component\HttpFoundation\Response as HttpFoundationResponse;
+use Symfony\Component\Serializer\Exception\ExceptionInterface;
 use UnitTests\TestCase;
 
 /**
@@ -32,8 +31,7 @@ class SportsTest extends TestCase
     /**
      * @return SportDTO
      * @throws GuzzleException
-     * @throws SerializerException
-     * @throws ReflectionException
+     * @throws ExceptionInterface
      */
     public function testGetAll(): SportDTO
     {
@@ -78,9 +76,8 @@ class SportsTest extends TestCase
 
     /**
      * @return SportDTO
+     * @throws ExceptionInterface
      * @throws GuzzleException
-     * @throws ReflectionException
-     * @throws SerializerException
      */
     public function testGet(): SportDTO
     {

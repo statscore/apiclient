@@ -1,25 +1,25 @@
 <?php
 
-namespace Statscore\Service\Feeds;
+namespace Statscore\Service\Venues;
 
 use GuzzleHttp\Exception\GuzzleException;
 use Statscore\Model\Request\RequestDTO;
-use Statscore\Model\Response\Feed\FeedDTO;
 use Statscore\Model\Response\ResponseDTO;
+use Statscore\Model\Response\Venue\VenueDTO;
 use Statscore\Service\Api;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Serializer\Exception\ExceptionInterface;
 
 /**
- * Class FeedsService
- * @package Statscore\Service\Feeds
+ * Class VenuesService
+ * @package Statscore\Service\Venues
  */
-class FeedsService extends Api
+class VenuesService extends Api
 {
     /**
      * @var string
      */
-    protected $url = 'feed';
+    protected $url = 'venues';
 
     /**
      * @param array $query
@@ -37,25 +37,37 @@ class FeedsService extends Api
         $responseDTO = $this->service->request($request);
         $responseDTO->setData(
             $this->serializer->denormalize(
-                $responseDTO->getData() ?? [],
-                FeedDTO::class . '[]')
+                $responseDTO->getData()['venues'] ?? [],
+                VenueDTO::class . '[]'
+            )
         );
 
         return $responseDTO;
     }
 
     /**
-     * @param int $eventId
+     * @param int $id
      * @param array $query
      * @return ResponseDTO
      * @throws ExceptionInterface
      * @throws GuzzleException
      */
-    public function get(int $eventId, array $query = []): ResponseDTO
+    public function get(int $id, array $query = []): ResponseDTO
     {
-        $this->url .= '/' . $eventId;
+        $request = new RequestDTO();
+        $request->setUri($this->url . '/' . $id);
+        $request->setMethod(Request::METHOD_GET);
+        $request->setQuery($query);
 
-        return $this->getAll($query);
+        $responseDTO = $this->service->request($request);
+        $responseDTO->setData(
+            $this->serializer->denormalize(
+                $responseDTO->getData()['venue'] ?? [],
+                VenueDTO::class
+            )
+        );
+
+        return $responseDTO;
     }
 
 }

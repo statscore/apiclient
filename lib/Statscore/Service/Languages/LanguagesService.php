@@ -3,13 +3,12 @@
 namespace Statscore\Service\Languages;
 
 use GuzzleHttp\Exception\GuzzleException;
-use Itav\Component\Serializer\SerializerException;
-use ReflectionException;
 use Statscore\Model\Request\RequestDTO;
 use Statscore\Model\Response\Language\LanguageDTO;
 use Statscore\Model\Response\ResponseDTO;
 use Statscore\Service\Api;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Serializer\Exception\ExceptionInterface;
 
 /**
  * Class LanguagesService
@@ -26,8 +25,7 @@ class LanguagesService extends Api
      * @param array $query
      * @return ResponseDTO
      * @throws GuzzleException
-     * @throws SerializerException
-     * @throws ReflectionException
+     * @throws ExceptionInterface
      */
     public function getAll(array $query = []): ResponseDTO
     {
@@ -40,7 +38,8 @@ class LanguagesService extends Api
         $responseDTO->setData(
             $this->serializer->denormalize(
                 $responseDTO->getData()['languages'] ?? [],
-                LanguageDTO::class . '[]')
+                LanguageDTO::class . '[]'
+            )
         );
 
         return $responseDTO;

@@ -4,8 +4,6 @@ namespace UnitTests\Participants;
 
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Response;
-use Itav\Component\Serializer\SerializerException;
-use ReflectionException;
 use Statscore\Model\Response\Participant\ParticipantCompareDTO;
 use Statscore\Model\Response\Participant\ParticipantCompareMatchesStatsDTO;
 use Statscore\Model\Response\Participant\ParticipantDetailsDTO;
@@ -13,6 +11,7 @@ use Statscore\Model\Response\Participant\ParticipantDTO;
 use Statscore\Model\Response\Participant\ParticipantHead2HeadDTO;
 use Statscore\Service\Participants\ParticipantsService;
 use Symfony\Component\HttpFoundation\Response as HttpFoundationResponse;
+use Symfony\Component\Serializer\Exception\ExceptionInterface;
 use UnitTests\TestCase;
 
 /**
@@ -35,8 +34,7 @@ class ParticipantsTest extends TestCase
     /**
      * @return ParticipantDTO
      * @throws GuzzleException
-     * @throws ReflectionException
-     * @throws SerializerException
+     * @throws ExceptionInterface
      */
     public function testGetAll(): ParticipantDTO
     {
@@ -121,9 +119,8 @@ class ParticipantsTest extends TestCase
 
     /**
      * @return ParticipantDTO
+     * @throws ExceptionInterface
      * @throws GuzzleException
-     * @throws SerializerException
-     * @throws ReflectionException
      */
     public function testGet(): ParticipantDTO
     {
@@ -156,9 +153,8 @@ class ParticipantsTest extends TestCase
 
     /**
      * @return ParticipantCompareDTO
+     * @throws ExceptionInterface
      * @throws GuzzleException
-     * @throws ReflectionException
-     * @throws SerializerException
      */
     public function testCompare(): ParticipantCompareDTO
     {

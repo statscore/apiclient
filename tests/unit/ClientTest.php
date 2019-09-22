@@ -3,10 +3,9 @@
 namespace UnitTests;
 
 use GuzzleHttp\Exception\GuzzleException;
-use Itav\Component\Serializer\SerializerException;
-use ReflectionException;
 use Statscore\Client;
 use Statscore\Service\Exception\AuthorizationException;
+use Symfony\Component\Serializer\Exception\ExceptionInterface;
 
 /**
  * Class ClientTest
@@ -33,8 +32,7 @@ class ClientTest extends TestCase
     /**
      * @throws AuthorizationException
      * @throws GuzzleException
-     * @throws SerializerException
-     * @throws ReflectionException
+     * @throws ExceptionInterface
      */
     public function testGetToken(): void
     {

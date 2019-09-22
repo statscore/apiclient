@@ -4,11 +4,10 @@ namespace UnitTests\Standings;
 
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Response;
-use Itav\Component\Serializer\SerializerException;
-use ReflectionException;
 use Statscore\Model\Response\Standing\StandingDTO;
 use Statscore\Service\Standings\StandingsService;
 use Symfony\Component\HttpFoundation\Response as HttpFoundationResponse;
+use Symfony\Component\Serializer\Exception\ExceptionInterface;
 use UnitTests\TestCase;
 
 /**
@@ -31,8 +30,7 @@ class StandingsTest extends TestCase
     /**
      * @return StandingDTO
      * @throws GuzzleException
-     * @throws SerializerException
-     * @throws ReflectionException
+     * @throws ExceptionInterface
      */
     public function testGetAll(): StandingDTO
     {
@@ -81,9 +79,8 @@ class StandingsTest extends TestCase
 
     /**
      * @return StandingDTO
+     * @throws ExceptionInterface
      * @throws GuzzleException
-     * @throws ReflectionException
-     * @throws SerializerException
      */
     public function testGet(): StandingDTO
     {

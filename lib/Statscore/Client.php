@@ -22,6 +22,7 @@ use Statscore\Service\Serializer;
 use Statscore\Service\Sports\SportsService;
 use Statscore\Service\Stages\StagesService;
 use Statscore\Service\Standings\StandingsService;
+use Statscore\Service\Venues\VenuesService;
 use Symfony\Component\Serializer\Exception\ExceptionInterface;
 
 /**
@@ -106,6 +107,11 @@ final class Client
     public $standings;
 
     /**
+     * @var VenuesService
+     */
+    public $venues;
+
+    /**
      * Statscore constructor.
      * @param int $clientId
      * @param string $secretKey
@@ -129,6 +135,7 @@ final class Client
         $this->sports = new SportsService($this->service);
         $this->stages = new StagesService($this->service);
         $this->standings = new StandingsService($this->service);
+        $this->venues = new VenuesService($this->service);
     }
 
     /**
