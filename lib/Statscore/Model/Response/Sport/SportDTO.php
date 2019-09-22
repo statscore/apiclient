@@ -3,6 +3,7 @@
 namespace Statscore\Model\Response\Sport;
 
 use Statscore\Model\Response\Status\StatusDTO;
+use Statscore\Model\Response\Venue\VenueSportDetailDTO;
 
 /**
  * Class SportDTO
@@ -54,6 +55,11 @@ class SportDTO
      * @var StatusDTO[]
      */
     private $statuses = [];
+
+    /**
+     * @var VenueSportDetailDTO[]
+     */
+    private $venueSportDetails = [];
 
     /**
      * @return int
@@ -222,6 +228,25 @@ class SportDTO
     public function setStatuses(array $statuses): SportDTO
     {
         $this->statuses = $statuses;
+
+        return $this;
+    }
+
+    /**
+     * @return VenueSportDetailDTO[]
+     */
+    public function getVenueSportDetails(): array
+    {
+        return $this->venueSportDetails;
+    }
+
+    /**
+     * @param VenueSportDetailDTO[] $venueSportDetails
+     * @return SportDTO
+     */
+    public function setVenueSportDetails(array $venueSportDetails): SportDTO
+    {
+        $this->venueSportDetails = $venueSportDetails;
 
         return $this;
     }

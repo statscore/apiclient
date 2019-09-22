@@ -4,7 +4,9 @@ namespace UnitTests\Venues;
 
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Response;
+use Statscore\Model\Response\Sport\SportDTO;
 use Statscore\Model\Response\Venue\VenueDTO;
+use Statscore\Model\Response\Venue\VenueSportDetailDTO;
 use Statscore\Service\Venues\VenuesService;
 use Symfony\Component\HttpFoundation\Response as HttpFoundationResponse;
 use Symfony\Component\Serializer\Exception\ExceptionInterface;
@@ -103,5 +105,32 @@ class VenuesTest extends TestCase
         $this->assertInstanceOf(VenueDTO::class, $responseDTO->getData());
 
         return $responseDTO->getData();
+    }
+
+    /**
+     * @param VenueDTO $venueDTO
+     * @depends testGet
+     * @return VenueSportDetailDTO
+     */
+    public function testVenueSports(VenueDTO $venueDTO): VenueSportDetailDTO
+    {
+        $this->assertCount(2, $venueDTO->getSports());
+        $this->assertInstanceOf(SportDTO::class, $venueDTO->getSports()[0]);
+
+        $sport = $venueDTO->getSports()[0];
+        $this->assertCount(15, $sport->getVenueSportDetails());
+
+        return $sport->getVenueSportDetails()[0];
+    }
+
+    /**
+     * @param VenueSportDetailDTO $detailDTO
+     * @depends testVenueSports
+     */
+    public function testVenueSportDetails(VenueSportDetailDTO $detailDTO): void
+    {
+        $this->assertEquals(14, $detailDTO->getId());
+        $this->assertEquals('Capacity', $detailDTO->getName());
+        $this->assertEquals(1, $detailDTO->getVelue());
     }
 }

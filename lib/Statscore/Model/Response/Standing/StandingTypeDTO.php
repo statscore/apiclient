@@ -18,12 +18,12 @@ class StandingTypeDTO
     private $name;
 
     /**
-     * @var string
+     * @var integer
      */
     private $ut;
 
     /**
-     * @var \Statscore\Model\Response\Standing\StandingColumnDTO[]
+     * @var StandingColumnDTO[]
      */
     private $columns;
 
@@ -44,9 +44,9 @@ class StandingTypeDTO
     }
 
     /**
-     * @return string
+     * @return integer
      */
-    public function getUt(): string
+    public function getUt(): int
     {
         return $this->ut;
     }
@@ -57,5 +57,49 @@ class StandingTypeDTO
     public function getColumns(): array
     {
         return $this->columns;
+    }
+
+    /**
+     * @param int $id
+     * @return StandingTypeDTO
+     */
+    public function setId(int $id): StandingTypeDTO
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * @param string $name
+     * @return StandingTypeDTO
+     */
+    public function setName(string $name): StandingTypeDTO
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * @param int $ut
+     * @return StandingTypeDTO
+     */
+    public function setUt(int $ut): StandingTypeDTO
+    {
+        $this->ut = $ut;
+
+        return $this;
+    }
+
+    /**
+     * @param StandingColumnDTO[] $columns
+     * @return StandingTypeDTO
+     */
+    public function setColumns(array $columns): StandingTypeDTO
+    {
+        $this->columns = $columns;
+
+        return $this;
     }
 }

@@ -2,6 +2,8 @@
 
 namespace Statscore\Model\Response\Venue;
 
+use Statscore\Model\Response\Sport\SportDTO;
+
 /**
  * @package Statscore\Model\Response\Venue
  */
@@ -66,6 +68,11 @@ class VenueDTO
      * @var integer
      */
     private $ut;
+
+    /**
+     * @var SportDTO[]
+     */
+    private $sports;
 
     /**
      * @return int
@@ -291,6 +298,25 @@ class VenueDTO
     public function setUt(int $ut): VenueDTO
     {
         $this->ut = $ut;
+
+        return $this;
+    }
+
+    /**
+     * @return SportDTO[]
+     */
+    public function getSports(): array
+    {
+        return $this->sports;
+    }
+
+    /**
+     * @param SportDTO[] $sports
+     * @return VenueDTO
+     */
+    public function setSports(array $sports): VenueDTO
+    {
+        $this->sports = $sports;
 
         return $this;
     }
