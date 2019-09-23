@@ -4,7 +4,6 @@
     "timestamp": 1569221869,
     "method": {
       "parameters": {
-        "username": "statscore",
         "client_id": "370",
         "product": "livescorepro",
         "booked": "yes",

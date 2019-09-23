@@ -35,18 +35,25 @@ class BookedEventsTest extends TestCase
      */
     public function testGetAll(): BookedEventDTO
     {
+        $clientId = 370;
+        $product = 'livescorepro';
         $response = file_get_contents(__DIR__ . '/assets/booked_events.json');
 
         $response = new Response(HttpFoundationResponse::HTTP_OK, ['Content-Type' => 'application/json'], $response);
 
         $this->guzzle->shouldReceive('request')->andReturn($response);
 
-        $responseDTO = $this->bookedEvents->getAll();
+        $responseDTO = $this->bookedEvents->getAll($clientId, $product);
 
         $this->assertEquals('booked-events.index', $responseDTO->getMethod()->getDetails());
         $this->assertEquals('booked-events.index', $responseDTO->getMethod()->getName());
         $this->assertEmpty($responseDTO->getMethod()->getPreviousPage());
         $this->assertEmpty($responseDTO->getMethod()->getNextPage());
+        $this->assertCount(8, $responseDTO->getMethod()->getParameters());
+        $this->assertArrayHasKey('client_id', $responseDTO->getMethod()->getParameters());
+        $this->assertEquals(370, $responseDTO->getMethod()->getParameters()['client_id']);
+        $this->assertArrayHasKey('product', $responseDTO->getMethod()->getParameters());
+        $this->assertEquals('livescorepro', $responseDTO->getMethod()->getParameters()['product']);
         $this->assertEquals(1569221869, $responseDTO->getTimestamp());
         $this->assertEquals('2.141.2', $responseDTO->getVer());
         $this->assertEquals(9, $responseDTO->getMethod()->getTotalItems());

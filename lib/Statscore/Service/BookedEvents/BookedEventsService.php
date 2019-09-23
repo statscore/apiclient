@@ -22,17 +22,21 @@ final class BookedEventsService extends Api
     protected $url = 'booked-events';
 
     /**
+     * @param int $clientId
+     * @param string $product
      * @param array $query
      * @return ResponseDTO
-     * @throws GuzzleException
      * @throws ExceptionInterface
+     * @throws GuzzleException
      */
-    public function getAll(array $query = []): ResponseDTO
+    public function getAll(int $clientId, string $product, array $query = []): ResponseDTO
     {
         $request = new RequestDTO();
         $request->setUri($this->url);
         $request->setMethod(Request::METHOD_GET);
         $request->setQuery($query);
+        $request->addQuery('client_id', $clientId);
+        $request->addQuery('product', $product);
 
         $responseDTO = $this->service->request($request);
         $responseDTO->setData(
