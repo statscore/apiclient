@@ -63,7 +63,7 @@ class VenuesTest extends TestCase
      * @depends testGetAll
      * @depends testGet
      */
-    public function testStandingResponse(VenueDTO $venueDTO): void
+    public function testVenueResponse(VenueDTO $venueDTO): void
     {
         $this->assertEquals(1, $venueDTO->getId());
         $this->assertEquals('Camp nou', $venueDTO->getName());
