@@ -1,4 +1,4 @@
-# STATSCORE Official SportsAPI Client
+# ![sportsapi](https://statscore-s3-cdn.statscore.com/v2/products/sportsAPI/spa-logo.png) STATSCORE Official SportsAPI Client
 
 [![Build Status](https://travis-ci.org/statscore/apiclient.svg?branch=development)](https://travis-ci.org/statscore/apiclient)
 [![Packagist](https://img.shields.io/packagist/v/statscore/apiclient.svg)](https://packagist.org/packages/statscore/apiclient)
@@ -58,12 +58,13 @@ The client is authenticated using a GET request including query string parameter
 use Statscore\Client;
 use Statscore\Model\Response\Authorization\AuthorizationDTO;
 
-$statscore = new Client(1, 'yoursecretkey');
+$clientId = 1;
+$statscore = new Client($clientId, 'yoursecretkey');
 /** @var AuthorizationDTO $token */
 $token = $statscore->getToken();
 
 /** Get your token, save it and use in future requests */
-$statscore->setToken($statscore->getToken());
+$statscore->setToken($token->getToken());
 ```
 
 ### Booked Events
