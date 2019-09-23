@@ -10,6 +10,7 @@
 * [Installation](#installation)
 * [Examples](#examples)
     * [Authentication](#authentication)
+    * [Booked Events](#booked-events)
 * [Troubleshooting](#troubleshooting)
 
 <a name="installation"></a>
@@ -57,6 +58,51 @@ $token = $statscore->getToken();
 
 /** Get your token, save it and use in future requests */
 $statscore->setToken($statscore->getToken());
+```
+
+### Booked Events
+
+#### Get all
+```php
+<?php
+use Statscore\Model\Response\BookedEvent\BookedEventDTO;
+use Statscore\Model\Response\ResponseDTO;
+
+$clientId = 1;
+$productName = 'livescorepro';
+
+/** @var ResponseDTO $response */
+$response = $statscore->bookedEvents->getAll($clientId, $productName);
+/** @var BookedEventDTO[] $bookedEvents */
+$bookedEvents = $response->getData();
+```
+
+#### Create
+```php
+<?php
+use Statscore\Model\Response\BookedEvent\BookedEventDTO;
+use Statscore\Model\Response\ResponseDTO;
+
+$clientId = 1;
+$productName = 'livescorepro';
+$eventId = 1232131;
+/** @var ResponseDTO $response */
+$response = $statscore->bookedEvents->create($clientId, $productName, $eventId);
+
+/** @var BookedEventDTO[] $bookedEvents */
+$bookedEvents = $response->getData();
+```
+
+#### Delete
+```php
+<?php
+use Statscore\Model\Response\ResponseDTO;
+
+$clientId = 1;
+$productName = 'livescorepro';
+$eventId = 1232131;
+/** @var ResponseDTO $response */
+$response = $statscore->bookedEvents->delete($clientId, $productName, $eventId);
 ```
 
 ## Troubleshooting
