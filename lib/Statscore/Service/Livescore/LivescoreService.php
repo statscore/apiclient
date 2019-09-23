@@ -2,6 +2,7 @@
 
 namespace Statscore\Service\Livescore;
 
+use Statscore\Service\Api;
 use Statscore\Service\Competitions\CompetitionsService;
 
 /**
@@ -13,5 +14,5 @@ final class LivescoreService extends CompetitionsService
     /**
      * @var string
      */
-    protected $url = 'livescore';
+    protected $url = Api::ROUTE_LIVESCORE;
 }

@@ -19,7 +19,7 @@ final class IncidentsService extends Api
     /**
      * @var string
      */
-    protected $url = 'incidents';
+    protected $url = Api::ROUTE_INCIDENTS;
 
     /**
      * @param array $query
@@ -37,7 +37,7 @@ final class IncidentsService extends Api
         $responseDTO = $this->service->request($request);
         $responseDTO->setData(
             $this->serializer->denormalize(
-                $responseDTO->getData()['incidents'] ?? [],
+                $responseDTO->getData()[Api::ROUTE_INCIDENTS] ?? [],
                 IncidentDTO::class . '[]'
             )
         );

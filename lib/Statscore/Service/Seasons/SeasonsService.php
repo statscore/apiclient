@@ -2,6 +2,7 @@
 
 namespace Statscore\Service\Seasons;
 
+use Statscore\Service\Api;
 use Statscore\Service\Competitions\CompetitionsService;
 
 /**
@@ -13,5 +14,5 @@ final class SeasonsService extends CompetitionsService
     /**
      * @var string
      */
-    protected $url = 'seasons';
+    protected $url = Api::ROUTE_SEASONS;
 }

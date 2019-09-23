@@ -1,7 +1,7 @@
 {
   "name": "statscore/apiclient",
   "type": "library",
-  "description": "Statscore Official PHP API Client",
+  "description": "STATSCORE Official SportsAPI Client",
   "keywords": [
     "statscore"
   ],

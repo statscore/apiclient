@@ -20,7 +20,7 @@ class CompetitionsService extends Api
     /**
      * @var string
      */
-    protected $url = 'competitions';
+    protected $url = Api::ROUTE_COMPETITIONS;
 
     /**
      * @param array $query
@@ -38,7 +38,7 @@ class CompetitionsService extends Api
         $responseDTO = $this->service->request($request);
         $responseDTO->setData(
             $this->serializer->denormalize(
-                $responseDTO->getData()['competitions'] ?? [],
+                $responseDTO->getData()[Api::ROUTE_COMPETITIONS] ?? [],
                 CompetitionDTO::class . '[]',
                 null,
                 [ObjectNormalizer::DISABLE_TYPE_ENFORCEMENT => true]

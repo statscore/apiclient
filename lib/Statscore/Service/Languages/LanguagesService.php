@@ -19,7 +19,7 @@ final class LanguagesService extends Api
     /**
      * @var string
      */
-    protected $url = 'languages';
+    protected $url = Api::ROUTE_LANGUAGES;
 
     /**
      * @param array $query
@@ -37,7 +37,7 @@ final class LanguagesService extends Api
         $responseDTO = $this->service->request($request);
         $responseDTO->setData(
             $this->serializer->denormalize(
-                $responseDTO->getData()['languages'] ?? [],
+                $responseDTO->getData()[Api::ROUTE_LANGUAGES] ?? [],
                 LanguageDTO::class . '[]'
             )
         );

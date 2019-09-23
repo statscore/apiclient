@@ -19,7 +19,7 @@ final class BookedEventsService extends Api
     /**
      * @var string
      */
-    protected $url = 'booked-events';
+    protected $url = Api::ROUTE_BOOKED_EVENTS;
 
     /**
      * @param int $clientId

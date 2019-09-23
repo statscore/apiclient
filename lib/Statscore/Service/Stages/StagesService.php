@@ -2,6 +2,7 @@
 
 namespace Statscore\Service\Stages;
 
+use Statscore\Service\Api;
 use Statscore\Service\Competitions\CompetitionsService;
 
 /**
@@ -13,5 +14,5 @@ final class StagesService extends CompetitionsService
     /**
      * @var string
      */
-    protected $url = 'stages';
+    protected $url = Api::ROUTE_STAGES;
 }

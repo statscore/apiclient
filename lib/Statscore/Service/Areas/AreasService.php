@@ -26,14 +26,14 @@ final class AreasService extends Api
     public function getAll(array $query = []): ResponseDTO
     {
         $request = new RequestDTO();
-        $request->setUri('areas');
+        $request->setUri(Api::ROUTE_AREAS);
         $request->setMethod(Request::METHOD_GET);
         $request->setQuery($query);
 
         $responseDTO = $this->service->request($request);
         $responseDTO->setData(
             $this->serializer->denormalize(
-                $responseDTO->getData()['areas'] ?? [],
+                $responseDTO->getData()[Api::ROUTE_AREAS] ?? [],
                 AreaDTO::class . '[]'
             )
         );

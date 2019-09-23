@@ -2,6 +2,7 @@
 
 namespace Statscore\Service\Events;
 
+use Statscore\Service\Api;
 use Statscore\Service\Competitions\CompetitionsService;
 
 /**
@@ -13,5 +14,5 @@ final class EventsService extends CompetitionsService
     /**
      * @var string
      */
-    protected $url = 'events';
+    protected $url = Api::ROUTE_EVENTS;
 }

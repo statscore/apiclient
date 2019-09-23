@@ -19,7 +19,7 @@ final class ToursService extends Api
     /**
      * @var string
      */
-    protected $url = 'tours';
+    protected $url = Api::ROUTE_TOURS;
 
     /**
      * @param array $query
@@ -37,7 +37,7 @@ final class ToursService extends Api
         $responseDTO = $this->service->request($request);
         $responseDTO->setData(
             $this->serializer->denormalize(
-                $responseDTO->getData()['tours'] ?? [],
+                $responseDTO->getData()[Api::ROUTE_TOURS] ?? [],
                 TourDTO::class . '[]'
             )
         );

@@ -19,7 +19,7 @@ final class StandingsService extends Api
     /**
      * @var string
      */
-    protected $url = 'standings';
+    protected $url = Api::ROUTE_STANDINGS;
 
     /**
      * @param array $query
@@ -62,7 +62,7 @@ final class StandingsService extends Api
         $responseDTO = $this->service->request($request);
         $responseDTO->setData(
             $this->serializer->denormalize(
-                $responseDTO->getData()['standings'] ?? [],
+                $responseDTO->getData()[Api::ROUTE_STANDINGS] ?? [],
                 StandingDTO::class
             )
         );

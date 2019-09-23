@@ -19,7 +19,7 @@ final class StatusesService extends Api
     /**
      * @var string
      */
-    protected $url = 'statuses';
+    protected $url = Api::ROUTE_STATUSES;
 
     /**
      * @param array $query
@@ -37,7 +37,7 @@ final class StatusesService extends Api
         $responseDTO = $this->service->request($request);
         $responseDTO->setData(
             $this->serializer->denormalize(
-                $responseDTO->getData()['statuses'] ?? [],
+                $responseDTO->getData()[Api::ROUTE_STATUSES] ?? [],
                 StatusDTO::class . '[]'
             )
         );

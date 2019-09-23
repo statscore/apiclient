@@ -19,7 +19,7 @@ final class GroupsService extends Api
     /**
      * @var string
      */
-    protected $url = 'groups';
+    protected $url = Api::ROUTE_GROUPS;
 
     /**
      * @param int $stageId

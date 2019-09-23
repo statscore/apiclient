@@ -5,6 +5,7 @@ namespace Statscore;
 use GuzzleHttp\Client as Guzzle;
 use GuzzleHttp\Exception\GuzzleException;
 use Statscore\Model\Response\Authorization\AuthorizationDTO;
+use Statscore\Service\Api;
 use Statscore\Service\Areas\AreasService;
 use Statscore\Service\BookedEvents\BookedEventsService;
 use Statscore\Service\Competitions\CompetitionsService;
@@ -133,12 +134,20 @@ final class Client
      * Statscore constructor.
      * @param int $clientId
      * @param string $secretKey
+     * @param string $url
+     * @param string $version
      */
-    public function __construct(int $clientId, string $secretKey)
-    {
+    public function __construct(
+        int $clientId,
+        string $secretKey,
+        string $url = Api::API_URI,
+        string $version = Api::API_VERSION
+    ) {
         $this->service = new ApiService(new Guzzle([]), Serializer::get());
         $this->service->setClientId($clientId);
         $this->service->setSecretKey($secretKey);
+        $this->service->setUrl($url);
+        $this->service->setVersion($version);
         $this->areas = new AreasService($this->service);
         $this->bookedEvents = new BookedEventsService($this->service);
         $this->competitions = new CompetitionsService($this->service);

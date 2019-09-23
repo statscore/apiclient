@@ -19,10 +19,6 @@ use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
  */
 final class ApiService
 {
-    private const VERSION = 'v2';
-
-    private const URI = 'http://dev.api.statscore.com';
-
     /**
      * @var Client
      */
@@ -47,6 +43,16 @@ final class ApiService
      * @var string
      */
     private $token;
+
+    /**
+     * @var string
+     */
+    private $url;
+
+    /**
+     * @var string
+     */
+    private $version;
 
     /**
      * ApiService constructor.
@@ -93,6 +99,28 @@ final class ApiService
     }
 
     /**
+     * @param string $url
+     * @return ApiService
+     */
+    public function setUrl(string $url): ApiService
+    {
+        $this->url = $url;
+
+        return $this;
+    }
+
+    /**
+     * @param string $version
+     * @return ApiService
+     */
+    public function setVersion(string $version): ApiService
+    {
+        $this->version = $version;
+
+        return $this;
+    }
+
+    /**
      * @return AuthorizationDTO
      * @throws AuthorizationException
      * @throws GuzzleException
@@ -131,7 +159,7 @@ final class ApiService
     {
         $request = $this->client->request(
             $requestDTO->getMethod(),
-            self::URI . '/' . self::VERSION . '/' . $requestDTO->getUri(),
+            $this->url . '/' . $this->version . '/' . $requestDTO->getUri(),
             $this->prepareBody($requestDTO)
         );
 

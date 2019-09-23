@@ -20,7 +20,7 @@ final class ParticipantsService extends Api
     /**
      * @var string
      */
-    protected $url = 'participants';
+    protected $url = Api::ROUTE_PARTICIPANTS;
 
     /**
      * @param int $sportId
@@ -40,7 +40,7 @@ final class ParticipantsService extends Api
         $responseDTO = $this->service->request($request);
         $responseDTO->setData(
             $this->serializer->denormalize(
-                $responseDTO->getData()['participants'] ?? [],
+                $responseDTO->getData()[Api::ROUTE_PARTICIPANTS] ?? [],
                 ParticipantDTO::class . '[]'
             )
         );

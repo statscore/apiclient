@@ -4,12 +4,12 @@ namespace UnitTests\Groups;
 
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Response;
-use ReflectionException;
 use Statscore\Model\Response\Competition\CompetitionDTO;
 use Statscore\Model\Response\Season\SeasonDTO;
 use Statscore\Model\Response\Stage\StageDTO;
 use Statscore\Service\Groups\GroupsService;
 use Symfony\Component\HttpFoundation\Response as HttpFoundationResponse;
+use Symfony\Component\Serializer\Exception\ExceptionInterface;
 use UnitTests\TestCase;
 
 /**
@@ -32,7 +32,7 @@ class GroupsTest extends TestCase
     /**
      * @return CompetitionDTO
      * @throws GuzzleException
-     * @throws ReflectionException
+     * @throws ExceptionInterface
      */
     public function testGet(): CompetitionDTO
     {

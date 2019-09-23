@@ -19,7 +19,7 @@ final class VenuesService extends Api
     /**
      * @var string
      */
-    protected $url = 'venues';
+    protected $url = Api::ROUTE_VENUES;
 
     /**
      * @param array $query
@@ -37,7 +37,7 @@ final class VenuesService extends Api
         $responseDTO = $this->service->request($request);
         $responseDTO->setData(
             $this->serializer->denormalize(
-                $responseDTO->getData()['venues'] ?? [],
+                $responseDTO->getData()[Api::ROUTE_VENUES] ?? [],
                 VenueDTO::class . '[]'
             )
         );
@@ -63,7 +63,7 @@ final class VenuesService extends Api
         $responseDTO = $this->service->request($request);
         $responseDTO->setData(
             $this->serializer->denormalize(
-                $responseDTO->getData()['venues'] ?? [],
+                $responseDTO->getData()[Api::ROUTE_VENUES] ?? [],
                 VenueDTO::class . '[]'
             )
         );

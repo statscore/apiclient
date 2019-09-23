@@ -19,7 +19,7 @@ final class FeedsService extends Api
     /**
      * @var string
      */
-    protected $url = 'feed';
+    protected $url = Api::ROUTE_FEED;
 
     /**
      * @param array $query
@@ -38,7 +38,8 @@ final class FeedsService extends Api
         $responseDTO->setData(
             $this->serializer->denormalize(
                 $responseDTO->getData() ?? [],
-                FeedDTO::class . '[]')
+                FeedDTO::class . '[]'
+            )
         );
 
         return $responseDTO;
@@ -57,5 +58,4 @@ final class FeedsService extends Api
 
         return $this->getAll($query);
     }
-
 }

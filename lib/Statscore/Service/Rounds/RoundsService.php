@@ -19,7 +19,7 @@ final class RoundsService extends Api
     /**
      * @var string
      */
-    protected $url = 'rounds';
+    protected $url = Api::ROUTE_ROUNDS;
 
     /**
      * @param array $query
@@ -37,7 +37,7 @@ final class RoundsService extends Api
         $responseDTO = $this->service->request($request);
         $responseDTO->setData(
             $this->serializer->denormalize(
-                $responseDTO->getData()['rounds'] ?? [],
+                $responseDTO->getData()[Api::ROUTE_ROUNDS] ?? [],
                 RoundDTO::class . '[]'
             )
         );

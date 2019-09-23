@@ -19,7 +19,7 @@ final class SportsService extends Api
     /**
      * @var string
      */
-    protected $url = 'sports';
+    protected $url = Api::ROUTE_SPORTS;
 
     /**
      * @param array $query
@@ -37,7 +37,7 @@ final class SportsService extends Api
         $responseDTO = $this->service->request($request);
         $responseDTO->setData(
             $this->serializer->denormalize(
-                $responseDTO->getData()['sports'] ?? [],
+                $responseDTO->getData()[Api::ROUTE_SPORTS] ?? [],
                 SportDTO::class . '[]'
             )
         );
