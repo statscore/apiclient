@@ -8,6 +8,7 @@ before_script:
 php:
   - 7.2
   - 7.3
+  - 7.4snapshot
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
