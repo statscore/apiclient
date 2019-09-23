@@ -34,7 +34,7 @@ final class GroupsService extends Api
         $request->setUri($this->url);
         $request->setMethod(Request::METHOD_GET);
         $request->setQuery($query);
-        $request->addQuery('stage_id', $stageId);
+        $request->addQuery(Api::QUERY_STAGE_ID, $stageId);
 
         $responseDTO = $this->service->request($request);
         $responseDTO->setData(

@@ -5,7 +5,8 @@
     "method": {
       "parameters": {
         "username": "statscore",
-        "client_id": 1
+        "client_id": 1,
+        "timestamp": "1553849196"
       },
       "name": "venues.index",
       "details": "venues.index",

@@ -87,7 +87,7 @@ final class ParticipantsService extends Api
         $request->setUri($this->url . '/' . $participantId . '/compare');
         $request->setMethod(Request::METHOD_GET);
         $request->setQuery($query);
-        $request->addQuery('compare_participant_id', $compareParticipantId);
+        $request->addQuery(Api::QUERY_COMPARE_PARTICIPANT_ID, $compareParticipantId);
 
         $responseDTO = $this->service->request($request);
 

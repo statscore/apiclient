@@ -7,6 +7,7 @@ use GuzzleHttp\Psr7\Response;
 use Statscore\Model\Response\Sport\SportDTO;
 use Statscore\Model\Response\Venue\VenueDTO;
 use Statscore\Model\Response\Venue\VenueSportDetailDTO;
+use Statscore\Service\Api;
 use Statscore\Service\Venues\VenuesService;
 use Symfony\Component\HttpFoundation\Response as HttpFoundationResponse;
 use Symfony\Component\Serializer\Exception\ExceptionInterface;
@@ -48,6 +49,39 @@ class VenuesTest extends TestCase
         $this->assertEquals('venues.index', $responseDTO->getMethod()->getName());
         $this->assertEmpty($responseDTO->getMethod()->getPreviousPage());
         $this->assertEmpty($responseDTO->getMethod()->getNextPage());
+        $this->assertEquals(1569159948, $responseDTO->getTimestamp());
+        $this->assertEquals('2.125', $responseDTO->getVer());
+        $this->assertEquals(6, $responseDTO->getMethod()->getTotalItems());
+
+        $this->assertCount(6, $responseDTO->getData());
+        $this->assertInstanceOf(VenueDTO::class, $responseDTO->getData()[0]);
+
+        return $responseDTO->getData()[0];
+    }
+
+    /**
+     * @return VenueDTO
+     * @throws GuzzleException
+     * @throws ExceptionInterface
+     */
+    public function testGetUpdated(): VenueDTO
+    {
+        $timestamp = 1553849196;
+        $response = file_get_contents(__DIR__ . '/assets/venues.json');
+
+        $response = new Response(HttpFoundationResponse::HTTP_OK, ['Content-Type' => 'application/json'], $response);
+
+        $this->guzzle->shouldReceive('request')->andReturn($response);
+
+        $responseDTO = $this->venuesService->getUpdated($timestamp);
+
+        $this->assertEquals('venues.index', $responseDTO->getMethod()->getDetails());
+        $this->assertEquals('venues.index', $responseDTO->getMethod()->getName());
+        $this->assertEmpty($responseDTO->getMethod()->getPreviousPage());
+        $this->assertEmpty($responseDTO->getMethod()->getNextPage());
+        $this->assertCount(3, $responseDTO->getMethod()->getParameters());
+        $this->assertArrayHasKey(Api::QUERY_TIMESTAMP, $responseDTO->getMethod()->getParameters());
+        $this->assertEquals($timestamp, $responseDTO->getMethod()->getParameters()[Api::QUERY_TIMESTAMP]);
         $this->assertEquals(1569159948, $responseDTO->getTimestamp());
         $this->assertEquals('2.125', $responseDTO->getVer());
         $this->assertEquals(6, $responseDTO->getMethod()->getTotalItems());

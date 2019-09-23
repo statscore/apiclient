@@ -46,6 +46,32 @@ final class VenuesService extends Api
     }
 
     /**
+     * @param int $timestamp
+     * @param array $query
+     * @return ResponseDTO
+     * @throws ExceptionInterface
+     * @throws GuzzleException
+     */
+    public function getUpdated(int $timestamp, array $query = []): ResponseDTO
+    {
+        $request = new RequestDTO();
+        $request->setUri($this->url);
+        $request->setMethod(Request::METHOD_GET);
+        $request->setQuery($query);
+        $request->addQuery(Api::QUERY_TIMESTAMP, $timestamp);
+
+        $responseDTO = $this->service->request($request);
+        $responseDTO->setData(
+            $this->serializer->denormalize(
+                $responseDTO->getData()['venues'] ?? [],
+                VenueDTO::class . '[]'
+            )
+        );
+
+        return $responseDTO;
+    }
+
+    /**
      * @param int $id
      * @param array $query
      * @return ResponseDTO
