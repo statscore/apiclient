@@ -35,7 +35,7 @@ final class ParticipantsService extends Api
         $request->setUri($this->url);
         $request->setMethod(Request::METHOD_GET);
         $request->setQuery($query);
-        $request->addQuery('sport_id', $sportId);
+        $request->addQuery(Api::QUERY_SPORT_ID, $sportId);
 
         $responseDTO = $this->service->request($request);
         $responseDTO->setData(

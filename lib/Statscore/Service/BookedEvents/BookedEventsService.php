@@ -35,8 +35,8 @@ final class BookedEventsService extends Api
         $request->setUri($this->url);
         $request->setMethod(Request::METHOD_GET);
         $request->setQuery($query);
-        $request->addQuery('client_id', $clientId);
-        $request->addQuery('product', $product);
+        $request->addQuery(Api::QUERY_CLIENT_ID, $clientId);
+        $request->addQuery(Api::QUERY_PRODUCT, $product);
 
         $responseDTO = $this->service->request($request);
         $responseDTO->setData(
@@ -64,9 +64,9 @@ final class BookedEventsService extends Api
         $request->setUri($this->url);
         $request->setMethod(Request::METHOD_POST);
         $request->setQuery($query);
-        $request->addQuery('client_id', $clientId);
-        $request->addQuery('product', $product);
-        $request->addQuery('event_id', $eventId);
+        $request->addQuery(Api::QUERY_CLIENT_ID, $clientId);
+        $request->addQuery(Api::QUERY_PRODUCT, $product);
+        $request->addQuery(Api::QUERY_EVENT_ID, $eventId);
 
         $responseDTO = $this->service->request($request);
 
@@ -95,8 +95,8 @@ final class BookedEventsService extends Api
         $request->setUri($this->url . '/' . $eventId);
         $request->setMethod(Request::METHOD_DELETE);
         $request->setQuery($query);
-        $request->addQuery('client_id', $clientId);
-        $request->addQuery('product', $product);
+        $request->addQuery(Api::QUERY_CLIENT_ID, $clientId);
+        $request->addQuery(Api::QUERY_PRODUCT, $product);
 
         return $this->service->request($request);
     }

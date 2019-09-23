@@ -10,6 +10,7 @@ use Statscore\Model\Response\Standing\StandingGroupDTO;
 use Statscore\Model\Response\Standing\StandingParticipantDTO;
 use Statscore\Model\Response\Standing\StandingTypeDTO;
 use Statscore\Model\Response\Standing\StandingZoneDTO;
+use Statscore\Service\Api;
 use Statscore\Service\Standings\StandingsService;
 use Symfony\Component\HttpFoundation\Response as HttpFoundationResponse;
 use Symfony\Component\Serializer\Exception\ExceptionInterface;
@@ -102,9 +103,9 @@ class StandingsTest extends TestCase
         $this->assertEquals('standings.show', $responseDTO->getMethod()->getName());
         $this->assertEmpty($responseDTO->getMethod()->getNextPage());
         $this->assertEmpty($responseDTO->getMethod()->getPreviousPage());
-        $this->assertArrayHasKey('client_id', $responseDTO->getMethod()->getParameters());
-        $this->assertArrayHasKey('standing_id', $responseDTO->getMethod()->getParameters());
-        $this->assertEquals($id, $responseDTO->getMethod()->getParameters()['standing_id']);
+        $this->assertArrayHasKey(Api::QUERY_CLIENT_ID, $responseDTO->getMethod()->getParameters());
+        $this->assertArrayHasKey(Api::QUERY_STANDING_ID, $responseDTO->getMethod()->getParameters());
+        $this->assertEquals($id, $responseDTO->getMethod()->getParameters()[Api::QUERY_STANDING_ID]);
         $this->assertEquals(1554189911, $responseDTO->getTimestamp());
         $this->assertEquals('2.132', $responseDTO->getVer());
 
@@ -216,9 +217,9 @@ class StandingsTest extends TestCase
         $this->assertEquals('standings-types.index', $responseDTO->getMethod()->getName());
         $this->assertEmpty($responseDTO->getMethod()->getNextPage());
         $this->assertEmpty($responseDTO->getMethod()->getPreviousPage());
-        $this->assertArrayHasKey('client_id', $responseDTO->getMethod()->getParameters());
-        $this->assertArrayHasKey('sport_id', $responseDTO->getMethod()->getParameters());
-        $this->assertEquals($sportId, $responseDTO->getMethod()->getParameters()['sport_id']);
+        $this->assertArrayHasKey(Api::QUERY_CLIENT_ID, $responseDTO->getMethod()->getParameters());
+        $this->assertArrayHasKey(Api::QUERY_SPORT_ID, $responseDTO->getMethod()->getParameters());
+        $this->assertEquals($sportId, $responseDTO->getMethod()->getParameters()[Api::QUERY_SPORT_ID]);
         $this->assertEquals(1565346035, $responseDTO->getTimestamp());
         $this->assertEquals('2.125', $responseDTO->getVer());
         $this->assertCount(15, $responseDTO->getData());

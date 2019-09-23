@@ -7,6 +7,7 @@ use GuzzleHttp\Psr7\Response;
 use Statscore\Model\Response\Competition\CompetitionDTO;
 use Statscore\Model\Response\Season\SeasonDTO;
 use Statscore\Model\Response\Stage\StageDTO;
+use Statscore\Service\Api;
 use Statscore\Service\Seasons\SeasonsService;
 use Symfony\Component\HttpFoundation\Response as HttpFoundationResponse;
 use Symfony\Component\Serializer\Exception\ExceptionInterface;
@@ -48,7 +49,7 @@ class SeasonsTest extends TestCase
         $this->assertEquals('seasons.index', $responseDTO->getMethod()->getName());
         $this->assertEmpty($responseDTO->getMethod()->getPreviousPage());
         $this->assertEmpty($responseDTO->getMethod()->getNextPage());
-        $this->assertArrayHasKey('client_id', $responseDTO->getMethod()->getParameters());
+        $this->assertArrayHasKey(Api::QUERY_CLIENT_ID, $responseDTO->getMethod()->getParameters());
         $this->assertEquals(1565265269, $responseDTO->getTimestamp());
         $this->assertEquals('2.125', $responseDTO->getVer());
         $this->assertEquals(49, $responseDTO->getMethod()->getTotalItems());
@@ -129,7 +130,7 @@ class SeasonsTest extends TestCase
         $this->assertEquals('seasons.show', $responseDTO->getMethod()->getName());
         $this->assertEmpty($responseDTO->getMethod()->getNextPage());
         $this->assertEmpty($responseDTO->getMethod()->getPreviousPage());
-        $this->assertArrayHasKey('client_id', $responseDTO->getMethod()->getParameters());
+        $this->assertArrayHasKey(Api::QUERY_CLIENT_ID, $responseDTO->getMethod()->getParameters());
         $this->assertArrayHasKey('season_id', $responseDTO->getMethod()->getParameters());
         $this->assertEquals($id, $responseDTO->getMethod()->getParameters()['season_id']);
         $this->assertEquals(1565262317, $responseDTO->getTimestamp());

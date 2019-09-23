@@ -6,6 +6,7 @@ use DateTime;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Response;
 use Statscore\Model\Response\BookedEvent\BookedEventDTO;
+use Statscore\Service\Api;
 use Statscore\Service\BookedEvents\BookedEventsService;
 use Symfony\Component\HttpFoundation\Response as HttpFoundationResponse;
 use Symfony\Component\Serializer\Exception\ExceptionInterface;
@@ -17,9 +18,6 @@ use UnitTests\TestCase;
  */
 class BookedEventsTest extends TestCase
 {
-    private const QUERY_CLIENT_ID = 'client_id';
-    private const QUERY_PRODUCT = 'product';
-
     /**
      * @var BookedEventsService
      */
@@ -53,10 +51,10 @@ class BookedEventsTest extends TestCase
         $this->assertEmpty($responseDTO->getMethod()->getPreviousPage());
         $this->assertEmpty($responseDTO->getMethod()->getNextPage());
         $this->assertCount(8, $responseDTO->getMethod()->getParameters());
-        $this->assertArrayHasKey(self::QUERY_CLIENT_ID, $responseDTO->getMethod()->getParameters());
-        $this->assertEquals($clientId, $responseDTO->getMethod()->getParameters()['client_id']);
-        $this->assertArrayHasKey(self::QUERY_PRODUCT, $responseDTO->getMethod()->getParameters());
-        $this->assertEquals($product, $responseDTO->getMethod()->getParameters()['product']);
+        $this->assertArrayHasKey(Api::QUERY_CLIENT_ID, $responseDTO->getMethod()->getParameters());
+        $this->assertEquals($clientId, $responseDTO->getMethod()->getParameters()[Api::QUERY_CLIENT_ID]);
+        $this->assertArrayHasKey(Api::QUERY_PRODUCT, $responseDTO->getMethod()->getParameters());
+        $this->assertEquals($product, $responseDTO->getMethod()->getParameters()[Api::QUERY_PRODUCT]);
         $this->assertEquals(1569221869, $responseDTO->getTimestamp());
         $this->assertEquals('2.141.2', $responseDTO->getVer());
         $this->assertEquals(9, $responseDTO->getMethod()->getTotalItems());
@@ -138,10 +136,10 @@ class BookedEventsTest extends TestCase
         $this->assertEmpty($responseDTO->getMethod()->getPreviousPage());
         $this->assertEmpty($responseDTO->getMethod()->getNextPage());
         $this->assertCount(5, $responseDTO->getMethod()->getParameters());
-        $this->assertArrayHasKey(self::QUERY_CLIENT_ID, $responseDTO->getMethod()->getParameters());
-        $this->assertEquals($clientId, $responseDTO->getMethod()->getParameters()['client_id']);
-        $this->assertArrayHasKey(self::QUERY_PRODUCT, $responseDTO->getMethod()->getParameters());
-        $this->assertEquals($product, $responseDTO->getMethod()->getParameters()['product']);
+        $this->assertArrayHasKey(Api::QUERY_CLIENT_ID, $responseDTO->getMethod()->getParameters());
+        $this->assertEquals($clientId, $responseDTO->getMethod()->getParameters()[Api::QUERY_CLIENT_ID]);
+        $this->assertArrayHasKey(Api::QUERY_PRODUCT, $responseDTO->getMethod()->getParameters());
+        $this->assertEquals($product, $responseDTO->getMethod()->getParameters()[Api::QUERY_PRODUCT]);
         $this->assertEquals(1569227749, $responseDTO->getTimestamp());
         $this->assertEquals('2.125', $responseDTO->getVer());
         $this->assertEquals(1, $responseDTO->getMethod()->getTotalItems());
@@ -174,10 +172,10 @@ class BookedEventsTest extends TestCase
         $this->assertEmpty($responseDTO->getMethod()->getPreviousPage());
         $this->assertEmpty($responseDTO->getMethod()->getNextPage());
         $this->assertCount(3, $responseDTO->getMethod()->getParameters());
-        $this->assertArrayHasKey(self::QUERY_CLIENT_ID, $responseDTO->getMethod()->getParameters());
-        $this->assertEquals($clientId, $responseDTO->getMethod()->getParameters()['client_id']);
-        $this->assertArrayHasKey(self::QUERY_PRODUCT, $responseDTO->getMethod()->getParameters());
-        $this->assertEquals($product, $responseDTO->getMethod()->getParameters()['product']);
+        $this->assertArrayHasKey(Api::QUERY_CLIENT_ID, $responseDTO->getMethod()->getParameters());
+        $this->assertEquals($clientId, $responseDTO->getMethod()->getParameters()[Api::QUERY_CLIENT_ID]);
+        $this->assertArrayHasKey(Api::QUERY_PRODUCT, $responseDTO->getMethod()->getParameters());
+        $this->assertEquals($product, $responseDTO->getMethod()->getParameters()[Api::QUERY_PRODUCT]);
         $this->assertEquals(1569230258, $responseDTO->getTimestamp());
         $this->assertEquals('2.125', $responseDTO->getVer());
         $this->assertEquals(null, $responseDTO->getMethod()->getTotalItems());

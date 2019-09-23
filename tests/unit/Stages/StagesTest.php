@@ -5,6 +5,7 @@ namespace UnitTests\Stages;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Response;
 use Statscore\Model\Response\Competition\CompetitionDTO;
+use Statscore\Service\Api;
 use Statscore\Service\Stages\StagesService;
 use Symfony\Component\HttpFoundation\Response as HttpFoundationResponse;
 use Symfony\Component\Serializer\Exception\ExceptionInterface;
@@ -46,7 +47,7 @@ class StagesTest extends TestCase
         $this->assertEquals('stages.show', $responseDTO->getMethod()->getName());
         $this->assertEmpty($responseDTO->getMethod()->getNextPage());
         $this->assertEmpty($responseDTO->getMethod()->getPreviousPage());
-        $this->assertArrayHasKey('client_id', $responseDTO->getMethod()->getParameters());
+        $this->assertArrayHasKey(Api::QUERY_CLIENT_ID, $responseDTO->getMethod()->getParameters());
         $this->assertArrayHasKey('stage_id', $responseDTO->getMethod()->getParameters());
         $this->assertEquals($id, $responseDTO->getMethod()->getParameters()['stage_id']);
         $this->assertEquals(1565331876, $responseDTO->getTimestamp());
