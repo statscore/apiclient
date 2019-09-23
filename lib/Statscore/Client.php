@@ -6,6 +6,7 @@ use GuzzleHttp\Client as Guzzle;
 use GuzzleHttp\Exception\GuzzleException;
 use Statscore\Model\Response\Authorization\AuthorizationDTO;
 use Statscore\Service\Areas\AreasService;
+use Statscore\Service\BookedEvents\BookedEventsService;
 use Statscore\Service\Competitions\CompetitionsService;
 use Statscore\Service\Events\EventsService;
 use Statscore\Service\Exception\AuthorizationException;
@@ -124,6 +125,11 @@ final class Client
     public $tours;
 
     /**
+     * @var BookedEventsService
+     */
+    public $bookedEvents;
+
+    /**
      * Statscore constructor.
      * @param int $clientId
      * @param string $secretKey
@@ -134,6 +140,7 @@ final class Client
         $this->service->setClientId($clientId);
         $this->service->setSecretKey($secretKey);
         $this->areas = new AreasService($this->service);
+        $this->bookedEvents = new BookedEventsService($this->service);
         $this->competitions = new CompetitionsService($this->service);
         $this->events = new EventsService($this->service);
         $this->feeds = new FeedsService($this->service);

@@ -51,9 +51,9 @@ class BookedEventsTest extends TestCase
         $this->assertEmpty($responseDTO->getMethod()->getNextPage());
         $this->assertCount(8, $responseDTO->getMethod()->getParameters());
         $this->assertArrayHasKey('client_id', $responseDTO->getMethod()->getParameters());
-        $this->assertEquals(370, $responseDTO->getMethod()->getParameters()['client_id']);
+        $this->assertEquals($clientId, $responseDTO->getMethod()->getParameters()['client_id']);
         $this->assertArrayHasKey('product', $responseDTO->getMethod()->getParameters());
-        $this->assertEquals('livescorepro', $responseDTO->getMethod()->getParameters()['product']);
+        $this->assertEquals($product, $responseDTO->getMethod()->getParameters()['product']);
         $this->assertEquals(1569221869, $responseDTO->getTimestamp());
         $this->assertEquals('2.141.2', $responseDTO->getVer());
         $this->assertEquals(9, $responseDTO->getMethod()->getTotalItems());
@@ -109,6 +109,78 @@ class BookedEventsTest extends TestCase
         $this->assertEquals('Round 22', $bookedEventDTO->getRoundName());
         $this->assertEquals('no', $bookedEventDTO->getInvertedParticipants());
         $this->assertEquals('gold', $bookedEventDTO->getEventStatsLvl());
+    }
+
+    /**
+     * @return BookedEventDTO
+     * @throws GuzzleException
+     * @throws ExceptionInterface
+     */
+    public function testCreate(): BookedEventDTO
+    {
+        $clientId = 1;
+        $product = 'livescorepro';
+        $eventId = 1822552;
+
+        $response = file_get_contents(__DIR__ . '/assets/booked_create.json');
+
+        $response = new Response(HttpFoundationResponse::HTTP_OK, ['Content-Type' => 'application/json'], $response);
+
+        $this->guzzle->shouldReceive('request')->andReturn($response);
+
+        $responseDTO = $this->bookedEvents->create($clientId, $product, $eventId);
+
+        $this->assertEquals('booked-events.store', $responseDTO->getMethod()->getDetails());
+        $this->assertEquals('booked-events.store', $responseDTO->getMethod()->getName());
+        $this->assertEmpty($responseDTO->getMethod()->getPreviousPage());
+        $this->assertEmpty($responseDTO->getMethod()->getNextPage());
+        $this->assertCount(5, $responseDTO->getMethod()->getParameters());
+        $this->assertArrayHasKey('client_id', $responseDTO->getMethod()->getParameters());
+        $this->assertEquals($clientId, $responseDTO->getMethod()->getParameters()['client_id']);
+        $this->assertArrayHasKey('product', $responseDTO->getMethod()->getParameters());
+        $this->assertEquals($product, $responseDTO->getMethod()->getParameters()['product']);
+        $this->assertEquals(1569227749, $responseDTO->getTimestamp());
+        $this->assertEquals('2.125', $responseDTO->getVer());
+        $this->assertEquals(1, $responseDTO->getMethod()->getTotalItems());
+
+        $this->assertCount(1, $responseDTO->getData());
+        $this->assertInstanceOf(BookedEventDTO::class, $responseDTO->getData()[0]);
+
+        return $responseDTO->getData()[0];
+    }
+
+    /**
+     * @throws ExceptionInterface
+     * @throws GuzzleException
+     */
+    public function testDelete(): void
+    {
+        $clientId = 1;
+        $product = 'livescorepro';
+        $eventId = 1822552;
+
+        $response = file_get_contents(__DIR__ . '/assets/booked_delete.json');
+        $response = new Response(HttpFoundationResponse::HTTP_OK, ['Content-Type' => 'application/json'], $response);
+
+        $this->guzzle->shouldReceive('request')->andReturn($response);
+
+        $responseDTO = $this->bookedEvents->delete($clientId, $product, $eventId);
+
+        $this->assertEquals('booked-events.destroy', $responseDTO->getMethod()->getDetails());
+        $this->assertEquals('booked-events.destroy', $responseDTO->getMethod()->getName());
+        $this->assertEmpty($responseDTO->getMethod()->getPreviousPage());
+        $this->assertEmpty($responseDTO->getMethod()->getNextPage());
+        $this->assertCount(3, $responseDTO->getMethod()->getParameters());
+        $this->assertArrayHasKey('client_id', $responseDTO->getMethod()->getParameters());
+        $this->assertEquals($clientId, $responseDTO->getMethod()->getParameters()['client_id']);
+        $this->assertArrayHasKey('product', $responseDTO->getMethod()->getParameters());
+        $this->assertEquals($product, $responseDTO->getMethod()->getParameters()['product']);
+        $this->assertEquals(1569230258, $responseDTO->getTimestamp());
+        $this->assertEquals('2.125', $responseDTO->getVer());
+        $this->assertEquals(null, $responseDTO->getMethod()->getTotalItems());
+
+        $this->assertEquals(200, $responseDTO->getData()['status']);
+        $this->assertEquals('Event successfully removed', $responseDTO->getData()['message']);
     }
 
 }

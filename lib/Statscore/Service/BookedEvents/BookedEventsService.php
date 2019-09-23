@@ -49,4 +49,55 @@ final class BookedEventsService extends Api
         return $responseDTO;
     }
 
+    /**
+     * @param int $clientId
+     * @param string $product
+     * @param int $eventId
+     * @param array $query
+     * @return ResponseDTO
+     * @throws ExceptionInterface
+     * @throws GuzzleException
+     */
+    public function create(int $clientId, string $product, int $eventId, array $query = []): ResponseDTO
+    {
+        $request = new RequestDTO();
+        $request->setUri($this->url);
+        $request->setMethod(Request::METHOD_POST);
+        $request->setQuery($query);
+        $request->addQuery('client_id', $clientId);
+        $request->addQuery('product', $product);
+        $request->addQuery('event_id', $eventId);
+
+        $responseDTO = $this->service->request($request);
+
+        $responseDTO->setData(
+            $this->serializer->denormalize(
+                $responseDTO->getData() ?? [],
+                BookedEventDTO::class . '[]'
+            )
+        );
+
+        return $responseDTO;
+    }
+
+    /**
+     * @param int $clientId
+     * @param string $product
+     * @param int $eventId
+     * @param array $query
+     * @return ResponseDTO
+     * @throws ExceptionInterface
+     * @throws GuzzleException
+     */
+    public function delete(int $clientId, string $product, int $eventId, array $query = []): ResponseDTO
+    {
+        $request = new RequestDTO();
+        $request->setUri($this->url . '/' . $eventId);
+        $request->setMethod(Request::METHOD_DELETE);
+        $request->setQuery($query);
+        $request->addQuery('client_id', $clientId);
+        $request->addQuery('product', $product);
+
+        return $this->service->request($request);
+    }
 }

@@ -92,7 +92,7 @@ class BookedEventDTO
     private $clockTime;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $clockStatus;
 
@@ -162,12 +162,12 @@ class BookedEventDTO
     private $seasonName;
 
     /**
-     * @var integer
+     * @var integer|null
      */
     private $stageId;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $stageName;
 
@@ -177,12 +177,12 @@ class BookedEventDTO
     private $verifiedResult;
 
     /**
-     * @var integer
+     * @var integer|null
      */
     private $roundId;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $roundName;
 
@@ -520,18 +520,18 @@ class BookedEventDTO
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getClockStatus(): string
+    public function getClockStatus(): ?string
     {
         return $this->clockStatus;
     }
 
     /**
-     * @param string $clockStatus
+     * @param string|null $clockStatus
      * @return BookedEventDTO
      */
-    public function setClockStatus(string $clockStatus): BookedEventDTO
+    public function setClockStatus(?string $clockStatus): BookedEventDTO
     {
         $this->clockStatus = $clockStatus;
 
@@ -767,18 +767,18 @@ class BookedEventDTO
     }
 
     /**
-     * @return mixed
+     * @return integer|null
      */
-    public function getStageId()
+    public function getStageId(): ?int
     {
         return $this->stageId;
     }
 
     /**
-     * @param mixed $stageId
+     * @param integer|null $stageId
      * @return BookedEventDTO
      */
-    public function setStageId($stageId)
+    public function setStageId(?int $stageId)
     {
         $this->stageId = $stageId;
 
@@ -786,18 +786,18 @@ class BookedEventDTO
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getStageName(): string
+    public function getStageName(): ?string
     {
         return $this->stageName;
     }
 
     /**
-     * @param string $stageName
+     * @param string|null $stageName
      * @return BookedEventDTO
      */
-    public function setStageName(string $stageName): BookedEventDTO
+    public function setStageName(?string $stageName): BookedEventDTO
     {
         $this->stageName = $stageName;
 
@@ -824,18 +824,18 @@ class BookedEventDTO
     }
 
     /**
-     * @return int
+     * @return int|null
      */
-    public function getRoundId(): int
+    public function getRoundId(): ?int
     {
         return $this->roundId;
     }
 
     /**
-     * @param int $roundId
+     * @param int|null $roundId
      * @return BookedEventDTO
      */
-    public function setRoundId(int $roundId): BookedEventDTO
+    public function setRoundId(?int $roundId): BookedEventDTO
     {
         $this->roundId = $roundId;
 
@@ -843,18 +843,18 @@ class BookedEventDTO
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getRoundName(): string
+    public function getRoundName(): ?string
     {
         return $this->roundName;
     }
 
     /**
-     * @param string $roundName
+     * @param string|null $roundName
      * @return BookedEventDTO
      */
-    public function setRoundName(string $roundName): BookedEventDTO
+    public function setRoundName(?string $roundName): BookedEventDTO
     {
         $this->roundName = $roundName;
 
