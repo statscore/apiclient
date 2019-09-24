@@ -7,5 +7,4 @@ namespace Statscore\Model\Response\Standing;
  */
 final class StandingCorrectionDTO
 {
-
 }

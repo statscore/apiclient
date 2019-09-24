@@ -4,11 +4,11 @@ namespace UnitTests\Languages;
 
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Response;
-use ReflectionException;
 use Statscore\Model\Response\Language\LanguageDTO;
 use Statscore\Service\Incidents\IncidentsService;
 use Statscore\Service\Languages\LanguagesService;
 use Symfony\Component\HttpFoundation\Response as HttpFoundationResponse;
+use Symfony\Component\Serializer\Exception\ExceptionInterface;
 use UnitTests\TestCase;
 
 /**
@@ -31,7 +31,7 @@ class LanguagesTest extends TestCase
     /**
      * @return LanguageDTO
      * @throws GuzzleException
-     * @throws ReflectionException
+     * @throws ExceptionInterface
      */
     public function testGetAll(): LanguageDTO
     {

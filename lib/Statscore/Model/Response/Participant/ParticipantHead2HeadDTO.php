@@ -55,5 +55,4 @@ final class ParticipantHead2HeadDTO
 
         return $this;
     }
-
 }

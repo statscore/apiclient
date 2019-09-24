@@ -55,5 +55,4 @@ class StatusesTest extends TestCase
 
         return $responseDTO->getData()[0];
     }
-
 }

@@ -4,10 +4,10 @@ namespace UnitTests\Incidents;
 
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Response;
-use ReflectionException;
 use Statscore\Model\Response\Incident\IncidentDTO;
 use Statscore\Service\Incidents\IncidentsService;
 use Symfony\Component\HttpFoundation\Response as HttpFoundationResponse;
+use Symfony\Component\Serializer\Exception\ExceptionInterface;
 use UnitTests\TestCase;
 
 /**
@@ -30,7 +30,7 @@ class IncidentsTest extends TestCase
     /**
      * @return IncidentDTO
      * @throws GuzzleException
-     * @throws ReflectionException
+     * @throws ExceptionInterface
      */
     public function testGetAll(): IncidentDTO
     {

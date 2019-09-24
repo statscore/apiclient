@@ -917,5 +917,4 @@ class BookedEventDTO
 
         return $this;
     }
-
 }

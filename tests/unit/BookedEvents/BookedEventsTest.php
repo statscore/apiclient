@@ -183,5 +183,4 @@ class BookedEventsTest extends TestCase
         $this->assertEquals(200, $responseDTO->getData()['status']);
         $this->assertEquals('Event successfully removed', $responseDTO->getData()['message']);
     }
-
 }

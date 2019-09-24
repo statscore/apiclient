@@ -127,5 +127,4 @@ final class FeedDTO
 
         return $this;
     }
-
 }

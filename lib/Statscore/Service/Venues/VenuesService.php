@@ -95,5 +95,4 @@ final class VenuesService extends Api
 
         return $responseDTO;
     }
-
 }

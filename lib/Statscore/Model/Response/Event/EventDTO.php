@@ -1019,5 +1019,4 @@ final class EventDTO
 
         return $this;
     }
-
 }

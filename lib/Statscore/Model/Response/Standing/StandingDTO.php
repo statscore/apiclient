@@ -414,6 +414,4 @@ final class StandingDTO
 
         return $this;
     }
-
-
 }

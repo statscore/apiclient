@@ -103,6 +103,4 @@ final class StatDTO
 
         return $this;
     }
-
-
 }

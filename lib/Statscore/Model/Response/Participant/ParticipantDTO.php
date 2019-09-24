@@ -538,5 +538,4 @@ final class ParticipantDTO
 
         return $this;
     }
-
 }

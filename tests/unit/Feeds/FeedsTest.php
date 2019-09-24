@@ -4,13 +4,13 @@ namespace UnitTests\Feeds;
 
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Response;
-use ReflectionException;
 use Statscore\Model\Response\Event\EventDTO;
 use Statscore\Model\Response\Feed\FeedDataDTO;
 use Statscore\Model\Response\Feed\FeedDTO;
 use Statscore\Model\Response\Feed\FeedIncidentDTO;
 use Statscore\Service\Feeds\FeedsService;
 use Symfony\Component\HttpFoundation\Response as HttpFoundationResponse;
+use Symfony\Component\Serializer\Exception\ExceptionInterface;
 use UnitTests\TestCase;
 
 /**
@@ -33,7 +33,7 @@ class FeedsTest extends TestCase
     /**
      * @return FeedDTO
      * @throws GuzzleException
-     * @throws ReflectionException
+     * @throws ExceptionInterface
      */
     public function testGetAll(): FeedDTO
     {
@@ -110,8 +110,8 @@ class FeedsTest extends TestCase
 
     /**
      * @return FeedDTO
+     * @throws ExceptionInterface
      * @throws GuzzleException
-     * @throws ReflectionException
      */
     public function testGet(): FeedDTO
     {

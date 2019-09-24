@@ -535,5 +535,4 @@ final class FeedIncidentDTO
 
         return $this;
     }
-
 }

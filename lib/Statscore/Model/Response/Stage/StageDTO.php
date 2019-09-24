@@ -274,6 +274,4 @@ final class StageDTO
 
         return $this;
     }
-
-
 }

@@ -40,5 +40,4 @@ class ClientTest extends TestCase
         $this->client = new Client(0, '');
         $this->client->authorize();
     }
-
 }

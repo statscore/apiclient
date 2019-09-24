@@ -68,5 +68,4 @@ class ToursTest extends TestCase
         $this->assertEquals(1, $tourDTO->getSortOrder());
         $this->assertEquals(1430808626, $tourDTO->getUt());
     }
-
 }
