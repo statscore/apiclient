@@ -28,7 +28,7 @@ class ApiServiceTest extends TestCase
     {
         $this->expectException(AuthorizationException::class);
         $this->expectExceptionMessage(AuthorizationException::ERROR_AUTHORIZATION_CLIENT_ID);
-        $this->service->getToken();
+        $this->service->authorize();
     }
 
     /**
@@ -42,7 +42,7 @@ class ApiServiceTest extends TestCase
 
         $this->expectException(AuthorizationException::class);
         $this->expectExceptionMessage(AuthorizationException::ERROR_AUTHORIZATION_SECRET_KEY);
-        $this->service->getToken();
+        $this->service->authorize();
     }
 
     /**
@@ -61,7 +61,7 @@ class ApiServiceTest extends TestCase
         $this->service->setClientId(1);
         $this->service->setSecretKey('dsadsadsadsa');
 
-        $authorizationDTO = $this->service->getToken();
+        $authorizationDTO = $this->service->authorize();
 
         $this->assertInstanceOf(AuthorizationDTO::class, $authorizationDTO);
         $this->assertEquals('415ab746cee5826dd8e2a64d3a137f56', $authorizationDTO->getToken());

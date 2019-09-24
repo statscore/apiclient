@@ -174,9 +174,9 @@ final class Client
      * @throws GuzzleException
      * @throws ExceptionInterface
      */
-    public function getToken(): AuthorizationDTO
+    public function authorize(): AuthorizationDTO
     {
-        return $this->service->getToken();
+        return $this->service->authorize();
     }
 
     /**

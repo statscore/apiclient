@@ -38,7 +38,7 @@ class ClientTest extends TestCase
     {
         $this->expectException(AuthorizationException::class);
         $this->client = new Client(0, '');
-        $this->client->getToken();
+        $this->client->authorize();
     }
 
 }

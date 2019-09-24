@@ -126,7 +126,7 @@ final class ApiService
      * @throws GuzzleException
      * @throws ExceptionInterface
      */
-    public function getToken(): AuthorizationDTO
+    public function authorize(): AuthorizationDTO
     {
         if (!$this->clientId) {
             throw new AuthorizationException(AuthorizationException::ERROR_AUTHORIZATION_CLIENT_ID);

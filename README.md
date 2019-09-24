@@ -60,11 +60,11 @@ use Statscore\Model\Response\Authorization\AuthorizationDTO;
 
 $clientId = 1;
 $statscore = new Client($clientId, 'yoursecretkey');
-/** @var AuthorizationDTO $token */
-$token = $statscore->getToken();
+/** @var AuthorizationDTO $authDTO */
+$authDTO = $statscore->authorize();
 
 /** Get your token, save it and use in future requests */
-$statscore->setToken($token->getToken());
+$statscore->setToken($authDTO->getToken());
 ```
 
 ### Booked Events
