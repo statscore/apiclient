@@ -4,7 +4,7 @@ namespace Statscore\Model\Response\BookedEvent;
 
 use DateTime;
 
-class BookedEventDTO
+final class BookedEventDTO
 {
     /**
      * @var integer
