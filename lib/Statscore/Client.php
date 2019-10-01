@@ -20,7 +20,7 @@ use Statscore\Service\Livescore\LivescoreService;
 use Statscore\Service\Participants\ParticipantsService;
 use Statscore\Service\Rounds\RoundsService;
 use Statscore\Service\Seasons\SeasonsService;
-use Statscore\Service\Serializer;
+use Statscore\Service\Serializer\Serializer;
 use Statscore\Service\Sports\SportsService;
 use Statscore\Service\Stages\StagesService;
 use Statscore\Service\Standings\StandingsService;

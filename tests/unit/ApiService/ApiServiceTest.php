@@ -75,6 +75,7 @@ class ApiServiceTest extends TestCase
      */
     public function testRequest(): void
     {
+        $this->service->setToken('blablabla');
         $this->guzzle->shouldReceive('request')->andReturn(new Response(200, [], '{"test":true}'));
 
         $request = new RequestDTO();

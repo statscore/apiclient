@@ -9,6 +9,7 @@ use Statscore\Model\Response\ResponseDTO;
 use Statscore\Service\Api;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Serializer\Exception\ExceptionInterface;
+use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
 
 /**
  * Class GroupsService
@@ -40,7 +41,9 @@ final class GroupsService extends Api
         $responseDTO->setData(
             $this->serializer->denormalize(
                 $responseDTO->getData()['competition'] ?? [],
-                CompetitionDTO::class
+                CompetitionDTO::class,
+                null,
+                [ObjectNormalizer::DISABLE_TYPE_ENFORCEMENT => true]
             )
         );
 

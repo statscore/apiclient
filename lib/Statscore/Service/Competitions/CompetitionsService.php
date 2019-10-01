@@ -66,7 +66,9 @@ class CompetitionsService extends Api
         $responseDTO->setData(
             $this->serializer->denormalize(
                 $responseDTO->getData()['competition'] ?? [],
-                CompetitionDTO::class
+                CompetitionDTO::class,
+                null,
+                [ObjectNormalizer::DISABLE_TYPE_ENFORCEMENT => true]
             )
         );
 

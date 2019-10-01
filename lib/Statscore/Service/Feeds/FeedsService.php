@@ -9,6 +9,7 @@ use Statscore\Model\Response\ResponseDTO;
 use Statscore\Service\Api;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Serializer\Exception\ExceptionInterface;
+use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
 
 /**
  * Class FeedsService
@@ -38,7 +39,9 @@ final class FeedsService extends Api
         $responseDTO->setData(
             $this->serializer->denormalize(
                 $responseDTO->getData() ?? [],
-                FeedDTO::class . '[]'
+                FeedDTO::class . '[]',
+                null,
+                [ObjectNormalizer::DISABLE_TYPE_ENFORCEMENT => true]
             )
         );
 

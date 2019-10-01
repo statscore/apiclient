@@ -12,6 +12,7 @@ use Statscore\Service\Exception\AuthorizationException;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Serializer\Exception\ExceptionInterface;
 use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
+use Symfony\Component\Serializer\Serializer;
 
 /**
  * Class ApiService
@@ -25,7 +26,7 @@ final class ApiService
     private $client;
 
     /**
-     * @var \Symfony\Component\Serializer\Serializer
+     * @var Serializer
      */
     public $serializer;
 
@@ -57,9 +58,9 @@ final class ApiService
     /**
      * ApiService constructor.
      * @param Client $guzzle
-     * @param \Symfony\Component\Serializer\Serializer $serializer
+     * @param Serializer $serializer
      */
-    public function __construct(Client $guzzle, \Symfony\Component\Serializer\Serializer $serializer)
+    public function __construct(Client $guzzle, Serializer $serializer)
     {
         $this->client = $guzzle;
         $this->serializer = $serializer;
@@ -176,6 +177,10 @@ final class ApiService
     private function prepareBody(RequestDTO $request): array
     {
         $body = [];
+        if ($this->token) {
+            $request->addQuery(Api::QUERY_TOKEN, $this->token);
+        }
+
         if ($request->getHeaders()) {
             $body[RequestOptions::HEADERS] = $request->getHeaders();
         }

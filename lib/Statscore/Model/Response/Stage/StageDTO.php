@@ -27,12 +27,12 @@ final class StageDTO
     private $name;
 
     /**
-     * @var DateTime
+     * @var null|DateTime
      */
     private $startDate;
 
     /**
-     * @var DateTime
+     * @var null|DateTime
      */
     private $endDate;
 
@@ -91,17 +91,17 @@ final class StageDTO
     }
 
     /**
-     * @return DateTime
+     * @return null|DateTime
      */
-    public function getStartDate(): DateTime
+    public function getStartDate(): ?DateTime
     {
         return $this->startDate;
     }
 
     /**
-     * @return DateTime
+     * @return null|DateTime
      */
-    public function getEndDate(): DateTime
+    public function getEndDate(): ?DateTime
     {
         return $this->endDate;
     }
@@ -188,10 +188,10 @@ final class StageDTO
     }
 
     /**
-     * @param DateTime $startDate
+     * @param null|DateTime $startDate
      * @return StageDTO
      */
-    public function setStartDate(DateTime $startDate): StageDTO
+    public function setStartDate(?DateTime $startDate): StageDTO
     {
         $this->startDate = $startDate;
 
@@ -199,10 +199,10 @@ final class StageDTO
     }
 
     /**
-     * @param DateTime $endDate
+     * @param null|DateTime $endDate
      * @return StageDTO
      */
-    public function setEndDate(DateTime $endDate): StageDTO
+    public function setEndDate(?DateTime $endDate): StageDTO
     {
         $this->endDate = $endDate;
 

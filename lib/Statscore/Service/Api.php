@@ -2,6 +2,8 @@
 
 namespace Statscore\Service;
 
+use Statscore\Service\Serializer\Serializer;
+
 abstract class Api
 {
     public const QUERY_CLIENT_ID = 'client_id';
@@ -14,6 +16,7 @@ abstract class Api
     public const QUERY_STAGE_ID = 'stage_id';
     public const QUERY_STANDING_ID = 'standing_id';
     public const QUERY_TIMESTAMP = 'timestamp';
+    public const QUERY_TOKEN = 'token';
 
     public const ROUTE_AREAS = 'areas';
     public const ROUTE_BOOKED_EVENTS = 'booked-events';

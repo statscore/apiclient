@@ -34,7 +34,7 @@ abstract class TestCase extends BaseTest
     {
         parent::setUp();
 
-        $this->serializer = \Statscore\Service\Serializer::get();
+        $this->serializer = \Statscore\Service\Serializer\Serializer::get();
         $this->guzzle = Mockery::mock(\GuzzleHttp\Client::class);
         $this->service = new ApiService($this->guzzle, $this->serializer);
     }

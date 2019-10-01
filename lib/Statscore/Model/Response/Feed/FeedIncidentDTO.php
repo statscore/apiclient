@@ -29,7 +29,7 @@ final class FeedIncidentDTO
     private $incidentName;
 
     /**
-     * @var integer
+     * @var integer|null
      */
     private $participantId;
 
@@ -151,17 +151,17 @@ final class FeedIncidentDTO
     }
 
     /**
-     * @return int
+     * @return null|int
      */
-    public function getParticipantId(): int
+    public function getParticipantId(): ?int
     {
         return $this->participantId;
     }
 
     /**
-     * @return string
+     * @return null|string
      */
-    public function getParticipantName(): string
+    public function getParticipantName(): ?string
     {
         return $this->participantName;
     }
@@ -339,10 +339,10 @@ final class FeedIncidentDTO
     }
 
     /**
-     * @param int $participantId
+     * @param null|int $participantId
      * @return FeedIncidentDTO
      */
-    public function setParticipantId(int $participantId): FeedIncidentDTO
+    public function setParticipantId(?int $participantId): FeedIncidentDTO
     {
         $this->participantId = $participantId;
 
@@ -350,10 +350,10 @@ final class FeedIncidentDTO
     }
 
     /**
-     * @param string $participantName
+     * @param null|string $participantName
      * @return FeedIncidentDTO
      */
-    public function setParticipantName(string $participantName): FeedIncidentDTO
+    public function setParticipantName(?string $participantName): FeedIncidentDTO
     {
         $this->participantName = $participantName;
 

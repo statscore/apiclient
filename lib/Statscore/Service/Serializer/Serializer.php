@@ -1,6 +1,6 @@
 <?php
 
-namespace Statscore\Service;
+namespace Statscore\Service\Serializer;
 
 use Symfony\Component\PropertyInfo\Extractor\PhpDocExtractor;
 use Symfony\Component\PropertyInfo\Extractor\ReflectionExtractor;
@@ -32,7 +32,7 @@ final class Serializer
         );
 
         $normalizers = [
-            new DateTimeNormalizer(),
+            new DateTimeNullNormalizer(new DateTimeNormalizer()),
             new ObjectNormalizer(null, new CamelCaseToSnakeCaseNameConverter(), null, $propertyInfo),
             new ArrayDenormalizer(),
         ];
