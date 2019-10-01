@@ -12,12 +12,12 @@ use Statscore\Model\Response\Group\GroupDTO;
 final class StageDTO
 {
     /**
-     * @var integer
+     * @var mixed
      */
     private $id;
 
     /**
-     * @var integer
+     * @var null|integer
      */
     private $stageNameId;
 
@@ -42,12 +42,12 @@ final class StageDTO
     private $showStandings;
 
     /**
-     * @var integer
+     * @var mixed
      */
     private $groupsNr;
 
     /**
-     * @var integer
+     * @var mixed
      */
     private $sort;
 
@@ -57,7 +57,7 @@ final class StageDTO
     private $isCurrent;
 
     /**
-     * @var integer
+     * @var string
      */
     private $ut;
 
@@ -67,17 +67,17 @@ final class StageDTO
     private $groups = [];
 
     /**
-     * @return int
+     * @return mixed
      */
-    public function getId(): int
+    public function getId()
     {
         return $this->id;
     }
 
     /**
-     * @return int
+     * @return null|int
      */
-    public function getStageNameId(): int
+    public function getStageNameId(): ?int
     {
         return $this->stageNameId;
     }
@@ -115,17 +115,17 @@ final class StageDTO
     }
 
     /**
-     * @return int
+     * @return mixed
      */
-    public function getGroupsNr(): int
+    public function getGroupsNr()
     {
         return $this->groupsNr;
     }
 
     /**
-     * @return int
+     * @return mixed
      */
-    public function getSort(): int
+    public function getSort()
     {
         return $this->sort;
     }
@@ -158,7 +158,7 @@ final class StageDTO
      * @param int $id
      * @return StageDTO
      */
-    public function setId(int $id): StageDTO
+    public function setId($id): StageDTO
     {
         $this->id = $id;
 
@@ -166,10 +166,10 @@ final class StageDTO
     }
 
     /**
-     * @param int $stageNameId
+     * @param null|int $stageNameId
      * @return StageDTO
      */
-    public function setStageNameId(int $stageNameId): StageDTO
+    public function setStageNameId(?int $stageNameId): StageDTO
     {
         $this->stageNameId = $stageNameId;
 
@@ -221,10 +221,10 @@ final class StageDTO
     }
 
     /**
-     * @param int $groupsNr
+     * @param mixed $groupsNr
      * @return StageDTO
      */
-    public function setGroupsNr(int $groupsNr): StageDTO
+    public function setGroupsNr($groupsNr): StageDTO
     {
         $this->groupsNr = $groupsNr;
 
@@ -232,10 +232,10 @@ final class StageDTO
     }
 
     /**
-     * @param int $sort
+     * @param mixed $sort
      * @return StageDTO
      */
-    public function setSort(int $sort): StageDTO
+    public function setSort($sort): StageDTO
     {
         $this->sort = $sort;
 
@@ -254,10 +254,10 @@ final class StageDTO
     }
 
     /**
-     * @param int $ut
+     * @param string $ut
      * @return StageDTO
      */
-    public function setUt(int $ut): StageDTO
+    public function setUt(string $ut): StageDTO
     {
         $this->ut = $ut;
 

@@ -34,7 +34,7 @@ final class IncidentDTO
     private $importantForTrader;
 
     /**
-     * @var integer
+     * @var null|integer
      */
     private $sportId;
 
@@ -109,9 +109,9 @@ final class IncidentDTO
     }
 
     /**
-     * @return int
+     * @return null|int
      */
-    public function getSportId(): int
+    public function getSportId(): ?int
     {
         return $this->sportId;
     }
@@ -220,10 +220,10 @@ final class IncidentDTO
     }
 
     /**
-     * @param int $sportId
+     * @param null|int $sportId
      * @return IncidentDTO
      */
-    public function setSportId(int $sportId): IncidentDTO
+    public function setSportId(?int $sportId): IncidentDTO
     {
         $this->sportId = $sportId;
 
