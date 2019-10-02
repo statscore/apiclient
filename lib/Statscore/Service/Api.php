@@ -19,6 +19,7 @@ abstract class Api
     public const QUERY_TOKEN = 'token';
 
     public const ROUTE_AREAS = 'areas';
+    public const ROUTE_AUTHORIZATION = 'oauth';
     public const ROUTE_BOOKED_EVENTS = 'booked-events';
     public const ROUTE_COMPETITIONS = 'competitions';
     public const ROUTE_EVENTS = 'events';

@@ -139,7 +139,7 @@ final class ApiService
 
         $request = new RequestDTO();
         $request->setMethod(Request::METHOD_GET);
-        $request->setUri('oauth');
+        $request->setUri(Api::ROUTE_AUTHORIZATION);
         $request->setQuery([
             Api::QUERY_CLIENT_ID => $this->clientId,
             'secret_key' => $this->secretKey,
