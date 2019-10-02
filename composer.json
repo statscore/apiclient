@@ -6,7 +6,7 @@
     "statscore"
   ],
   "homepage": "https://github.com/statscore/apiclient",
-  "license": "GNU",
+  "license": "GPL-3.0-or-later",
   "authors": [
     {
       "name": "Michał Per",
