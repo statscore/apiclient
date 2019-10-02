@@ -19,7 +19,7 @@ final class IncidentDTO
     private $name;
 
     /**
-     * @var string
+     * @var null|string
      */
     private $code;
 
@@ -85,9 +85,9 @@ final class IncidentDTO
     }
 
     /**
-     * @return string
+     * @return null|string
      */
-    public function getCode(): string
+    public function getCode(): ?string
     {
         return $this->code;
     }
@@ -187,10 +187,10 @@ final class IncidentDTO
     }
 
     /**
-     * @param string $code
+     * @param null|string $code
      * @return IncidentDTO
      */
-    public function setCode(string $code): IncidentDTO
+    public function setCode(?string $code): IncidentDTO
     {
         $this->code = $code;
 

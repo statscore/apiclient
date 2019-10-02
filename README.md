@@ -3,9 +3,9 @@
 [![Build Status](https://travis-ci.org/statscore/apiclient.svg?branch=master)](https://travis-ci.org/statscore/apiclient)
 [![Packagist](https://img.shields.io/packagist/v/statscore/apiclient.svg)](https://packagist.org/packages/statscore/apiclient)
 [![codecov](https://codecov.io/gh/statscore/apiclient/branch/master/graph/badge.svg)](https://codecov.io/gh/statscore/apiclient)
-![PHP from Travis config](https://img.shields.io/travis/php-v/statscore/apiclient/master.svg)
+[![PHP from Travis config](https://img.shields.io/travis/php-v/statscore/apiclient/master.svg)](https://travis-ci.org/statscore/apiclient)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=statscore_apiclient&metric=alert_status)](https://sonarcloud.io/dashboard?id=statscore_apiclient)
-![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/statscore/apiclient)
+[![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/statscore/apiclient)](https://libraries.io/github/statscore/apiclient)
 
 The API service is based on the REST architecture and supports a number of resources accessed with HTTP protocol. The client should send a HTTP GET request and in return will receive a return list document in JSON or XML format. The default response format is JSON.
 
@@ -22,7 +22,8 @@ The API service is based on the REST architecture and supports a number of resou
 
 ### Prerequisites
 
-- PHP version 7.*
+- PHP version >=7.2
+- [ext-json](https://www.php.net/manual/en/book.json.php) required
 
 ### Documentation
 
@@ -41,7 +42,7 @@ or add our package to your `composer.json` file.
 ```json
 {
   "require": {
-    "statscore/apiclient": "~1"
+    "statscore/apiclient": "^1"
   }
 }
 ```
