@@ -1,0 +1,320 @@
+{
+  "api": {
+    "ver": "2.125",
+    "timestamp": 1564165992,
+    "method": {
+      "parameters": {
+        "client_id": 1
+      },
+      "name": "rounds.index",
+      "details": "rounds.index",
+      "total_items": 88,
+      "previous_page": "",
+      "next_page": "http://dev.api.statscore.com/v2/rounds?username=statscore&client_id=1&page=2"
+    },
+    "data": {
+      "rounds": [
+        {
+          "id": 1,
+          "name": "Round 1",
+          "sort": 1,
+          "ut": 1368136800
+        },
+        {
+          "id": 2,
+          "name": "Round 2",
+          "sort": 2,
+          "ut": 1368136800
+        },
+        {
+          "id": 3,
+          "name": "Round 3",
+          "sort": 3,
+          "ut": 1368136800
+        },
+        {
+          "id": 4,
+          "name": "Round 4",
+          "sort": 4,
+          "ut": 1368136800
+        },
+        {
+          "id": 5,
+          "name": "Round 5",
+          "sort": 5,
+          "ut": 1368136800
+        },
+        {
+          "id": 6,
+          "name": "Round 6",
+          "sort": 6,
+          "ut": 1368136800
+        },
+        {
+          "id": 7,
+          "name": "Round 7",
+          "sort": 7,
+          "ut": 1368136800
+        },
+        {
+          "id": 8,
+          "name": "Round 8",
+          "sort": 8,
+          "ut": 1368136800
+        },
+        {
+          "id": 9,
+          "name": "Round 9",
+          "sort": 9,
+          "ut": 1368136800
+        },
+        {
+          "id": 10,
+          "name": "Round 10",
+          "sort": 10,
+          "ut": 1368136800
+        },
+        {
+          "id": 11,
+          "name": "Round 11",
+          "sort": 11,
+          "ut": 1368136800
+        },
+        {
+          "id": 12,
+          "name": "Round 12",
+          "sort": 12,
+          "ut": 1368136800
+        },
+        {
+          "id": 13,
+          "name": "Round 13",
+          "sort": 13,
+          "ut": 1368136800
+        },
+        {
+          "id": 14,
+          "name": "Round 14",
+          "sort": 14,
+          "ut": 1368136800
+        },
+        {
+          "id": 15,
+          "name": "Round 15",
+          "sort": 15,
+          "ut": 1368136800
+        },
+        {
+          "id": 16,
+          "name": "Round 16",
+          "sort": 16,
+          "ut": 1368136800
+        },
+        {
+          "id": 17,
+          "name": "Round 17",
+          "sort": 17,
+          "ut": 1368136800
+        },
+        {
+          "id": 18,
+          "name": "Round 18",
+          "sort": 18,
+          "ut": 1368136800
+        },
+        {
+          "id": 19,
+          "name": "Round 19",
+          "sort": 19,
+          "ut": 1368136800
+        },
+        {
+          "id": 20,
+          "name": "Round 20",
+          "sort": 20,
+          "ut": 1368136800
+        },
+        {
+          "id": 21,
+          "name": "Round 21",
+          "sort": 21,
+          "ut": 1368136800
+        },
+        {
+          "id": 22,
+          "name": "Round 22",
+          "sort": 22,
+          "ut": 1368136800
+        },
+        {
+          "id": 23,
+          "name": "Round 23",
+          "sort": 23,
+          "ut": 1368136800
+        },
+        {
+          "id": 24,
+          "name": "Round 24",
+          "sort": 24,
+          "ut": 1368136800
+        },
+        {
+          "id": 25,
+          "name": "Round 25",
+          "sort": 25,
+          "ut": 1368136800
+        },
+        {
+          "id": 26,
+          "name": "Round 26",
+          "sort": 26,
+          "ut": 1368136800
+        },
+        {
+          "id": 27,
+          "name": "Round 27",
+          "sort": 27,
+          "ut": 1368136800
+        },
+        {
+          "id": 28,
+          "name": "Round 28",
+          "sort": 28,
+          "ut": 1368136800
+        },
+        {
+          "id": 29,
+          "name": "Round 29",
+          "sort": 29,
+          "ut": 1368136800
+        },
+        {
+          "id": 30,
+          "name": "Round 30",
+          "sort": 30,
+          "ut": 1368136800
+        },
+        {
+          "id": 31,
+          "name": "Round 31",
+          "sort": 31,
+          "ut": 1368136800
+        },
+        {
+          "id": 32,
+          "name": "Round 32",
+          "sort": 32,
+          "ut": 1368136800
+        },
+        {
+          "id": 33,
+          "name": "Round 33",
+          "sort": 33,
+          "ut": 1368136800
+        },
+        {
+          "id": 34,
+          "name": "Round 34",
+          "sort": 34,
+          "ut": 1368136800
+        },
+        {
+          "id": 35,
+          "name": "Round 35",
+          "sort": 35,
+          "ut": 1368136800
+        },
+        {
+          "id": 36,
+          "name": "Round 36",
+          "sort": 36,
+          "ut": 1368136800
+        },
+        {
+          "id": 37,
+          "name": "Round 37",
+          "sort": 37,
+          "ut": 1368136800
+        },
+        {
+          "id": 38,
+          "name": "Round 38",
+          "sort": 38,
+          "ut": 1368136800
+        },
+        {
+          "id": 39,
+          "name": "Round 39",
+          "sort": 39,
+          "ut": 1368136800
+        },
+        {
+          "id": 40,
+          "name": "Round 40",
+          "sort": 40,
+          "ut": 1368136800
+        },
+        {
+          "id": 41,
+          "name": "Round 41",
+          "sort": 41,
+          "ut": 1368136800
+        },
+        {
+          "id": 42,
+          "name": "Round 42",
+          "sort": 42,
+          "ut": 1368136800
+        },
+        {
+          "id": 43,
+          "name": "Round 43",
+          "sort": 43,
+          "ut": 1368136800
+        },
+        {
+          "id": 44,
+          "name": "Round 44",
+          "sort": 44,
+          "ut": 1368136800
+        },
+        {
+          "id": 45,
+          "name": "Round 45",
+          "sort": 45,
+          "ut": 1368136800
+        },
+        {
+          "id": 46,
+          "name": "Round 46",
+          "sort": 46,
+          "ut": 1368136800
+        },
+        {
+          "id": 47,
+          "name": "Round 47",
+          "sort": 47,
+          "ut": 1368136800
+        },
+        {
+          "id": 48,
+          "name": "Round 48",
+          "sort": 48,
+          "ut": 1368136800
+        },
+        {
+          "id": 49,
+          "name": "Round 49",
+          "sort": 49,
+          "ut": 1368136800
+        },
+        {
+          "id": 50,
+          "name": "Round 50",
+          "sort": 50,
+          "ut": 1368136800
+        }
+      ]
+    }
+  }
+}

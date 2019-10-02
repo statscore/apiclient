@@ -1,0 +1,47 @@
+{
+  "name": "statscore/apiclient",
+  "type": "library",
+  "description": "STATSCORE Official SportsAPI Client",
+  "keywords": [
+    "statscore"
+  ],
+  "homepage": "https://github.com/statscore/apiclient",
+  "license": "GNU",
+  "authors": [
+    {
+      "name": "Michał Per",
+      "email": "m.per@statscore.com",
+      "homepage": "https://github.com/michalper",
+      "role": "Chief Technology Officer"
+    }
+  ],
+  "require": {
+    "ext-json": "*",
+    "guzzlehttp/guzzle": "^6.3",
+    "php": ">=7.2",
+    "symfony/http-foundation": "^4.3",
+    "symfony/property-access": "^4.3",
+    "symfony/property-info": "^4.3",
+    "symfony/serializer": "^4.3"
+  },
+  "require-dev": {
+    "mockery/mockery": "^1.2",
+    "phpunit/phpunit": "^8.3",
+    "symfony/var-dumper": "^4.3"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-0": {
+      "Statscore": "lib/"
+    },
+    "psr-4": {
+      "Statscore\\": "lib/Statscore/",
+      "UnitTests\\": "tests/unit"
+    }
+  },
+  "support": {
+    "email": "m.per@statscore.com"
+  }
+}

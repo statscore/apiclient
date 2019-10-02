@@ -1,0 +1,63 @@
+{
+  "api": {
+    "ver": "2.125",
+    "timestamp": 1569227749,
+    "method": {
+      "parameters": {
+        "client_id": 1,
+        "product_id": 4,
+        "username": "statscore",
+        "product": "livescorepro",
+        "event_id": "1822552"
+      },
+      "name": "booked-events.store",
+      "details": "booked-events.store",
+      "total_items": 1,
+      "previous_page": "",
+      "next_page": ""
+    },
+    "data": [
+      {
+        "id": 1822552,
+        "client_event_id": "",
+        "booked_by": 1,
+        "name": "snook1 - snook2",
+        "source": -1,
+        "relation_status": "not_started",
+        "start_date": "2019-09-23 06:53",
+        "ft_only": "no",
+        "coverage_type": "basic",
+        "scoutsfeed": "no",
+        "status_id": 1,
+        "status_name": "Not started",
+        "status_type": "scheduled",
+        "sport_id": 14,
+        "sport_name": "Snooker",
+        "day": "",
+        "clock_time": null,
+        "clock_status": null,
+        "winner_id": null,
+        "progress_id": null,
+        "bet_status": "suspended",
+        "neutral_venue": "yes",
+        "item_status": "active",
+        "ut": 1569221705,
+        "old_event_id": "",
+        "slug": "snook1-snook2,1822552",
+        "area_id": 14,
+        "area_name": "Australia",
+        "competition_id": 6366,
+        "competition_short_name": "Australian Open",
+        "season_id": 25526,
+        "season_name": "Australian Open 2016/17",
+        "stage_id": null,
+        "stage_name": null,
+        "verified_result": "no",
+        "round_id": null,
+        "round_name": null,
+        "inverted_participants": "no",
+        "event_stats_lvl": "bronze"
+      }
+    ]
+  }
+}

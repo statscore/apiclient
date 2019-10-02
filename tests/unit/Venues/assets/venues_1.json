@@ -1,0 +1,191 @@
+{
+  "api": {
+    "ver": "2.125",
+    "timestamp": 1569160204,
+    "method": {
+      "parameters": {
+        "username": "statscore"
+      },
+      "name": "venues.show",
+      "details": "venues.show",
+      "total_items": 1,
+      "previous_page": null,
+      "next_page": null
+    },
+    "data": {
+      "venue": {
+        "id": 1,
+        "name": "Camp nou",
+        "short_name": "Camp nou",
+        "country": "Spain",
+        "status": "active",
+        "url": "camp-nou,1",
+        "city": "Warsaw",
+        "lat": "",
+        "lng": "",
+        "opened": "",
+        "photo": "no",
+        "ut": 1521461782,
+        "sports": [
+          {
+            "id": 5,
+            "name": "Soccer",
+            "venue_sport_details": [
+              {
+                "id": 14,
+                "name": "Capacity",
+                "value": 1
+              },
+              {
+                "id": 24,
+                "name": "Architect",
+                "value": null
+              },
+              {
+                "id": 25,
+                "name": "Field size (m)",
+                "value": null
+              },
+              {
+                "id": 26,
+                "name": "Owner",
+                "value": null
+              },
+              {
+                "id": 27,
+                "name": "Operator",
+                "value": null
+              },
+              {
+                "id": 28,
+                "name": "Executive suites",
+                "value": null
+              },
+              {
+                "id": 29,
+                "name": "Record attendance",
+                "value": null
+              },
+              {
+                "id": 30,
+                "name": "Built",
+                "value": null
+              },
+              {
+                "id": 31,
+                "name": "Construction cost",
+                "value": null
+              },
+              {
+                "id": 32,
+                "name": "Former names",
+                "value": null
+              },
+              {
+                "id": 33,
+                "name": "UEFA Category",
+                "value": null
+              },
+              {
+                "id": 34,
+                "name": "Opened",
+                "value": null
+              },
+              {
+                "id": 35,
+                "name": "First match",
+                "value": null
+              },
+              {
+                "id": 36,
+                "name": "Pitch illumination (lux)",
+                "value": null
+              },
+              {
+                "id": 37,
+                "name": "Is stadium covered?",
+                "value": null
+              }
+            ]
+          },
+          {
+            "id": 11,
+            "name": "Ski jumping",
+            "venue_sport_details": [
+              {
+                "id": 1,
+                "name": "Hill size [m]",
+                "value": "140.55"
+              },
+              {
+                "id": 2,
+                "name": "K-point [m]",
+                "value": "125.24"
+              },
+              {
+                "id": 3,
+                "name": "Hill record owner (winter)",
+                "value": 51456
+              },
+              {
+                "id": 4,
+                "name": "Hill record winter [m]",
+                "value": "135.76"
+              },
+              {
+                "id": 5,
+                "name": "Hill record owner (summer)",
+                "value": null
+              },
+              {
+                "id": 6,
+                "name": "Hill record summer [m]",
+                "value": null
+              },
+              {
+                "id": 7,
+                "name": "Average speed [km/h]",
+                "value": "80.12"
+              },
+              {
+                "id": 8,
+                "name": "Inrun length [m]",
+                "value": "55.33"
+              },
+              {
+                "id": 9,
+                "name": "Inrun angle",
+                "value": 65
+              },
+              {
+                "id": 10,
+                "name": "Take-off length [m]",
+                "value": "44.67"
+              },
+              {
+                "id": 11,
+                "name": "Take-off angle",
+                "value": "23.22"
+              },
+              {
+                "id": 12,
+                "name": "Take-off height [m]",
+                "value": "219.02"
+              },
+              {
+                "id": 13,
+                "name": "Landing angle",
+                "value": 77
+              },
+              {
+                "id": 14,
+                "name": "Capacity",
+                "value": 6126
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

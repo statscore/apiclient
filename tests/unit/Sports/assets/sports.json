@@ -1,0 +1,780 @@
+{
+  "api": {
+    "ver": "2.125",
+    "timestamp": 1565268139,
+    "method": {
+      "parameters": {
+        "username": "statscore"
+      },
+      "name": "sports.index",
+      "details": "sports.index",
+      "total_items": 76,
+      "previous_page": "",
+      "next_page": ""
+    },
+    "data": {
+      "sports": [
+        {
+          "id": 1,
+          "name": "Basketball",
+          "url": "basketball",
+          "active": "yes",
+          "has_timer": "yes",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1412922509
+        },
+        {
+          "id": 2,
+          "name": "Volleyball",
+          "url": "volleyball",
+          "active": "yes",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1412922509
+        },
+        {
+          "id": 3,
+          "name": "Ice Hockey",
+          "url": "hockey",
+          "active": "yes",
+          "has_timer": "yes",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1412922509
+        },
+        {
+          "id": 4,
+          "name": "Tennis",
+          "url": "tennis",
+          "active": "yes",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1412922509
+        },
+        {
+          "id": 5,
+          "name": "Soccer",
+          "url": "soccer",
+          "active": "yes",
+          "has_timer": "yes",
+          "template": "default",
+          "incidents_positions": "yes",
+          "ut": 1412922509
+        },
+        {
+          "id": 6,
+          "name": "Handball",
+          "url": "handball",
+          "active": "yes",
+          "has_timer": "yes",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1412922509
+        },
+        {
+          "id": 7,
+          "name": "Baseball",
+          "url": "baseball",
+          "active": "yes",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1429820920
+        },
+        {
+          "id": 8,
+          "name": "Am. football",
+          "url": "am-football",
+          "active": "yes",
+          "has_timer": "yes",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1412922509
+        },
+        {
+          "id": 9,
+          "name": "Bandy",
+          "url": "bandy",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1439616912
+        },
+        {
+          "id": 10,
+          "name": "Floorball",
+          "url": "floorball",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1412922510
+        },
+        {
+          "id": 11,
+          "name": "Ski jumping",
+          "url": "ski-jumping",
+          "active": "yes",
+          "has_timer": "no",
+          "template": "fixed_incidents",
+          "incidents_positions": "no",
+          "ut": 1448043434
+        },
+        {
+          "id": 12,
+          "name": "Biathlon",
+          "url": "biathlon",
+          "active": "yes",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1489532400
+        },
+        {
+          "id": 13,
+          "name": "Cycling",
+          "url": "cycling",
+          "active": "yes",
+          "has_timer": "no",
+          "template": "fixed_incidents",
+          "incidents_positions": "no",
+          "ut": 1412922510
+        },
+        {
+          "id": 14,
+          "name": "Snooker",
+          "url": "snooker",
+          "active": "yes",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1412922510
+        },
+        {
+          "id": 15,
+          "name": "Rugby",
+          "url": "rugby",
+          "active": "yes",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1412922510
+        },
+        {
+          "id": 16,
+          "name": "Futsal",
+          "url": "futsal",
+          "active": "yes",
+          "has_timer": "yes",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1550664000
+        },
+        {
+          "id": 17,
+          "name": "Darts",
+          "url": "darts",
+          "active": "yes",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1412922510
+        },
+        {
+          "id": 18,
+          "name": "Beach soccer",
+          "url": "beach-soccer",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1412922510
+        },
+        {
+          "id": 19,
+          "name": "Beach volleyball",
+          "url": "beach-volleyball",
+          "active": "yes",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1412922510
+        },
+        {
+          "id": 20,
+          "name": "Alpine skiing",
+          "url": "alpine-skiing",
+          "active": "yes",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1489532400
+        },
+        {
+          "id": 21,
+          "name": "Speed skating",
+          "url": "speed-skating",
+          "active": "yes",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1489532400
+        },
+        {
+          "id": 22,
+          "name": "Nordic combined",
+          "url": "nordic-combined",
+          "active": "yes",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1489532400
+        },
+        {
+          "id": 23,
+          "name": "Luge",
+          "url": "luge",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1489532400
+        },
+        {
+          "id": 24,
+          "name": "Cross country",
+          "url": "cross-country",
+          "active": "yes",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1489532400
+        },
+        {
+          "id": 25,
+          "name": "Bobsleigh",
+          "url": "bobsleigh",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1412922511
+        },
+        {
+          "id": 26,
+          "name": "Speedway",
+          "url": "speedway",
+          "active": "yes",
+          "has_timer": "no",
+          "template": "speedway",
+          "incidents_positions": "no",
+          "ut": 1489532400
+        },
+        {
+          "id": 27,
+          "name": "Cricket",
+          "url": "cricket",
+          "active": "yes",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1412922511
+        },
+        {
+          "id": 28,
+          "name": "Curling",
+          "url": "curling",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1412922511
+        },
+        {
+          "id": 29,
+          "name": "Badminton",
+          "url": "badminton",
+          "active": "yes",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1412922511
+        },
+        {
+          "id": 30,
+          "name": "Horse Racing",
+          "url": "horse-racing",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1412922511
+        },
+        {
+          "id": 31,
+          "name": "Snowboard",
+          "url": "snowboard",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1412922511
+        },
+        {
+          "id": 32,
+          "name": "Golf",
+          "url": "golf",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1412922511
+        },
+        {
+          "id": 33,
+          "name": "Waterpolo",
+          "url": "waterpolo",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1412922511
+        },
+        {
+          "id": 35,
+          "name": "Pesepallo",
+          "url": "pesepallo",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1412922512
+        },
+        {
+          "id": 36,
+          "name": "Formula 1",
+          "url": "formula-1",
+          "active": "yes",
+          "has_timer": "no",
+          "template": "fixed_incidents",
+          "incidents_positions": "no",
+          "ut": 1412922512
+        },
+        {
+          "id": 37,
+          "name": "Nascar",
+          "url": "nascar",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1412922512
+        },
+        {
+          "id": 38,
+          "name": "Moto GP",
+          "url": "moto-gp",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1412922512
+        },
+        {
+          "id": 39,
+          "name": "DTM",
+          "url": "dtm",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1412922512
+        },
+        {
+          "id": 41,
+          "name": "Gaa Football",
+          "url": "gaa-football",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1412922512
+        },
+        {
+          "id": 42,
+          "name": "Gaa Hurling",
+          "url": "gaa-hurling",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1412922512
+        },
+        {
+          "id": 43,
+          "name": "Boxing",
+          "url": "boxing",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1412922513
+        },
+        {
+          "id": 44,
+          "name": "Mixed martial arts",
+          "url": "mma",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1412922513
+        },
+        {
+          "id": 45,
+          "name": "Ausfootball",
+          "url": "ausfootball",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1412922513
+        },
+        {
+          "id": 46,
+          "name": "Table tennis",
+          "url": "tabletennis",
+          "active": "yes",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1412922513
+        },
+        {
+          "id": 47,
+          "name": "Bowls",
+          "url": "bowls",
+          "active": "yes",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1461858812
+        },
+        {
+          "id": 48,
+          "name": "Field hockey",
+          "url": "fieldhockey",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1461858812
+        },
+        {
+          "id": 49,
+          "name": "Freestyle skiing",
+          "url": "freestyleskiing",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1461858812
+        },
+        {
+          "id": 50,
+          "name": "Short Track",
+          "url": "shorttrack",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1461858812
+        },
+        {
+          "id": 51,
+          "name": "Skeleton",
+          "url": "skeleton",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1461858812
+        },
+        {
+          "id": 52,
+          "name": "Figure Skating",
+          "url": "figureskating",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1461858812
+        },
+        {
+          "id": 53,
+          "name": "Marathon",
+          "url": "marathon",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1461858812
+        },
+        {
+          "id": 54,
+          "name": "Others",
+          "url": "others",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1461858812
+        },
+        {
+          "id": 55,
+          "name": "Diving",
+          "url": "diving",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1461858812
+        },
+        {
+          "id": 56,
+          "name": "Swimming",
+          "url": "swimming",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1461858812
+        },
+        {
+          "id": 57,
+          "name": "Synchronized Swimming",
+          "url": "synchronizedswimming",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1461858812
+        },
+        {
+          "id": 58,
+          "name": "Archery",
+          "url": "archery",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1461858812
+        },
+        {
+          "id": 59,
+          "name": "Canoe",
+          "url": "canoe",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1461858812
+        },
+        {
+          "id": 60,
+          "name": "Equestrian",
+          "url": "equestrian",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1461858812
+        },
+        {
+          "id": 61,
+          "name": "Fencing",
+          "url": "fencing",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1461858812
+        },
+        {
+          "id": 62,
+          "name": "Gymnastics",
+          "url": "gymnastics",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1461858812
+        },
+        {
+          "id": 63,
+          "name": "Judo",
+          "url": "judo",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1461858812
+        },
+        {
+          "id": 64,
+          "name": "Modern pentathlon",
+          "url": "modernpentathlon",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1461858812
+        },
+        {
+          "id": 65,
+          "name": "Rowing",
+          "url": "rowing",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1461858812
+        },
+        {
+          "id": 66,
+          "name": "Sailing",
+          "url": "sailing",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1461858812
+        },
+        {
+          "id": 67,
+          "name": "Shooting",
+          "url": "shooting",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1461858812
+        },
+        {
+          "id": 68,
+          "name": "Taekwondo",
+          "url": "taekwondo",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1461858812
+        },
+        {
+          "id": 69,
+          "name": "Triathlon",
+          "url": "triathlon",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1461858812
+        },
+        {
+          "id": 70,
+          "name": "Weightlifting",
+          "url": "weightlifting",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1461858812
+        },
+        {
+          "id": 71,
+          "name": "Wrestling",
+          "url": "wrestling",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1461858812
+        },
+        {
+          "id": 72,
+          "name": "Squash",
+          "url": "squash",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1461858812
+        },
+        {
+          "id": 73,
+          "name": "E-Sports",
+          "url": "esports",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1461858812
+        },
+        {
+          "id": 74,
+          "name": "Financials",
+          "url": "financials",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1461858812
+        },
+        {
+          "id": 75,
+          "name": "Chess",
+          "url": "chess",
+          "active": "no",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1461858812
+        },
+        {
+          "id": 76,
+          "name": "Counter Strike",
+          "url": "counter-strike",
+          "active": "yes",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1483524671
+        },
+        {
+          "id": 77,
+          "name": "League Of Legends",
+          "url": "league-of-legends",
+          "active": "yes",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1483524671
+        },
+        {
+          "id": 78,
+          "name": "Dota2",
+          "url": "dota2",
+          "active": "yes",
+          "has_timer": "no",
+          "template": "default",
+          "incidents_positions": "no",
+          "ut": 1483524671
+        }
+      ]
+    }
+  }
+}

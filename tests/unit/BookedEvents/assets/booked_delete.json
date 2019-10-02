@@ -1,0 +1,22 @@
+{
+  "api": {
+    "ver": "2.125",
+    "timestamp": 1569230258,
+    "method": {
+      "parameters": {
+        "client_id": 1,
+        "username": "statscore",
+        "product": "livescorepro"
+      },
+      "name": "booked-events.destroy",
+      "details": "booked-events.destroy",
+      "total_items": "",
+      "previous_page": "",
+      "next_page": ""
+    },
+    "data": {
+      "message": "Event successfully removed",
+      "status": 200
+    }
+  }
+}

@@ -1,0 +1,2387 @@
+{
+  "api": {
+    "ver": "2.125",
+    "timestamp": 1569174625,
+    "method": {
+      "parameters": {
+        "username": "statscore",
+        "client_id": 1
+      },
+      "name": "statuses.index",
+      "details": "statuses.index",
+      "total_items": 338,
+      "previous_page": "",
+      "next_page": ""
+    },
+    "data": {
+      "statuses": [
+        {
+          "id": 1,
+          "name": "Not started",
+          "short_name": "Sched.",
+          "type": "scheduled",
+          "ut": 1415797229
+        },
+        {
+          "id": 2,
+          "name": "Interrupted",
+          "short_name": "Interr.",
+          "type": "interrupted",
+          "ut": 1415797229
+        },
+        {
+          "id": 3,
+          "name": "Cancelled",
+          "short_name": "Canc.",
+          "type": "cancelled",
+          "ut": 1415797229
+        },
+        {
+          "id": 4,
+          "name": "No information",
+          "short_name": "No info",
+          "type": "other",
+          "ut": 1418677161
+        },
+        {
+          "id": 5,
+          "name": "Postponed",
+          "short_name": "Post.",
+          "type": "scheduled",
+          "ut": 1415797229
+        },
+        {
+          "id": 6,
+          "name": "Start delayed",
+          "short_name": "Delay.",
+          "type": "scheduled",
+          "ut": 1415797229
+        },
+        {
+          "id": 7,
+          "name": "Abandoned",
+          "short_name": "Abd.",
+          "type": "finished",
+          "ut": 1502355600
+        },
+        {
+          "id": 8,
+          "name": "1st quarter",
+          "short_name": "1st q.",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 9,
+          "name": "Halftime",
+          "short_name": "HT",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 10,
+          "name": "2nd quarter",
+          "short_name": "2nd q.",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 11,
+          "name": "Finished",
+          "short_name": "Fin.",
+          "type": "finished",
+          "ut": 1415797229
+        },
+        {
+          "id": 12,
+          "name": "Finished awarded win",
+          "short_name": "AW",
+          "type": "finished",
+          "ut": 1415797229
+        },
+        {
+          "id": 13,
+          "name": "Finished after penalties",
+          "short_name": "Fin pen.",
+          "type": "finished",
+          "ut": 1415797229
+        },
+        {
+          "id": 14,
+          "name": "Finished after extratime",
+          "short_name": "Fin ext.",
+          "type": "finished",
+          "ut": 1415797229
+        },
+        {
+          "id": 15,
+          "name": "Extratime",
+          "short_name": "Extra",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 16,
+          "name": "Penalties",
+          "short_name": "Pen.",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 18,
+          "name": "Live",
+          "short_name": "live",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 19,
+          "name": "3rd quarter",
+          "short_name": "3rd q.",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 20,
+          "name": "4th quarter",
+          "short_name": "4th q.",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 33,
+          "name": "1st half",
+          "short_name": "1st half",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 34,
+          "name": "2nd half",
+          "short_name": "2nd half",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 35,
+          "name": "Extratime 1st half",
+          "short_name": "Extra 1st",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 36,
+          "name": "Extratime 2nd half",
+          "short_name": "Extra 2nd",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 37,
+          "name": "Extratime halftime",
+          "short_name": "Extra HT",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 41,
+          "name": "1st period",
+          "short_name": "1st period",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 42,
+          "name": "Break",
+          "short_name": "Break",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 43,
+          "name": "2nd period",
+          "short_name": "2nd period",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 44,
+          "name": "3rd period",
+          "short_name": "3rd period",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 48,
+          "name": "Waiting for extratime",
+          "short_name": "Waiting ET",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 49,
+          "name": "1st inning",
+          "short_name": "1st inn.",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 50,
+          "name": "2nd inning",
+          "short_name": "2nd inn.",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 51,
+          "name": "3rd inning",
+          "short_name": "3rd inn.",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 52,
+          "name": "4th inning",
+          "short_name": "4th inn.",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 53,
+          "name": "5th inning",
+          "short_name": "5th inn.",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 54,
+          "name": "6th inning",
+          "short_name": "6th inn.",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 55,
+          "name": "7th inning",
+          "short_name": "7th inn.",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 56,
+          "name": "8th inning",
+          "short_name": "8th inn.",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 57,
+          "name": "9th inning",
+          "short_name": "9th inn.",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 58,
+          "name": "10th inning",
+          "short_name": "10th inn.",
+          "type": "live",
+          "ut": 1445601629
+        },
+        {
+          "id": 59,
+          "name": "11th inning",
+          "short_name": "11th inn.",
+          "type": "live",
+          "ut": 1445601629
+        },
+        {
+          "id": 60,
+          "name": "12th inning",
+          "short_name": "12th inn.",
+          "type": "live",
+          "ut": 1445601629
+        },
+        {
+          "id": 61,
+          "name": "13th inning",
+          "short_name": "13th inn.",
+          "type": "live",
+          "ut": 1445601629
+        },
+        {
+          "id": 62,
+          "name": "14th inning",
+          "short_name": "14th inn.",
+          "type": "live",
+          "ut": 1445601629
+        },
+        {
+          "id": 63,
+          "name": "15th inning",
+          "short_name": "15th inn.",
+          "type": "live",
+          "ut": 1445601629
+        },
+        {
+          "id": 64,
+          "name": "16th inning",
+          "short_name": "16th inn.",
+          "type": "live",
+          "ut": 1445601629
+        },
+        {
+          "id": 65,
+          "name": "2nd set",
+          "short_name": "2nd set",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 66,
+          "name": "After day 1",
+          "short_name": "After 1 d.",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 67,
+          "name": "After day 2",
+          "short_name": "After 2 d.",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 68,
+          "name": "After day 3",
+          "short_name": "After 3 d.",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 69,
+          "name": "After day 4",
+          "short_name": "After 4 d.",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 71,
+          "name": "1st frame",
+          "short_name": "1 frame",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 72,
+          "name": "2nd frame",
+          "short_name": "2 frame",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 73,
+          "name": "3rd frame",
+          "short_name": "3 frame",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 74,
+          "name": "4th frame",
+          "short_name": "4 frame",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 75,
+          "name": "5th frame",
+          "short_name": "5 frame",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 76,
+          "name": "Retired",
+          "short_name": "Ret.",
+          "type": "finished",
+          "ut": 1415797229
+        },
+        {
+          "id": 77,
+          "name": "Walkover",
+          "short_name": "W/O",
+          "type": "finished",
+          "ut": 1415797229
+        },
+        {
+          "id": 78,
+          "name": "6th frame",
+          "short_name": "6 frame",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 79,
+          "name": "7th frame",
+          "short_name": "7 frame",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 80,
+          "name": "8th frame",
+          "short_name": "8 frame",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 81,
+          "name": "9th frame",
+          "short_name": "9 frame",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 82,
+          "name": "10th frame",
+          "short_name": "10 frame",
+          "type": "live",
+          "ut": 1415800997
+        },
+        {
+          "id": 83,
+          "name": "11th frame",
+          "short_name": "11 frame",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 84,
+          "name": "12th frame",
+          "short_name": "12 frame",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 85,
+          "name": "13th frame",
+          "short_name": "13 frame",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 86,
+          "name": "14th frame",
+          "short_name": "14 frame",
+          "type": "live",
+          "ut": 1415801012
+        },
+        {
+          "id": 87,
+          "name": "15th frame",
+          "short_name": "15 frame",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 88,
+          "name": "16th frame",
+          "short_name": "16 frame",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 89,
+          "name": "17th frame",
+          "short_name": "17 frame",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 90,
+          "name": "18th frame",
+          "short_name": "18 frame",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 91,
+          "name": "19th frame",
+          "short_name": "19 frame",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 92,
+          "name": "20th frame",
+          "short_name": "20 frame",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 93,
+          "name": "21st frame",
+          "short_name": "21 frame",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 94,
+          "name": "22nd frame",
+          "short_name": "22 frame",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 95,
+          "name": "23rd frame",
+          "short_name": "23 frame",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 96,
+          "name": "24th frame",
+          "short_name": "24 frame",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 97,
+          "name": "25th frame",
+          "short_name": "25 frame",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 98,
+          "name": "26th frame",
+          "short_name": "26 frame",
+          "type": "live",
+          "ut": 1415797230
+        },
+        {
+          "id": 99,
+          "name": "27th frame",
+          "short_name": "27 frame",
+          "type": "live",
+          "ut": 1415797230
+        },
+        {
+          "id": 100,
+          "name": "28th frame",
+          "short_name": "28 frame",
+          "type": "live",
+          "ut": 1415797230
+        },
+        {
+          "id": 101,
+          "name": "29th frame",
+          "short_name": "29 frame",
+          "type": "live",
+          "ut": 1415797230
+        },
+        {
+          "id": 102,
+          "name": "30th frame",
+          "short_name": "30 frame",
+          "type": "live",
+          "ut": 1415797230
+        },
+        {
+          "id": 103,
+          "name": "31st frame",
+          "short_name": "31 frame",
+          "type": "live",
+          "ut": 1415797230
+        },
+        {
+          "id": 104,
+          "name": "32nd frame",
+          "short_name": "32 frame",
+          "type": "live",
+          "ut": 1415797230
+        },
+        {
+          "id": 105,
+          "name": "33rd frame",
+          "short_name": "33 frame",
+          "type": "live",
+          "ut": 1415797230
+        },
+        {
+          "id": 106,
+          "name": "34th frame",
+          "short_name": "34 frame",
+          "type": "live",
+          "ut": 1415797230
+        },
+        {
+          "id": 107,
+          "name": "35th frame",
+          "short_name": "35 frame",
+          "type": "live",
+          "ut": 1415797230
+        },
+        {
+          "id": 108,
+          "name": "Pause",
+          "short_name": "Pause",
+          "type": "live",
+          "ut": 1415797230
+        },
+        {
+          "id": 134,
+          "name": "1st set",
+          "short_name": "1st set",
+          "type": "live",
+          "ut": 1415797230
+        },
+        {
+          "id": 135,
+          "name": "3rd set",
+          "short_name": "3rd set",
+          "type": "live",
+          "ut": 1415797230
+        },
+        {
+          "id": 136,
+          "name": "4th set",
+          "short_name": "4th set",
+          "type": "live",
+          "ut": 1415797230
+        },
+        {
+          "id": 137,
+          "name": "5th set",
+          "short_name": "5th set",
+          "type": "live",
+          "ut": 1415797230
+        },
+        {
+          "id": 138,
+          "name": "Waiting for overtime",
+          "short_name": "Waiting OT",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 139,
+          "name": "Overtime",
+          "short_name": "OT",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 140,
+          "name": "Finished after overtime",
+          "short_name": "AOT",
+          "type": "finished",
+          "ut": 1415797229
+        },
+        {
+          "id": 141,
+          "name": "Penalty shootout",
+          "short_name": "Penalty",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 142,
+          "name": "Waiting for penalty",
+          "short_name": "Before Pen",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 143,
+          "name": "Finished after extra inning",
+          "short_name": "Fin ext. i",
+          "type": "finished",
+          "ut": 1415797229
+        },
+        {
+          "id": 144,
+          "name": "Extra inning",
+          "short_name": "Extra inn.",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 145,
+          "name": "Day 1",
+          "short_name": "Day 1",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 146,
+          "name": "Day 2",
+          "short_name": "Day 2",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 147,
+          "name": "Day 3",
+          "short_name": "Day 3",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 148,
+          "name": "Day 4",
+          "short_name": "Day 4",
+          "type": "live",
+          "ut": 1415797229
+        },
+        {
+          "id": 149,
+          "name": "Delayed by rain",
+          "short_name": "Delayed",
+          "type": "scheduled",
+          "ut": 1434110429
+        },
+        {
+          "id": 150,
+          "name": "Called game",
+          "short_name": "Call. game",
+          "type": "interrupted",
+          "ut": 1434110429
+        },
+        {
+          "id": 151,
+          "name": "Cancelled due rain",
+          "short_name": "Canc. rain",
+          "type": "cancelled",
+          "ut": 1437480749
+        },
+        {
+          "id": 152,
+          "name": "To finish",
+          "short_name": "To fin.",
+          "type": "scheduled",
+          "ut": 1437480749
+        },
+        {
+          "id": 153,
+          "name": "Overtime break",
+          "short_name": "OT break",
+          "type": "live",
+          "ut": 1445429549
+        },
+        {
+          "id": 154,
+          "name": "Golden set",
+          "short_name": "Golden set",
+          "type": "live",
+          "ut": 1470308400
+        },
+        {
+          "id": 155,
+          "name": "Break after 1st set",
+          "short_name": "1st set break",
+          "type": "live",
+          "ut": 1470308400
+        },
+        {
+          "id": 156,
+          "name": "Break after 2nd set",
+          "short_name": "2nd set break",
+          "type": "live",
+          "ut": 1470308400
+        },
+        {
+          "id": 157,
+          "name": "Break after 3rd set",
+          "short_name": "3rd set break",
+          "type": "live",
+          "ut": 1470308400
+        },
+        {
+          "id": 158,
+          "name": "Break after 4th set",
+          "short_name": "4th set break",
+          "type": "live",
+          "ut": 1476878400
+        },
+        {
+          "id": 159,
+          "name": "Break after 5th set",
+          "short_name": "5th set break",
+          "type": "live",
+          "ut": 1476878400
+        },
+        {
+          "id": 160,
+          "name": "Break after 6th set",
+          "short_name": "6th set break",
+          "type": "live",
+          "ut": 1476878400
+        },
+        {
+          "id": 161,
+          "name": "Break after 7th set",
+          "short_name": "7th set break",
+          "type": "live",
+          "ut": 1476878400
+        },
+        {
+          "id": 162,
+          "name": "6th set",
+          "short_name": "6th set",
+          "type": "live",
+          "ut": 1476878400
+        },
+        {
+          "id": 163,
+          "name": "7th set",
+          "short_name": "7th set",
+          "type": "live",
+          "ut": 1476878400
+        },
+        {
+          "id": 165,
+          "name": "Match finished",
+          "short_name": "fin",
+          "type": "finished",
+          "ut": 1477291623
+        },
+        {
+          "id": 166,
+          "name": "17th inning",
+          "short_name": "17th inn.",
+          "type": "live",
+          "ut": 1445601629
+        },
+        {
+          "id": 167,
+          "name": "18th inning",
+          "short_name": "18th inn.",
+          "type": "live",
+          "ut": 1445601629
+        },
+        {
+          "id": 168,
+          "name": "19th inning",
+          "short_name": "19th inn.",
+          "type": "live",
+          "ut": 1445601629
+        },
+        {
+          "id": 169,
+          "name": "20th inning",
+          "short_name": "20th inn.",
+          "type": "live",
+          "ut": 1445601629
+        },
+        {
+          "id": 170,
+          "name": "21st inning",
+          "short_name": "21st inn.",
+          "type": "live",
+          "ut": 1445601629
+        },
+        {
+          "id": 171,
+          "name": "22nd inning",
+          "short_name": "22nd inn.",
+          "type": "live",
+          "ut": 1445601629
+        },
+        {
+          "id": 172,
+          "name": "23rd inning",
+          "short_name": "23rd inn.",
+          "type": "live",
+          "ut": 1445601629
+        },
+        {
+          "id": 173,
+          "name": "Break after 1st frame",
+          "short_name": "1st Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 174,
+          "name": "Break after 2nd frame",
+          "short_name": "2nd Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 175,
+          "name": "Break after 3rd frame",
+          "short_name": "3rd Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 176,
+          "name": "Break after 4th frame",
+          "short_name": "4th Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 177,
+          "name": "Break after 5th frame",
+          "short_name": "5th Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 178,
+          "name": "Break after 6th frame",
+          "short_name": "6th Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 179,
+          "name": "Break after 7th frame",
+          "short_name": "7th Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 180,
+          "name": "Break after 8th frame",
+          "short_name": "8th Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 181,
+          "name": "Break after 9th frame",
+          "short_name": "9th Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 182,
+          "name": "Break after 10th frame",
+          "short_name": "10th Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 183,
+          "name": "Break after 11th frame",
+          "short_name": "11th Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 184,
+          "name": "Break after 12th frame",
+          "short_name": "12th Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 185,
+          "name": "Break after 13th frame",
+          "short_name": "13th Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 186,
+          "name": "Break after 14th frame",
+          "short_name": "14th Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 187,
+          "name": "Break after 15th frame",
+          "short_name": "15th Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 188,
+          "name": "Break after 16th frame",
+          "short_name": "16th Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 189,
+          "name": "Break after 17th frame",
+          "short_name": "17th Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 190,
+          "name": "Break after 18th frame",
+          "short_name": "18th Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 191,
+          "name": "Break after 19th frame",
+          "short_name": "19th Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 192,
+          "name": "Break after 20th frame",
+          "short_name": "20th Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 193,
+          "name": "Break after 21st frame",
+          "short_name": "21st Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 194,
+          "name": "Break after 22nd frame",
+          "short_name": "22nd Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 195,
+          "name": "Break after 23rd frame",
+          "short_name": "23rd Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 196,
+          "name": "Break after 24th frame",
+          "short_name": "24th Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 197,
+          "name": "Break after 25th frame",
+          "short_name": "25th Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 198,
+          "name": "Break after 26th frame",
+          "short_name": "26th Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 199,
+          "name": "Break after 27th frame",
+          "short_name": "27th Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 200,
+          "name": "Break after 28th frame",
+          "short_name": "28th Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 201,
+          "name": "Break after 29th frame",
+          "short_name": "29th Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 202,
+          "name": "Break after 30th frame",
+          "short_name": "30th Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 203,
+          "name": "Break after 31st frame",
+          "short_name": "31st Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 204,
+          "name": "Break after 32nd frame",
+          "short_name": "32nd Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 205,
+          "name": "Break after 33rd frame",
+          "short_name": "33rd Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 206,
+          "name": "Break after 34th frame",
+          "short_name": "34th Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 207,
+          "name": "Break after 35th frame",
+          "short_name": "35th Frame break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 208,
+          "name": "Session break",
+          "short_name": "Session brake",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 209,
+          "name": "Waiting for tie-breaker",
+          "short_name": "Waiting for t/b",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 210,
+          "name": "Tie-breaker",
+          "short_name": "Tie break",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 211,
+          "name": "In progress",
+          "short_name": "In prog.",
+          "type": "live",
+          "ut": 1471953629
+        },
+        {
+          "id": 212,
+          "name": "Break after 1st quarter",
+          "short_name": "Break 1st q.",
+          "type": "live",
+          "ut": 1509002420
+        },
+        {
+          "id": 213,
+          "name": "Break after 2nd quarter",
+          "short_name": "Break 2st q.",
+          "type": "live",
+          "ut": 1509002420
+        },
+        {
+          "id": 214,
+          "name": "Break after 3rd quarter",
+          "short_name": "Break 3rd q.",
+          "type": "live",
+          "ut": 1509002420
+        },
+        {
+          "id": 215,
+          "name": "Break after 4th quarter",
+          "short_name": "Break 4th q.",
+          "type": "live",
+          "ut": 1509002420
+        },
+        {
+          "id": 216,
+          "name": "Extratime 1",
+          "short_name": "Extra 1",
+          "type": "live",
+          "ut": 1509002420
+        },
+        {
+          "id": 217,
+          "name": "Extratime 2",
+          "short_name": "Extra 2",
+          "type": "live",
+          "ut": 1509002420
+        },
+        {
+          "id": 218,
+          "name": "Extratime 3",
+          "short_name": "Extra 3",
+          "type": "live",
+          "ut": 1509002420
+        },
+        {
+          "id": 219,
+          "name": "Extratime 4",
+          "short_name": "Extra 4",
+          "type": "live",
+          "ut": 1509002420
+        },
+        {
+          "id": 220,
+          "name": "Extratime 5",
+          "short_name": "Extra 5",
+          "type": "live",
+          "ut": 1509002420
+        },
+        {
+          "id": 221,
+          "name": "Break after extratime 1",
+          "short_name": "Break extra 1",
+          "type": "live",
+          "ut": 1509002420
+        },
+        {
+          "id": 222,
+          "name": "Break after extratime 2",
+          "short_name": "Break extra 2",
+          "type": "live",
+          "ut": 1509002420
+        },
+        {
+          "id": 223,
+          "name": "Break after extratime 3",
+          "short_name": "Break extra 3",
+          "type": "live",
+          "ut": 1509002420
+        },
+        {
+          "id": 224,
+          "name": "Break after extratime 4",
+          "short_name": "Break extra 4",
+          "type": "live",
+          "ut": 1509002420
+        },
+        {
+          "id": 225,
+          "name": "Technical problems",
+          "short_name": "Tech. problems",
+          "type": "live",
+          "ut": 1509002420
+        },
+        {
+          "id": 226,
+          "name": "8th set",
+          "short_name": "8th set",
+          "type": "live",
+          "ut": 1509002420
+        },
+        {
+          "id": 227,
+          "name": "9th set",
+          "short_name": "9th set",
+          "type": "live",
+          "ut": 1509002420
+        },
+        {
+          "id": 228,
+          "name": "10th set",
+          "short_name": "10th set",
+          "type": "live",
+          "ut": 1509002420
+        },
+        {
+          "id": 229,
+          "name": "11th set",
+          "short_name": "11th set",
+          "type": "live",
+          "ut": 1509002420
+        },
+        {
+          "id": 230,
+          "name": "12th set",
+          "short_name": "12th set",
+          "type": "live",
+          "ut": 1509002420
+        },
+        {
+          "id": 231,
+          "name": "13th set",
+          "short_name": "13th set",
+          "type": "live",
+          "ut": 1509002420
+        },
+        {
+          "id": 232,
+          "name": "Break after 8th set",
+          "short_name": "8th set break",
+          "type": "live",
+          "ut": 1509002420
+        },
+        {
+          "id": 233,
+          "name": "Break after 9th set",
+          "short_name": "9th set break",
+          "type": "live",
+          "ut": 1509002420
+        },
+        {
+          "id": 234,
+          "name": "Break after 10th set",
+          "short_name": "10th set break",
+          "type": "live",
+          "ut": 1509002420
+        },
+        {
+          "id": 235,
+          "name": "Break after 11th set",
+          "short_name": "11th set break",
+          "type": "live",
+          "ut": 1509002420
+        },
+        {
+          "id": 236,
+          "name": "Break after 12th set",
+          "short_name": "12th set break",
+          "type": "live",
+          "ut": 1509002420
+        },
+        {
+          "id": 237,
+          "name": "1st round",
+          "short_name": "1st r.",
+          "type": "live",
+          "ut": 1477291623
+        },
+        {
+          "id": 238,
+          "name": "Break after 1st round",
+          "short_name": "break 1st r.",
+          "type": "live",
+          "ut": 1477291623
+        },
+        {
+          "id": 239,
+          "name": "2nd round",
+          "short_name": "2nd r.",
+          "type": "live",
+          "ut": 1477291623
+        },
+        {
+          "id": 240,
+          "name": "Break after 2nd round",
+          "short_name": "break 2nd r.",
+          "type": "live",
+          "ut": 1477291623
+        },
+        {
+          "id": 241,
+          "name": "3rd round",
+          "short_name": "3rd r.",
+          "type": "live",
+          "ut": 1477291623
+        },
+        {
+          "id": 242,
+          "name": "Break after 3rd round",
+          "short_name": "break 3rd r.",
+          "type": "live",
+          "ut": 1477291623
+        },
+        {
+          "id": 243,
+          "name": "4th round",
+          "short_name": "4th r.",
+          "type": "live",
+          "ut": 1477291623
+        },
+        {
+          "id": 244,
+          "name": "Final round",
+          "short_name": "Final r.",
+          "type": "live",
+          "ut": 1477291623
+        },
+        {
+          "id": 245,
+          "name": "Trial round",
+          "short_name": "Trial r.",
+          "type": "live",
+          "ut": 1477291623
+        },
+        {
+          "id": 246,
+          "name": "Finished after Super Over",
+          "short_name": "Fin. after Super Over",
+          "type": "finished",
+          "ut": 1479390963
+        },
+        {
+          "id": 247,
+          "name": "1st innings home",
+          "short_name": "1st innings - home",
+          "type": "live",
+          "ut": 1479390963
+        },
+        {
+          "id": 248,
+          "name": "Break after 1st innings home",
+          "short_name": "Innings break 1st - h.",
+          "type": "live",
+          "ut": 1479390963
+        },
+        {
+          "id": 249,
+          "name": "1st innings away",
+          "short_name": "1st innings - away",
+          "type": "live",
+          "ut": 1479390963
+        },
+        {
+          "id": 250,
+          "name": "Break after 1st innings away",
+          "short_name": "Innings break 1st - a.",
+          "type": "live",
+          "ut": 1479390963
+        },
+        {
+          "id": 251,
+          "name": "2nd innings home",
+          "short_name": "2nd innings - home",
+          "type": "live",
+          "ut": 1479390963
+        },
+        {
+          "id": 252,
+          "name": "Break after 2nd innings home",
+          "short_name": "Innings break 2nd - h.",
+          "type": "live",
+          "ut": 1479390963
+        },
+        {
+          "id": 253,
+          "name": "2nd innings away",
+          "short_name": "2nd innings away",
+          "type": "live",
+          "ut": 1479390963
+        },
+        {
+          "id": 254,
+          "name": "Break after 2nd innings away",
+          "short_name": "Innings break 2nd - a.",
+          "type": "live",
+          "ut": 1479390963
+        },
+        {
+          "id": 255,
+          "name": "Super Over home",
+          "short_name": "Super Over - home",
+          "type": "live",
+          "ut": 1479390963
+        },
+        {
+          "id": 256,
+          "name": "Super Over Break",
+          "short_name": "Super Over Break",
+          "type": "live",
+          "ut": 1479390963
+        },
+        {
+          "id": 257,
+          "name": "Super Over away",
+          "short_name": "Super Over - away",
+          "type": "live",
+          "ut": 1479390963
+        },
+        {
+          "id": 258,
+          "name": "Lunch break",
+          "short_name": "Lunch break",
+          "type": "live",
+          "ut": 1479390963
+        },
+        {
+          "id": 259,
+          "name": "Tea break",
+          "short_name": "Tea break",
+          "type": "live",
+          "ut": 1479390963
+        },
+        {
+          "id": 260,
+          "name": "Stumps",
+          "short_name": "Stumps",
+          "type": "live",
+          "ut": 1479390963
+        },
+        {
+          "id": 261,
+          "name": "Break after Super Over home",
+          "short_name": "Break after S.O. h.",
+          "type": "live",
+          "ut": 1479390963
+        },
+        {
+          "id": 262,
+          "name": "Break after Super Over away",
+          "short_name": "Break after S.O. a.",
+          "type": "live",
+          "ut": 1479390963
+        },
+        {
+          "id": 263,
+          "name": "Break after 1st half",
+          "short_name": "After 1st",
+          "type": "live",
+          "ut": 1479390963
+        },
+        {
+          "id": 264,
+          "name": "Break after 2nd half",
+          "short_name": "After 2nd",
+          "type": "live",
+          "ut": 1479390963
+        },
+        {
+          "id": 265,
+          "name": "1st ET 1st half",
+          "short_name": "1st Extra 1st",
+          "type": "live",
+          "ut": 1479390963
+        },
+        {
+          "id": 266,
+          "name": "Break after 1st ET 1st half",
+          "short_name": "After 1st ET 1st",
+          "type": "live",
+          "ut": 1479390963
+        },
+        {
+          "id": 267,
+          "name": "1st ET 2nd half",
+          "short_name": "1st Extra 2nd",
+          "type": "live",
+          "ut": 1479390963
+        },
+        {
+          "id": 268,
+          "name": "Break after 1st ET 2nd half",
+          "short_name": "After 1st ET",
+          "type": "live",
+          "ut": 1479390963
+        },
+        {
+          "id": 269,
+          "name": "2nd Extratime 1st half",
+          "short_name": "2nd Extra 1st",
+          "type": "live",
+          "ut": 1479390963
+        },
+        {
+          "id": 270,
+          "name": "2nd Extratime halftime",
+          "short_name": "After 2nd ET 1st",
+          "type": "live",
+          "ut": 1479390963
+        },
+        {
+          "id": 271,
+          "name": "2nd Extratime 2nd half",
+          "short_name": "2nd Extra 2nd",
+          "type": "live",
+          "ut": 1479390963
+        },
+        {
+          "id": 272,
+          "name": "Break after 2nd ET 2nd half",
+          "short_name": "After 2nd ET",
+          "type": "live",
+          "ut": 1479390963
+        },
+        {
+          "id": 273,
+          "name": "Heat 1",
+          "short_name": "Heat1",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 274,
+          "name": "Break after heat 1",
+          "short_name": "break h1",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 275,
+          "name": "Heat 2",
+          "short_name": "Heat2",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 276,
+          "name": "Break after heat 2",
+          "short_name": "break h2",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 277,
+          "name": "Heat 3",
+          "short_name": "Heat3",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 278,
+          "name": "Break after heat 3",
+          "short_name": "break h3",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 279,
+          "name": "Heat 4",
+          "short_name": "Heat4",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 280,
+          "name": "Break after heat 4",
+          "short_name": "break h4",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 281,
+          "name": "Heat 5",
+          "short_name": "Heat5",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 282,
+          "name": "Break after heat 5",
+          "short_name": "break h5",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 283,
+          "name": "Heat 6",
+          "short_name": "Heat6",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 284,
+          "name": "Break after heat 6",
+          "short_name": "break h6",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 285,
+          "name": "Heat 7",
+          "short_name": "Heat7",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 286,
+          "name": "Break after heat 7",
+          "short_name": "break h7",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 287,
+          "name": "Heat 8",
+          "short_name": "Heat8",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 288,
+          "name": "Break after heat 8",
+          "short_name": "break h8",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 289,
+          "name": "Heat 9",
+          "short_name": "Heat9",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 290,
+          "name": "Break after heat 9",
+          "short_name": "break h9",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 291,
+          "name": "Heat 10",
+          "short_name": "Heat10",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 292,
+          "name": "Break after heat 10",
+          "short_name": "break h10",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 293,
+          "name": "Heat 11",
+          "short_name": "Heat11",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 294,
+          "name": "Break after heat 11",
+          "short_name": "break h11",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 295,
+          "name": "Heat 12",
+          "short_name": "Heat12",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 296,
+          "name": "Break after heat 12",
+          "short_name": "break h12",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 297,
+          "name": "Heat 13",
+          "short_name": "Heat13",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 298,
+          "name": "Break after heat 13",
+          "short_name": "break h13",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 299,
+          "name": "Heat 14",
+          "short_name": "Heat14",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 300,
+          "name": "Break after heat 14",
+          "short_name": "break h14",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 301,
+          "name": "Heat 15",
+          "short_name": "Heat15",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 302,
+          "name": "Break after heat 15",
+          "short_name": "break h15",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 303,
+          "name": "Heat 16",
+          "short_name": "Heat16",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 304,
+          "name": "Break after heat 16",
+          "short_name": "break h16",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 305,
+          "name": "Heat 17",
+          "short_name": "Heat17",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 306,
+          "name": "Break after heat 17",
+          "short_name": "break h17",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 307,
+          "name": "Heat 18",
+          "short_name": "Heat18",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 308,
+          "name": "Break after heat 18",
+          "short_name": "break h18",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 309,
+          "name": "Heat 19",
+          "short_name": "Heat19",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 310,
+          "name": "Break after heat 19",
+          "short_name": "break h19",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 311,
+          "name": "Heat 20",
+          "short_name": "Heat20",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 312,
+          "name": "Break after heat 20",
+          "short_name": "break h20",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 313,
+          "name": "Heat 21",
+          "short_name": "Heat21",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 314,
+          "name": "Break after heat 21",
+          "short_name": "break h21",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 315,
+          "name": "Heat 22",
+          "short_name": "Heat22",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 316,
+          "name": "Break after heat 22",
+          "short_name": "break h22",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 317,
+          "name": "Semifinal 1",
+          "short_name": "semi1",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 318,
+          "name": "Break after semifinal 1",
+          "short_name": "break semi1",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 319,
+          "name": "Semifinal 2",
+          "short_name": "semi2",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 320,
+          "name": "Break after semifinal 2",
+          "short_name": "break semi2",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 321,
+          "name": "Final",
+          "short_name": "final",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 322,
+          "name": "Break after final",
+          "short_name": "break fin",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 323,
+          "name": "Final B",
+          "short_name": "finalb",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 324,
+          "name": "Break after final B",
+          "short_name": "break finb",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 325,
+          "name": "Extra heat",
+          "short_name": "extraheat",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 326,
+          "name": "Break after Extra heat",
+          "short_name": "break eh",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 327,
+          "name": "Extra heat 2",
+          "short_name": "extraheat2",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 328,
+          "name": "Break after Extra heat 2",
+          "short_name": "break eh2",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 329,
+          "name": "Extra heat 3",
+          "short_name": "extraheat3",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 330,
+          "name": "Break after Extra heat 3",
+          "short_name": "break eh3",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 331,
+          "name": "Super tiebreak",
+          "short_name": "S. tiebreak",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 332,
+          "name": "Finished after 2nd extratime",
+          "short_name": "Fin 2nd ext.",
+          "type": "finished",
+          "ut": 1489532400
+        },
+        {
+          "id": 333,
+          "name": "Waiting for 2nd extratime",
+          "short_name": "Waiting 2nd ET",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 334,
+          "name": "Waiting for penalties",
+          "short_name": "Waiting pen.",
+          "type": "live",
+          "ut": 1489532400
+        },
+        {
+          "id": 335,
+          "name": "Break after 1st period",
+          "short_name": "After 1st period",
+          "type": "live",
+          "ut": 1507622400
+        },
+        {
+          "id": 336,
+          "name": "Break after 2nd period",
+          "short_name": "After 2nd period",
+          "type": "live",
+          "ut": 1507622400
+        },
+        {
+          "id": 337,
+          "name": "Break after 3rd period",
+          "short_name": "After 3rd period",
+          "type": "live",
+          "ut": 1507622400
+        },
+        {
+          "id": 338,
+          "name": "1st overtime",
+          "short_name": "1st OT",
+          "type": "live",
+          "ut": 1507622400
+        },
+        {
+          "id": 339,
+          "name": "Break after 1st overtime",
+          "short_name": "After 1st OT",
+          "type": "live",
+          "ut": 1507622400
+        },
+        {
+          "id": 340,
+          "name": "2nd overtime",
+          "short_name": "2nd OT",
+          "type": "live",
+          "ut": 1507622400
+        },
+        {
+          "id": 341,
+          "name": "Break after 2nd overtime",
+          "short_name": "After 2nd OT",
+          "type": "live",
+          "ut": 1507622400
+        },
+        {
+          "id": 342,
+          "name": "3rd overtime",
+          "short_name": "3rd OT",
+          "type": "live",
+          "ut": 1507622400
+        },
+        {
+          "id": 343,
+          "name": "Break after 3rd overtime",
+          "short_name": "After 3rd OT",
+          "type": "live",
+          "ut": 1507622400
+        },
+        {
+          "id": 344,
+          "name": "4th overtime",
+          "short_name": "4th OT",
+          "type": "live",
+          "ut": 1507622400
+        },
+        {
+          "id": 345,
+          "name": "Break after 4th overtime",
+          "short_name": "After 4th OT",
+          "type": "live",
+          "ut": 1507622400
+        },
+        {
+          "id": 346,
+          "name": "5th overtime",
+          "short_name": "5th OT",
+          "type": "live",
+          "ut": 1507622400
+        },
+        {
+          "id": 347,
+          "name": "Map 1",
+          "short_name": "Map 1",
+          "type": "live",
+          "ut": 1515074400
+        },
+        {
+          "id": 348,
+          "name": "Map 2",
+          "short_name": "Map 2",
+          "type": "live",
+          "ut": 1515074400
+        },
+        {
+          "id": 349,
+          "name": "Map 3",
+          "short_name": "Map 3",
+          "type": "live",
+          "ut": 1515074400
+        },
+        {
+          "id": 350,
+          "name": "Map 4",
+          "short_name": "Map 4",
+          "type": "live",
+          "ut": 1515074400
+        },
+        {
+          "id": 351,
+          "name": "Map 5",
+          "short_name": "Map 5",
+          "type": "live",
+          "ut": 1515074400
+        },
+        {
+          "id": 352,
+          "name": "Practice 1",
+          "short_name": "Practice 1",
+          "type": "live",
+          "ut": 1517392800
+        },
+        {
+          "id": 353,
+          "name": "Practice 2",
+          "short_name": "Practice 2",
+          "type": "live",
+          "ut": 1517392800
+        },
+        {
+          "id": 354,
+          "name": "Practice 3",
+          "short_name": "Practice 3",
+          "type": "live",
+          "ut": 1517392800
+        },
+        {
+          "id": 355,
+          "name": "Qualifying 1",
+          "short_name": "Qualifying 1",
+          "type": "live",
+          "ut": 1517392800
+        },
+        {
+          "id": 356,
+          "name": "Break after qualifying 1",
+          "short_name": "break q1",
+          "type": "live",
+          "ut": 1517392800
+        },
+        {
+          "id": 357,
+          "name": "Qualifying 2",
+          "short_name": "Qualifying 2",
+          "type": "live",
+          "ut": 1517392800
+        },
+        {
+          "id": 358,
+          "name": "Break after qualifying 2",
+          "short_name": "break q2",
+          "type": "live",
+          "ut": 1517392800
+        },
+        {
+          "id": 359,
+          "name": "Qualifying 3",
+          "short_name": "Qualifying 3",
+          "type": "live",
+          "ut": 1517392800
+        },
+        {
+          "id": 360,
+          "name": "Warm-up lap",
+          "short_name": "Warm-up lap",
+          "type": "live",
+          "ut": 1517392800
+        },
+        {
+          "id": 361,
+          "name": "Awaiting start",
+          "short_name": "Awaiting start",
+          "type": "live",
+          "ut": 1517392800
+        },
+        {
+          "id": 362,
+          "name": "Race in progress",
+          "short_name": "Race",
+          "type": "live",
+          "ut": 1517392800
+        },
+        {
+          "id": 363,
+          "name": "Break after 1st inning",
+          "short_name": "1st in. break",
+          "type": "live",
+          "ut": 1516006800
+        },
+        {
+          "id": 364,
+          "name": "Break after 2nd inning",
+          "short_name": "2nd in. break",
+          "type": "live",
+          "ut": 1516006800
+        },
+        {
+          "id": 365,
+          "name": "Break after 3rd inning",
+          "short_name": "3rd in. break",
+          "type": "live",
+          "ut": 1516006800
+        },
+        {
+          "id": 366,
+          "name": "Break after 4th inning",
+          "short_name": "4th in. break",
+          "type": "live",
+          "ut": 1516006800
+        },
+        {
+          "id": 367,
+          "name": "Break after 5th inning",
+          "short_name": "5th in. break",
+          "type": "live",
+          "ut": 1516006800
+        },
+        {
+          "id": 368,
+          "name": "Break after 6th inning",
+          "short_name": "6th in. break",
+          "type": "live",
+          "ut": 1516006800
+        },
+        {
+          "id": 369,
+          "name": "Break after 7th inning",
+          "short_name": "7th in. break",
+          "type": "live",
+          "ut": 1516006800
+        },
+        {
+          "id": 370,
+          "name": "Break after 8th inning",
+          "short_name": "8th in. break",
+          "type": "live",
+          "ut": 1516006800
+        },
+        {
+          "id": 371,
+          "name": "Break after 9th inning",
+          "short_name": "9th in. break",
+          "type": "live",
+          "ut": 1516006800
+        },
+        {
+          "id": 372,
+          "name": "Break after 10th inning",
+          "short_name": "10th in. break",
+          "type": "live",
+          "ut": 1516006800
+        },
+        {
+          "id": 373,
+          "name": "Break after 11th inning",
+          "short_name": "11th in. break",
+          "type": "live",
+          "ut": 1516006800
+        },
+        {
+          "id": 374,
+          "name": "Break after 12th inning",
+          "short_name": "12th in. break",
+          "type": "live",
+          "ut": 1516006800
+        },
+        {
+          "id": 375,
+          "name": "Break after 13th inning",
+          "short_name": "13th in. break",
+          "type": "live",
+          "ut": 1516006800
+        },
+        {
+          "id": 376,
+          "name": "Break after 14th inning",
+          "short_name": "14th in. break",
+          "type": "live",
+          "ut": 1516006800
+        },
+        {
+          "id": 377,
+          "name": "Break after 15th inning",
+          "short_name": "15th in. break",
+          "type": "live",
+          "ut": 1516006800
+        },
+        {
+          "id": 378,
+          "name": "Break after 16th inning",
+          "short_name": "16th in. break",
+          "type": "live",
+          "ut": 1516006800
+        },
+        {
+          "id": 379,
+          "name": "Break after 17th inning",
+          "short_name": "17th in. break",
+          "type": "live",
+          "ut": 1516006800
+        },
+        {
+          "id": 380,
+          "name": "Break after 18th inning",
+          "short_name": "18th in. break",
+          "type": "live",
+          "ut": 1516006800
+        },
+        {
+          "id": 381,
+          "name": "Break after 19th inning",
+          "short_name": "19th in. break",
+          "type": "live",
+          "ut": 1516006800
+        },
+        {
+          "id": 382,
+          "name": "Break after 20th inning",
+          "short_name": "20th in. break",
+          "type": "live",
+          "ut": 1516006800
+        },
+        {
+          "id": 383,
+          "name": "Break after 21th inning",
+          "short_name": "21th in. break",
+          "type": "live",
+          "ut": 1516006800
+        },
+        {
+          "id": 384,
+          "name": "Break after 22th inning",
+          "short_name": "22th in. break",
+          "type": "live",
+          "ut": 1516006800
+        }
+      ]
+    }
+  }
+}

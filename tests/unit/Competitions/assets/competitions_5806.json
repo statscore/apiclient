@@ -1,0 +1,44 @@
+{
+  "api": {
+    "ver": "2.125",
+    "timestamp": 1563821336,
+    "method": {
+      "parameters": {
+        "client_id": 1,
+        "competition_id": "5806"
+      },
+      "name": "competitions.show",
+      "details": "competitions.show",
+      "total_items": 1,
+      "previous_page": "",
+      "next_page": ""
+    },
+    "data": {
+      "competition": {
+        "id": 5806,
+        "name": "Serbia & Montenegro",
+        "short_name": "Serbia & Montenegro",
+        "mini_name": "mnb",
+        "gender": "male",
+        "type": "country_league",
+        "area_id": 1,
+        "area_name": "Afghanistan",
+        "area_type": "country",
+        "area_sort": 2,
+        "area_code": "AFG",
+        "overall_sort": 50,
+        "sport_id": 20,
+        "sport_name": "Alpine skiing",
+        "tour_id": 4,
+        "tour_name": "ATP Challengers",
+        "ut": 1434115672,
+        "old_competition_id": "",
+        "slug": "serbia-&-montenegro,5806",
+        "stats_lvl": "bronze",
+        "generate_season_stats": true,
+        "seasons": [
+        ]
+      }
+    }
+  }
+}

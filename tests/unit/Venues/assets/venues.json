@@ -1,0 +1,106 @@
+{
+  "api": {
+    "ver": "2.125",
+    "timestamp": 1569159948,
+    "method": {
+      "parameters": {
+        "username": "statscore",
+        "client_id": 1,
+        "timestamp": "1553849196"
+      },
+      "name": "venues.index",
+      "details": "venues.index",
+      "total_items": 6,
+      "previous_page": null,
+      "next_page": null
+    },
+    "data": {
+      "venues": [
+        {
+          "id": 1,
+          "name": "Camp nou",
+          "short_name": "Camp nou",
+          "country": "Spain",
+          "status": "active",
+          "url": "camp-nou,1",
+          "city": "Warsaw",
+          "lat": "",
+          "lng": "",
+          "opened": "",
+          "photo": "no",
+          "ut": 1521461782
+        },
+        {
+          "id": 2,
+          "name": "Camp two",
+          "short_name": "Camp two",
+          "country": "Spain",
+          "status": "active",
+          "url": "camp-two,2",
+          "city": "Warsaw",
+          "lat": "",
+          "lng": "",
+          "opened": "",
+          "photo": "no",
+          "ut": 1521461782
+        },
+        {
+          "id": 3,
+          "name": "Camp three",
+          "short_name": "Camp three",
+          "country": "Spain",
+          "status": "active",
+          "url": "camp-three,1",
+          "city": "Warsaw",
+          "lat": "",
+          "lng": "",
+          "opened": "",
+          "photo": "no",
+          "ut": 1521461782
+        },
+        {
+          "id": 4,
+          "name": "Camp four",
+          "short_name": "Camp four",
+          "country": "Spain",
+          "status": "active",
+          "url": "camp-four,7",
+          "city": "Warsaw",
+          "lat": "",
+          "lng": "",
+          "opened": "",
+          "photo": "no",
+          "ut": 1521461782
+        },
+        {
+          "id": 5,
+          "name": "Camp five",
+          "short_name": "Camp five",
+          "country": "Spain",
+          "status": "active",
+          "url": "camp-five,2",
+          "city": "Warsaw",
+          "lat": "",
+          "lng": "",
+          "opened": "",
+          "photo": "no",
+          "ut": 1521461782
+        },
+        {
+          "id": 6,
+          "name": "Camp six",
+          "short_name": "Camp six",
+          "country": "Spain",
+          "status": "active",
+          "url": "camp-six,8",
+          "city": "Warsaw",
+          "lat": "",
+          "lng": "",
+          "opened": "",
+          "photo": "no",
+          "ut": 1521461782
+        }
+      ]
+    }
+  }
+}

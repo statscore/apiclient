@@ -1,0 +1,74 @@
+{
+  "api": {
+    "ver": "2.125",
+    "timestamp": 1564258061,
+    "method": {
+      "parameters": {
+        "sport_id": "5",
+        "client_id": 1,
+        "participant_id": "51447"
+      },
+      "name": "participants.show",
+      "details": "participants.show",
+      "total_items": 1,
+      "previous_page": "",
+      "next_page": ""
+    },
+    "data": {
+      "participant": {
+        "id": 51447,
+        "type": "team",
+        "name": "Dzikie Korki",
+        "short_name": "Korki",
+        "acronym": "kor",
+        "gender": "male",
+        "area_id": 144,
+        "area_name": "Poland",
+        "area_code": "POL",
+        "sport_id": 5,
+        "sport_name": "Soccer",
+        "national": "no",
+        "website": "",
+        "ut": 1474875000,
+        "old_participant_id": "",
+        "slug": "dzikie-korki,51447",
+        "logo": "no",
+        "virtual": "no",
+        "shirt_nr": "",
+        "details": {
+          "founded": "",
+          "phone": "",
+          "email": "",
+          "address": "",
+          "venue_id": "",
+          "venue_name": "",
+          "weight": "",
+          "height": "",
+          "nickname": "",
+          "position_name": "",
+          "position_id": "",
+          "birthdate": "",
+          "born_place": "",
+          "is_retired": "no",
+          "subtype": ""
+        },
+        "venues": [
+          {
+            "id": 1,
+            "name": "Camp nou",
+            "short_name": "Camp nou",
+            "country": "Spain",
+            "status": "active",
+            "url": "camp-nou,1",
+            "city": "Warsaw",
+            "lat": "",
+            "lng": "",
+            "opened": "",
+            "photo": "no",
+            "ut": 1521461782
+          }
+        ]
+      }
+    }
+  }
+}

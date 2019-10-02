@@ -1,0 +1,294 @@
+{
+  "api": {
+    "ver": "2.125",
+    "timestamp": 1569174852,
+    "method": {
+      "parameters": {
+        "username": "statscore",
+        "client_id": 1
+      },
+      "name": "tours.index",
+      "details": "tours.index",
+      "total_items": 39,
+      "previous_page": "",
+      "next_page": ""
+    },
+    "data": {
+      "tours": [
+        {
+          "id": 1,
+          "name": "ATP Tour",
+          "sport_id": 4,
+          "sort_order": 1,
+          "ut": 1430808626
+        },
+        {
+          "id": 2,
+          "name": "WTA Tour",
+          "sport_id": 4,
+          "sort_order": 2,
+          "ut": 1430131171
+        },
+        {
+          "id": 3,
+          "name": "Hopman Cup",
+          "sport_id": 4,
+          "sort_order": 3,
+          "ut": 1430131171
+        },
+        {
+          "id": 4,
+          "name": "ATP Challengers",
+          "sport_id": 4,
+          "sort_order": 4,
+          "ut": 1430131171
+        },
+        {
+          "id": 5,
+          "name": "Fed Cup",
+          "sport_id": 4,
+          "sort_order": 5,
+          "ut": 1430131171
+        },
+        {
+          "id": 6,
+          "name": "Davis Cup",
+          "sport_id": 4,
+          "sort_order": 6,
+          "ut": 1430131171
+        },
+        {
+          "id": 7,
+          "name": "Olimpics",
+          "sport_id": 4,
+          "sort_order": 7,
+          "ut": 1430131171
+        },
+        {
+          "id": 8,
+          "name": "Olimpics (W)",
+          "sport_id": 4,
+          "sort_order": 8,
+          "ut": 1430131171
+        },
+        {
+          "id": 10,
+          "name": "WTA Challengers (W)",
+          "sport_id": 4,
+          "sort_order": 10,
+          "ut": 1430131171
+        },
+        {
+          "id": 11,
+          "name": "ITF",
+          "sport_id": 4,
+          "sort_order": 11,
+          "ut": 1430131171
+        },
+        {
+          "id": 12,
+          "name": "ITF (W)",
+          "sport_id": 4,
+          "sort_order": 12,
+          "ut": 1430131171
+        },
+        {
+          "id": 13,
+          "name": "Exhibition",
+          "sport_id": 4,
+          "sort_order": 13,
+          "ut": 1430131171
+        },
+        {
+          "id": 14,
+          "name": "Exhibition (W)",
+          "sport_id": 4,
+          "sort_order": 14,
+          "ut": 1430131171
+        },
+        {
+          "id": 15,
+          "name": "UCI Tour",
+          "sport_id": 4,
+          "sort_order": 15,
+          "ut": 1461784810
+        },
+        {
+          "id": 16,
+          "name": "Grand Slam",
+          "sport_id": 4,
+          "sort_order": 16,
+          "ut": 1462180883
+        },
+        {
+          "id": 17,
+          "name": "Open",
+          "sport_id": 4,
+          "sort_order": 17,
+          "ut": 1462181337
+        },
+        {
+          "id": 18,
+          "name": "Masters",
+          "sport_id": 4,
+          "sort_order": 18,
+          "ut": 1462181363
+        },
+        {
+          "id": 19,
+          "name": "CBT",
+          "sport_id": 4,
+          "sort_order": 19,
+          "ut": 1462181636
+        },
+        {
+          "id": 20,
+          "name": "Challengers",
+          "sport_id": 4,
+          "sort_order": 20,
+          "ut": 1462181678
+        },
+        {
+          "id": 21,
+          "name": "Satellite",
+          "sport_id": 4,
+          "sort_order": 21,
+          "ut": 1462181727
+        },
+        {
+          "id": 22,
+          "name": "CBBVP",
+          "sport_id": 4,
+          "sort_order": 22,
+          "ut": 1462181772
+        },
+        {
+          "id": 23,
+          "name": "Major Series",
+          "sport_id": 4,
+          "sort_order": 23,
+          "ut": 1462181789
+        },
+        {
+          "id": 24,
+          "name": "BWF",
+          "sport_id": 4,
+          "sort_order": 24,
+          "ut": 1462183507
+        },
+        {
+          "id": 25,
+          "name": "Superseries",
+          "sport_id": 4,
+          "sort_order": 25,
+          "ut": 1462183522
+        },
+        {
+          "id": 26,
+          "name": "Grand Prix",
+          "sport_id": 4,
+          "sort_order": 26,
+          "ut": 1462183564
+        },
+        {
+          "id": 27,
+          "name": "SBT",
+          "sport_id": 4,
+          "sort_order": 27,
+          "ut": 1462198055
+        },
+        {
+          "id": 28,
+          "name": "UCI Tour",
+          "sport_id": 13,
+          "sort_order": 15,
+          "ut": 1476950720
+        },
+        {
+          "id": 29,
+          "name": "Grand Slam",
+          "sport_id": 19,
+          "sort_order": 16,
+          "ut": 1476950720
+        },
+        {
+          "id": 30,
+          "name": "Open",
+          "sport_id": 19,
+          "sort_order": 17,
+          "ut": 1476950720
+        },
+        {
+          "id": 31,
+          "name": "Masters",
+          "sport_id": 19,
+          "sort_order": 18,
+          "ut": 1476950720
+        },
+        {
+          "id": 32,
+          "name": "CBT",
+          "sport_id": 19,
+          "sort_order": 19,
+          "ut": 1476950720
+        },
+        {
+          "id": 33,
+          "name": "Challengers",
+          "sport_id": 19,
+          "sort_order": 20,
+          "ut": 1476950720
+        },
+        {
+          "id": 34,
+          "name": "Satellite",
+          "sport_id": 19,
+          "sort_order": 21,
+          "ut": 1476950720
+        },
+        {
+          "id": 35,
+          "name": "CBBVP",
+          "sport_id": 19,
+          "sort_order": 22,
+          "ut": 1476950720
+        },
+        {
+          "id": 36,
+          "name": "Major Series",
+          "sport_id": 19,
+          "sort_order": 23,
+          "ut": 1476950720
+        },
+        {
+          "id": 37,
+          "name": "BWF",
+          "sport_id": 29,
+          "sort_order": 24,
+          "ut": 1476950720
+        },
+        {
+          "id": 38,
+          "name": "Superseries",
+          "sport_id": 29,
+          "sort_order": 25,
+          "ut": 1476950720
+        },
+        {
+          "id": 39,
+          "name": "Grand Prix",
+          "sport_id": 29,
+          "sort_order": 26,
+          "ut": 1476950720
+        },
+        {
+          "id": 40,
+          "name": "SBT",
+          "sport_id": 19,
+          "sort_order": 27,
+          "ut": 1476950720
+        }
+      ]
+    }
+  }
+}
